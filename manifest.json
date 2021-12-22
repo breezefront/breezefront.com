@@ -1,0 +1,12 @@
+{
+    "name": "Breeze",
+    "short_name": "Breeze",
+    "icons": [{
+        "src": "/favicon-android.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "fullscreen"
+}

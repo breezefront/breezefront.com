@@ -1,0 +1,57 @@
+<nav id="nav">
+  <input type="checkbox" id="nav-toggler"/>
+  <label class="nav-toggler" for="nav-toggler">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    {%- if page.collection %}
+      {%- assign group = site.collections | where: "label", page.collection | first -%}
+      <span class="parent">
+        {{ group.title }}
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+    {%- endif %}
+    {{ page.title }}
+  </label>
+  <ul>
+    {%- comment -%}
+    <li>
+      <h5><a class="{% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Welcome</a></h5>
+    </li>
+    {%- endcomment -%}
+    {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
+    {% for section in sections %}
+      {% assign draft = false %}
+      {%- if section.draft == true -%}
+        {%- assign draft = true -%}
+      {%- endif -%}
+      <li>
+        <h5 class="{%- if draft %}draft{% endif -%}">{{ section.title }}</h5>
+        {%- assign articles = site[section.label] | sort: 'order' -%}
+        {%- if articles.size > 0 %}
+          <ul>
+          {%- for article in articles %}
+            {%- assign draft = false %}
+            {%- if section.draft == true or article.draft == true %}
+              {%- assign draft = true %}
+            {%- endif %}
+            <li>
+              <a class="{%- if article.url == page.url %}active{% endif -%}{%- if draft %}draft{% endif -%}" {%- if draft %} tabindex="-1" {%- endif %} href="
+                {%- unless draft -%}
+                  {{ article.url }}
+                {%- else -%}
+                  #
+                {%- endunless -%}
+              ">
+                {{- article.title -}}
+              </a>
+            </li>
+          {%- endfor %}
+          </ul>
+        {%- endif %}
+      </li>
+    {%- endfor %}
+  </ul>
+</nav>

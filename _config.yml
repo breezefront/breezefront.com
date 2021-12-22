@@ -1,0 +1,56 @@
+title: Breeze
+email: support@swissuplabs.com
+description: >-
+  Breeze — is a minimalistic Magento starter theme for your next unique design.
+baseurl: ""
+url: "https://breezefront.com"
+github_username: swissup
+
+collections_dir: collections
+collections:
+  essentials:
+    output: true
+    permalink: /:name
+    navigation: true
+    title: Essentials
+    order: 10
+  theme:
+    draft: true
+    output: true
+    permalink: /:name
+    navigation: true
+    title: Theme
+    order: 20
+  js:
+    draft: true
+    output: true
+    permalink: /:name
+    navigation: true
+    title: JS
+    order: 30
+  guides:
+    draft: true
+    output: true
+    permalink: /:collection/:name
+    navigation: true
+    title: Guides
+    order: 40
+
+markdown: kramdown
+kramdown:
+  toc_levels: 2..5
+
+sass:
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,46 @@
+body {
+    color: #111827;
+    line-height: 1.3;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+* {
+    outline: none;
+    &:focus-visible {
+        border-radius: .125rem;
+        outline: 2px solid #2563eb;
+        outline-offset: 2px;
+    }
+}
+
+.skip-to-content {
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+    z-index: 51;
+    background: #fff;
+    padding: .5rem .75rem;
+    outline-offset: 0;
+    &:not(:focus) {
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
+}

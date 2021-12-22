@@ -1,0 +1,47 @@
+:root {
+    --container-padding: 1rem;
+    --sidebar-width: 16rem;
+    @media (min-width: 640px) {
+        --container-padding: 2rem 2rem 0;
+    }
+    @media (min-width: 1280px) {
+        --sidebar-width: 24rem;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+aside, main {
+    padding: var(--container-padding);
+}
+
+aside {
+    z-index: 50;
+    flex-shrink: 0;
+    background: #fff;
+}
+
+main {
+    flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+    .page {
+        flex-direction: row;
+    }
+    aside {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: var(--sidebar-width);
+        height: 100vh;
+        overflow-y: auto;
+        border-right: 1px solid #e4e4e4;
+    }
+    main {
+        width: calc(100% - var(--sidebar-width));
+    }
+}
