@@ -36,7 +36,7 @@
 
   {%- if previous -%}
     {%- assign group = site.collections | where: "label", previous.collection | first %}
-    <a href="{{ previous.url }}" class="prev" title="{{ previous.title }}">
+    <a href="{{ previous.url | relative_url }}" class="prev" title="{{ previous.title }}">
       Previous
       <span>
         {%- if page.collection != previous.collection %}
@@ -54,7 +54,7 @@
 
   {%- if next -%}
     {%- assign group = site.collections | where: "label", next.collection | first %}
-    <a href="{{ next.url }}" class="next" title="{{ next.title }}">
+    <a href="{{ next.url | relative_url }}" class="next" title="{{ next.title }}">
       Next
       <span>
         {%- if page.collection != next.collection %}
