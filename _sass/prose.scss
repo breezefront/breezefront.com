@@ -2,6 +2,10 @@
     font-size: 1rem;
     line-height: 1.4em;
 
+    @media (min-width: 1024px) {
+        font-size: 1.25rem;
+    }
+
     > li {
         padding: 0;
         li {
@@ -22,8 +26,9 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     #markdown-toc {
+        font-size: 1rem;
         position: sticky;
         top: 1rem;
         z-index: 10;
@@ -55,13 +60,11 @@
 
     @media (min-width: 1024px) {
         max-width: 50ch;
+        font-size: 1.25em;
+        line-height: 1.65em;
     }
     @media (min-width: 1080px) {
         max-width: 55ch;
-    }
-    @media (min-width: 1280px) {
-        font-size: 1.25em;
-        line-height: 1.65em;
     }
     @media (min-width: 1400px) {
         max-width: 60ch;
