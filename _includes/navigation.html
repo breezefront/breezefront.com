@@ -40,7 +40,7 @@
             <li>
               <a class="{%- if article.url == page.url %}active{% endif -%}{%- if draft %}draft{% endif -%}" {%- if draft %} tabindex="-1" {%- endif %} href="
                 {%- unless draft -%}
-                  {{ article.url }}
+                  {{ article.url | relative_url }}
                 {%- else -%}
                   #
                 {%- endunless -%}
