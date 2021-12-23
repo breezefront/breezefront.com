@@ -7,7 +7,7 @@ permalink: /
 
 # Welcome to Breeze Docs
 
-👋 Hello there! We are the [swissup team](https://github.com/swissup) and we develop
+👋 Hello there! We are the [Swissup team](https://github.com/swissup) and we develop
 top-notch Magento modules and themes. As every responsible developer we want
 to see how our products help merchants to increase sales and improve various
 aspects of the store. The crusial aspect --- is a **store performance.**
