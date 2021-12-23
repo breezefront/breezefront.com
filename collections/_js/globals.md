@@ -2,6 +2,7 @@
 layout: default
 title: Globals
 order: 20
+draft: true
 ---
 
 # Globals
