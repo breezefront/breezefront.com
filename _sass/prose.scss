@@ -59,12 +59,11 @@
     line-height: 1.75;
 
     @media (min-width: 1024px) {
-        max-width: 50ch;
         font-size: 1.25em;
         line-height: 1.65em;
     }
     @media (min-width: 1080px) {
-        max-width: 55ch;
+        max-width: 60ch;
     }
     @media (min-width: 1400px) {
         max-width: 60ch;
