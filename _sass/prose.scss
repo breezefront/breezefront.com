@@ -24,6 +24,9 @@
         display: inline-block;
         margin-bottom: .3rem;
     }
+    > li:last-child > a:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -175,7 +178,9 @@
         padding: .125rem .25rem;
         border: 1px solid #eaeaea;
         border-radius: .25rem;
-        white-space: nowrap;
+        @media (min-width: 1024px) {
+            white-space: nowrap;
+        }
     }
     a code {
         color: #2563eb;
