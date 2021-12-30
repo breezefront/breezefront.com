@@ -20,6 +20,7 @@ Package Name                            | Description
 ----------------------------------------|--------------
 swissup/theme-frontend-breeze-blank     | Breeze Blank Theme
 swissup/module-breeze                   | Breeze Module
+swissup/module-breeze-integrations      | Third-party modules integrations
 swissup/module-rtl                      | RTL Direction Module
 
 ## Setup

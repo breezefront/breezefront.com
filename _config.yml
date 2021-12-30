@@ -15,7 +15,6 @@ collections:
     title: Essentials
     order: 10
   theme:
-    draft: true
     output: true
     permalink: /:name
     navigation: true

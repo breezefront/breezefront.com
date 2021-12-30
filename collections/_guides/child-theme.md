@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Child Theme
-order: 10
+order: 100
 draft: true
 ---
 
-# Creating child theme
+# Child theme
