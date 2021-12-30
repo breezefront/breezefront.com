@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Widgets
-order: 30
+order: 300
 draft: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Styles
-order: 10
 draft: true
+order: 300
 ---
 
 # Styles

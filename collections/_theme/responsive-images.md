@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Responsive Images
-order: 20
+order: 500
 draft: true
 ---
 

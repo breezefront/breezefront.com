@@ -2,7 +2,7 @@
 layout: default
 title: Installation
 description: Breeze installation instructions
-order: 20
+order: 200
 ---
 
 # Installation

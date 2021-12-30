@@ -2,7 +2,7 @@
 layout: default
 title: Configuration
 description: Breeze configuration options
-order: 30
+order: 300
 ---
 
 # Configuration

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-order: 10
+order: 100
 permalink: /
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Dark Mode
-order: 30
 draft: true
+order: 400
 ---
 
 # Dark Mode
