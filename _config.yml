@@ -21,7 +21,6 @@ collections:
     title: Theme
     order: 20
   js:
-    draft: true
     output: true
     permalink: /:name
     navigation: true
