@@ -2,7 +2,7 @@
 layout: default
 title: Scripts
 description: Writing Breeze scripts
-order: 200
+order: 100
 ---
 
 # Scripts

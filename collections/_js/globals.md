@@ -2,7 +2,7 @@
 layout: default
 title: Globals
 description: Global JS variables in Breeze
-order: 100
+order: 200
 ---
 
 # Globals
