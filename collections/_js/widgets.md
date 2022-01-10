@@ -13,6 +13,29 @@ similar to Luma's jQuery UI based widgets.
 * TOC
 {:toc}
 
+## $.widget function
+
+`$.widget` --- is a function that is usually used to declare a new widget:
+
+```js
+$.widget('name', {});
+```
+
+However, you can also retrieve all widget instances using this function:
+
+```js
+// iterate over all instances
+$.widget('name').each(function (widget) {
+    console.log(widget);
+});
+
+// call for specified method in all instances
+$.widget('name').invoke('close');
+
+// destroy all instances
+$.widget('name').destroy();
+```
+
 ## Declaration
 
 There are three main parts in widget declaration:
