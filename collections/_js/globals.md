@@ -127,7 +127,7 @@ Usage examples:
 
 ```js
 // GET request
-$.request.get({
+var promise = $.request.get({
     url: 'url',
     type: 'html',
     success: callback,
@@ -136,7 +136,7 @@ $.request.get({
 });
 
 // POST request
-$.request.post({
+var promise = $.request.post({
     url: 'url',
     data: data,
     success: callback,
