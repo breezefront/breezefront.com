@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Scripts
-description: Writing Breeze scripts
-order: 100
+title: Components
+description: Writing Breeze JS Components
+order: 200
 ---
 
-# Scripts
+# Components
 
 * TOC
 {:toc}
@@ -42,23 +42,26 @@ Here is an example that register `Vendor_Module/js/file` component in
   <arguments>
     <argument name="bundles" xsi:type="array">
       <item name="customer" xsi:type="array">
+        <!-- Optional. Declare and set to true to force bundle injection on all pages. -->
+        <item name="active" xsi:type="boolean">true</item>
+
         <item name="items" xsi:type="array">
           <item name="Vendor_Module/js/file" xsi:type="array">
             <!-- Path to file with component declaration -->
             <item name="path" xsi:type="string">Vendor_Module/js/breeze/file</item>
 
-              <!-- A flag that tells Breeze if the component should be used (required when bundles are enabled) -->
-              <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
-                <param name="path">config/path/enabled</param>
-              </item>
+            <!-- A flag that tells Breeze if the component should be used (required when bundles are enabled) -->
+            <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
+              <param name="path">config/path/enabled</param>
+            </item>
 
-              <!-- Optional. Helpful if you use multiple names for the same component -->
-              <!-- 1. data-mage-init='{"vendorModule": {}}'  -->
-              <!-- 2. data-mage-init='{"Vendor_Module/js/file": {}}' -->
-              <item name="names" xsi:type="array">
-                <item name="fullname" xsi:type="string">Vendor_Module/js/file</item>
-                <item name="shortname" xsi:type="string">vendorModule</item>
-              </item>
+            <!-- Optional. Helpful if you use multiple names for the same component -->
+            <!-- 1. data-mage-init='{"vendorModule": {}}'  -->
+            <!-- 2. data-mage-init='{"Vendor_Module/js/file": {}}' -->
+            <item name="names" xsi:type="array">
+              <item name="fullname" xsi:type="string">Vendor_Module/js/file</item>
+              <item name="shortname" xsi:type="string">vendorModule</item>
+            </item>
           </item>
         </item>
       </item>
@@ -159,4 +162,34 @@ $(document).on('breeze:load', function () {
     $(el).dropdown(options);
 });
 </script>
+```
+
+## Programmatic Usage
+
+Sometimes you'll need to create new component instance or call some method of
+existing component programmatically. Breeze allows you to do this with a single
+line of javascript code.
+
+Create new component instance or update options of existing one:
+
+```js
+$(el).cmpName(options);
+```
+
+Get the component instance:
+
+```js
+var instance = $(el).cmpName('instance');
+```
+
+Call the methodName in the component instance:
+
+```js
+$(el).cmpName('methodName', param);
+```
+
+Call the methodName statically:
+
+```js
+$.fn.cmpName().methodName(param);
 ```

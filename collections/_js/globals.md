@@ -2,7 +2,7 @@
 layout: default
 title: Globals
 description: Global JS variables in Breeze
-order: 200
+order: 100
 ---
 
 # Globals
@@ -182,19 +182,17 @@ $.translation.add({
 
 ## Widgets and Views
 
- -  `$.widget` --- is the function that creates Breeze Widget.
- -  `$.view` --- is a special Widget that has an additional ability to render
-    reactive view (KnockoutJS is used under the hood).
+ -  `$.widget` --- is the function that registers Breeze Widget.
+ -  `$.view` --- is the function that registers special Widget that has an
+    additional ability to render reactive view (KnockoutJS is used under the hood).
 
 ```js
 // Declare a widget that will be automatically created
 // for each DOM node with data-mage-init='{"dropdown":{}}'
 $.widget('dropdown', {
     component: 'dropdown',
-    options: {},
-    create: fn,
-    destroy: fn,
-    method: fn
+    create: function () {},
+    destroy: function () {}
 });
 
 // Declare a view that will be automatically created
@@ -202,12 +200,15 @@ $.widget('dropdown', {
 // data-mage-init='{"Vendor_Module/js/view/component":{}}'
 $.view('cmpName', {
     component: 'Vendor_Module/js/view/component',
-    options: {},
-    create: fn,
-    destroy: fn,
-    method: fn
+    create: function () {},
+    destroy: function () {}
 });
 ```
+
+You can read more information about Widgets and Views at the separate pages:
+
+ -  [Widget](/widgets)
+ -  [View](/views)
 
 ## Mixin
 
