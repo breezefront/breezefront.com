@@ -101,12 +101,6 @@ $(document).on('breeze:resize', function (event, data) {
     });
     ```
 
-## turbolinks
-
-When [Turbo mode](/configuration) is enabled, Breeze use Turbolinks library. This
-means that all turbolinks events will be dipatched as well. However, we recommend
-to use [breeze:load](#breezeload) event in most cases.
-
 ## validateAfter
 
  -  `validateAfter` --- dispatched after form validation. Useful to add additional
