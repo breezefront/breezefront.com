@@ -42,7 +42,7 @@ There are three main parts in widget declaration:
 
  -  `$.widget` function call
  -  Widget name --- The name is used for event names and to work with
-    widget [programmatically](#components#programmatic-usage).
+    widget [programmatically](/components#programmatic-usage).
  -  Object with methods and properties --- A prototype to use when creating
     widget instance.
 
