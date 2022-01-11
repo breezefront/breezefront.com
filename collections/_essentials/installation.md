@@ -9,18 +9,27 @@ order: 200
 
 ## Pre-Installation
 
-Installation requires [swissup/marketplace](https://github.com/swissup/module-marketplace) module.
-It’s our module that register our packages repository in the composer.json file,
-saves its credentials to the auth.json file, and provides one-click theme installer.
+ 1. Install [swissup/marketplace](https://github.com/swissup/module-marketplace) module:
 
-Here is a commands that will download and enable Marketplace module, and then
-activate our packages repository:
+    ```powershell
+    composer require swissup/module-marketplace &&\
+    bin/magento setup:upgrade
+    ```
 
-```powershell
-composer require swissup/module-marketplace &&\
-bin/magento setup:upgrade &&\
-bin/magento marketplace:channel:enable swissuplabs
-```
+    > `swissup/marketplace` --- is the module that registers our packages repository
+    > in the composer.json file, saves credentials to the auth.json file, and provides
+    > one-click theme installer.
+
+ 2. Complete a free purchase of [Breeze Blank Theme](https://swissuplabs.com/magento-themes/magento-2-breeze-blank-theme.html)
+ 3. Enable swissuplabs packages channel using `swissup/marketplace` module:
+
+    ```powershell
+    bin/magento marketplace:channel:enable swissuplabs
+    ```
+
+    You’ll be asked to activate your domain and enter identity key. Get identity
+    key and activate the domain at
+    [swissuplabs.com customer account page](https://swissuplabs.com/license/customer/activation/)
 
 ## Installation
 
