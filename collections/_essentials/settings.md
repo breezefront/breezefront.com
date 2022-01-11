@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Configuration
-description: Breeze configuration options
+title: Settings
+description: Breeze settings
 order: 300
 ---
 
-# Configuration
+# Settings
 
 Breeze lets you configure some options.
 
