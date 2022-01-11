@@ -88,6 +88,8 @@ Every Breeze Component is declared using `$.widget` or `$.view` function. Widget
 is used to declare most type of components. View is used to declare component
 that needs reactivity and need to render KnockoutJS template.
 
+> Component names are saved in shared registry, so you can't use same name for view and widget.
+
 ```js
 // Dropdown widget example
 $.widget('dropdown', {
@@ -192,4 +194,18 @@ Call the methodName statically:
 
 ```js
 $.fn.cmpName().methodName(param);
+```
+
+Additionally, you can collect all instances of specified component name, or call
+some method in all instances using `$.widget` or `$.view` functions:
+
+```js
+// iterate over all instances
+$.widget('widgetName').each(fn);
+
+// call for specified method in all instances
+$.widget('widgetName').invoke('close');
+
+// destroy all instances
+$.widget('widgetName').destroy();
 ```
