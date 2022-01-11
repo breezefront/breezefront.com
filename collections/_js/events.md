@@ -95,7 +95,6 @@ $(document).on('breeze:resize', function (event, data) {
         type: 'html'
     }).then(function (response) {
         $('selector')
-            .empty()
             .append(response.text)
             .trigger('contentUpdated');
     });
