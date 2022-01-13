@@ -16,11 +16,13 @@
     <script src="{{ '/assets/lib/gumshoe.min.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/scripts.js' | relative_url }}" defer></script>
 
+    {%- if site.url != "http://localhost:4000" %}
     <script async src="https://www.google-analytics.com/analytics.js"></script>
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-76779817-4', 'auto');
     </script>
+    {%- endif %}
   </head>
   <body>
     <a href="#main" class="skip-to-content">Skip to Content</a>
@@ -41,8 +43,10 @@
       </main>
     </div>
 
+    {%- if site.url != "http://localhost:4000" %}
     <script>
       ga('send', 'pageview', location.pathname + location.search);
     </script>
+    {%- endif %}
   </body>
 </html>
