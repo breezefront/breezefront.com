@@ -284,16 +284,13 @@ dispatched event:
 this._trigger('opened');
 ```
 
-Triggering the event above from 'widgetName' component initialized on `$(el)` DOM
-element could be listened as shown below:
+And here is how you should add event listener for this event:
 
 ```js
 $(el).on('widgetName:opened', function (event, data) {
     console.log(data.instance);
 });
 ```
-
-There are two default build-in events in all widgets: `beforeCreate` and `afterCreate`.
 
 ## Events
 

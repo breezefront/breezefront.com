@@ -50,7 +50,7 @@ Here is an example that register `Vendor_Module/js/file` component in
             <!-- Path to file with component declaration -->
             <item name="path" xsi:type="string">Vendor_Module/js/breeze/file</item>
 
-            <!-- A flag that tells Breeze if the component should be used (required when bundles are enabled) -->
+            <!-- A flag that tells Breeze if the component should be used -->
             <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
               <param name="path">config/path/enabled</param>
             </item>
