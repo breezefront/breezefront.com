@@ -16,7 +16,7 @@ theme as an example.
 
 You should always pay attention to the proper image's configuration, as it
 will make your store look much pleasant on modern HiDPI screens, and increase the
-speed of the site, since all visitors will not download too large images.
+speed of the site since all visitors will not download too large images.
 
 ## Collect size rules
 
@@ -81,9 +81,11 @@ dimensions.
 ## Choose image dimensions
 
 When choosing image dimensions we want to guarantee that we provide a perfectly
-sized image for [most popular screen resolutions](https://gs.statcounter.com/screen-resolution-stats).
+sized image for the most popular screen resolutions. We will use
+[Statcounter statistics](https://gs.statcounter.com/screen-resolution-stats) for
+that.
 
-Let's create a table with perfect dimensions for most popular resolutions:
+Let's create a table with perfect dimensions for the most popular resolutions:
 
 Screen resolution | Perfect image width
 ------------------|-------------------------------
@@ -131,6 +133,6 @@ Let's write the collected dimensions to the `<theme_dir>/etc/view.xml` file:
 </media>
 ```
 
-p.s. Keep in mind that every new dimension will increase hard drive space usage,
+p.s. Keep in mind that every new size will increase hard drive space usage,
 so feel free to omit some of the sizes to find out the best solution for you and
 your visitors.
