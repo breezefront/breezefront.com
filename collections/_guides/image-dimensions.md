@@ -18,7 +18,7 @@ You should always pay attention to the proper image's configuration, as it
 will make your store look much pleasant on modern HiDPI screens, and increase the
 speed of the site, since all visitors will not download too large images.
 
-## Collect image sizes
+## Collect size rules
 
 First, we need to write proper `sizes` rules for our theme. To do that
 let's open our [category page](https://argento-m2.swissupdemo.com/force_breeze/gear/bags.html)
