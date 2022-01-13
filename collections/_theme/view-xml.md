@@ -2,7 +2,6 @@
 layout: default
 title: View.xml
 description: Breeze theme view.xml file
-# draft: true
 order: 200
 ---
 
@@ -13,10 +12,10 @@ describe basic image dimensions and product gallery settings.
 
 Breeze module adds few more settings you can control within view.xml file:
 
- -  Responsive images sizes and srcsets
- -  Breeze module settings
+ -  [Responsive images sizes and srcsets](/responsive-images)
+ -  [Breeze module settings](/settings)
 
-Here is a simplified version of view.xml file contents:
+Here is a shortened version of view.xml file contents:
 
 ```xml
 <?xml version="1.0"?>
