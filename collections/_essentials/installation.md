@@ -34,10 +34,11 @@ order: 200
 ## Installation
 
 When Marketplace module is installed, proceed with the following commands to
-install and enable Breeze package:
+download and enable Breeze package:
 
 ```powershell
-bin/magento marketplace:package:require swissup/breeze-blank &&\
+composer require swissup/breeze-blank &&\
+bin/magento setup:upgrade &&\
 bin/magento marketplace:package:install swissup/breeze-blank
 ```
 
