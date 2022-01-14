@@ -1,9 +1,3 @@
-.language-powershell {
-  .n {
-    color: #ae81ff;
-  }
-}
-
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .w {
@@ -84,4 +78,23 @@
 }
 .highlight .ss {
   color: #a6e22e;
+}
+
+.highlight {
+  .nb {
+    color: #ae81ff;
+  }
+}
+.language-powershell {
+  .o {
+    color: #66d9ef;
+  }
+  .n {
+    color: #ae81ff;
+  }
+}
+.language-bash {
+  .o {
+    color: #66d9ef;
+  }
 }
