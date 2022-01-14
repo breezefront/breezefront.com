@@ -15,18 +15,18 @@ every Magento developer:
 ├── <Vendor>_<Module>/
 │   ├── web/
 │   ├── layout/
-│   ├── templates/
+│   └── templates/
 ├── etc/
-│   ├── view.xml
+│   └── view.xml
 ├── i18n/
 ├── media/
 ├── web/
 │   ├── css/
 │   ├── images/
-│   ├── js/
+│   └── js/
 ├── composer.json
 ├── registration.php
-├── theme.xml
+└── theme.xml
 ```
 
 Path                    | Description
