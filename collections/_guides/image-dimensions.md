@@ -2,7 +2,7 @@
 layout: default
 title: Image Dimensions
 description: How to properly configure image dimensions for the Breeze Frontend
-order: 200
+order: 300
 ---
 
 # Setup Image Dimensions
