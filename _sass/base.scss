@@ -26,6 +26,22 @@ a {
     }
 }
 
+.badge {
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    background: #f3f4f6;
+    color: #888;
+    font-size: .8rem;
+    font-weight: 400;
+    border-radius: 9999px;
+    padding: 0 .5rem;
+    &.blue {
+        background: #60a5fa;
+        color: #fff;
+    }
+}
+
 .skip-to-content {
     position: absolute;
     top: 1rem;
