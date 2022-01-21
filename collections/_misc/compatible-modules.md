@@ -25,6 +25,7 @@ swissup/hover-gallery         | +               | -
 swissup/lightboxpro           | -               | -
 swissup/navigationpro         | +               | -
 swissup/pro-labels *new*{:.badge.blue}  | +     | +
+swissup/testimonials          | -               | -
 swissup/quantity-switcher     | +               | -
 
  -  **\*Breeze Module** --- the specified module is compatible with any
