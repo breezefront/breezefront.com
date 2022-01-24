@@ -15,7 +15,7 @@ mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
 swissup/ajaxlayerednavigation *new*{:.badge.blue}  | +     | +
 swissup/ajaxpro *new*{:.badge.blue} | +         | +
-swissup/ajaxsearch *new*{:.badge.blue}  | +     | +
+swissup/ajaxsearch *Without category filter*{:.badge}  | +     | +
 swissup/askit                 | +               | -
 swissup/easybanner            | +               | -
 swissup/easy-slide            | +               | -
