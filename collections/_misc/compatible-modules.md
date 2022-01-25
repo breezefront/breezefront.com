@@ -13,11 +13,8 @@ amasty/xnotif                 | +               | ?
 magento/\* *All Magento modules*{:.badge} | +   | +
 mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
-swissup/ajaxlayerednavigation *new*{:.badge.blue}  | +     | +
-swissup/ajaxpro *new*{:.badge.blue} | +         | +
-swissup/ajaxsearch *Without category filter*{:.badge}  | +     | +
-swissup/askit *new*{:.badge.blue} | +               | +
-swissup/easybanner            | +               | -
+swissup/askit *new*{:.badge.blue} | +           | +
+swissup/easybanner *new*{:.badge.blue} | +      | +
 swissup/easy-slide            | +               | -
 swissup/easytabs *new*{:.badge.blue} | +        | +
 swissup/gdpr *new*{:.badge.blue} | +            | +
@@ -25,7 +22,6 @@ swissup/highlight             | +               | -
 swissup/hover-gallery         | +               | -
 swissup/lightboxpro           | -               | -
 swissup/navigationpro         | +               | -
-swissup/pro-labels *new*{:.badge.blue}  | +     | +
 swissup/social-login *new*{:.badge.blue} | +    | +
 swissup/testimonials *new*{:.badge.blue} | +    | +
 swissup/quantity-switcher     | +               | -
