@@ -18,7 +18,7 @@ swissup/easybanner *new*{:.badge.blue} | +      | +
 swissup/easy-slide *new*{:.badge.blue} | +      | +
 swissup/easytabs *new*{:.badge.blue} | +        | +
 swissup/gdpr *new*{:.badge.blue} | +            | +
-swissup/highlight             | +               | -
+swissup/highlight *new*{:.badge.blue} | +       | +
 swissup/hover-gallery *new*{:.badge.blue} | +   | +
 swissup/lightboxpro           | -               | -
 swissup/navigationpro         | +               | -
