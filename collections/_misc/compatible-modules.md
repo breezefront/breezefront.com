@@ -26,7 +26,7 @@ swissup/hover-gallery         | +               | -
 swissup/lightboxpro           | -               | -
 swissup/navigationpro         | +               | -
 swissup/pro-labels *new*{:.badge.blue}  | +     | +
-swissup/social-login          | -               | -
+swissup/social-login *new*{:.badge.blue} | +    | +
 swissup/testimonials *new*{:.badge.blue} | +    | +
 swissup/quantity-switcher     | +               | -
 
