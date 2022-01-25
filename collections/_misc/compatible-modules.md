@@ -19,14 +19,14 @@ swissup/ajaxsearch *Without category filter*{:.badge}  | +     | +
 swissup/askit                 | +               | -
 swissup/easybanner            | +               | -
 swissup/easy-slide            | +               | -
-swissup/easytabs              | +               | -
+swissup/easytabs *new*{:.badge.blue} | +        | +
 swissup/gdpr                  | +               | -
 swissup/highlight             | +               | -
 swissup/hover-gallery         | +               | -
 swissup/lightboxpro           | -               | -
 swissup/navigationpro         | +               | -
 swissup/pro-labels *new*{:.badge.blue}  | +     | +
-swissup/testimonials          | -               | -
+swissup/testimonials *new*{:.badge.blue} | +    | +
 swissup/quantity-switcher     | +               | -
 
  -  **\*Breeze Module** --- the specified module is compatible with any
