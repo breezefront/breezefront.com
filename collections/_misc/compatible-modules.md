@@ -15,11 +15,11 @@ mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
 swissup/askit *new*{:.badge.blue} | +           | +
 swissup/easybanner *new*{:.badge.blue} | +      | +
-swissup/easy-slide            | +               | -
+swissup/easy-slide *new*{:.badge.blue} | +      | +
 swissup/easytabs *new*{:.badge.blue} | +        | +
 swissup/gdpr *new*{:.badge.blue} | +            | +
 swissup/highlight             | +               | -
-swissup/hover-gallery         | +               | -
+swissup/hover-gallery *new*{:.badge.blue} | +   | +
 swissup/lightboxpro           | -               | -
 swissup/navigationpro         | +               | -
 swissup/social-login *new*{:.badge.blue} | +    | +
