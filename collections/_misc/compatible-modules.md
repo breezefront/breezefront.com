@@ -20,7 +20,7 @@ swissup/askit *new*{:.badge.blue} | +               | +
 swissup/easybanner            | +               | -
 swissup/easy-slide            | +               | -
 swissup/easytabs *new*{:.badge.blue} | +        | +
-swissup/gdpr                  | +               | -
+swissup/gdpr *new*{:.badge.blue} | +            | +
 swissup/highlight             | +               | -
 swissup/hover-gallery         | +               | -
 swissup/lightboxpro           | -               | -
