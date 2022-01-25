@@ -16,7 +16,7 @@ swissup/\* *All, except the listed below*{:.badge} | +     | +
 swissup/ajaxlayerednavigation *new*{:.badge.blue}  | +     | +
 swissup/ajaxpro *new*{:.badge.blue} | +         | +
 swissup/ajaxsearch *Without category filter*{:.badge}  | +     | +
-swissup/askit                 | +               | -
+swissup/askit *new*{:.badge.blue} | +               | +
 swissup/easybanner            | +               | -
 swissup/easy-slide            | +               | -
 swissup/easytabs *new*{:.badge.blue} | +        | +
@@ -26,6 +26,7 @@ swissup/hover-gallery         | +               | -
 swissup/lightboxpro           | -               | -
 swissup/navigationpro         | +               | -
 swissup/pro-labels *new*{:.badge.blue}  | +     | +
+swissup/social-login          | -               | -
 swissup/testimonials *new*{:.badge.blue} | +    | +
 swissup/quantity-switcher     | +               | -
 
