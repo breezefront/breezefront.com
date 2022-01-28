@@ -14,6 +14,7 @@ magento/\* *All Magento modules*{:.badge} | +   | +
 mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
 swissup/askit *new*{:.badge.blue} | +           | +
+swissup/checkout-success      | +               | -
 swissup/easybanner *new*{:.badge.blue} | +      | +
 swissup/easy-slide *new*{:.badge.blue} | +      | +
 swissup/easytabs *new*{:.badge.blue} | +        | +
@@ -21,8 +22,9 @@ swissup/gdpr *new*{:.badge.blue} | +            | +
 swissup/highlight *new*{:.badge.blue} | +       | +
 swissup/hover-gallery *new*{:.badge.blue} | +   | +
 swissup/lightboxpro           | -               | -
-swissup/navigationpro         | +               | -
+swissup/navigationpro *new*{:.badge.blue} | +   | +
 swissup/social-login *new*{:.badge.blue} | +    | +
+swissup/sold-together *new*{:.badge.blue} | +   | +
 swissup/testimonials *new*{:.badge.blue} | +    | +
 swissup/quantity-switcher *new*{:.badge.blue} | + | +
 
