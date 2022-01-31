@@ -17,6 +17,10 @@ a {
     }
 }
 
+details summary {
+    cursor: pointer;
+}
+
 * {
     outline: none;
     &:focus-visible {

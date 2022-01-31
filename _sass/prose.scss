@@ -255,15 +255,10 @@
         margin-top: 1.25em;
         margin-bottom: 1.25em;
     }
-    img {
-        margin-top: 2em;
-        margin-bottom: 2em;
-    }
-    video {
-        margin-top: 2em;
-        margin-bottom: 2em;
-    }
-    figure {
+    img,
+    video,
+    figure,
+    details {
         margin-top: 2em;
         margin-bottom: 2em;
     }
