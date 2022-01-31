@@ -13,20 +13,12 @@ amasty/xnotif                 | +               | ?
 magento/\* *All Magento modules*{:.badge} | +   | +
 mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
-swissup/askit *new*{:.badge.blue} | +           | +
+swissup/address-field-manager | -               | -
+swissup/checkout-fields       | -               | -
 swissup/checkout-success      | +               | -
-swissup/easybanner *new*{:.badge.blue} | +      | +
-swissup/easy-slide *new*{:.badge.blue} | +      | +
-swissup/easytabs *new*{:.badge.blue} | +        | +
-swissup/gdpr *new*{:.badge.blue} | +            | +
+swissup/firecheckout          | +               | -
 swissup/highlight *new*{:.badge.blue} | +       | +
-swissup/hover-gallery *new*{:.badge.blue} | +   | +
 swissup/lightboxpro           | -               | -
-swissup/navigationpro *new*{:.badge.blue} | +   | +
-swissup/social-login *new*{:.badge.blue} | +    | +
-swissup/sold-together *new*{:.badge.blue} | +   | +
-swissup/testimonials *new*{:.badge.blue} | +    | +
-swissup/quantity-switcher *new*{:.badge.blue} | + | +
 
  -  **\*Breeze Module** --- the specified module is compatible with any
     Luma-based theme that uses Breeze JS stack.
