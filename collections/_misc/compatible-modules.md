@@ -17,7 +17,6 @@ swissup/address-field-manager | -               | -
 swissup/checkout-fields       | -               | -
 swissup/checkout-success      | +               | -
 swissup/firecheckout          | +               | -
-swissup/highlight *new*{:.badge.blue} | +       | +
 swissup/lightboxpro           | -               | -
 
  -  **\*Breeze Module** --- the specified module is compatible with any
