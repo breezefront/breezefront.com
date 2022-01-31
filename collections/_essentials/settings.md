@@ -13,6 +13,11 @@ Breeze lets you configure some options.
  2. Select the Store you want to change and press _Edit_.
  3. Scroll down to the _Breeze_ fieldset.
 
+<details>
+    <summary>View Screenshot</summary>
+    <img src="{{ '/assets/img/settings.webp' | relative_url }}" width="697" height="545" alt="Settings Screenshot" loading="lazy"/>
+</details>
+
 Here is a list of available options:
 
 Option                              | Description
