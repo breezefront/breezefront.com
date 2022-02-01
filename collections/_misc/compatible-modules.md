@@ -13,10 +13,6 @@ amasty/xnotif                 | +               | ?
 magento/\* *All Magento modules*{:.badge} | +   | +
 mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
-swissup/address-field-manager | -               | -
-swissup/checkout-fields       | -               | -
-swissup/checkout-success      | +               | -
-swissup/firecheckout          | +               | -
 swissup/lightboxpro           | -               | -
 
  -  **\*Breeze Module** --- the specified module is compatible with any
