@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Custom Styles
-description: How to create custom Breeze-based theme.
+description: How to add styles using custom Breeze-based theme.
 order: 200
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Custom Module
-order: 400
+order: 500
 draft: true
 ---
 
