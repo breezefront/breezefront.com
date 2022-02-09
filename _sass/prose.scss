@@ -3,7 +3,7 @@
     line-height: 1.4em;
 
     @media (min-width: 1024px) {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     > li {
@@ -62,11 +62,14 @@
     line-height: 1.75;
 
     @media (min-width: 1024px) {
-        font-size: 1.25em;
+        font-size: 1.15em;
         line-height: 1.65em;
     }
     @media (min-width: 1080px) {
         max-width: 60ch;
+    }
+    @media (min-width: 1281px) {
+        font-size: 1.25em;
     }
     @media (min-width: 1400px) {
         max-width: 60ch;
