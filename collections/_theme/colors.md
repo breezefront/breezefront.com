@@ -75,7 +75,7 @@ in Breeze styles as follows:
 
 ```scss
 .element {
-    color: ~"rgba(var(--rgb-color), var(--alpha-value, .85))";
+    color: ~"rgba(var(--green), var(--alpha-value, .85))";
 }
 ```
 
