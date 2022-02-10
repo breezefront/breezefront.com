@@ -27,7 +27,7 @@ file:
 ```
 
 We use gray, blue, green, red, and yellow colors only, however you may change
-this by redefining base color variables using `_extend.less` or `_custom.less`
+this by redefining base color variables using [`_extend.less` or `_custom.less`](/custom-styles)
 files.
 
 
