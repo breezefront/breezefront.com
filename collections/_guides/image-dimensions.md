@@ -10,6 +10,8 @@ order: 300
 * TOC
 {:toc}
 
+## About
+
 In this guide, we will prepare images configuration for the custom Breeze theme. We'll
 use our [Argento Force](https://argento-m2.swissupdemo.com/force_breeze/gear/bags.html)
 theme as an example.

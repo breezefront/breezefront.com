@@ -10,6 +10,8 @@ order: 100
 * TOC
 {:toc}
 
+## About
+
 Since Breeze doesn't use modern JS techniques to load js dependencies, you will
 work with global js variables. For the sake of simplicity, most of globals declared
 under `$` scope:

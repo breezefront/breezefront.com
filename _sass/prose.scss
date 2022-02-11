@@ -6,18 +6,21 @@
         font-size: 1.15rem;
     }
 
-    > li {
-        padding: 0;
-        li {
-            padding-left: .75rem;
-        }
+    &::before {
+        content: 'Contents';
+        display: block;
+
+        color: #111827;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        line-height: 1.3;
     }
+
     li {
         &.active > a {
             color: #2563eb;
-        }
-        &::before {
-            display: none;
         }
     }
     a {
@@ -42,6 +45,22 @@
         background-color: #fff;
         border: 1px solid #f1f1f1;
         border-radius: .375rem;
+
+        &::before {
+            display: none;
+        }
+
+        > li {
+            padding: 0;
+            li {
+                padding-left: .75rem;
+            }
+        }
+        li {
+            &::before {
+                display: none;
+            }
+        }
         a {
             color: #aaa;
             &:hover {

@@ -10,6 +10,8 @@ order: 600
 * TOC
 {:toc}
 
+## About
+
 Breeze uses [swissup/module-rtl](https://github.com/swissup/module-rtl) module
 to support RTL languages. This module automatically generates appropriate
 CSS depending on active store view language settings. All you need is to use

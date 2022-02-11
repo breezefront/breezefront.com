@@ -7,11 +7,13 @@ order: 100
 
 # Child theme
 
-In this guide we will create a new Breeze-based theme called "Local/breeze-custom"
-and then activate it for selected store view.
-
 * TOC
 {:toc}
+
+## About
+
+In this guide we will create a new Breeze-based theme called "Local/breeze-custom"
+and then activate it for selected store view.
 
 ## Declare new theme
 

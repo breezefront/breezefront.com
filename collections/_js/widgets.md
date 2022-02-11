@@ -7,11 +7,16 @@ order: 300
 
 # Widgets
 
-Widget --- is the main interface to create JS Component. Breeze widgets are very
-similar to Luma's jQuery UI based widgets.
 
 * TOC
 {:toc}
+
+## About
+
+Widget --- is the main interface to create JS Component. Breeze widgets are very
+similar to Luma's jQuery UI based widgets. Sometimes, you can even
+[reuse the same file](/integration-tips#how-to-reuse-js-widgets) for both
+Luma and Breeze Themes
 
 ## $.widget function
 
