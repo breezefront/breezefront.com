@@ -2,11 +2,15 @@ var spy = false,
   scrollTop = 0;
 
 addEventListener("turbolinks:before-render", function () {
-  scrollTop = document.querySelector('aside').scrollTop;
+  if (document.querySelector('aside')) {
+    scrollTop = document.querySelector('aside').scrollTop;
+  }
 });
 
 document.addEventListener('turbolinks:render', () => {
-  document.querySelector('aside').scrollTop = scrollTop;
+  if (document.querySelector('aside')) {
+    document.querySelector('aside').scrollTop = scrollTop;
+  }
 
   if (!spy || !document.getElementById('markdown-toc')) {
     return;
