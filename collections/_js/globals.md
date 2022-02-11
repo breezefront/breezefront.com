@@ -23,7 +23,7 @@ Variable            | Description
 `$.storage`         | [Local storage manager](#local-storage)
 `$.cookies`         | [Cookie Manager](#cookies)
 `$.sections`        | [Section/Customer Data](#customer-data)
-`$.request`         | [Ajax requests tool](#ajax-requests)
+`$.request`, `$.ajax` | [Ajax requests tool](#ajax-requests)
 `$.async()`         | [DOM watcher tool](#async)
 `$.translation`     | [Translation manager](#translate)
 `$.__()`            | [Translate function](#translate)
@@ -144,6 +144,11 @@ var promise = $.request.post({
     success: callback,
     complete: callback,
     error: callback
+});
+
+// jQuery-friendly API
+$.[ajax|get|post]({
+    //
 });
 ```
 
