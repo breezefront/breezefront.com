@@ -28,7 +28,7 @@ Breeze consists from two parts:
     - Universal solution that works with any Luma-based theme.
     - Easy to extend thanks to full support of `data-mage-init` declarations.
     - Customization friendly thanks to `mixins`, and component inheritance.
-    - JS bundling, SPA expirience, keyboard navigation, A11y friendly.
+    - JS bundling, SPA experience, keyboard navigation, A11y friendly.
 
  -  **Breeze Theme** --- minimalistic starter theme for your next unique design.
 
