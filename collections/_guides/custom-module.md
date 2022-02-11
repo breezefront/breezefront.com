@@ -164,7 +164,7 @@ Now, let's view a basic example of `js/breeze/component.js` file:
     $.widget('uniqueComponentName', {
         component: 'Vendor_Module/js/component', // an alias that's used in the `data-mage-init` instructions.
         create: function () {
-            // this.element - $.cash collection
+            // this.element - Cash collection. See https://github.com/fabiospampinato/cash
             // this.options - object
         }
     });
@@ -175,7 +175,7 @@ Now, let's view a basic example of `js/breeze/component.js` file:
             template: 'Vendor_Module/component' // see "Knockout templates" section below
         },
         create: function () {
-            // this.element - $.cash collection
+            // this.element - Cash collection. See https://github.com/fabiospampinato/cash
             // this.options - object
         }
     });
