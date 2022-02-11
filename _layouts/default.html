@@ -24,7 +24,7 @@
     </script>
     {%- endif %}
   </head>
-  <body>
+  <body {%- if page.class %} class="{{ page.class }}"{% endif %}>
     {%- if page.sidebar != false %}
     <a href="#main" class="skip-to-content">Skip to Content</a>
     {%- endif %}
