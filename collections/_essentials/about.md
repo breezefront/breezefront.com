@@ -2,10 +2,9 @@
 layout: default
 title: About
 order: 100
-permalink: /
 ---
 
-# Welcome to Breeze Docs
+# About
 
 👋 Hello there! We are the [Swissup team](https://github.com/swissup) and we develop
 top-notch Magento modules and themes. As every responsible developer we want
