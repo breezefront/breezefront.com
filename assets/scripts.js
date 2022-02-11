@@ -25,7 +25,7 @@ document.addEventListener('turbolinks:render', () => {
 });
 
 document.addEventListener('turbolinks:load', () => {
-  anchors.add('.prose h2, .prose h3, .prose h4, .prose h5');
+  anchors.add('.prose h2:not(.subtitle), .prose h3:not(.subtitle), .prose h4, .prose h5');
 
   if (!spy && document.getElementById('markdown-toc')) {
     spy = new Gumshoe('#markdown-toc a', {
