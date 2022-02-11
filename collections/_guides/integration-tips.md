@@ -19,17 +19,7 @@ don't want to duplicate existing styles or javascript code just to make your
 module compatible with another frontend.
 
 We didn't want to do this too when added integration for [all of our modules](https://swissuplabs.com/magento-extensions.html?cat=17),
-so we collect some of our tricks we've used.
-
-## How to apply layout update for Breeze theme only
-
-Create new layout update file with `breeze_` prefix in its name:
-
-```
-breeze_default.xml
-breeze_catalog_product_view.xml
-breeze_cms_noroute_index.xml
-```
+so we collect some of the tricks we've used.
 
 ## How to reuse styles from \_module.less
 
@@ -75,6 +65,7 @@ breeze_cms_noroute_index.xml
     available in Breeze theme:
 
     ```scss
+    @import '../source/_module.less';
     @font-weight__semibold: 400;
     ```
 
