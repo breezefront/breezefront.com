@@ -10,7 +10,8 @@ order: 100
 Module                        | Breeze Module*  | Breeze Theme**
 ------------------------------|:---------------:|:------------:
 amasty/xnotif                 | +               | ?
-magento/\* *All Magento modules*{:.badge} | +   | +
+magento/\* *All, except the listed below*{:.badge} | +   | +
+magento/multishipping         | +               | -
 mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
 swissup/lightboxpro           | -               | -
