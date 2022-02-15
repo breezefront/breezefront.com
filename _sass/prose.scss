@@ -22,6 +22,12 @@
         &.active > a {
             color: #2563eb;
         }
+        &::before {
+            width: .25em;
+            height: .25em;
+            top: calc(0.7em - 0.125em);
+            left: .375em;
+        }
     }
     a {
         display: inline-block;
