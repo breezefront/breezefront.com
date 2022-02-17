@@ -7,7 +7,10 @@ order: 200
 
 # Installation
 
-## Pre-Installation
+* TOC
+{:toc}
+
+## Pre-installation
 
  1. Install [swissup/marketplace](https://github.com/swissup/module-marketplace) module:
 
@@ -53,3 +56,9 @@ swissup/theme-frontend-breeze-blank     | Breeze Blank Theme
 swissup/module-breeze                   | Breeze Module
 swissup/module-breeze-integrations      | Third-party modules integrations
 swissup/module-rtl                      | RTL Direction Module
+
+**That's all.** Breeze is now installed and activated for selected store views.
+
+
+No additional action is required, however, you can customize some config
+options if you want.
