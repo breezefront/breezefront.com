@@ -79,6 +79,13 @@ The code above will be compiled by Magento into two separate files. Critical sty
 will be added to `default.css`, and non-critical will be added to `deferred-default.css`
 file.
 
+> Don't forget to enable _Use CSS critical path_ config option to get maximum
+> benefit of the critical CSS:
+>
+> ```powershell
+> bin/magento config:set dev/css/use_css_critical_path 1
+> ```
+
 ## Less variables
 
 LESS variables used for most customization needs. These variables

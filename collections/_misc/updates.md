@@ -7,6 +7,26 @@ order: 50
 
 # Updates
 
+## 0.12.0
+
+> Feb 17, 2022
+
+**Module Updates**
+
+ -  🚀 Added critical images preloading. This feature decreases time of
+    Largest Contentful Paint. _No additional actions are required to activate this feature_.
+ -  🚀 Added "Use CSS critical path" config option support. Activate it at
+    _Stores > Configuration > Advanced > Developer > CSS Settings > Use CSS critical path_.
+ -  🚀 Added js chunking mechanism that improves page load time on slow internet
+    connections. _No additional actions are required to activate this feature_.
+ -  🔧 Slightly improve js and html minification.
+
+**Theme Updates**
+
+ -  💄 Improved chevron position in collapsible layered navigation filters.
+ -  💄 Added ability to wrap product thumbnails to the new line instead of overflowed scrolling.
+ -  🔧 Fixed video centering at product page gallery.
+
 ## 0.11.0
 
 > Feb 8, 2022
