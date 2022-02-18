@@ -55,4 +55,4 @@ You can then check your score at
 [Google PageSpeed Insights](https://pagespeed.web.dev/){:target="_blank" rel="noopener"}
 and [share your result with us on Twitter][twitter]{:target="_blank" rel="noopener"} 😉.
 
-[twitter]: https://twitter.com/intent/tweet?&text={{"Hey @breezefront, my pagespeed score is now 93! Take a look:" | url_encode }}
+[twitter]: https://twitter.com/intent/tweet?&text={{"Hey @breezefront, my pagespeed score is now 95! Take a look:" | url_encode }}
