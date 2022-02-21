@@ -20,7 +20,7 @@ The only parts that you may need to change are:
 
  -  CSS styles --- if you use `source/_module.less` entry point for your styles.
  -  Javascript --- if you use `requirejs` in your scripts.
- -  Html templates --- if you use non-standard knockout tags (`<each>`, `<render>`, etc).
+ -  Html templates --- if you use custom knockout tags (`<each>`, `<render>`, etc).
 
 Let's take a look at directory structure of the Breeze-friendly module.
 
