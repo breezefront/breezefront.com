@@ -22,10 +22,10 @@ styles using this file.
 We recommend you to split your customizations across multiple partials:
 
 ```scss
-@import (reference) 'abstracts/_variables.less';
-@import 'layout/_header.less';
-@import 'layout/_listing.less';
-@import 'layout/_swatches.less';
+@import (reference) 'custom/abstracts/_variables.less';
+@import 'custom/layout/_header.less';
+@import 'custom/layout/_listing.less';
+@import 'custom/layout/_swatches.less';
 ```
 
 Here is how directory structure will look like for `Local/breeze-custom` theme:
@@ -34,13 +34,14 @@ Here is how directory structure will look like for `Local/breeze-custom` theme:
 Local/breeze-custom/
 ├── web/
 │   ├── css/
-│   │   ├── abstracts/
-│   │   │   └── _variables.less
-│   │   ├── layout/
-│   │   │   ├── _header.less
-│   │   │   ├── _listing.less
-│   │   │   └── _swatches.less
-│   │   └── _extend.less
+│   │   ├── custom/
+│   │   │   ├── abstracts/
+│   │   │   │   └── _variables.less
+│   │   │   └── layout/
+│   │   │       ├── _header.less
+│   │   │       ├── _listing.less
+│   │   │       └── _swatches.less
+│   │   └── _custom.less
 │   └── images/
 │       └── logo.svg
 ├── composer.json
