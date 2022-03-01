@@ -7,6 +7,17 @@ order: 50
 
 # Updates
 
+## 0.12.2
+
+> Mar 1, 2022
+
+ -  🔧 Fixed js chunks deployment during `setup:static-content:deploy` command.
+    This fixes compatibility with Magento Commerce Cloud environment.
+ -  🔧 Fixed error in logs about empty less file during deployment.
+ -  💄 Fixed CSS issues when menu is moved inside header.
+ -  💄 Fixed dropdown styles when parent container is dark.
+ -  💄 Added new LESS variables to improve cusomization abilities.
+
 ## 0.12.0
 
 > Feb 17, 2022
