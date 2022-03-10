@@ -7,6 +7,12 @@ order: 50
 
 # Updates
 
+## 0.12.3
+
+> Mar 10, 2022
+
+ -  Updated compatibility with latest versions of Swissup modules.
+
 ## 0.12.2
 
 > Mar 1, 2022
