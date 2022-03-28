@@ -6,6 +6,12 @@ baseurl: ""
 url: "https://breezefront.com"
 github_username: swissup
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 collections_dir: collections
 collections:
   essentials:

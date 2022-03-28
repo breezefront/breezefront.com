@@ -1,0 +1,26 @@
+{% assign subdir = include.dir | append: '/small/' | prepend: '/' %}
+{% assign images = site.static_files | where: "image", true %}
+{% assign id = include.dir | replace: '/', '-' | prepend: 'gallery-' %}
+
+<div class="gallery" id="{{ id }}">
+{%- for image in images -%}
+  {%- if image.path contains subdir %}
+    <a href="{{ image.path | replace: '/small/', '/' }}">
+      <img alt="img1"
+        loading="lazy"
+        src="{{ image.path }}"
+        width="{{ include.width }}"
+        height="{{ include.height }}"/>
+    </a>
+  {%- endif -%}
+{%- endfor %}
+</div>
+
+<script type="text/javascript" defer>
+  document.addEventListener('turbolinks:load', () => {
+    lightGallery(document.getElementById("{{ id }}"), {
+      backdropDuration: 100,
+      download: false
+    });
+  });
+</script>

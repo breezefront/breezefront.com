@@ -7,6 +7,20 @@ order: 50
 
 # Updates
 
+## 1.0.0
+
+> Mar 25, 2022
+
+> In order to update from previous version, run the following command:
+> `composer require swissup/breeze-blank -w`
+
+ -  ✨ [Breeze Evolution theme](/screenshots#breeze-evolution) created.
+    See [updated installation guide](/installation) on how to install new theme.
+ -  ✨ Added store contact information in top panel above the header.
+ -  ✨ Added GoogleMaps widget support inserted with Magento Pagebuilder.
+ -  💄 Much more variables in `.less` files.
+ -  🔧 Fixed minor css issues with various Swissup modules.
+
 ## 0.12.3
 
 > Mar 10, 2022
