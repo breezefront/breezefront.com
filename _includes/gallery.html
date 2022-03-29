@@ -4,23 +4,58 @@
 
 <div class="gallery" id="{{ id }}">
 {%- for image in images -%}
-  {%- if image.path contains subdir %}
-    <a href="{{ image.path | replace: '/small/', '/' }}">
-      <img alt="img1"
+  {%- unless image.path contains subdir -%}
+    {% continue %}
+  {%- endunless -%}
+
+  {% assign dimensions = image.path
+    | split: '-'
+    | last
+    | replace: '.png', ''
+    | replace: '.webp', ''
+    | replace: '.gif', ''
+    | split: 'x' %}
+  <a href="{{ image.path | replace: '/small/', '/' }}"
+    data-pswp-width="{{ dimensions[0] }}"
+    data-pswp-height="{{ dimensions[1] }}"
+    data-cropped="true"
+    target="_blank">
+    <img alt=""
+      {% unless include.lazy == false %}
         loading="lazy"
-        src="{{ image.path }}"
-        width="{{ include.width }}"
-        height="{{ include.height }}"/>
-    </a>
-  {%- endif -%}
+      {% endunless %}
+      src="{{ image.path }}"
+      width="{{ include.width }}"
+      height="{{ include.height }}"/>
+  </a>
 {%- endfor %}
 </div>
 
-<script type="text/javascript" defer>
-  document.addEventListener('turbolinks:load', () => {
-    lightGallery(document.getElementById("{{ id }}"), {
-      backdropDuration: 100,
-      download: false
-    });
-  });
+<script type="module">
+import PhotoSwipeLightbox from '/assets/lib/photoswipe/photoswipe-lightbox.esm.min.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#{{ id }}',
+  children: 'a',
+  initialZoomLevel: 'fill',
+  secondaryZoomLevel: 'fill',
+  pswpModule: () => import('/assets/lib/photoswipe/photoswipe.esm.min.js')
+});
+
+lightbox.init();
+
+lightbox.addFilter('thumbBounds', (thumbBounds, itemData) => {
+  const thumbAreaRect = itemData.element.querySelector('img').getBoundingClientRect();
+
+  thumbBounds.y = thumbAreaRect.top;
+  thumbBounds.innerRect.y = 0;
+
+  return thumbBounds;
+});
+
+lightbox.on('initialZoomPan', (event) => {
+  if (event.slide.pan.y < 0) {
+    event.slide.pan.y = 0;
+  }
+});
 </script>

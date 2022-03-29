@@ -11,15 +11,12 @@
     <link rel="apple-touch-icon" href="{{ '/favicon-apple.png' | relative_url }}">
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
     {%- if page.gallery == true %}
-    <link type="text/css" rel="stylesheet" href="{{ '/assets/lib/lightgallery/css/lightgallery.css?v=1' | relative_url }}" />
+    <link type="text/css" rel="stylesheet" href="{{ '/assets/lib/photoswipe/photoswipe.css?v=1' | relative_url }}" />
     {%- endif %}
     <link rel="stylesheet" href="{{ '/assets/styles.css?v=7' | relative_url }}">
     <script src="{{ '/assets/lib/turbolinks.min.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/lib/anchor.min.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/lib/gumshoe.min.js' | relative_url }}" defer></script>
-    {%- if page.gallery == true %}
-    <script src="{{ '/assets/lib/lightgallery/lightgallery.min.js?v=1' | relative_url }}" defer></script>
-    {%- endif %}
     <script src="{{ '/assets/scripts.js?v=2' | relative_url }}" defer></script>
 
     {%- if site.url != "http://localhost:4000" %}

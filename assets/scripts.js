@@ -33,15 +33,6 @@ document.addEventListener('turbolinks:load', () => {
     });
   }
 
-  // if (typeof lightGallery !== 'undefined') {
-  //   lightGallery(document.getElementById('main'), {
-  //       // plugins: [lgZoom, lgThumbnail],
-  //       // licenseKey: 'your_license_key'
-  //       speed: 500,
-  //       ... other settings
-  //   });
-  // }
-
   // fix not working click on anchor after back button
   if (window.location.hash && document.querySelector(window.location.hash)) {
     document.querySelector(window.location.hash).scrollIntoView();
