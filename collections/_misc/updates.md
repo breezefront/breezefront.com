@@ -9,7 +9,7 @@ order: 50
 
 ## 1.0.0
 
-> Mar 25, 2022
+> Mar 29, 2022
 
 > In order to update from previous version, run the following command:
 > `composer require swissup/breeze-blank -w`
