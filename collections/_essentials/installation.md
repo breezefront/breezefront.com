@@ -23,7 +23,11 @@ order: 200
     > in the composer.json file, saves credentials to the auth.json file, and provides
     > one-click theme installer.
 
- 2. Complete a free purchase of [Breeze Blank Theme](https://swissuplabs.com/magento-themes/magento-2-breeze-blank-theme.html)
+ 2. Purchase a theme you'd like to install:
+
+    - [Breeze Blank](https://swissuplabs.com/magento-themes/magento-2-breeze-blank-theme.html) --- Free minimalistic starter theme ([View screenshots](/screenshots#breeze-blank)).
+    - [Breeze Evolution](https://swissuplabs.com/magento-themes/magento-2-breeze-evolution-theme.html) --- Free full featured theme ([View screenshots](/screenshots#breeze-evolution)).
+
  3. Enable swissuplabs packages channel using `swissup/marketplace` module:
 
     ```powershell
@@ -37,7 +41,12 @@ order: 200
 ## Installation
 
 When Marketplace module is installed, proceed with the following commands to
-download and enable Breeze package:
+download and enable Breeze package.
+
+Replace `swissup/breeze-blank` with theme you'd like to install:
+
+ - Breeze Blank --- `swissup/breeze-blank`
+ - Breeze Evolution --- `swissup/breeze-evolution`
 
 ```powershell
 composer require swissup/breeze-blank &&\
@@ -46,19 +55,9 @@ bin/magento marketplace:package:install swissup/breeze-blank
 ```
 
 Installer will ask you to select a store, then it will create CMS content, and
-change your current theme to the `swissup/theme-frontend-breeze-blank`.
+change your current theme to Breeze.
 
-The list of packages that will be installed:
-
-Package Name                            | Description
-----------------------------------------|--------------
-swissup/theme-frontend-breeze-blank     | Breeze Blank Theme
-swissup/module-breeze                   | Breeze Module
-swissup/module-breeze-integrations      | Third-party modules integrations
-swissup/module-rtl                      | RTL Direction Module
-
-**That's all.** Breeze is now installed and activated for selected store views.
-
+**That's all.** Breeze is now installed and activated for the selected store view.
 
 No additional action is required, however, you can customize some config
 options if you want.

@@ -10,6 +10,9 @@
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
     <link rel="apple-touch-icon" href="{{ '/favicon-apple.png' | relative_url }}">
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    {%- if page.gallery == true %}
+    <link type="text/css" rel="stylesheet" href="{{ '/assets/lib/photoswipe/photoswipe.css?v=1' | relative_url }}" />
+    {%- endif %}
     <link rel="stylesheet" href="{{ '/assets/styles.css?v=7' | relative_url }}">
     <script src="{{ '/assets/lib/turbolinks.min.js' | relative_url }}" defer></script>
     <script src="{{ '/assets/lib/anchor.min.js' | relative_url }}" defer></script>
