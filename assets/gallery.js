@@ -19,20 +19,22 @@ export default function (selector) {
 
   lightbox.init();
 
-  lightbox.addFilter('thumbBounds', (thumbBounds, itemData) => {
-    const thumbAreaRect = itemData.element.querySelector('img').getBoundingClientRect();
-
-    thumbBounds.y = thumbAreaRect.top;
-    thumbBounds.innerRect.y = 0;
-
-    return thumbBounds;
-  });
-
   lightbox.on('initialZoomPan', (event) => {
     if (event.slide.pan.y < 0) {
       event.slide.pan.y = 0;
     }
   });
+
+  // https://github.com/dimsemenov/PhotoSwipe/pull/1868
+  // lightbox.addFilter('thumbBounds', (thumbBounds, itemData) => {
+  //   const thumbAreaRect = itemData.element.querySelector('img').getBoundingClientRect();
+
+  //   thumbBounds.y = thumbAreaRect.top;
+  //   thumbBounds.innerRect.y = 0;
+
+  //   return thumbBounds;
+  // });
+
 
   return lightbox;
 };
