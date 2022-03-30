@@ -37,7 +37,15 @@ import PhotoSwipeLightbox from '/assets/lib/photoswipe/photoswipe-lightbox.esm.m
 const lightbox = new PhotoSwipeLightbox({
   gallery: '#{{ id }}',
   children: 'a',
-  initialZoomLevel: 'fill',
+  initialZoomLevel: (zoomLevelObject) => {
+    const viewportWidth = document.documentElement.clientWidth - 130;
+
+    if (zoomLevelObject.elementSize.x > viewportWidth) {
+      return viewportWidth / zoomLevelObject.elementSize.x;
+    }
+
+    return zoomLevelObject.fill;
+  },
   secondaryZoomLevel: 'fill',
   pswpModule: () => import('/assets/lib/photoswipe/photoswipe.esm.min.js')
 });
