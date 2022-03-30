@@ -40,11 +40,11 @@ bin/magento maintenance:enable &&\
 bin/magento cache:clean &&\
 rm -rf generated/code &&\
 rm -rf generated/metadata &&\
-rm -rf var/view_preprocessed/pub/static/frontend/Swissup/breeze-blank &&\
-rm -rf pub/static/frontend/Swissup/breeze-blank &&\
+rm -rf var/view_preprocessed/pub/static/frontend/ &&\
+rm -rf pub/static/frontend/ &&\
 bin/magento deploy:mode:set production --skip-compilation &&\
 bin/magento setup:di:compile &&\
-bin/magento setup:static-content:deploy --theme=Swissup/breeze-blank &&\
+bin/magento setup:static-content:deploy &&\
 bin/magento maintenance:disable
 ```
 
