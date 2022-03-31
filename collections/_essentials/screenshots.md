@@ -13,12 +13,12 @@ gallery: true
 
 ## Breeze Blank
 
-Minimalistic starter theme. Great to build your new unique theme.
+Minimalistic starter theme. Great to build your new unique theme. [View Demo](https://breeze.swissupdemo.com/breeze_blank/){:target="_blank" rel="noopener"}
 
 {% include gallery.html dir="blank" lazy=false width="350" height="250" %}
 
 ## Breeze Evolution
 
-Light theme with rounded shapes and contrast forms.
+Light theme with rounded shapes and contrast forms. [View Demo](https://breeze.swissupdemo.com/breeze_evolution/){:target="_blank" rel="noopener"}
 
 {% include gallery.html dir="evolution" width="350" height="250" %}
