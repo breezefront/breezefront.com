@@ -19,6 +19,7 @@ order: 50
  -  ✨ Added store contact information in top panel above the header.
  -  ✨ Added GoogleMaps widget support inserted with Magento Pagebuilder.
  -  💄 Much more variables in `.less` files.
+ -  🔧 Fixed js bundles deployment in Commerce Cloud environment.
  -  🔧 Fixed minor css issues with various Swissup modules.
 
 ## 0.12.3
