@@ -20,6 +20,6 @@ sidebar: false
 {:.features}
 
 [Read Docs](/about){:.button}
-[View Demo](https://breeze.swissupdemo.com/breeze_blank/){:target="_blank" rel="noopener" .button}
+[View Screenshots](/screenshots){:.button}
 [Twitter](https://twitter.com/breezefront){:target="_blank" rel="noopener" .button}
 {:.flex}
