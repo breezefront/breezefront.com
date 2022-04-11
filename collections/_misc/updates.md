@@ -7,6 +7,24 @@ order: 50
 
 # Updates
 
+## 1.0.4
+
+> Apr 11, 2022
+
+ -  ✨ Added Paypal Express Order Review page support.
+ -  💄 Tiny checkout CSS fixes.
+ -  🔧 Improved Paypal Express button stability in minicart dropdown.
+ -  🔧 Fixed missing components when deploying static content via terminal.
+ -  🔧 Fixed rare js error when using `$.async` function.
+
+**Developer experience**
+
+ -  🔧 Much better `$.ajax` request compatibility with jQuery syntax:
+    - `beforeSend` support added.
+    - `context` support added.
+    - Better handling of plain html response.
+    - Ability to pass request data as URL-encoded string.
+
 ## 1.0.0
 
 > Mar 29, 2022
