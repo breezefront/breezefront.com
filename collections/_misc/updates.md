@@ -9,7 +9,7 @@ order: 50
 
 ## April 15, 2022
 
- -  Magento 2.4.4 and PHP 8.1 compatibility
+ -  🔧 Magento 2.4.4 and PHP 8.1 compatibility
 
 ## April 11, 2022
 
