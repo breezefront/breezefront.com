@@ -7,9 +7,11 @@ order: 50
 
 # Updates
 
-## 1.0.4
+## April 15, 2022
 
-> Apr 11, 2022
+ -  Magento 2.4.4 and PHP 8.1 compatibility
+
+## April 11, 2022
 
  -  ✨ Added Paypal Express Order Review page support.
  -  💄 Tiny checkout CSS fixes.
@@ -25,9 +27,7 @@ order: 50
     - Better handling of plain html response.
     - Ability to pass request data as URL-encoded string.
 
-## 1.0.0
-
-> Mar 29, 2022
+## March 29, 2022
 
 > In order to update from previous version, run the following command:
 > `composer require swissup/breeze-blank -w`
@@ -40,15 +40,11 @@ order: 50
  -  🔧 Fixed js bundles deployment in Commerce Cloud environment.
  -  🔧 Fixed minor css issues with various Swissup modules.
 
-## 0.12.3
-
-> Mar 10, 2022
+## March 10, 2022
 
  -  Updated compatibility with latest versions of Swissup modules.
 
-## 0.12.2
-
-> Mar 1, 2022
+## March 1, 2022
 
  -  🔧 Fixed js chunks deployment during `setup:static-content:deploy` command.
     This fixes compatibility with Magento Commerce Cloud environment.
@@ -57,9 +53,7 @@ order: 50
  -  💄 Fixed dropdown styles when parent container is dark.
  -  💄 Added new LESS variables to improve cusomization abilities.
 
-## 0.12.0
-
-> Feb 17, 2022
+## February 17, 2022
 
 **Module Updates**
 
@@ -77,9 +71,7 @@ order: 50
  -  💄 Added ability to wrap product thumbnails to the new line instead of overflowed scrolling.
  -  🔧 Fixed video centering at product page gallery.
 
-## 0.11.0
-
-> Feb 8, 2022
+## February 8, 2022
 
  -  **Added minimalistic email styles.** We've took Magento/blank email structure
     as a base, so you will find it super easy to integrate with existing blank/luma
@@ -88,9 +80,7 @@ order: 50
  -  Fixed missing options at product page for Bundle Products.
  -  Fixed error at homepage about unknown "new" attribute on fresh Magento installations.
 
-## 0.10.0
-
-> Jan 28, 2022
+## January 28, 2022
 
 **Theme Updates**
 
@@ -106,9 +96,7 @@ order: 50
  -  Improved click handling inside modal popups.
  -  Improved SPA experience.
 
-## 0.9.1
-
-> Jan 14, 2021
+## January 14, 2021
 
  -  Allow to create nested view components.
  -  Fixed js error when recaptcha is enabled in product review form.
