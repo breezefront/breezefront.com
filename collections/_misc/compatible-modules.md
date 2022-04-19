@@ -15,6 +15,7 @@ magento/multishipping         | +               | -
 mirasvit/cachewarmer          | +               | ?
 swissup/\* *All, except the listed below*{:.badge} | +     | +
 swissup/lightboxpro           | -               | -
+swissup/pagebuilder           | -               | -
 
  -  **\*Breeze Module** --- the specified module is compatible with any
     Luma-based theme that uses Breeze JS stack.
