@@ -7,6 +7,14 @@ order: 50
 
 # Updates
 
+## April 25, 2022
+
+ -  🔧 Fixed price update in product listing when swithing to another configurable product variation.
+ -  💄 Fixed styles of out-of-stock label in product listing when shown over
+    the image.
+ -  💄 Fixed swatches over the image after listing's ajax refresh.
+ -  💄 Added missing "disabled" state to swatch item filter.
+
 ## April 15, 2022
 
  -  🔧 Magento 2.4.4 and PHP 8.1 compatibility
