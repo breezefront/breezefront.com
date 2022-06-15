@@ -7,20 +7,10 @@ order: 400
 
 # Performance
 
-The table below shows the options that will improve store performance and their
-recommended values:
+When your store is ready to sell, do not forget properly configure Magento
+and enable production mode.
 
-Option                      | Default Value | Recommended Value
-----------------------------|---------------|-------------------
-Minify Html                 | No            | Yes
-Merge JavaScript Files      | No            | Yes
-Enable JavaScript Bundling  | No            | No
-Minify JavaScript Files     | No            | Yes
-Merge CSS Files             | No            | Yes
-Minify CSS Files            | No            | Yes
-Use CSS critical path       | No            | Yes
-
-Here is a one-line command that will set all of these settings to the recommended
+Here is a one-line command that will set configuration to the recommended
 values:
 
 ```powershell
