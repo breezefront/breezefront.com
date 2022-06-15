@@ -111,23 +111,23 @@ Let's write the collected dimensions to the `<theme_dir>/etc/view.xml` file:
       <width>212</width>
       <height>[x]</height>
     </image>
-    <image id="category_page_grid-srcset-332" type="small_image">
+    <image id="category_page_grid-srcset-1" type="small_image">
       <width>332</width>
       <height>[x]</height>
     </image>
-    <image id="category_page_grid-srcset-368" type="small_image">
+    <image id="category_page_grid-srcset-2" type="small_image">
       <width>368</width>
       <height>[x]</height>
     </image>
-    <image id="category_page_grid-srcset-414" type="small_image">
+    <image id="category_page_grid-srcset-3" type="small_image">
       <width>414</width>
       <height>[x]</height>
     </image>
-    <image id="category_page_grid-srcset-498" type="small_image">
+    <image id="category_page_grid-srcset-4" type="small_image">
       <width>498</width>
       <height>[x]</height>
     </image>
-    <image id="category_page_grid-srcset-552" type="small_image">
+    <image id="category_page_grid-srcset-5" type="small_image">
       <width>552</width>
       <height>[x]</height>
     </image>

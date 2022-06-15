@@ -47,7 +47,7 @@ suffix:
       <width>300</width>
       <height>375</height>
     </image>
-    <image id="category_page_grid-srcset-230" type="small_image">
+    <image id="category_page_grid-srcset-1" type="small_image">
       <width>230</width>
       <height>287</height>
     </image>
@@ -58,11 +58,11 @@ suffix:
       <width>300</width>
       <height>375</height>
     </image>
-    <image id="category_page_list-srcset-260" type="small_image">
+    <image id="category_page_list-srcset-1" type="small_image">
       <width>260</width>
       <height>325</height>
     </image>
-    <image id="category_page_list-srcset-600" type="small_image">
+    <image id="category_page_list-srcset-2" type="small_image">
       <width>600</width>
       <height>750</height>
     </image>
