@@ -13,7 +13,7 @@ sidebar: false
 {:.subtitle}
 
  -  Fast and extendable
- -  Highly compatible with Luma-based modules
+ -  Easy to integrate with Luma-based modules
  -  SPA experience
  -  A11y friendly
  -  RTL support
