@@ -28,7 +28,7 @@ Here is a shortened version of view.xml file contents:
                 <width>300</width>
                 <height>375</height>
             </image>
-            <image id="category_page_grid-srcset-600" type="small_image">
+            <image id="category_page_grid-srcset-1" type="small_image">
                 <width>600</width>
                 <height>750</height>
             </image>
