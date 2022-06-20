@@ -15,7 +15,7 @@ order: 50
       - Reveal information on hover.
       - Truncate product name to fit into X lines.
       - Columns count per different screen sizes.
- -  💄 More LESS variables to [change minicart view in header](https://twitter.com/breezefront/status/1522510428529692673).
+ -  💄 More LESS variables to [change minicart view in header](https://twitter.com/breezefront/status/1522510428529692673){:target="_blank" rel="noopener"}.
  -  🚀 Fixed layout shift caused by slider initialization.
  -  🔧 Remember recently viewed products for 1 day instead of 15 minutes.
  -  🔧 And up to 50 commits with small fixes and improvements!
