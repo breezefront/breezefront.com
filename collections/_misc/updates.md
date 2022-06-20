@@ -7,6 +7,19 @@ order: 50
 
 # Updates
 
+## June 20, 2022
+
+ -  ✨ [Argento Stripes theme](/screenshots#argento-stripes) created.
+ -  💄 Improved default styles for contact, login, create account, advanced search pages.
+ -  💄 More LESS variables for product item on category page:
+      - Reveal information on hover.
+      - Truncate product name to fit into X lines.
+      - Columns count per different screen sizes.
+ -  💄 More LESS variables to [change minicart view in header](https://twitter.com/breezefront/status/1522510428529692673).
+ -  🚀 Fixed layout shift caused by slider initialization.
+ -  🔧 Remember recently viewed products for 1 day instead of 15 minutes.
+ -  🔧 And up to 50 commits with small fixes and improvements!
+
 ## April 25, 2022
 
  -  🔧 Fixed price update in product listing when swithing to another configurable product variation.
