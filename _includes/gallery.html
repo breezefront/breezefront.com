@@ -16,8 +16,8 @@
     | replace: '.gif', ''
     | split: 'x' %}
   <a href="{{ image.path | replace: '/small/', '/' }}"
-    data-pswp-width="{{ dimensions[0] }}"
-    data-pswp-height="{{ dimensions[1] }}"
+    data-pswp-width="{{ dimensions[0] | divided_by: 2 }}"
+    data-pswp-height="{{ dimensions[1] | divided_by: 2 }}"
     data-cropped="true"
     target="_blank">
     <img alt=""
