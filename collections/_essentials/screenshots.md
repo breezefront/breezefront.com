@@ -22,3 +22,9 @@ Minimalistic starter theme. Great to build your new unique theme. [View Demo](ht
 Light theme with rounded shapes and contrast forms. [View Demo](https://breeze.swissupdemo.com/breeze_evolution/){:target="_blank" rel="noopener"}
 
 {% include gallery.html dir="evolution" width="350" height="250" %}
+
+## Argento Stripes
+
+Premium theme built on top of Breeze Blank.
+
+{% include gallery.html dir="argento-stripes" width="350" height="250" %}
