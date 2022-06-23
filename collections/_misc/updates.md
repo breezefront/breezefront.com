@@ -7,6 +7,12 @@ order: 50
 
 # Updates
 
+## June 23, 2022
+
+ -  ✨ Mirasvit_GoogleTagManager integration added.
+ -  🔧 Improved compatibility with third-party modules that use plain javascript
+    in the html body tag.
+
 ## June 20, 2022
 
  -  ✨ [Argento Stripes theme](/screenshots#argento-stripes) created.
