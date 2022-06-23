@@ -7,17 +7,17 @@ order: 100
 
 # Compatible modules
 
-Module                        | Breeze Module*  | Breeze Theme**
-------------------------------|:---------------:|:------------:
-amasty/xnotif                 | +               | ?
-magento/\* *All, except the listed below*{:.badge} | +   | +
-magento/multishipping         | +               | -
-mirasvit/cachewarmer          | +               | ?
-swissup/\* *All, except the listed below*{:.badge} | +     | +
-swissup/lightboxpro           | -               | -
-swissup/pagebuilder           | -               | -
+Module                                              | Breeze Module*    | Breeze Theme**
+----------------------------------------------------|:-----------------:|:------------:
+amasty/xnotif                                       | +                 | ?
+magento/\* *All, except the listed below*{:.badge}  | +                 | +
+magento/paypal *Smart btn at product page*{:.badge} | -                 | -
+magento/multishipping                               | +                 | -
+mirasvit/cachewarmer                                | +                 | *Debug toolbar is not integrated*{:.badge}
+mirasvit/googletagmanager *New*{:.badge.blue}       | +                 | +
+swissup/\* *All, except the listed below*{:.badge}  | +                 | +
+swissup/lightboxpro                                 | -                 | -
+swissup/pagebuilder                                 | -                 | -
 
- -  **\*Breeze Module** --- the specified module is compatible with any
-    Luma-based theme that uses Breeze JS stack.
- -  **\*\*Breeze Theme** --- the specified module is fully compatible with
-    Breeze Frontend (Breeze JS and Breeze Theme).
+ -  **\*Breeze Module** --- the specified module is compatible with Luma-based theme.
+ -  **\*\*Breeze Theme** --- the specified module is compatible with Breeze-based theme.
