@@ -190,7 +190,7 @@ Here is mixins declarations examples:
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.scrollbar {
+.breeze-scrollbar {
     &::-webkit-scrollbar {
         width: @scrollbar__width;
         height: @scrollbar__width;
@@ -213,6 +213,6 @@ And here is a usage example from `web/css/layout/_file.less`:
    &:extend(.transition);
 }
 .container-we-want-to-use-fancy-scrollbars-with {
-   &:extend(.scrollbar all);
+   &:extend(.breeze-scrollbar all);
 }
 ```
