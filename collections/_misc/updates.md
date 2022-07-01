@@ -7,6 +7,12 @@ order: 50
 
 # Updates
 
+## July 1, 2022
+
+ -  ✨ Zoom feature was added to the product gallery.
+ -  💄 Improved styles of opened product gallery.
+ -  🔧 Double tap `dbltap` event support added.
+
 ## June 23, 2022
 
  -  ✨ Mirasvit_GoogleTagManager integration added.
