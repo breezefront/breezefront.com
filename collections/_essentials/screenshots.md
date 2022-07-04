@@ -25,6 +25,6 @@ Light theme with rounded shapes and contrast forms. [View Demo](https://breeze.s
 
 ## Argento Stripes
 
-Premium theme built on top of Breeze Blank.
+Premium theme built on top of Breeze Blank. [View Demo](https://argento-breeze-m2.swissupdemo.com/stripes_breeze/){:target="_blank" rel="noopener"}
 
 {% include gallery.html dir="argento-stripes" width="350" height="250" %}
