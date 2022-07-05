@@ -36,6 +36,9 @@ has critical and deferred part. Currently, there are two bundles used only:
  -  **default.less** --- commonly used styles goes here. This bundle added on all pages.
  -  **checkout.less** --- styles for checkout page. Added on checkout page only.
 
+> - [How to add custom theme styles?](/custom-styles)
+> - [How to add custom module styles?](/custom-module#styles)
+
 Each bundle provides additional file for deferred styles that doesn't affect layout shifts.
 
  -  **deferred-default.less**
