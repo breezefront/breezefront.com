@@ -37,6 +37,8 @@ Every color used by Breeze Theme is declared in RGB format as LESS variable in
 `web/css/abstracts/variables/_colors.less` file.
 
 ```scss
+@rgb-brand: red(@theme__brand-color), green(@theme__brand-color), blue(@theme__brand-color);
+
 @rgb-black: red(@black), green(@black), blue(@black);
 @rgb-white: red(@white), green(@white), blue(@white);
 
@@ -108,3 +110,30 @@ keep brand color (focus-ring, buttons, spinner) without changes.
 You may wonder why we use CSS properties as the values for component colors? It's
 done for dark color scheme support, since we tweak base colors when detecting
 `prefers-color-scheme: dark` setting in visitor's browser preferences.
+
+> If you build a light theme only, you can use hex colors as usual. See
+> examples below.
+
+## Basic examples
+
+### Changing theme color
+
+This will change color of buttons and focus rings.
+
+```scss
+@theme__brand-color: @green-500;
+```
+
+### Changing form colors
+
+```scss
+@ring__color: @black;
+@input__color: @gray-700;
+@input__background: @gray-100;
+@input__border: 1px solid @gray-500;
+@input__focus__outline: 2px solid @black;
+@input__focus__outline-offset: -1px;
+@button__background: @indigo-600;
+@button__hover__background: @violet-600;
+@button__focus__background: @violet-600;
+```
