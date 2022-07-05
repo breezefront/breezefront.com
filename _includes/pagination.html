@@ -15,6 +15,10 @@
 
     {%- assign articles = site[section.label] | sort: 'order' -%}
     {%- for article in articles -%}
+      {%- if article.disabled -%}
+        {% continue %}
+      {%- endif -%}
+
       {%- if article.draft -%}
         {% continue %}
       {%- endif -%}

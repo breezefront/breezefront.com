@@ -33,6 +33,9 @@
         {%- if articles.size > 0 %}
           <ul>
           {%- for article in articles %}
+            {%- if article.disabled == true -%}
+              {%- continue -%}
+            {%- endif -%}
             {%- assign draft = false %}
             {%- if section.draft == true or article.draft == true %}
               {%- assign draft = true %}
