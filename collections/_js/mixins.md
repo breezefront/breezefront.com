@@ -2,7 +2,6 @@
 layout: default
 title: Mixins
 description: Overriding built-in Breeze components using mixins
-draft: true
 order: 450
 ---
 
@@ -22,4 +21,29 @@ The syntax is very simple:
 $.mixin('componentName', propsToExtend);
 ```
 
+ - `componentName` -- is the name of component that you want to modify.
+ - `propsToExtend` -- an object with methods to override.
+
 ## Example
+
+> [Where to place my custom scripts?](/custom-javascript)
+
+```js
+$.mixin('collapsible', {
+    create: function (parent) {
+        parent();
+    },
+
+    someMethod: function (parent, arg1, arg2) {
+        parent(arg1, arg2);
+    }
+});
+```
+
+You can also use mixin to disable component:
+
+```js
+$.mixin('quickSearch', {
+    component: false
+});
+```
