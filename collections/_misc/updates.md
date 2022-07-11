@@ -7,6 +7,11 @@ order: 50
 
 # Updates
 
+## July 11, 2022
+
+ -  🚀 Removed superagent library dependency --- minus 10 kB of javascript.
+ -  🔧 Fixed notice about empty `_email.less` file during static content deployment.
+
 ## July 1, 2022
 
  -  ✨ Zoom feature was added to the product gallery.
