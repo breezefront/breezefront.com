@@ -7,6 +7,11 @@ order: 50
 
 # Updates
 
+## July 19, 2022
+
+ -  Added ability to add slides programmatically to `pagebuilderSlider`.
+ -  Added new `breeze_theme` layout handle when Breeze theme is used.
+
 ## July 11, 2022
 
  -  🚀 Removed superagent library dependency --- minus 10 kB of javascript.
