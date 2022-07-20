@@ -27,8 +27,8 @@ download and enable Breeze package.
 
 Replace `swissup/breeze-blank` with theme you'd like to install:
 
- - Breeze Blank --- `swissup/breeze-blank`
- - Breeze Evolution --- `swissup/breeze-evolution`
+ - Breeze Blank --- `swissup/breeze-blank` ([View screenshots](/screenshots#breeze-blank))
+ - Breeze Evolution --- `swissup/breeze-evolution`([View screenshots](/screenshots#breeze-evolution))
 
 ```powershell
 composer require swissup/breeze-blank &&\
