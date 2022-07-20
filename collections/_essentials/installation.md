@@ -12,31 +12,13 @@ order: 200
 
 ## Pre-installation
 
- 1. Install [swissup/marketplace](https://github.com/swissup/module-marketplace) module:
+Install [swissup/marketplace](https://github.com/swissup/module-marketplace) module.
+We will use it to run one-click theme installer in the end of installation.
 
-    ```powershell
-    composer require swissup/module-marketplace &&\
-    bin/magento setup:upgrade
-    ```
-
-    > `swissup/marketplace` --- is the module that registers our packages repository
-    > in the composer.json file, saves credentials to the auth.json file, and provides
-    > one-click theme installer.
-
- 2. Purchase a theme you'd like to install:
-
-    - [Breeze Blank](https://swissuplabs.com/magento-themes/magento-2-breeze-blank-theme.html) --- Free minimalistic starter theme ([View screenshots](/screenshots#breeze-blank)).
-    - [Breeze Evolution](https://swissuplabs.com/magento-themes/magento-2-breeze-evolution-theme.html) --- Free full featured theme ([View screenshots](/screenshots#breeze-evolution)).
-
- 3. Enable swissuplabs packages channel using `swissup/marketplace` module:
-
-    ```powershell
-    bin/magento marketplace:channel:enable swissuplabs
-    ```
-
-    You’ll be asked to activate your domain and enter identity key. Get identity
-    key and activate the domain at
-    [swissuplabs.com customer account page](https://swissuplabs.com/license/customer/activation/)
+```powershell
+composer require swissup/module-marketplace &&\
+bin/magento setup:upgrade --safe-mode=1
+```
 
 ## Installation
 
@@ -50,7 +32,7 @@ Replace `swissup/breeze-blank` with theme you'd like to install:
 
 ```powershell
 composer require swissup/breeze-blank &&\
-bin/magento setup:upgrade &&\
+bin/magento setup:upgrade --safe-mode=1 &&\
 bin/magento marketplace:package:install swissup/breeze-blank
 ```
 
