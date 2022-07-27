@@ -7,6 +7,15 @@ order: 50
 
 # Updates
 
+## July 26, 2022
+
+ -  [Cash.js](https://github.com/breezefront/cash) library updated with a
+    fix for `form.serialize` method.
+ -  Small CSS fixes and improvements for HTML carousel, multiselect fields,
+    lists, headers, and submit button.
+ -  [Magefan's blog](https://github.com/magefan/module-blog) module
+    [integrarion added](https://github.com/breezefront/module-breeze-magefan-blog).
+
 ## July 19, 2022
 
  -  Added ability to add slides programmatically to `pagebuilderSlider`.
