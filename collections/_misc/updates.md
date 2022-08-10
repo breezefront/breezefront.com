@@ -7,6 +7,14 @@ order: 50
 
 # Updates
 
+## August 10, 2022
+
+ -  Properly update product price when changing qty and tier-pricing is enabled.
+ -  Fix incorrect price when configurable options passed via query hash params (Example: #190=3).
+ -  Fixed not working "Reload captcha" button.
+ -  Fixed error during static content deploy if minification option was changed.
+ -  Fixed styles for configurable product options that are not swatches.
+
 ## July 26, 2022
 
  -  [Cash.js](https://github.com/breezefront/cash) library updated with a
