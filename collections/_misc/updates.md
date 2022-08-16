@@ -7,6 +7,12 @@ order: 50
 
 # Updates
 
+## August 16, 2022
+
+ -  Fix a few bugs in our `$.ajax` implementation so it now more compatible with
+    code written for jQuery.
+ -  Fixed ability to disable Turbo at store level using backend config.
+
 ## August 10, 2022
 
  -  Properly update product price when changing qty and tier-pricing is enabled.
