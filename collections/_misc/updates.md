@@ -7,6 +7,13 @@ order: 50
 
 # Updates
 
+## August 25, 2022
+
+ -  💄 Header panel was [moved into the slideout menu](https://twitter.com/breezefront/status/1559913064853606400)
+    on mobile devices.
+ -  ✨ Amasty_MostViewed integration added.
+ -  🔧 CSS fixes for Right-to-Left languages.
+
 ## August 16, 2022
 
  -  Fix a few bugs in our `$.ajax` implementation so it now more compatible with
