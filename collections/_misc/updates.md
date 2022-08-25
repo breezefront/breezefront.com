@@ -13,6 +13,7 @@ order: 50
     on mobile devices.
  -  ✨ Amasty_MostViewed integration added.
  -  🔧 CSS fixes for Right-to-Left languages.
+ -  🔧 Fixed not working "scroll to top" on Breeze Evolution theme (iOS only).
 
 ## August 16, 2022
 
