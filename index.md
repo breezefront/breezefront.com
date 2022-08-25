@@ -7,7 +7,9 @@ class: home
 sidebar: false
 ---
 
-{% include logo.svg %}
+<div class="logo">
+    {% include logo.svg %}
+</div>
 
 ## A gentle shift from default Magento frontend towards all-green performance.
 {:.subtitle}
@@ -21,5 +23,6 @@ sidebar: false
 
 [Read Docs](/about){:.button}
 [View Screenshots](/screenshots){:.button}
+[GitHub](https://github.com/breezefront/){:target="_blank" rel="noopener" .button}
 [Twitter](https://twitter.com/breezefront){:target="_blank" rel="noopener" .button}
 {:.flex}
