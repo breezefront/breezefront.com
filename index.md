@@ -23,6 +23,6 @@ sidebar: false
 
 [Read Docs](/about){:.button}
 [View Screenshots](/screenshots){:.button}
-[GitHub](https://github.com/breezefront/){:target="_blank" rel="noopener" .button}
+[Support](https://github.com/breezefront/community/){:target="_blank" rel="noopener" .button}
 [Twitter](https://twitter.com/breezefront){:target="_blank" rel="noopener" .button}
 {:.flex}
