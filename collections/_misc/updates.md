@@ -7,7 +7,7 @@ order: 50
 
 # Updates
 
-## Septermber 1, 2022
+## September 1, 2022
 
  -  💄 Added font-family variables to [easily customize font](/custom-fonts)
     in block titles, buttons, or whole site.
