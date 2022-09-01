@@ -7,6 +7,14 @@ order: 50
 
 # Updates
 
+## Septermber 1, 2022
+
+ -  💄 Added font-family variables to [easily customize font](/custom-fonts)
+    in block titles, buttons, or whole site.
+ -  🔧 Fixed incorrect urls to local resources in critical CSS.
+ -  🔧 Fixed error in PHP log files about missing requirejs files when js merge is enabled.
+ -  🔧 Removed font-related css properties. Less variables should be used instead.
+
 ## August 25, 2022
 
  -  💄 Header panel was [moved into the slideout menu](https://twitter.com/breezefront/status/1559913064853606400)
