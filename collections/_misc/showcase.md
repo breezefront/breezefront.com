@@ -7,7 +7,8 @@ order: 500
 
 # Showcase
 
-You can find examples of Breeze-powered stores on this page. Some of them are Luma-based, some use full Breeze experience. We split them into separate groups
+You can find examples of Breeze-powered stores on this page. Some of them are
+Luma-based, some use full Breeze experience. We split them into separate groups
 for you.
 
 * TOC
