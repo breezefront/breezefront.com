@@ -85,7 +85,11 @@ and apply new font to your site!
  2. Now, we need to add `@font-face` declarations at the beginning of
     [Local/breeze-custom/web/css/_custom.less](/custom-styles) file:
 
-    > We recommend using `@import` statements to split your CSS into logical parts.
+    > We recommend using `@import "custom/base/_fonts.less"`
+    > to split your CSS into logical parts.
+    >
+    > Please note, that the path is always relative to `web/css/_custom.less`,
+    > so use only one level up in path to the font file &mdash; `../fonts/`
 
     ```scss
     & when (@critical) {
