@@ -27,7 +27,7 @@ Example:
     $(document).on('breeze:load', function () {
         console.log('Hello');
     });
-});
+})();
 ```
 
 Here is how directory structure will look like for `Local/breeze-custom` theme:
