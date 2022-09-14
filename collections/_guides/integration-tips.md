@@ -1,35 +1,68 @@
 ---
 layout: default
 title: Integration Tips
-description: Module integration tips and tricks
+description: >
+    How to integrate existing Luma-based module and theme with Breeze frontend
 order: 600
 ---
 
-# Module Integration Tips
+# Integration Tips
 
 * TOC
 {:toc}
 
 ## About
 
-> If you didn't read Breeze-friendly module page, please [take a look](/custom-module).
+On this page, you’ll find integration tips and common issues you may have to solve
+trying to run your module or theme on a Breeze frontend.
 
-If you have a module that already works with Luma-based theme, you are probably
-don't want to duplicate existing styles or javascript code just to make your
-module compatible with another frontend.
+## Adding new js file
 
-We didn't want to do this too when added integration for [all of our modules](https://swissuplabs.com/magento-extensions.html?cat=17),
-so we collect some of the tricks we've used.
+This common task usually achieved with "deps" option of requirejs-config file
+in Luma-based themes:
 
-## How to reuse styles from \_module.less
+```js
+deps: [
+    'js/theme-js-file'
+]
+```
 
- 1. Add `@import` instruction into `breeze/_default.less`:
+In Breeze you should use `breeze_default.xml` layout update to add new js file:
+
+```xml
+<referenceBlock name="breeze.js">
+    <arguments>
+        <argument name="bundles" xsi:type="array">
+            <item name="default" xsi:type="array">
+                <item name="items" xsi:type="array">
+                    <!-- Adding file from custom module -->
+                    <item name="module-js-file" xsi:type="string">Vendor_Module/js/breeze/new-js-file</item>
+
+                    <!-- Adding file from custom theme -->
+                    <item name="theme-js-file" xsi:type="string">js/breeze/new-js-file</item>
+                </item>
+            </item>
+        </argument>
+    </arguments>
+</referenceBlock>
+```
+
+## Migrate module CSS
+
+Breeze theme doesn't include `_module.less` into the styles. You'll need to
+create `web/css/breeze/_default.less` in your module with styles for the
+Breeze Theme.
+
+<details markdown=1><summary markdown="span">It's still possible to reuse your `_module.less` in Breeze Theme:</summary>
+
+ 1. Add `@import` instruction into your new `web/css/breeze/_default.less` file:
 
     ```scss
     @import '../source/_module.less';
     ```
 
- 2. Declare `@critical` variable in `source/_module.less` to prevent error in Luma theme:
+ 2. Declare `@critical` variable in your existing `source/_module.less` to
+    prevent error in Luma theme:
 
     ```scss
     @critical: unsure;
@@ -60,21 +93,224 @@ so we collect some of the tricks we've used.
      }
     ```
 
- 4. This step is optional. Add missing variables to `breeze/_default.less`. For
-    example, if your styles use `@font-weight__semibold` variable and it's not
+ 4. This step is optional. Add missing variables to `web/css/breeze/_default.less`.
+    For example, if your styles use `@font-weight__semibold` variable and it's not
     available in Breeze theme:
 
     ```scss
     @import '../source/_module.less';
     @font-weight__semibold: 400;
     ```
+</details>
 
-## How to reuse js widgets
+## Migrate mixins
 
-When your module has _simple_ widget for Luma theme, you can slightly modify it
-to make it compatible with both Luma and Breeze. Take a look at the examples below.
+Let's assume you have the following code that works on Luma theme:
 
-**Widget**
+```js
+// requirejs-config.js
+mixins: {
+    'component': {
+        'Vendor_Module/js/mixin': true
+    }
+}
+```
+{:.chained}
+
+```js
+// mixin.js
+define(['mage/utils/wrapper'], function (wrapper) {
+    return function (target) {
+        target.method = wrapper.wrap(target.method, function () {
+            //
+        });
+        return target;
+    };
+});
+```
+
+Here is a Breeze equivalent added to [new js file](#adding-new-js-file):
+
+```js
+$.mixin('component', {
+    method: function (original, arg) {
+        console.log('Mixin!');
+    }
+});
+```
+
+## Migrate widgets
+
+Let's assume you have the following code that works on Luma theme:
+
+```html
+<!-- template.phtml -->
+<div data-mage-init='{"Vendor_Module/js/widget": {}}'></div>
+```
+{:.chained}
+
+```js
+// widget.js
+define(['jquery', 'jquery-ui-modules/widget'], function($) {
+    $.widget('widgetName', {
+        _create: function() {}
+    });
+});
+```
+
+Here is a Breeze equivalent added to [new js file](#adding-new-js-file):
+
+```js
+$.widget('widgetName', {
+    component: 'Vendor_Module/js/widget',
+    create: function() {
+        console.log('Widget Created!');
+    }
+});
+```
+
+Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
+
+## Migrate uiComponents
+
+Let's assume you have the following code that works on Luma theme:
+
+```js
+// requirejs-config.js
+map: {
+    '*': {
+        'simpleComponent': 'Vendor_Module/js/component'
+    }
+}
+```
+{:.chained}
+
+```html
+<!-- template.phtml -->
+<div data-mage-init='{"simpleComponent": {}}'></div>
+```
+{:.chained}
+
+```js
+// component.js
+Component.extend({
+    defaults: {
+        template: 'Vendor_Module/template'
+    },
+    initialize: function (config, messageContainer) {
+        this.observe('isVisible');
+    }
+});
+```
+{:.chained}
+
+```html
+<!-- template.html -->
+<div data-bind="visible: isVisible(), click: removeAll">
+    ...
+</div>
+```
+
+Breeze doesn't support uiComponents. Hovewer, we have a lightweight
+replacement that can render the same html or knockout template. Read more
+about [view components](/view).
+
+Here is a Breeze equivalent in two steps:
+
+ 1. Pre-render html template using special block and layout update:
+
+    ```xml
+    <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.Vendor_Module_template" template="Vendor_Module::template.html"/>
+    ```
+
+ 2. Add component code to the [new js file](#adding-new-js-file):
+
+    ```js
+    Component.extend({
+        component: 'simpleComponent',
+        defaults: {
+            template: 'Vendor_Module/template'
+        },
+        create: function () {
+            this.isVisible = ko.observable();
+        }
+    });
+    ```
+
+    Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
+
+## Migrate functions
+
+Let's assume you have the following code that works on Luma theme:
+
+```js
+define(['jquery'], function ($) {
+    return function (options, element) {
+        //
+    }
+});
+```
+
+Here is a Breeze equivalent added to the [new js file](#adding-new-js-file):
+
+```js
+(function () {
+    var init = function (options, element) {
+        //
+    };
+
+    // If this is a component to mount on DOM elements:
+    $(document).on('breeze:mount:Vendor_Module/js/component', (e, data) => {
+        init(data.settings, data.el);
+    });
+
+    // If this is a utility used by other components:
+    if ($.breezemap) {
+        $.breezemap['Vendor_Module/js/component'] = init;
+    }
+})();
+```
+
+Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
+
+## Reusing Luma files
+
+Breeze has a [simple `define` function](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/core/define.js){:target="_blank" rel="noopener"}.
+This allows to reuse some of Luma-based widgets and components with
+minimum changes.
+
+In order to reuse Luma-based js files you need to register all js files using
+`breeze_default.xml` layout update:
+
+> The order of files is important. In the example below, `Vendor_Module/js/utility`
+> is added on the top because it's used inside other components.
+
+```xml
+<referenceBlock name="breeze.js">
+    <arguments>
+        <argument name="bundles" xsi:type="array">
+            <item name="default" xsi:type="array">
+                <item name="items" xsi:type="array">
+                    <item name="Vendor_Module/js/utility" xsi:type="string">Vendor_Module/js/utility</item>
+                    <item name="Vendor_Module/js/widget" xsi:type="string">Vendor_Module/js/widget</item>
+                    <item name="Vendor_Module/js/function" xsi:type="string">Vendor_Module/js/function</item>
+                    <item name="Vendor_Module/js/object" xsi:type="string">Vendor_Module/js/object</item>
+                    <item name="Vendor_Module/js/ui" xsi:type="string">Vendor_Module/js/ui</item>
+                </item>
+            </item>
+        </argument>
+    </arguments>
+</referenceBlock>
+```
+
+Then you have to add compatibility changes into Luma-based files. Take a look
+at the examples below.
+
+### Utility
+
+We need to register our component in `$.breezemap` object. By doing this we allow
+to resolve `'Vendor_Module/js/utility'` string in `define` statements of all
+other components.
 
 ```diff
  define([
@@ -82,52 +318,108 @@ to make it compatible with both Luma and Breeze. Take a look at the examples bel
  ], function ($) {
      'use strict';
 
+-    return function () {
++    var result = function () {
+         //
+     };
++
++    if ($.breezemap) {
++        $.breezemap['Vendor_Module/js/utility'] = result;
++    }
++
++    return result;
+ });
+```
+
+### Widget
+
+We need to add `component: 'Vendor_Module/js/widget'` to the widget code.
+With this change Breeze will mount the widget on all
+`data-mage-init='{"Vendor_Module/js/widget": {}}'` elements.
+
+```diff
+ define([
+     'jquery',
+     'Vendor_Module/js/utility'
+ ], function ($, action) {
+     'use strict';
+
      $.widget('widgetName', {
-+        component: 'Vendor_Module/js/component',
-         _create: function () {
-             //
-         }
++        component: 'Vendor_Module/js/widget',
+         _create: function () {}
      });
  });
 ```
 
-**Function**
+### Function
 
-Luma compatible code:
+If we want to mount our function on all
+`data-mage-init='{"Vendor_Module/js/function": {}}'` elements, we need to apply
+the following changes:
 
-```js
-define([
-    'jquery',
-    'knockout'
-], function ($, ko) {
-    'use strict';
+```diff
+ define([
+     'jquery',
+     'knockout',
+     'Vendor_Module/js/utility'
+ ], function ($, ko, action) {
+     'use strict';
 
-    return function (options, element) {
-        //
-    };
-});
+-    return function (options, element) {
++    var result = function (options, element) {
+     };
++
++    $(document).on('breeze:mount:Vendor_Module/js/function', (e, data) => {
++        result(data.settings, data.el);
++    });
++
++   return result;
+ });
 ```
 
-_Luma and Breeze_ compatible code:
+### Object
 
-```js
-(function (factory) {
-    'use strict';
+If we want to mount our object on all
+`data-mage-init='{"Vendor_Module/js/object": {}}'` elements, we need to apply
+the following changes:
 
-    if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'knockout'], factory);
-    } else {
-        var fn = factory($, ko);
+```diff
+ define([
+     'jquery',
+     'knockout',
+     'Vendor_Module/js/utility'
+ ], function ($, ko, action) {
+     'use strict';
 
-        $(document).on('breeze:mount:Vendor_Module/js/component', function (event, data) {
-            fn(data.settings, data.element);
-        });
-    }
-}(function ($, ko) {
-    'use strict';
+-    return {
++    var result = {
+         'Vendor_Module/js/object': function (options, element) {}
+     };
++
++    $(document).on('breeze:mount:Vendor_Module/js/object', (e, data) => {
++        result['Vendor_Module/js/object'](data.settings, data.el);
++    });
++
++   return result;
+ });
+```
 
-    return function (options, element) {
-        //
-    };
-}));
+### uiComponent
+
+If we want to mount our component on all
+`data-mage-init='{"Vendor_Module/js/ui": {}}'` elements, we need to apply
+the following changes:
+
+```diff
+ define([
+     'uiComponent',
+     'Vendor_Module/js/utility'
+ ], function (Component, action) {
+     'use strict';
+
+     return Component.extend({
++        component: 'Vendor_Module/js/ui',
+         initialize: function () {}
+     });
+ });
 ```
