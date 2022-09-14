@@ -7,6 +7,21 @@ order: 50
 
 # Updates
 
+## September 14, 2022
+
+ -  ✨ Improved ability to reuse Luma-based files in Breeze frontend. This
+    feature is super useful for third-party module developers.
+    [Read details](/integration-tips#reusing-luma-files).
+ -  🔧 Allows to include third-party scripts (chats, analytics, etc).
+    Previously you had to add `data-breeze` attribute for these scripts.
+ -  🔧 Added missing translation in 'Recent' product block title.
+ -  🔧 Fixed broken gallery styles when using critical css on Luma-based themes.
+ -  🔧 Fixed wrong scroll position on mobile devices when swithing between tabs.
+ -  🔧 Fixed form serialization when sending array data to the server.
+ -  🔧 Fixed redirect to homepage after log out.
+ -  🔧 Fixed missing contact info in mobile slideout on non-breeze pages (cart).
+ -  💄 Few small CSS fixes
+
 ## September 1, 2022
 
  -  💄 Added font-family variables to [easily customize font](/custom-fonts)
