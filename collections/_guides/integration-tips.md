@@ -70,6 +70,8 @@ Use `breeze_default.xml` layout update to add new js file:
 </referenceBlock>
 ```
 
+> Read more about [bundles and component registration](/components#component-registration).
+
 ## Migrate module CSS
 
 Breeze theme doesn't include `_module.less` into the styles. You'll need to
