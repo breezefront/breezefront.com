@@ -323,6 +323,7 @@ Here is a Breeze equivalent added to the [new js file](#add-custom-js-file):
 
 Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
 
+<!-- 
 ## Migrate inline scripts
 
 Let's assume you have the following code that works on Luma theme:
@@ -345,7 +346,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
-```
+``` 
+-->
 
 ## Reusing Luma files
 
