@@ -16,18 +16,41 @@ order: 600
 On this page, you’ll find integration tips and common issues you may have to solve
 trying to run your module or theme on a Breeze frontend.
 
-## Adding new js file
+## Migrate requirejs config
 
-This common task usually achieved with "deps" option of requirejs-config file
-in Luma-based themes:
+Requirejs config file may have the following entries that you need to migrate to
+Breeze:
 
 ```js
-deps: [
-    'js/theme-js-file'
-]
+var config = {
+    config: {
+        mixins: {
+            'mage/storage': {
+                'js/mixin': true
+            }
+        }
+    },
+    map: {
+        '*': {
+            'component': 'Vendor_Module/js/component'
+        }
+    },
+    deps: [
+        'js/script'
+    ]
+};
 ```
 
-In Breeze you should use `breeze_default.xml` layout update to add new js file:
+ -  `deps` &mdash; [Add custom js file](/integration-tips#add-custom-js-file)
+ -  `mixins` &mdash; [Migrate mixins](/integration-tips#migrate-mixins)
+ -  `map` &mdash; [Migrate widgets](/integration-tips#migrate-widgets), 
+    [uiComponents](/integration-tips#migrate-uicomponents),
+    [functions](/integration-tips#migrate-functions),
+    [objects](/integration-tips#migrate-objects).
+
+## Add custom js file
+
+Use `breeze_default.xml` layout update to add new js file:
 
 ```xml
 <referenceBlock name="breeze.js">
@@ -193,7 +216,8 @@ map: {
 
 ```js
 // component.js
-Component.extend({
+$.view('simpleComponent', {
+    component: 'simpleComponent',
     defaults: {
         template: 'Vendor_Module/template'
     },
