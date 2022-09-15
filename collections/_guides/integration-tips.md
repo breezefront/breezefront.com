@@ -247,7 +247,7 @@ Let's assume you have the following code that works on Luma theme:
 define(['jquery'], function ($) {
     return function (options, element) {
         //
-    }
+    };
 });
 ```
 
@@ -259,15 +259,39 @@ Here is a Breeze equivalent added to the [new js file](#adding-new-js-file):
         //
     };
 
-    // If this is a component to mount on DOM elements:
+    // Automatically mount on elements with data-mage-init='{"Vendor_Module/js/component"}'
     $(document).on('breeze:mount:Vendor_Module/js/component', (e, data) => {
         init(data.settings, data.el);
     });
+})();
+```
 
-    // If this is a utility used by other components:
-    if ($.breezemap) {
-        $.breezemap['Vendor_Module/js/component'] = init;
-    }
+Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
+
+## Migrate objects
+
+Let's assume you have the following code that works on Luma theme:
+
+```js
+define(['jquery'], function ($) {
+    return {
+        'Vendor_Module/js/component': function () {}
+    };
+});
+```
+
+Here is a Breeze equivalent added to the [new js file](#adding-new-js-file):
+
+```js
+(function () {
+    var result = {
+        'Vendor_Module/js/component': function (settings, element) {}
+    };
+
+    // Automatically mount on elements with data-mage-init='{"Vendor_Module/js/component"}'
+    $(document).on('breeze:mount:Vendor_Module/js/component', (e, data) => {
+        result['Vendor_Module/js/component'](data.settings, data.el);
+    });
 })();
 ```
 
@@ -340,7 +364,7 @@ With this change Breeze will mount the widget on all
 ```diff
  define([
      'jquery',
-     'Vendor_Module/js/utility'
+     'Vendor_Module/js/utility' // taken from $.breezemap
  ], function ($, action) {
      'use strict';
 
@@ -361,7 +385,7 @@ the following changes:
  define([
      'jquery',
      'knockout',
-     'Vendor_Module/js/utility'
+     'Vendor_Module/js/utility' // taken from $.breezemap
  ], function ($, ko, action) {
      'use strict';
 
@@ -387,7 +411,7 @@ the following changes:
  define([
      'jquery',
      'knockout',
-     'Vendor_Module/js/utility'
+     'Vendor_Module/js/utility' // taken from $.breezemap
  ], function ($, ko, action) {
      'use strict';
 
@@ -413,7 +437,7 @@ the following changes:
 ```diff
  define([
      'uiComponent',
-     'Vendor_Module/js/utility'
+     'Vendor_Module/js/utility' // taken from $.breezemap
  ], function (Component, action) {
      'use strict';
 
