@@ -323,6 +323,30 @@ Here is a Breeze equivalent added to the [new js file](#add-custom-js-file):
 
 Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
 
+## Migrate inline scripts
+
+Let's assume you have the following code that works on Luma theme:
+
+```html
+<script>
+require(['jquery'], ($) => {
+    //
+});
+</script>
+```
+
+Here is a **Luma and Breeze** compatible equivalent:
+
+```html
+<script data-breeze>
+document.addEventListener('DOMContentLoaded', () => {
+    require(['jquery'], ($) => {
+        //
+    });
+});
+</script>
+```
+
 ## Reusing Luma files
 
 Breeze has a [simple `define` function](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/core/define.js){:target="_blank" rel="noopener"}.
