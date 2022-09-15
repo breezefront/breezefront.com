@@ -152,7 +152,7 @@ define(['mage/utils/wrapper'], function (wrapper) {
 });
 ```
 
-Here is a Breeze equivalent added to [new js file](#adding-new-js-file):
+Here is a Breeze equivalent added to [new js file](#add-custom-js-file):
 
 ```js
 $.mixin('component', {
@@ -181,7 +181,7 @@ define(['jquery', 'jquery-ui-modules/widget'], function($) {
 });
 ```
 
-Here is a Breeze equivalent added to [new js file](#adding-new-js-file):
+Here is a Breeze equivalent added to [new js file](#add-custom-js-file):
 
 ```js
 $.widget('widgetName', {
@@ -247,7 +247,7 @@ Here is a Breeze equivalent in two steps:
     <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.Vendor_Module_template" template="Vendor_Module::template.html"/>
     ```
 
- 2. Add component code to the [new js file](#adding-new-js-file):
+ 2. Add component code to the [new js file](#add-custom-js-file):
 
     ```js
     Component.extend({
@@ -275,7 +275,7 @@ define(['jquery'], function ($) {
 });
 ```
 
-Here is a Breeze equivalent added to the [new js file](#adding-new-js-file):
+Here is a Breeze equivalent added to the [new js file](#add-custom-js-file):
 
 ```js
 (function () {
@@ -304,7 +304,7 @@ define(['jquery'], function ($) {
 });
 ```
 
-Here is a Breeze equivalent added to the [new js file](#adding-new-js-file):
+Here is a Breeze equivalent added to the [new js file](#add-custom-js-file):
 
 ```js
 (function () {
