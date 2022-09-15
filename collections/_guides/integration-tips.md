@@ -341,7 +341,7 @@ other components.
      'jquery'
  ], function ($) {
      'use strict';
-
+ 
 -    return function () {
 +    var result = function () {
          //
@@ -388,7 +388,7 @@ the following changes:
      'Vendor_Module/js/utility' // taken from $.breezemap
  ], function ($, ko, action) {
      'use strict';
-
+ 
 -    return function (options, element) {
 +    var result = function (options, element) {
      };
@@ -414,7 +414,7 @@ the following changes:
      'Vendor_Module/js/utility' // taken from $.breezemap
  ], function ($, ko, action) {
      'use strict';
-
+ 
 -    return {
 +    var result = {
          'Vendor_Module/js/object': function (options, element) {}
