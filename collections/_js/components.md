@@ -34,7 +34,7 @@ into bundles to decrease network requests count.
 ## Component Registration
 
 Each component must be registered in `breeze_default.xml` layout update file.
-Here is an example that register `Vendor_Module/js/file` component in
+Here is an example that register `Vendor_Module/js/component` component in
 `customer` bundle:
 
 ```xml
@@ -46,7 +46,8 @@ Here is an example that register `Vendor_Module/js/file` component in
         <item name="active" xsi:type="boolean">true</item>
 
         <item name="items" xsi:type="array">
-          <item name="Vendor_Module/js/file" xsi:type="array">
+          <!-- 'Vendor_Module/js/component' - is the name used in data-mage-init or x-magento-init -->
+          <item name="Vendor_Module/js/component" xsi:type="array">
             <!-- Path to file with component declaration -->
             <item name="path" xsi:type="string">Vendor_Module/js/breeze/file</item>
 
@@ -57,9 +58,9 @@ Here is an example that register `Vendor_Module/js/file` component in
 
             <!-- Optional. Helpful if you use multiple names for the same component -->
             <!-- 1. data-mage-init='{"vendorModule": {}}'  -->
-            <!-- 2. data-mage-init='{"Vendor_Module/js/file": {}}' -->
+            <!-- 2. data-mage-init='{"Vendor_Module/js/component": {}}' -->
             <item name="names" xsi:type="array">
-              <item name="fullname" xsi:type="string">Vendor_Module/js/file</item>
+              <item name="fullname" xsi:type="string">Vendor_Module/js/component</item>
               <item name="shortname" xsi:type="string">vendorModule</item>
             </item>
           </item>
