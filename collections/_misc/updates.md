@@ -7,6 +7,12 @@ order: 50
 
 # Updates
 
+## September 16, 2022
+
+ -  ✨ In addition to previous release we've added support 
+    [for inline scripts](/integration-tips#migrate-inline-scripts). This allows
+    reusing Luma-based templates with simple inline scripts.
+
 ## September 14, 2022
 
  -  ✨ Improved ability to reuse Luma-based files in Breeze frontend. This

@@ -323,7 +323,6 @@ Here is a Breeze equivalent added to the [new js file](#add-custom-js-file):
 
 Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
 
-<!-- 
 ## Migrate inline scripts
 
 Let's assume you have the following code that works on Luma theme:
@@ -336,18 +335,18 @@ require(['jquery'], ($) => {
 </script>
 ```
 
-Here is a **Luma and Breeze** compatible equivalent:
+Here is a Breeze compatible equivalent:
 
 ```html
 <script data-breeze>
-document.addEventListener('DOMContentLoaded', () => {
-    require(['jquery'], ($) => {
-        //
-    });
+require(['jquery'], ($) => {
+    //
 });
 </script>
-``` 
--->
+```
+
+> Using custom dependencies in require call? You should [register them](#utility)
+> in $.breezemap.
 
 ## Reusing Luma files
 
@@ -498,6 +497,28 @@ the following changes:
          initialize: function () {}
      });
  });
+```
+
+### Html template
+
+Breeze can pre-render html template from `web/template` folder using layout update 
+instruction:
+
+```xml
+<referenceContainer name="breeze.container">
+    <block
+        class="Swissup\Breeze\Block\HtmlTemplate"
+        name="breeze.Vendor_Module_template_confirmation_html"
+        template="Vendor_Module::confirmation.html" />
+</referenceContainer>
+```
+
+Then you can use this template as usual:
+
+```js
+define(['text!Vendor_Module/template/name.html'], function (template) {
+    console.log(template);
+});
 ```
 
 ## Turbo issues
