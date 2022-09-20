@@ -7,6 +7,17 @@ order: 50
 
 # Updates
 
+## September 20, 2022
+
+ -  🔧 Fixed compatibility with Magento 2.3.5 that was broken in the previous release.
+ -  ✨ $.breeze.url helper added. It's also available as `mage/url` in require and define calls:
+
+    ```js
+    define(['mage/url'], function (url) {
+        console.log(url.build('hello/there'));
+    });
+    ```
+
 ## September 16, 2022
 
  -  ✨ In addition to previous release we've added support 
