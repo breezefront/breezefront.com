@@ -7,10 +7,11 @@ order: 100
 
 # Compatible modules
 
-Module                                              | Breeze Module*    | Breeze Theme**
+Module                                              | Breeze Module     | Breeze Theme
 ----------------------------------------------------|:-----------------:|:------------:
 amasty/xnotif                                       | +                 | ?
-amasty/mostviewed *New*{:.badge.blue}               | +                 | +
+amasty/mostviewed                                   | +                 | +
+magecomp/\* *New*{:.badge.blue}                     | *Partner's integration program\**{:.badge} | *Partner's integration program\**{:.badge}
 magento/\* *All, except the listed below*{:.badge}  | +                 | +
 magento/paypal *Smart btn at product page*{:.badge} | -                 | -
 magento/multishipping                               | +                 | -
@@ -21,5 +22,4 @@ swissup/\* *All, except the listed below*{:.badge}  | +                 | +
 swissup/lightboxpro                                 | -                 | -
 swissup/pagebuilder                                 | -                 | -
 
- -  **\*Breeze Module** --- the specified module is compatible with Luma-based theme.
- -  **\*\*Breeze Theme** --- the specified module is compatible with Breeze-based theme.
+ -  **\*Partner's integration** --- the specified company provides Breeze integrations for all of their modules.
