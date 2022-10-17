@@ -3,7 +3,6 @@ layout: default
 title: Partners
 description: Web studios and solo developers that work with Breeze
 order: 600
-disabled: true
 ---
 
 # Partners
