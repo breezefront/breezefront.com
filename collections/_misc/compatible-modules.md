@@ -12,6 +12,7 @@ Module                                              | Breeze Module     | Breeze
 amasty/xnotif                                       | +                 | ?
 amasty/mostviewed                                   | +                 | +
 magecomp/\* *New*{:.badge.blue}                     | *Partner's integration program\**{:.badge} | *Partner's integration program\**{:.badge}
+meetanshi/\* *New*{:.badge.blue}                    | *Partner's integration program\**{:.badge} | *Partner's integration program\**{:.badge}
 magento/\* *All, except the listed below*{:.badge}  | +                 | +
 magento/paypal *Smart btn at product page*{:.badge} | -                 | -
 magento/multishipping                               | +                 | -
