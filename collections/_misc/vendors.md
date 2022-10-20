@@ -13,7 +13,7 @@ order: 700
 Magecomp is an Indian based company with 10+ years of experience in Magento niche. 
 We have successfully completed 750+ projects and served 30000+ customers in more 
 than 120 countries. Also, we have developed 150+ Magento extensions and our 
-numerous services used by more than 10000+ store owners & developers globally.
+numerous services used by more than 10000+ store owners & developers globally. Magecomp extension provider will be offering free integration for their modules with Breeze frontend.
 
 **[Meetanshi.com](https://meetanshi.com/){:target="_blank" rel="noopener"}**
 
