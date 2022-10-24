@@ -17,6 +17,13 @@ solutions that are both effective and easy to use. Working with UK clients from
 Fashion, Beauty, Giftware, we are proud to say our clients have voted us on 
 Clutch for Top UK Magento Agency.
 
+
+**[elogic.co](https://elogic.co/){:target="_blank" rel="noopener"}**
+
+Certified eCommerce Development Company to Build, Transform, and Optimize Your Store. We help code your ecommerce stores into perfection, build successful ecommerce strategies, and deliver tech solutions that become an essential part of your business success.
+
+ 
+
 **[outeredge.agency](https://outeredge.agency/){:target="_blank" rel="noopener"}**
 
 outer/edge is a UK-based, expert Magento development agency. Working with Magento since its launch and with over 20 years of industry experience, we're passionate about helping your business successfully achieve its long-term goals. We build conversion focussed and integrated websites that engage consumers and transform businesses. We have an extremely high retention rate and are always on the lookout for retailers who need rescuing by battle-worn Magento devs. We are excited by the opportunities that Breeze can offer merchants and we are recommending it to those who don't want or need the investment of a headless/PWA build.
