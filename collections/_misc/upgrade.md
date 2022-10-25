@@ -19,7 +19,7 @@ Breeze source code. The tables below shows each variable we've changed.
 
 1.x.x variable                            | 2.x.x replacement
 ------------------------------------------|--------------------------------------
-`@rgb-*`                                  | `This variables are completely removed`
+`@rgb-*`                                  | `These variables were completely removed`
 `@button__hover__color`                   | `@button__hover__text-color`
 `@button__focus__color`                   | `@button__focus__text-color`
 `@button-primary__hover__color`           | `@button-primary__hover__text-color`
