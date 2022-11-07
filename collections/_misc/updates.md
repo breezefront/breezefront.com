@@ -7,6 +7,23 @@ order: 50
 
 # Updates
 
+## Upcoming 2.0 Release
+
+[Upgrade guide](/upgrade#upgrading-from-1xx-to-2xx)
+
+ -  🚀 Improved LCP on product page using fetchpriority for product image.
+ -  💄 Easier forms and buttons customizations using LESS variables.
+ -  🌚 Dark mode was disabled since it was rarely used by the customers.
+ -  🏗️ Simplified responsive layout breakpoints. Now it uses simple fluid
+    layout for screen size < 1260px.
+ -  🚀 As a result of simplified layout we've decreased count of generated
+    responsive images that may be crucial for budget hostings.
+ -  🔧 Automatically reload page during turbo load if static version has changed.
+ -  ✨ Sticky messages with autohide feature added.
+ -  ✨ Containered slider style added.
+ -  🗑️ Removed all `rgb-*` variables to simplify theme styling.
+ -  🧵 And more than 50 small fixes in CSS and JS components.
+
 ## September 20, 2022
 
  -  🔧 Fixed compatibility with Magento 2.3.5 that was broken in the previous release.

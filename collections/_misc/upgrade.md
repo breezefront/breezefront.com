@@ -14,6 +14,13 @@ order: 51
 Dark color scheme is disabled by default now. If you wish to enable this feature,
 you need to add `@respect-color-scheme: true;` to your custom.less file.
 
+Markup of header dropdown item was changed (`.switcher` wrapper was added)
+to match language and currency switcher dropdowns. This allows to move
+customer dropdown menu to header panel if needed.
+If your custom theme used `.header.content > .actions > .action` selector for
+some styles, you need to update it with
+`.header.content > .switcher > .actions > .action`.
+
 We've removed/renamed bunch of less variables to make it easier to maintain
 Breeze source code. The tables below shows each variable we've changed.
 
