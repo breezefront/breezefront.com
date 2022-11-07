@@ -27,7 +27,7 @@ This store uses customized Breeze Evolution theme with some extra features:
  -  Quick buy button at product page powered by Vipps payment.
  -  Firecheckout as a checkout page.
 
-**[boma.ua](https://boma.ua/){:target="_blank" rel="noopener"}**
+**[Boma.ua](https://boma.ua/){:target="_blank" rel="noopener"}**
 
 Boma" is a Ukrainian brand of children's clothing. Located in a beautiful Chernivtsi city, the company started online sales on the well-performed and accessible website. The online store offers underwear, suits, t-shirts and tank tops, shorts, skirts, and pajamas. The apparel is of excellent quality and is sewn using reliable and soft materials so that nothing interferes with your child during a brisk walk. You can buy children's clothes both individually and in bulk. And for foreign buyers and partners, Boma added the option of international delivery. 
 
@@ -40,11 +40,11 @@ Breeze Evolution theme with beautiful brown color scheme.
  -  Firecheckout as a checkout page.
 
 
-**[ecrystal.pl](https://ecrystal.pl/){:target="_blank" rel="noopener"}**
+**[Ecrystal.pl](https://ecrystal.pl/){:target="_blank" rel="noopener"}**
 
 To see the best collection of lamps for any modern interior, make friends with ECRYSTAL store. Since 2005 they offer a professional selection of lighting for entertainment venues, clubs, wedding halls, and apartments. The company is the authorized partner for Poland of KOLARZ and SWAROVSKI. When presenting goods in the showroom located in Białystok, the company also offers unique lighting on the fast and user-friendly website.
 
-**[kellykettle.ca](https://kellykettle.ca/){:target="_blank" rel="noopener"}**
+**[KellyKettle.ca](https://kellykettle.ca/){:target="_blank" rel="noopener"}**
 
 Kelly Kettle is a small family business. The company is located in the West of Ireland, where the Kelly Kettle has been an essential piece of camping kit for Irish Fishermen for many generations. There are so many clients happy with stainless steel camp cookware such as cook sets, cups, and plates. After long-term use of Kelly Kettle goods, customers found that they're extremely fast and easy to use. Well just like their website built with Breeze.
 
@@ -57,11 +57,11 @@ Another pure Breeze Evolution store with additional modules:
  -  SoldTogehter blocks at product pages.
  -  Firecheckout as a checkout page.
 
-**[Millingandturningtech.com](https://Millingandturningtech.com/){:target="_blank" rel="noopener"}**
+**[MillingandTurningtech.com](https://Millingandturningtech.com/){:target="_blank" rel="noopener"}**
 
 Millingandturningtech.com is a store providing a piece of Milling machinery in Lake Arrowhead. The website offers a large catalog of products where you can choose V-drive rigging, interior parts, accessories, and build-to-order parts. With the fast and mobile-optimized site based on the Breeze Evolution theme, customers will easily find the items according to their requirements.
 
-**[mydreamday.se](https://mydreamday.se/){:target="_blank" rel="noopener"}**
+**[MyDreamDay.se](https://mydreamday.se/){:target="_blank" rel="noopener"}**
 
 My Dream Day store has everything for your next event. They take customer satisfaction as a basis. To give inspiration and ideas for a successful party, this Swedish company offers decorations, balloons, table settings, presents, accessories, etc. for all types of happy occasions. A large variety of options and equipment will take your event to the next level. 
 
