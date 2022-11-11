@@ -11,6 +11,17 @@ order: 51
 
 > This guide is still in progress
 
+### How to update
+
+Run the following commands to download the latest Breeze Module / Theme:
+
+```sh
+composer update swissup/marketplace &&\ 
+composer require swissup/breeze:^2.0 swissup/breeze-blank:^2.0 swissup/breeze-evolution:^2.0
+```
+
+### Breaking Changes
+
 Dark color scheme is disabled by default now. If you wish to enable this feature,
 you need to add `@respect-color-scheme: true;` to your custom.less file.
 
