@@ -77,6 +77,8 @@ Breeze source code. The tables below shows each variable we've changed.
 `@product-stock-available__background`    | `@product-stock-available__background-color`
 `@product-stock-unavailable__color`       | `@product-stock-unavailable__text-color`
 `@product-stock-unavailable__background`  | `@product-stock-unavailable__background-color`
+`@listing-grid-item__aspect-ratio`   | `@listing-grid-item__reveal-on-hover__aspect-ratio`
+`@listing-grid-item__details-height`   | `@listing-grid-item__reveal-on-hover__visible-height`
 `@listing-grid-item-actions-primary__opacity`   | `@listing-grid-item-actions-primary__absolute__opacity`
 `@listing-grid-item-actions-primary__z-index`   | `@listing-grid-item-actions-primary__absolute__z-index`
 `@listing-grid-item-actions-primary__top`       | `@listing-grid-item-actions-primary__absolute__top`
