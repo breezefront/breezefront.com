@@ -13,12 +13,21 @@ order: 51
 
 ### How to update
 
-Run the following commands to download the latest Breeze Module / Theme:
+ 1. Update all Swissup modules
 
-```sh
-composer update swissup/marketplace &&\ 
-composer require swissup/breeze:^2.0 swissup/breeze-blank:^2.0 swissup/breeze-evolution:^2.0
-```
+    ```sh
+    composer update "swissup/*"
+    ```
+
+ 2. Update Breeze module or theme to version 2.0
+
+    > Edit this command and leave the packages you use:
+
+    ```sh
+    composer require swissup/breeze:^2.0 \
+        swissup/breeze-blank:^2.0 \
+        swissup/breeze-evolution:^2.0
+    ```
 
 ### Breaking Changes
 
@@ -77,8 +86,8 @@ Breeze source code. The tables below shows each variable we've changed.
 `@product-stock-available__background`    | `@product-stock-available__background-color`
 `@product-stock-unavailable__color`       | `@product-stock-unavailable__text-color`
 `@product-stock-unavailable__background`  | `@product-stock-unavailable__background-color`
-`@listing-grid-item__aspect-ratio`   | `@listing-grid-item__reveal-on-hover__aspect-ratio`
-`@listing-grid-item__details-height`   | `@listing-grid-item__reveal-on-hover__visible-height`
+`@listing-grid-item__aspect-ratio`        | `@listing-grid-item__reveal-on-hover__aspect-ratio`
+`@listing-grid-item__details-height`      | `@listing-grid-item__reveal-on-hover__visible-height`
 `@listing-grid-item-actions-primary__opacity`   | `@listing-grid-item-actions-primary__absolute__opacity`
 `@listing-grid-item-actions-primary__z-index`   | `@listing-grid-item-actions-primary__absolute__z-index`
 `@listing-grid-item-actions-primary__top`       | `@listing-grid-item-actions-primary__absolute__top`
