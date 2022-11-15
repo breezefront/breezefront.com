@@ -9,8 +9,6 @@ order: 51
 
 ## Upgrading from 1.x.x to 2.x.x
 
-> This guide is still in progress
-
 ### How to update
 
  1. Update all Swissup modules
