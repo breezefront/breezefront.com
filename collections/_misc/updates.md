@@ -7,9 +7,9 @@ order: 50
 
 # Updates
 
-## Upcoming 2.0 Release
+## November 15, 2022
 
-[Upgrade guide](/upgrade#upgrading-from-1xx-to-2xx)
+[2.0 Upgrade guide](/upgrade#upgrading-from-1xx-to-2xx)
 
 **Backward Incompatible Changes**
 
