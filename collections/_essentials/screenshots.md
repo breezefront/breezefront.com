@@ -26,7 +26,14 @@ Light theme with rounded shapes and contrast forms. [View Demo](https://breeze.s
 ## Argento Stripes
 
 [Premium theme](https://argentotheme.com/order/){:target="_blank" rel="noopener"}
-built on top of Breeze Blank.
+with contrast header built on top of Breeze Blank.
 [View Demo](https://argento-breeze-m2.swissupdemo.com/stripes_breeze/){:target="_blank" rel="noopener"}
 
 {% include gallery.html dir="argento-stripes" width="350" height="250" %}
+
+## Argento Force
+
+[Premium theme](https://argentotheme.com/order/){:target="_blank" rel="noopener"}
+with dynamic accents built on top of Breeze Blank. Demo is coming soon.
+
+{% include gallery.html dir="argento-force" width="350" height="250" %}
