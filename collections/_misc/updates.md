@@ -20,6 +20,7 @@ order: 50
 
 **Fixes and Improvements**
 
+ -  🎉 [Argento Force theme](/screenshots#argento-force) created.
  -  🚀 Improved LCP on product page using fetchpriority for product image.
  -  💄 Easier forms and buttons customizations using LESS variables.
  -  🏗️ Simplified responsive layout breakpoints.
