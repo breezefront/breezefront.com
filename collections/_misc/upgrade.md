@@ -22,7 +22,7 @@ order: 51
     > Edit this command and leave the packages you use:
 
     ```sh
-    composer require swissup/breeze:^2.0 \
+    composer require -w swissup/breeze:^2.0 \
         swissup/breeze-blank:^2.0 \
         swissup/breeze-evolution:^2.0
     ```
