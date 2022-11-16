@@ -86,11 +86,11 @@ of third-party scripts and styles.
 Another one goliath. Fully custom theme made by SheroCommerce. SheroCommerce
 made a titanic work to integrate tons of custom logic with Breeze JS stack.
 
-**[BGGTH.com](https://bggth.com/){:target="_blank" rel="noopener"}**
+<!-- **[BGGTH.com](https://bggth.com/){:target="_blank" rel="noopener"}**
 
 Very unexpected Breeze usage. This store uses custom theme based on Breeze Blank,
 but JS stack is disabled in favor of classic Luma stack: jQuery, RequireJS, etc.
-We do hope it's a temporary decision.
+We do hope it's a temporary decision. -->
 
 **Argento based stores**
 
