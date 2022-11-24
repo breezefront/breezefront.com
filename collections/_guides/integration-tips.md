@@ -239,7 +239,7 @@ $.view('simpleComponent', {
 
 Breeze doesn't support uiComponents. Hovewer, we have a lightweight
 replacement that can render the same html or knockout template. Read more
-about [view components](/view).
+about [view components](/views).
 
 Here is a Breeze equivalent in two steps:
 
