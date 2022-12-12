@@ -34,6 +34,7 @@ with contrast header built on top of Breeze Blank.
 ## Argento Force
 
 [Premium theme](https://argentotheme.com/order/){:target="_blank" rel="noopener"}
-with dynamic accents built on top of Breeze Blank. Demo is coming soon.
+with dynamic accents built on top of Breeze Blank.
+[View Demo](https://argento-breeze-m2.swissupdemo.com/force_breeze/){:target="_blank" rel="noopener"}
 
 {% include gallery.html dir="argento-force" width="350" height="250" %}
