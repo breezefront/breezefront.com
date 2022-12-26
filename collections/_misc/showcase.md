@@ -27,6 +27,18 @@ This store uses customized Breeze Evolution theme with some extra features:
  -  Quick buy button at product page powered by Vipps payment.
  -  Firecheckout as a checkout page.
 
+
+**[LeatherCollection.com](https://leathercollection.com/){:target="_blank" rel="noopener"}**
+
+Leather Collection is a sleek and sophisticated web store that specializes in high-quality leather goods. The website boasts a clean and modern design, making it easy for customers to navigate and find exactly what they are looking for. The store features an extensive collection of leather products, including bags, wallets, belts, and other accessories. All of the items in the store are crafted with the finest materials and attention to detail, ensuring that customers receive top-quality products that will last for years to come. 
+
+Leather Collection site is using Argento Force Breeze theme powered by Breeze and multiply extensions from Swissuplabs:
+- Fire checkout
+- Prolabls
+- Easy slider
+- Highlight
+
+
 **[Boma.ua](https://boma.ua/){:target="_blank" rel="noopener"}**
 
 Boma" is a Ukrainian brand of children's clothing. Located in a beautiful Chernivtsi city, the company started online sales on the well-performed and accessible website. The online store offers underwear, suits, t-shirts and tank tops, shorts, skirts, and pajamas. The apparel is of excellent quality and is sewn using reliable and soft materials so that nothing interferes with your child during a brisk walk. You can buy children's clothes both individually and in bulk. And for foreign buyers and partners, Boma added the option of international delivery. 
@@ -104,6 +116,5 @@ the box. 1.5-2.5x perfomance boost was made in just a few clicks!
 
 **[Minisport.com](https://www.minisport.com/){:target="_blank" rel="noopener"}**
 
-**[LeatherCollection.com](https://leathercollection.com/){:target="_blank" rel="noopener"}**
 
 **[Sirri.co.uk](https://www.sirri.co.uk/){:target="_blank" rel="noopener"}**
