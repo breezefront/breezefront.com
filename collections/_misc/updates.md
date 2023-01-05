@@ -11,7 +11,7 @@ order: 50
 
 **Gallery Improvements**
 
- -  Magnifier support added to product gallery.
+ -  Magnifier support added to product gallery. [View available options](https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/etc/view.xml#L249-L266).
  -  Fixed not working pinch to zoom when multiple galleries are created.
  -  Cache previously loaded images to decrease network requests count.
  -  Prevent 2 active thumbs in the gallery.
