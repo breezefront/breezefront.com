@@ -7,6 +7,28 @@ order: 50
 
 # Updates
 
+## January 5, 2023
+
+**Gallery Improvements**
+
+ -  Magnifier support added to product gallery.
+ -  Fixed not working pinch to zoom when multiple galleries are created.
+ -  Cache previously loaded images to decrease network requests count.
+ -  Prevent 2 active thumbs in the gallery.
+
+**General Fixes and Improvements**
+
+ -  Fixed missing js files in merged bundle when deploying on page refresh (dev mode).
+ -  Do not encode non-latin chars in html source.
+ -  Fixed inability to save address with selected region from customer address page.
+ -  Fixed multiple visible spinners in one element.
+
+**Evolution theme**
+
+ -  Enabled [magnifier option](https://github.com/breezefront/theme-frontend-breeze-evolution/blob/master/etc/view.xml#L167-L169).
+ -  Display "Add to Cart" button on touch devices.
+ -  Use sticky messages position.
+
 ## November 15, 2022
 
 [2.0 Upgrade guide](/upgrade#upgrading-from-1xx-to-2xx)
