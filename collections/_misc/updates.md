@@ -7,6 +7,11 @@ order: 50
 
 # Updates
 
+## January 9, 2023
+
+ -  Magento_GoogleGtag integration added. Integration was added for both Analytics4
+    and Adwords components.
+
 ## January 5, 2023
 
 **Gallery Improvements**
