@@ -7,6 +7,15 @@ order: 50
 
 # Updates
 
+## January 17, 2023
+
+ -  Integration with [smile/elasticsuite](https://github.com/Smile-SA/elasticsuite) module added.
+    Integration is available via [separate module](https://github.com/breezefront/module-breeze-smile-elasticsuite).
+ -  Range-slider component added to use with any third-party layered navigation module.
+ -  `breeze:module:create` command added.
+ -  `breeze:theme:create` command added.
+ -  RTL fixes for product magnifier.
+
 ## January 9, 2023
 
  -  Magento_GoogleGtag integration added. Integration was added for both Analytics4
