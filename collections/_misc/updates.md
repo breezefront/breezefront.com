@@ -7,6 +7,12 @@ order: 50
 
 # Updates
 
+## January 19, 2023
+
+ -  Fixed possible bug when the same resource may load with different version number
+    across the website.
+ -  Do not show empty active filters badge when using third-party layered navigation.
+
 ## January 17, 2023
 
  -  Integration with [smile/elasticsuite](https://github.com/Smile-SA/elasticsuite) module added.
