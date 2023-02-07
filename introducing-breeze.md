@@ -35,8 +35,7 @@ Breeze front is the Evolution of Magento 2 community products. With the advantag
 
 ## We are proud of our clients who were excited to take advantage of the Breeze front. Take a look at these examples to get inspired.
 
-![[e35shop]([https://pagespeed.web.dev/report?url=https%3A%2F%2Fbreeze.swissupdemo.com%2Fbreeze_blank%2F&form_factor=mobile](https://www.e35shop.com/))](/assets/img/introducing-breeze/e35_home_page_screenshot.png)
-
+[![e35shop](/assets/img/introducing-breeze/e35_home_page_screenshot.png)](https://www.e35shop.com/)
 
 [Colorit](https://colorit.ro/) is the main supplier of materials for painting, drawing, and creative crafts in Romania. With over 16 years of experience, the store offers you a wide range of acrylic and oil colors, watercolors, brushes, canvas for painting, sprays for graffiti, easels, colored pencils, crayons, drawing pads, and painting on numbers.
 
