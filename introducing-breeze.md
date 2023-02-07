@@ -5,7 +5,7 @@
 
 Breeze is the greatest free product we’ve ever done. We believe the perfect website experience starts at speed. Better performance comes together with serious business gains. This is the reason we designed Breeze as an alternative to the classic Magento 2  Luma frontend. Breeze is the modern open source frontend created to increase performance and reduce the development cost. We replaced JS scripts to simplified versions that ensure a development of faster Magento 2 sites. Go on, try it – its future for your website.
 
-![Breeze frontend perfomance](/assets/img/introducing-breeze/breeze_blank_pagespeed.png)
+![[Breeze frontend perfomance](https://pagespeed.web.dev/report?url=https%3A%2F%2Fbreeze.swissupdemo.com%2Fbreeze_blank%2F&form_factor=mobile)](/assets/img/introducing-breeze/breeze_blank_pagespeed.png)
 
 ## What does Breeze stand for?
 
