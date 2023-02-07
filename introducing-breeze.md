@@ -5,6 +5,8 @@
 
 Breeze is the greatest free product we’ve ever done. We believe the perfect website experience starts at speed. Better performance comes together with serious business gains. This is the reason we designed Breeze as an alternative to the classic Magento 2  Luma frontend. Breeze is the modern open source frontend created to increase performance and reduce the development cost. We replaced JS scripts to simplified versions that ensure a development of faster Magento 2 sites. Go on, try it – its future for your website.
 
+![Breeze frontend perfomance](/assets/img/introducing-breeze/breeze_blank_pagespeed.png)
+
 ## What does Breeze stand for?
 
 A frontend javascript stack was designed by using our knowledge of innovative speed technologies and 16 years of experience. The primary goal is to help your store get a 100 score in Google PageSpeed and improve Core Web Vitals. on all metrics. Breeze front contains great features optimally implemented to achieve the best performance. These are Tailwind 3.0 default color palette, Single Page Apps (SPA), and A11y support. There are RTL Direction and 2 starter themes out of the box. That's how Breeze users get faster page load time, simplified development process and smooth experience while interacting.
