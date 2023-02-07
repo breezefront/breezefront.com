@@ -23,7 +23,7 @@ To benefit from better visitor engagement, and increased sales, you may start wi
 
 In addition to front-end performance optimization techniques, Breeze front offers easy integration with Magento 2 modules and Luma-based customizations.  Adding new integrations is easy as Breeze doesn’t modify CSS and HTML of Luma and Blank themes. Start exploring an excellent Breeze documentation website to see the list of compatible modules. 
 
-No words, but striking numbers for Breeze Blank
+## No words, but striking numbers for Breeze Blank
 
 > - Mobile Performance 100
 > - Accessibility 100
