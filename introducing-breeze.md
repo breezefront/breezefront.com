@@ -9,7 +9,7 @@ Breeze is the greatest free product we’ve ever done. We believe the perfect we
 
 ## What does Breeze stand for?
 
-A frontend javascript stack was designed by using our knowledge of innovative speed technologies and 16 years of experience. The primary goal is to help your store get a 100 score in Google PageSpeed and improve Core Web Vitals. on all metrics. Breeze front contains great features optimally implemented to achieve the best performance. These are Tailwind 3.0 default color palette, Single Page Apps (SPA), and A11y support. There are RTL Direction and 2 starter themes out of the box. That's how Breeze users get faster page load time, simplified development process and smooth experience while interacting.
+A frontend javascript stack was designed by using our knowledge of innovative speed technologies and 16 years of experience. The primary goal is to help your store get a 100 score in Google PageSpeed and improve Core Web Vitals on all metrics. Breeze front contains great features optimally implemented to achieve the best performance. These are Tailwind 3.0 default color palette, Single Page Apps (SPA), and A11y support. There are RTL Direction and 2 starter themes out of the box. That's how Breeze users get faster page load time, simplified development process and smooth experience while interacting.
 
 ![Breeze frontend GTMetrix](/assets/img/introducing-breeze/breeze_blank_gtmetrix.png)
 
@@ -21,7 +21,8 @@ To benefit from better visitor engagement, and increased sales, you may start wi
 
 ## Magento 2 extensions are ready for Breeze front
 
-In addition to front-end performance optimization techniques, Breeze front offers easy integration with Magento 2 modules and Luma-based customizations. The increased number of extensions compatible with the fastest Magento 2 front will entitle you to empowering your eCommerce. Adding new integrations is easy as Breeze doesn’t modify CSS and HTML of Luma and Blank themes. Start exploring an excellent Breeze documentation website to see the list of compatible modules. 
+In addition to front-end performance optimization techniques, Breeze front offers easy integration with Magento 2 modules and Luma-based customizations.  Adding new integrations is easy as Breeze doesn’t modify CSS and HTML of Luma and Blank themes. Start exploring an excellent Breeze documentation website to see the list of compatible modules. 
+
 No words, but striking numbers for Breeze Blank
 
 > - Mobile Performance 100
@@ -31,7 +32,7 @@ No words, but striking numbers for Breeze Blank
 
 ## Transforming Magento 2 for future
 
-Breeze front is the Evolution of Magento 2 community products. With the advantages of Breeze front for better and faster performance, the Magento platform got long-term help for eCommerce. Together with extensions providers and design studios we make SMBs ready for more conversions. We welcome and invite everyone with the intention of developing our frontend for faster websites. It will keep the Magento 2 platform scalable with the largest customer base in the eCommerce world. Let's remain in communication with you.
+Breeze front is  the Evolution of Magento 2 Open Source. With the advantages of Breeze front for better and faster performance, the Magento platform got long-term help for eCommerce. Together with extensions providers and design studios we make SMBs ready for more conversions. We welcome and invite everyone with the intention of developing our frontend for faster websites. It will keep the Magento 2 platform scalable with the largest customer base in the eCommerce world. Let's remain in communication with you.
 
 ## We are proud of our clients who were excited to take advantage of the Breeze front. Take a look at these examples to get inspired.
 
