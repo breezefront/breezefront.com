@@ -25,7 +25,7 @@ In addition to front-end performance optimization techniques, Breeze front offer
 
 ## No words, but striking numbers for Breeze Blank
 
-> - Mobile Performance 100
+> - Mobile Performance 98
 > - Accessibility 100
 > - Best Practices 100
 > - Fully Loaded Time 802 ms
