@@ -12,7 +12,7 @@ A frontend javascript stack was designed by using our knowledge of innovative sp
 
 ![Breeze frontend GTMetrix](/assets/img/introducing-breeze/breeze_blank_gtmetrix.png)
 ## Why choose Breeze themes?
-
+ 
 To benefit from better visitor engagement, and increased sales, you may start with free Breeze Blank or Breeze Evolution templates. They will help you build beautiful, fast, and reliable Magento 2 sites. You may choose the light theme with rounded shapes and contrast forms or a minimalistic one to design the new unique theme. Among options you can see responsive images, touch-friendly buttons and page elements, Tailwind 3.0 color palette, and the possibility to add custom styles to the email templates, and much more. There are also premium themes Argento Force and Argento Stripes powered by Breeze. Its advanced functionality is tomorrow's growth of your online business. Start using Breeze themes to make your sales go up!
 
 ## Magento 2 extensions are ready for Breeze front
