@@ -1,3 +1,9 @@
+---
+layout: default
+title: Not Found
+class: prose prose-zink max-w-3xl mx-auto
+---
+
 # Here is the best front end for Magento 2
 
 ## Ready for a fast and reliable front for building new Magento 2 websites? 
