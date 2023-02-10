@@ -12,8 +12,8 @@ describe basic image dimensions and product gallery settings.
 
 Breeze module adds few more settings you can control within view.xml file:
 
- -  [Responsive images sizes and srcsets](/responsive-images)
- -  [Breeze module settings](/settings)
+ -  [Responsive images sizes and srcsets](responsive-images)
+ -  [Breeze module settings](settings)
 
 Here is a shortened version of view.xml file contents:
 

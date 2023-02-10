@@ -7,7 +7,7 @@ order: 200
 
 # Custom styles
 
-> Make sure to [create and change](/child-theme) your theme to `Local/breeze-custom`
+> Make sure to [create and change](child-theme) your theme to `Local/breeze-custom`
 > before start.
 
 There are two entry points for custom styles in Breeze theme:

@@ -41,12 +41,12 @@ var config = {
 };
 ```
 
- -  `deps` &mdash; [Add custom js file](/integration-tips#add-custom-js-file)
- -  `mixins` &mdash; [Migrate mixins](/integration-tips#migrate-mixins)
- -  `map` &mdash; [Migrate widgets](/integration-tips#migrate-widgets), 
-    [uiComponents](/integration-tips#migrate-uicomponents),
-    [functions](/integration-tips#migrate-functions),
-    [objects](/integration-tips#migrate-objects).
+ -  `deps` &mdash; [Add custom js file](#add-custom-js-file)
+ -  `mixins` &mdash; [Migrate mixins](#migrate-mixins)
+ -  `map` &mdash; [Migrate widgets](#migrate-widgets), 
+    [uiComponents](#migrate-uicomponents),
+    [functions](#migrate-functions),
+    [objects](#migrate-objects).
 
 ## Add custom js file
 
@@ -70,7 +70,7 @@ Use `breeze_default.xml` layout update to add new js file:
 </referenceBlock>
 ```
 
-> Read more about [bundles and component registration](/components#component-registration).
+> Read more about [bundles and component registration](components#component-registration).
 
 ## Migrate module CSS
 
@@ -239,7 +239,7 @@ $.view('simpleComponent', {
 
 Breeze doesn't support uiComponents. Hovewer, we have a lightweight
 replacement that can render the same html or knockout template. Read more
-about [view components](/views).
+about [view components](views).
 
 Here is a Breeze equivalent in two steps:
 

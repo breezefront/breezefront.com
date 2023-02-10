@@ -126,7 +126,7 @@ Example:
 
 ## JS components
 
-> Please read the [JS components page](/components) before you proceed further.
+> Please read the [JS components page](components) before you proceed further.
 
 JS component lifecycle in Breeze is pretty similar to Luma's components:
 
@@ -153,7 +153,7 @@ using `breeze_default.xml` layout update:
 ```
 
 Pay attention to the bundle name in the example above and choose the right one
-for your component. See the list of available bundles at [JS components page](/components).
+for your component. See the list of available bundles at [JS components page](components).
 
 Now, let's view a basic example of `js/breeze/component.js` file:
 
@@ -182,7 +182,7 @@ Now, let's view a basic example of `js/breeze/component.js` file:
 })();
 ```
 
-> Please review [Widgets](/widgets) and [Views](/views) pages to get more information
+> Please review [Widgets](widgets) and [Views](views) pages to get more information
 > about these components.
 
 ## Knockout templates

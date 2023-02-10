@@ -7,7 +7,7 @@ order: 210
 
 # Custom Scripts
 
-> Make sure to [create and change](/child-theme) your theme to `Local/breeze-custom`
+> Make sure to [create and change](child-theme) your theme to `Local/breeze-custom`
 > before start.
 
 There are two built-in entry points for custom scripts in Breeze theme:

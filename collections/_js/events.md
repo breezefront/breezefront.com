@@ -31,7 +31,7 @@ order: 500
  -  `breeze:load` --- dispatched when page is loaded.
 
     > Do not use native `DOMContentLoaded` event as it doesn't work in a way
-    > as you may expect when [Turbo mode](/settings) in enabled.
+    > as you may expect when [Turbo mode](settings) in enabled.
 
     Usage Example:
 

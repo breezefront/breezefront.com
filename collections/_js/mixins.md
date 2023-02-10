@@ -26,7 +26,7 @@ $.mixin('componentName', propsToExtend);
 
 ## Example
 
-> [Where to place my custom scripts?](/custom-javascript)
+> [Where to place my custom scripts?](custom-javascript)
 
 ```js
 $.mixin('collapsible', {

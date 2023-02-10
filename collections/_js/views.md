@@ -36,7 +36,7 @@ comparing with uiComponent:
 $.view('name', {});
 ```
 
-Please take a look at the [Widget page](/widgets) first. Since `$.view` and View
+Please take a look at the [Widget page](widgets) first. Since `$.view` and View
 Components have the same abilities as `$.widget` and Widget Components we will not
 repeat the same parts, but focus on differences.
 

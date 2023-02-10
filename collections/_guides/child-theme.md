@@ -62,5 +62,5 @@ Select `Custom Breeze Theme` in the **Applied Theme** dropdown and save the conf
 ---
 
 That's all. You are now using your own custom theme and can override templates,
-[add new styles](/custom-styles), apply layout updates, and
-[change images settings](/image-dimensions).
+[add new styles](custom-styles), apply layout updates, and
+[change images settings](image-dimensions).

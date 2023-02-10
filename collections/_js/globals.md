@@ -214,8 +214,8 @@ $.view('cmpName', {
 
 You can read more information about Widgets and Views at the separate pages:
 
- -  [Widget](/widgets)
- -  [View](/views)
+ -  [Widget](widgets)
+ -  [View](views)
 
 ## Mixin
 

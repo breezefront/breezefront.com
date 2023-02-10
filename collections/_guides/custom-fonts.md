@@ -10,7 +10,7 @@ order: 220
 * TOC
 {:toc}
 
-> Make sure to [create and change](/child-theme) your theme to `Local/breeze-custom`
+> Make sure to [create and change](child-theme) your theme to `Local/breeze-custom`
 > before start.
 
 We'll be using Inter font by Rasmus Andersson, taken from
@@ -73,7 +73,7 @@ Google suggests to add the following rule to our CSS:
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 ```
 
-Since our [custom theme](/child-theme) already has a [Local/breeze-custom/web/css/_custom.less](/custom-styles),
+Since our [custom theme](child-theme) already has a [Local/breeze-custom/web/css/_custom.less](custom-styles),
 all we need is to copy-paste this code into our CSS file.
 
 That's all. Head over [to the next section](#applying-added-font-to-the-selected-elements)
@@ -83,7 +83,7 @@ and apply new font to your site!
 
  1. Put your fonts into the `Local/breeze-custom/web/fonts` folder.
  2. Now, we need to add `@font-face` declarations at the beginning of
-    [Local/breeze-custom/web/css/_custom.less](/custom-styles) file:
+    [Local/breeze-custom/web/css/_custom.less](custom-styles) file:
 
     > We recommend using `@import "custom/base/_fonts.less"`
     > to split your CSS into logical parts.
@@ -136,7 +136,7 @@ and apply new font to your site!
 
 ## Applying added font to the selected elements
 
-Open your [Local/breeze-custom/web/css/_custom.less](/custom-styles) and add
+Open your [Local/breeze-custom/web/css/_custom.less](custom-styles) and add
 the following code to activate the new font:
 
 ```scss

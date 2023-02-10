@@ -100,4 +100,4 @@ the example above:
 
 ## Related guides
 
- - [Setup image dimensions](/image-dimensions)
+ - [Setup image dimensions](image-dimensions)

@@ -15,7 +15,7 @@ order: 300
 
 Widget --- is the main interface to create JS Component. Breeze widgets are very
 similar to Luma's jQuery UI based widgets. Sometimes, you can even
-[reuse the same file](/integration-tips#how-to-reuse-js-widgets) for both
+[reuse the same file](integration-tips#how-to-reuse-js-widgets) for both
 Luma and Breeze Themes
 
 ## $.widget function
@@ -47,7 +47,7 @@ There are three main parts in widget declaration:
 
  -  `$.widget` function call
  -  Widget name --- The name is used for event names and to work with
-    widget [programmatically](/components#programmatic-usage).
+    widget [programmatically](components#programmatic-usage).
  -  Object with methods and properties --- A prototype to use when creating
     widget instance.
 
@@ -198,7 +198,7 @@ will be called twice.
 ### destroy
 
 Component destructor. It's called before the page unload event when
-[Turbo mode](/settings) is enabled.
+[Turbo mode](settings) is enabled.
 Since base Widget class has its own destroy logic you should call `this._super()`
 inside your destroy method.
 
