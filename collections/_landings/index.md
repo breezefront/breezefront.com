@@ -76,7 +76,7 @@ description: High performance frontend for Magento 2
   <h2 class="text-center text-4xl font-extrabold leading-10 tracking-tight">
     Frequently asked questions
   </h2>
-  <p class="mt-5 mx-auto max-w-2xl text-lg text-center text-zinc-500">
+  <p class="mt-5 mx-auto max-w-3xl text-lg text-center text-zinc-500">
     Have a different question and can’t find the answer you’re looking for?
     Reach out to us by <a class="font-semibold text-blue-600 hover:text-blue-500" href="https://github.com/breezefront/community/discussions" target="_blank" rel="noopener">creating a discussion at GitHub</a>
     and we’ll respond to you as soon as we can.
