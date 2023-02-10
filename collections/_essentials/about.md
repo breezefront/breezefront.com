@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: docs
 title: About
 order: 100
+navigation: false
 ---
 
 # About

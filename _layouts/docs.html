@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body class="docs antialiased {%- if page.body %} {{ page.body }} {%- endif -%}">
+    <a href="#main" class="skip-to-content">Skip to Content</a>
+    <div class="md:ml-64 lg:ml-72 xl:ml-80">
+      <header class="contents md:pointer-events-none md:fixed md:inset-0 md:z-40 md:flex">
+        <div data-preserve-scroll class="flex items-center p-4 sm:px-6 sm:py-5 overscroll-contain md:px-8 md:py-6 lg:py-8 md:pointer-events-auto md:block md:w-64 lg:w-72 md:overflow-y-auto md:border-r md:border-zinc-900/10 xl:w-80">
+          <a class="rounded-full inline-block" href="{{ '/' | relative_url }}" aria-label="Home">
+            {%- include logo-round.svg -%}
+          </a>
+          {% include docs/navigation.html %}
+        </div>
+      </header>
+      <main id="main" class="prose prose-zinc xl:max-w-[70ch] p-4 sm:px-6 sm:py-5 md:px-8 md:py-7 lg:py-9">
+        {{ content }}
+        {%- if page.pagination != false %}
+          {%- include docs/pagination.html %}
+        {%- endif %}
+      </main>
+    </div>
+
+    {%- if site.url != "http://localhost:4000" %}
+    <script>
+      gtag('set', 'page_path', location.pathname + location.search);
+      gtag('event', 'page_view');
+    </script>
+    {%- endif %}
+  </body>
+</html>

@@ -1,0 +1,196 @@
+- name: swissup/*
+  url: https://swissuplabs.com/magento-extensions.html?cat=17
+  description: >
+    More than 40 compatible modules from Breeze frontend authors! All modules
+    are compatible except of:
+    <ul>
+      <li>
+        Lightboxpro is not supported because we use our own lightweight
+        gallery in Breeze.
+      </li>
+      <li>
+        Pagebuilder is not supported because it's not a finished product,
+        and we focus on magento/pagebuilder support for now.
+      </li>
+    </ul>
+  require:
+    - swissup/breeze^2.0
+    - swissup/module-breeze-integrations^1.2
+
+- name: magento/*
+  url: https://magento.com/
+  description: >
+    Breeze supports almost all modules that are the part of Magento OpenSource
+    edition. Here is the list of partially/not supported modules:
+    <ul>
+      <li>magento/multishipping is not supported by Breeze Themes.</li>
+      <li>
+        magento/paypal - smart button at product page is not supported due to
+        extra large amount of JS code required.
+        We recommend to use old paypal express button instead.
+      </li>
+    </ul>
+  require:
+    - magento/project-community-edition^2.4.4
+    - swissup/breeze^2.0
+
+- name: amasty/mostviewed
+  url: https://amasty.com/automatic-related-products-for-magento-2.html
+  description: >
+    Automatic Related Products extension dynamically showcase
+    related product offers and enables smart personalized recommendations on
+    the website, thus motivating customers to
+    complement their orders with extra items.
+  require:
+    - amasty/mostviewed^2.13
+    - swissup/breeze^2.0
+    - swissup/breeze-integrations^1.2.4
+
+- name: amasty/xnotif
+  url: https://amasty.com/out-of-stock-notification-for-magento-2.html
+  description: >
+    Stock notification module. Check the number of new stock and price
+    subscriptions, view the list of subscribers for a particular product, see
+    the "most wanted" products and "recent activity" subscriptions, and many more.
+  note: Not tested with Breeze Theme.
+  require:
+    - amasty/xnotif^1.14
+    - swissup/breeze^2.0
+    - swissup/breeze-integrations^1.1.1
+
+- name: amasty/xsearch
+  url: https://amasty.com/advanced-search-for-magento-2.html
+  description: >
+    Advanced Search module helps customers smoothly navigate through the
+    website and quickly find desired products. Show related, recent, and popular
+    keywords to upsell via flexibly customizable autocomplete popup.
+  require:
+    - amasty/xsearch^1.18
+    - swissup/breeze^2.0
+    - swissup/module-breeze-amasty-xsearch^1.0.2
+
+- name: backendorf/installment
+  url: https://github.com/DaviBackendorf/magento2-installment
+  description: >
+    This module allows you to view the values of installments and discounts
+    on the frontend.
+  require:
+    - backendorf/module-installment^1.0
+    - swissup/breeze^2.0
+    - swissup/module-breeze-backendorf-installment^1.0.1
+
+- name: landofcoder/estimate-shipping-rate
+  url: https://github.com/landofcoder/module-simple-calculate-shipping-rate
+  description: >
+    This module allows you to calculate shipping rates on product page.
+  require:
+    - landofcoder/module-estimate-shipping-rate^1.0
+    - swissup/breeze^2.0
+    - swissup/module-breeze-landofcoder-estimate-shipping-rate^1.0.1
+
+- name: magecomp/*
+  url: https://magecomp.com/magento-2-extensions.html
+  description: >
+    Magecomp company provides Breeze integrations for all of their modules.
+  note: Contact the Magecomp company about additional requirements per each module.
+  require:
+    - swissup/breeze^2.0
+
+- name: magefan/blog
+  url: https://magefan.com/magento2-blog-extension
+  description: >
+    This extension allows you to manage your store together
+    with a blog from one place without having to rely on any second platform.
+    There's no need to install WordPress or other platforms additionally in order
+    to have a blog on the Magento store!
+  require:
+    - magefan/blog^2.10
+    - swissup/breeze^2.0
+    - swissup/module-breeze-magefan-blog^1.0
+
+- name: magenable/purchase-partner-url
+  url: https://github.com/magenable/module-purchase-partner-url
+  description: >
+    This module allows you to calculate shipping rates on product page.
+  require:
+    - magenable/purchase-partner-url^1.4.3
+    - swissup/breeze^2.0
+
+- name: mageworx/advancedproductoptions
+  url: https://www.mageworx.com/magento-2-advanced-product-options-suite.html
+  description: >
+    Powerful module to manage product customizable options.
+  require:
+    - mageworx/advancedproductoptions^1.4.3
+    - swissup/breeze^2.0
+    - swissup/module-breeze-mageworx-advancedproductoptions^1.1.1
+
+- name: meetanshi/*
+  url: https://meetanshi.com/magento-2-extensions.html
+  description: Meetanshi provides Breeze integrations for all of their modules.
+  note: Contact the Meetanshi company about additional requirements per each module.
+  require:
+    - swissup/breeze^2.0
+
+- name: mirasvit/cachewarmer
+  url: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
+  description: >
+    This extension automatically adds pages to the cache and thus, speeds up
+    your store! Whenever your customer or Google visits a page, its most recent
+    variant will be loaded in a fraction of seconds from the cache.
+  note: Debug toolbar is not integrated with Breeze Theme.
+  require:
+    - mirasvit/cachewarmer^1.5
+    - swissup/breeze^2.0
+    - swissup/module-breeze-integrations^1.1
+
+- name: mirasvit/googletagmanager
+  url: https://mirasvit.com/magento-2-google-tag-manager.html
+  description: >
+    The Google Tag Manager & Facebook Pixel extension is a simple way to get
+    eCommerce Tracking in Google Analytics for your store. Get in-depth reports
+    on your customers' behavior while they are shopping. See the bottlenecks of
+    the shopping process in your store.
+  require:
+    - mirasvit/googletagmanager^1.2
+    - swissup/breeze^2.0
+    - swissup/module-breeze-integrations^1.2
+
+- name: mirasvit/search-ultimate
+  url: https://mirasvit.com/magento-2-extensions/sphinx-search-ultimate.html
+  description: >
+    Incredibly relevant search results, ultra-fast search autocomplete,
+    stopwords and synonyms for search queries.
+  note: Typeahead and Fullsize layout are not integrated.
+  require:
+    - mirasvit/module-search-ultimate^1.2
+    - swissup/breeze^2.0
+    - swissup/module-breeze-mirasvit-search-ultimate^1.0.1
+
+- name: paypal/braintree
+  url: https://marketplace.magento.com/paypal-module-braintree.html
+  description: Braintree payment method.
+  require:
+    - paypal/module-braintree^4.2
+    - swissup/breeze^2.0
+    - swissup/module-breeze-paypal-braintree^1.0
+
+- name: smile/elasticsuite
+  url: https://elasticsuite.io/
+  description: >
+    The Ultimate eCommerce Searchandising Toolbox.
+  require:
+    - smile/elasticsuite^2.10
+    - swissup/breeze^2.0
+    - swissup/module-breeze-smile-elasticsuite^1.0
+
+- name: ulmod/bundle-item
+  url: https://www.ulmod.com/magento-2-bundle-items-url.html
+  description: >
+    Add a link of each bundle product option/item under the bundle edit page in
+    the backend, allowing store admins to easily access and edit options of
+    bundle products.
+  require:
+    - ulmod/module-bundle-item^2.0
+    - swissup/breeze^2.0
+    - swissup/module-breeze-ulmod-bundle-item^1.0.2

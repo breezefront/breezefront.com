@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: CMS Elements
 description: Collection of custom html elements.
 order: 90

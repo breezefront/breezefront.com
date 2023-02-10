@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Settings
 description: Breeze settings
 order: 300

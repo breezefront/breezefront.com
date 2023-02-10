@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: RTL Direction
 description: RTL direction support in Breeze
 order: 600

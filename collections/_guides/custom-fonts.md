@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Custom Fonts
 description: How to add custom font in Breeze-based theme.
 order: 220

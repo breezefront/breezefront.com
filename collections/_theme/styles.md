@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Styles
 description: Breeze styles organization
 order: 300

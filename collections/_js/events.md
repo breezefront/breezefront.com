@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Events
 description: The list of events dispatched by Breeze Frontend
 order: 500

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: View.xml
 description: Breeze theme view.xml file
 order: 200

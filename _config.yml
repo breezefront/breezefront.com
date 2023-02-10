@@ -14,36 +14,33 @@ defaults:
 
 collections_dir: collections
 collections:
-  essentials:
+  landings:
     output: true
     permalink: /:name
+  essentials:
+    output: true
+    permalink: /docs/:name
     navigation: true
     title: Essentials
     order: 10
   theme:
     output: true
-    permalink: /:name
+    permalink: /docs/:name
     navigation: true
     title: Theme
     order: 20
   js:
     output: true
-    permalink: /:name
+    permalink: /docs/:name
     navigation: true
     title: JS
     order: 30
   guides:
     output: true
-    permalink: /:name
+    permalink: /docs/:name
     navigation: true
     title: Guides
     order: 40
-  misc:
-    output: true
-    permalink: /:name
-    navigation: true
-    title: Misc
-    order: 50
 
 markdown: kramdown
 kramdown:

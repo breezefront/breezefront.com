@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Globals
 description: Global JS variables in Breeze
 order: 100

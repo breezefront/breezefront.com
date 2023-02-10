@@ -1,60 +1,41 @@
-<nav id="nav">
-  <input type="checkbox" id="nav-toggler"/>
-  <label class="nav-toggler" for="nav-toggler">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<div class="nav-toggler ml-auto md:hidden">
+  <input class="hidden" type="checkbox" id="nav-toggler"/>
+  <label class="nav-icon block h-6 w-6 cursor-pointer relative z-50" for="nav-toggler">
+    <svg class="nav-open absolute w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
-    {%- if page.collection %}
-      {%- assign group = site.collections | where: "label", page.collection | first -%}
-      <span class="parent">
-        {{ group.title }}
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </span>
-    {%- endif %}
-    {{ page.title }}
+    <svg class="nav-close absolute w-6 h-6 opacity-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
   </label>
-  <ul>
-    {%- comment -%}
-    <li>
-      <h5><a class="{% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Welcome</a></h5>
-    </li>
-    {%- endcomment -%}
-    {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
-    {% for section in sections %}
-      {% assign draft = false %}
-      {%- if section.draft == true -%}
-        {%- assign draft = true -%}
+  <label class="nav-overlay opacity-0 invisible pointer-events-none fixed bg-black/20 inset-0 z-30 transition-opacity" for="nav-toggler"></label>
+</div>
+
+<div class="nav items-center grow
+  opacity-0 pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 md:opacity-100 md:pointer-events-auto md:translate-y-0 md:flex md:static md:shadow-none md:p-0 md:gap-3">
+  {%- assign activeClass = 'underline decoration-2 underline-offset-4 text-zinc-800' -%}
+  <ul class="flex flex-col md:flex-row md:items-center md:gap-1 lg:gap-3 mx-auto">
+    {%- assign items = site.landings | sort: 'order' -%}
+    {% for item in items %}
+      {%- if item.navigation == false -%}
+        {%- continue -%}
       {%- endif -%}
-      <li>
-        <h5 class="{%- if draft %}draft{% endif -%}">{{ section.title }}</h5>
-        {%- assign articles = site[section.label] | sort: 'order' -%}
-        {%- if articles.size > 0 %}
-          <ul>
-          {%- for article in articles %}
-            {%- if article.disabled == true -%}
-              {%- continue -%}
-            {%- endif -%}
-            {%- assign draft = false %}
-            {%- if section.draft == true or article.draft == true %}
-              {%- assign draft = true %}
-            {%- endif %}
-            <li>
-              <a class="{%- if article.url == page.url %}active{% endif -%}{%- if draft %}draft{% endif -%}" {%- if draft %} tabindex="-1" {%- endif %} href="
-                {%- unless draft -%}
-                  {{ article.url | relative_url }}
-                {%- else -%}
-                  #
-                {%- endunless -%}
-              ">
-                {{- article.title -}}
-              </a>
-            </li>
-          {%- endfor %}
-          </ul>
-        {%- endif %}
-      </li>
+
+      {%- assign title = item.title -%}
+      {%- if item.navigation != true and item.navigation != null -%}
+        {%- assign title = item.navigation -%}
+      {%- endif -%}
+
+      {%- assign css = 'text-zinc-600' -%}
+      {%- if item.url == page.url -%}
+        {%- assign css = activeClass -%}
+      {%- endif -%}
+
+      <li><a class="flex p-2 py-1.5 rounded hover:text-zinc-800 md:px-3 md:py-1.5 lg:px-4 {{ css }}" href="{{ item.url | relative_url }}">{{ title }}</a></li>
     {%- endfor %}
   </ul>
-</nav>
+  <ul class="flex flex-col md:flex-row md:items-center md:gap-1 lg:gap-3">
+    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 {%- if page.url == '/updates' %} {{ activeClass }} {%- endif -%}" href="{{ 'updates' | relative_url }}">Changelog</a></li>
+    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 md:text-white md:hover:text-white md:bg-zinc-900" href="{{ 'docs/installation' | relative_url }}">Docs</a></li>
+  </ul>
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Mixins
 description: Overriding built-in Breeze components using mixins
 order: 450

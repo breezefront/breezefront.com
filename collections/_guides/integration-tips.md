@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Integration Tips
 description: >
     How to integrate existing Luma-based module and theme with Breeze frontend

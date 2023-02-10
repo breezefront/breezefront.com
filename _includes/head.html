@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<title>Breeze | {{ page.title }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
+{% if page.keywords %}<meta name="keywords" content="{{ page.keywords | strip_newlines }}">{% endif %}
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/favicon-apple.png' | relative_url }}">
+<link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+{%- if page.gallery == true %}
+<link type="text/css" rel="stylesheet" href="{{ '/assets/lib/photoswipe/photoswipe.css?v=1' | relative_url }}" />
+{%- endif %}
+<link rel="stylesheet" href="{{ '/assets/dist/styles.css?v=7' | relative_url }}">
+<script src="{{ '/assets/lib/turbolinks.min.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/lib/anchor.min.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/lib/gumshoe.min.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/scripts.js?v=2' | relative_url }}" defer></script>
+
+{%- if site.url != "http://localhost:4000" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HLVK26JBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5HLVK26JBW');
+</script>
+{%- endif %}

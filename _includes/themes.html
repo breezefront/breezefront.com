@@ -1,0 +1,66 @@
+{%- assign images = site.static_files | where: "image", true -%}
+
+<div class="max-w-4xl grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2 gap-y-3 sm:gap-6 sm:gap-y-8 my-12 mx-auto not-prose sm:mt-16">
+{% for theme in site.data.themes %}
+  {%- assign marker = theme.media | append: '/demo-' -%}
+  {%- assign srcset = '' -%}
+  {%- assign src = '' -%}
+  {%- for image in images -%}
+    {%- unless image.path contains marker -%}
+      {% continue %}
+    {%- endunless -%}
+
+    {%- assign src = image.path -%}
+    {%- assign width = image.path | split: '-' | last | split: '.' | first -%}
+    {%- assign srcset = srcset | append: ', '
+      | append: image.path
+      | append: ' '
+      | append: width
+      | append: 'w'
+    -%}
+  {%- endfor %}
+  {%- assign srcset = srcset | replace_first: ', ', '' %}
+
+  <div>
+    <div class="group relative rounded shadow-[rgb(0_0_0_/_30%)_0px_10px_20px_-20px] after:rounded after:border after:border-black/5 after:absolute after:inset-0 after:pointer-events-none before:bg-gradient-to-t from-white/60 to-white/20 before:absolute before:inset-0 before:rounded before:pointer-events-none before:transition before:opacity-0 hover:before:opacity-100">
+      <a href="{{ theme.demo }}" target="_blank" rel="noopener">
+        <img class="inline-block rounded"
+          src="{{ src }}"
+          srcset="{{ srcset }}"
+          sizes="(max-width: 639px) calc((100vw - 2.5rem) / 2), (max-width: 960px) calc((100vw - 7rem) / 3), 283px"
+          alt="{{ theme.title }}"
+          {% if forloop.index > 2 %}
+            loading="lazy"
+          {% endif %}
+          width="283"
+          height="339"/>
+      </a>
+      <div class="flex flex-col gap-2 absolute bottom-2 left-2 right-2 sm:bottom-5 sm:left-5 sm:right-5 transition opacity-0 pointer-events-none translate-y-1.5 group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto hover-none:translate-y-0 hover-none:opacity-100 hover-none:pointer-events-auto">
+        {% unless theme.gallery == false %}
+          <button class="rounded-lg bg-white font-semibold px-5 py-3 text-center whitespace-nowrap text-sm md:text-base leading-tight shadow-lg overflow-hidden text-ellipsis focus-visible:ring-black" tabindex="-1" data-gallery="{{ theme.media }}">View Screenshots</button>
+        {% endunless %}
+        <a class="rounded-lg bg-zinc-900 text-white font-semibold px-5 py-3 text-center whitespace-nowrap text-sm md:text-base leading-tight shadow-lg overflow-hidden text-ellipsis hover-none:hidden focus-visible:ring-black" href="{{ theme.demo }}" tabindex="-1" target="_blank" rel="noopener">View Demo</a>
+      </div>
+    </div>
+    <div class="flex flex-col mt-2">
+      <div class="flex gap-1 items-start justify-between">
+        <a class="md:text-lg font-semibold text-zinc-900 hover:underline" href="{{ theme.demo }}" tabindex="-1" target="_blank" rel="noopener">{{ theme.title }}</a>
+        {% if theme.buy %}
+          <a class="text-xs font-semibold rounded-full mt-0.5 px-3 py-1 bg-amber-300 transition hover:bg-zinc-900 hover:text-white" href="{{ theme.buy }}" tabindex="-1" target="_blank" rel="noopener">Buy</a>
+        {% endif %}
+      </div>
+      <p class="text-zinc-500">{{ theme.description }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<div class="hidden">
+{%- for theme in site.data.themes -%}
+  {%- if theme.gallery == false -%}
+    {%- continue -%}
+  {%- endif -%}
+
+  {%- include docs/gallery.html dir=theme.media width="350" height="250" animation="fade" -%}
+{%- endfor -%}
+</div>

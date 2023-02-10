@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Image Dimensions
 description: How to properly configure image dimensions for the Breeze Frontend
 order: 300

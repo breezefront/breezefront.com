@@ -1,0 +1,37 @@
+- q: What is Breeze?
+  a: >
+    Breeze is a free, open-source performant frontend for Magento 2.
+    It consists of two parts:
+    <ul>
+      <li>
+        A module that replaces default JS stack with our own implementation.
+        We removed a bunch of js libraries and greatly reduced script evaluation
+        time. This part could be used on top of custom Luma-based theme.
+      </li>
+      <li>
+        A theme created from scratch with built-in critical and deferred CSS splitting,
+        razor sharp images for all devices, RTL support, keyboard navigation.
+        It doesn't use Luma or Blank theme as its base.
+      </li>
+    </ul>
+    Take a look at live demos on the <a href="/themes">separate page</a>.
+
+- q: What JS was removed?
+  a: We removed everything except Knockout.
+
+- q: Why did you keep Knockout?
+  a: >
+    We did that for easier migration from Luma to Breeze stack. In future, we
+    plan to remove it from our integrations and dynamically inject it into the
+    page only if some module will require it.
+
+- q: Can I use Breeze with my Luma-based theme?
+  a: Yes, you can install <code>swissup/breeze</code> module separately.
+
+- q: Will my current modules work with Breeze?
+  a: No, if it uses JS.
+
+- q: How do I integrate my modules with Breeze?
+  a: >
+    You can read our <a href="/docs/integration-tips">integration tips</a>
+    but we recommend to hire a professional developer for this.

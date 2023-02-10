@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Views
 description: Creating a View Component in Breeze
 order: 400

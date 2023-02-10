@@ -2,14 +2,14 @@ var spy = false,
   scrollTop = 0;
 
 addEventListener("turbolinks:before-render", function () {
-  if (document.querySelector('aside')) {
-    scrollTop = document.querySelector('aside').scrollTop;
+  if (document.querySelector('[data-preserve-scroll]')) {
+    scrollTop = document.querySelector('[data-preserve-scroll]').scrollTop;
   }
 });
 
 document.addEventListener('turbolinks:render', () => {
-  if (document.querySelector('aside')) {
-    document.querySelector('aside').scrollTop = scrollTop;
+  if (document.querySelector('[data-preserve-scroll]')) {
+    document.querySelector('[data-preserve-scroll]').scrollTop = scrollTop;
   }
 
   if (!spy || !document.getElementById('markdown-toc')) {
@@ -25,7 +25,9 @@ document.addEventListener('turbolinks:render', () => {
 });
 
 document.addEventListener('turbolinks:load', () => {
-  anchors.add('.prose h2:not(.subtitle), .prose h3:not(.subtitle), .prose h4, .prose h5');
+  if (!document.querySelector('body.no-anchors')) {
+    anchors.add('.prose h2:not(.subtitle), .prose h3:not(.subtitle), .prose h4, .prose h5');
+  }
 
   if (!spy && document.getElementById('markdown-toc')) {
     spy = new Gumshoe('#markdown-toc a', {
@@ -37,6 +39,16 @@ document.addEventListener('turbolinks:load', () => {
   if (window.location.hash && document.querySelector(window.location.hash)) {
     document.querySelector(window.location.hash).scrollIntoView();
   }
+});
+
+document.addEventListener('click', (e) => {
+  const gallery = e.target.dataset.gallery;
+
+  if (!gallery) {
+    return;
+  }
+
+  document.querySelector(`#gallery-${gallery} img`).click();
 });
 
 document.addEventListener("DOMContentLoaded", () => {

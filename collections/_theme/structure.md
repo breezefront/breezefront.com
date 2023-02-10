@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Structure
 description: Theme folder structure
 order: 100

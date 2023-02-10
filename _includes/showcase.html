@@ -1,0 +1,111 @@
+{%- assign images = site.static_files | where: "image", true -%}
+
+<div class="max-w-5xl grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2 gap-y-3 sm:gap-3 my-12 mx-auto not-prose sm:mt-16">
+{% for store in site.data.showcase %}
+  {%- assign title = store.url
+    | replace: 'https://', ''
+    | replace: 'http://', ''
+    | replace: 'www.', ''
+    | replace: '/', ''
+  -%}
+
+  {%- assign avgScore = 0 -%}
+  {%- assign minScore = 100 -%}
+  {%- assign maxScore = 0 -%}
+
+  {%- for data in store.scores -%}
+    {%- assign score = data[1] -%}
+    {%- assign avgScore = avgScore | plus: score -%}
+
+    {%- if score < minScore -%}
+      {%- assign minScore = score -%}
+    {%- endif -%}
+
+    {%- if score > maxScore -%}
+      {%- assign maxScore = score -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign avgScore = avgScore | divided_by: store.scores.size | round -%}
+
+  {%- assign scoreBg = 'bg-green-500' -%}
+  {%- if avgScore < 50 -%}
+    {%- assign scoreBg = 'bg-red-500' -%}
+  {%- elsif avgScore < 90 -%}
+    {%- assign scoreBg = 'bg-amber-500' -%}
+  {%- endif -%}
+
+  {%- assign srcset = '' -%}
+  {%- assign src = '' -%}
+  {%- for image in images -%}
+    {%- unless image.path contains title -%}
+      {% continue %}
+    {%- endunless -%}
+
+    {%- assign src = image.path -%}
+    {%- assign width = image.path | split: '-' | last | split: '.' | first -%}
+    {%- assign srcset = srcset | append: ', '
+      | append: image.path
+      | append: ' '
+      | append: width
+      | append: 'w'
+    -%}
+  {%- endfor %}
+  {%- assign srcset = srcset | replace_first: ', ', '' %}
+
+  <div class="sm:p-3 lg:p-6 rounded-md group transition sm:bg-zinc-50 sm:hover:bg-zinc-100">
+    <a class="block relative rounded shadow-[rgb(0_0_0_/_30%)_0px_10px_20px_-20px] after:rounded after:border after:border-black/5 after:absolute after:inset-0 after:pointer-events-none" href="{{ store.url }}" target="_blank" rel="noopener nofollow">
+      <img class="inline-block rounded"
+        src="{{ src }}"
+        srcset="{{ srcset }}"
+        sizes="(max-width: 639px) calc((100vw - 2.5rem) / 2), (max-width: 1023px) calc((100vw - 10rem) / 3), 285px"
+        alt="{{ title }}"
+        {% if forloop.index > 2 %}
+          loading="lazy"
+        {% endif %}
+        width="285"
+        height="342"/>
+    </a>
+    <div class="flex flex-col mt-2">
+      <div class="lg:flex justify-between items-start">
+        <a class="lg:pr-6 break-words font-semibold text-zinc-900 md:text-lg lg:break-normal lg:whitespace-nowrap lg:text-ellipsis lg:overflow-hidden lg:max-w-[calc(100%-80px)] hover:underline" href="{{ store.url }}" tabindex="-1" target="_blank" rel="noopener nofollow">
+          {{ title }}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="hidden lg:inline w-5 h-5 -ml-5 translate-x-5 opacity-0 group-hover:opacity-100">
+            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <div class="group/score cursor-default relative z-10 hidden lg:flex justify-center items-center gap-1 whitespace-nowrap mt-0.5 px-1.5 pr-2 py-0.5 rounded-full text-white text-sm font-semibold {{ scoreBg }}">
+          <svg class="w-4 h-4 -mt-px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.1 231.9l-47.5 75.5a31 31 0 01-7 7 30.11 30.11 0 01-35-49l75.5-47.5a10.23 10.23 0 0111.7 0 10.06 10.06 0 012.3 14z"/><path d="M256 64C132.3 64 32 164.2 32 287.9a223.18 223.18 0 0056.3 148.5c1.1 1.2 2.1 2.4 3.2 3.5a25.19 25.19 0 0037.1-.1 173.13 173.13 0 01254.8 0 25.19 25.19 0 0037.1.1l3.2-3.5A223.18 223.18 0 00480 287.9C480 164.2 379.7 64 256 64z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 128v32M416 288h-32M128 288H96M165.49 197.49l-22.63-22.63M346.51 197.49l22.63-22.63"/></svg>
+          <span>{{ minScore }}-{{ maxScore }}</span>
+          <div class="absolute top-full right-0 w-44 p-2 px-3 mt-1 rounded-lg bg-white shadow-xl text-zinc-800 transition origin-top-right scale-95 invisible opacity-0 group-hover/score:opacity-100 group-hover/score:scale-100 group-hover/score:visible">
+            <p class="font-bold py-1">Avg. mobile score</p>
+            <ul class="space-y-px text-zinc-500">
+              {%- for data in store.scores -%}
+                {%- assign score = data[1] -%}
+
+                {%- assign css = 'bg-green-500' -%}
+                {%- if score < 50 -%}
+                  {% assign css = 'bg-red-500' -%}
+                {%- elsif score < 90 -%}
+                  {%- assign css = 'bg-amber-500' -%}
+                {%- endif -%}
+
+                {%- if forloop.first -%}
+                  {%- assign css = css | append: ' rounded-t' -%}
+                {%- elsif forloop.last -%}
+                  {%- assign css = css | append: ' rounded-b' -%}
+                {%- endif %}
+                <li class="flex justify-between items-center gap-4">
+                  {{ data[0] }}
+                  <span class="w-8 p-0.5 px-1 {{ css }} text-white text-center tracking-tighter">{{ score }}</span>
+                </li>
+
+              {%- endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-zinc-500">{{ store.description }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Custom Module
 description: How to write Breeze-friendly module for Magento
 order: 500

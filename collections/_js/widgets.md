@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Widgets
 description: Creating a Widget Component in Breeze
 order: 300

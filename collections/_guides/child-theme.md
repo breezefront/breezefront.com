@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Child Theme
 description: How to create custom Breeze-based theme.
 order: 100

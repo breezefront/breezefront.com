@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Custom Styles
 description: How to add styles using custom Breeze-based theme.
 order: 200

@@ -1,0 +1,76 @@
+<div class="pagination">
+  {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
+  {%- assign current = false -%}
+  {%- assign previous = false -%}
+  {%- assign next = false -%}
+
+  {%- for section in sections -%}
+    {%- if next -%}
+      {% break %}
+    {%- endif -%}
+
+    {%- if section.draft -%}
+      {% continue %}
+    {%- endif -%}
+
+    {%- assign articles = site[section.label] | sort: 'order' -%}
+    {%- for article in articles -%}
+      {%- if article.navigation == false -%}
+        {% continue %}
+      {%- endif -%}
+
+      {%- if article.draft -%}
+        {% continue %}
+      {%- endif -%}
+
+      {%- if current %}
+        {%- assign next = article -%}
+        {% break %}
+      {%- endif -%}
+
+      {%- if article.url == page.url -%}
+        {%- assign current = article -%}
+      {%- endif -%}
+
+      {%- if current == false -%}
+        {%- assign previous = article -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+
+  {%- if previous -%}
+    {%- assign group = site.collections | where: "label", previous.collection | first %}
+    <a href="{{ previous.url | relative_url }}" class="prev" title="{{ previous.title }}">
+      Previous
+      <span>
+        {%- if page.collection != previous.collection %}
+          {{ group.title }}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        {%- endif %}
+        {{ previous.title }}
+      </span>
+    </a>
+  {%- else %}
+    <span class="prev">Previous</span>
+  {%- endif -%}
+
+  {%- if next -%}
+    {%- assign group = site.collections | where: "label", next.collection | first %}
+    <a href="{{ next.url | relative_url }}" class="next" title="{{ next.title }}">
+      Next
+      <span>
+        {%- if page.collection != next.collection %}
+          {{ group.title }}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        {%- endif %}
+        {{ next.title }}
+      </span>
+    </a>
+  {%- else %}
+    <span class="next">Next</span>
+  {%- endif %}
+</div>

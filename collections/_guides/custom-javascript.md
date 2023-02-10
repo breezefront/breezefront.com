@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Custom Scripts
 description: How to add custom javascript to the Breeze-based theme.
 order: 210

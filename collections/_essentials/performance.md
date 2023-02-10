@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Performance
 description: How to get maximum performance with Breeze Theme
 order: 400

@@ -1,0 +1,154 @@
+- url: https://signsupplier.co.uk/
+  description: High quality business signs
+  scores:
+    Homepage: 98
+    Category: 98
+    Product: 97
+
+- url: https://www.made-in-meubles.com/
+  description: Furniture
+  scores:
+    Homepage: 80
+    Category: 35
+    Product: 58
+
+- url: https://www.e35shop.com/
+  description: Fashion clothes and accessories
+  scores:
+    Homepage: 96
+    Category: 100
+    Product: 99
+
+- url: https://www.kellykettle.ca/
+  description: Outdoor cooking
+  scores:
+    Homepage: 99
+    Category: 85
+    Product: 96
+
+- url: https://www.lithobee.com/
+  description: Printed wall art
+  scores:
+    Homepage: 84
+    Category: 84
+    Product: 84
+
+- url: https://millingandturningtech.com/
+  description: Milling machinery
+  scores:
+    Homepage: 97
+    Category: 92
+    Product: 94
+
+- url: https://awsupply.com/
+  description: Building maintenance supply
+  scores:
+    Homepage: 66
+    Category: 91
+    Product: 93
+
+- url: https://eleather.it/
+  description: Leather apparel
+  scores:
+    Homepage: 95
+    Category: 96
+    Product: 90
+
+- url: https://boma.ua/
+  description: Children's clothing
+  scores:
+    Homepage: 60
+    Category: 96
+    Product: 98
+
+- url: https://www.impressionslast.com/
+  description: Decanters and barware
+  scores:
+    Homepage: 99
+    Category: 74
+    Product: 85
+
+- url: https://www.mydreamday.se/
+  description: Party planning and organization
+  scores:
+    Homepage: 82
+    Category: 76
+    Product: 89
+
+
+- url: https://mafukoo.com/
+  description: Jewelry store
+  scores:
+    Homepage: 84
+    Category: 82
+    Product: 79
+
+- url: https://motospeeds.com/
+  description: Motorcycle gear
+  scores:
+    Homepage: 78
+    Category: 82
+    Product: 73
+
+- url: https://www.colorit.ro/
+  description: Painting materials for artists
+  scores:
+    Homepage: 82
+    Category: 71
+    Product: 71
+
+- url: https://ecrystal.pl/
+  description: Lamps and ceiling lights
+  scores:
+    Homepage: 68
+    Category: 74
+    Product: 75
+
+- url: https://www.optimill-uk.com/
+  description: Land Rover parts
+  scores:
+    Homepage: 80
+    Category: 95
+    Product: 89
+
+- url: https://www.minisport.com/
+  description: Mini Cooper parts
+  scores:
+    Homepage: 74
+    Category: 82
+    Product: 78
+
+- url: https://altitec.no/
+  description: Batteries and chargers supplier
+  scores:
+    Homepage: 66
+    Category: 70
+    Product: 60
+
+- url: https://premiumkilts.com/
+  description: Premium kilts
+  scores:
+    Homepage: 70
+    Category: 74
+    Product: 75
+
+# - url: https://www.sirri.co.uk/
+#   description: Apparel store
+#   scores:
+#     Homepage: 65
+#     Category: 65
+#     Product: 74
+
+- url: https://www.spotix.com/
+  description: Fire pits and outdoor cooking
+  scores:
+    Homepage: 44
+    Category: 42
+    Product: 41
+
+- url: https://www.rainclear.co.uk/
+  description: Metal rainwater, roofline, drainage
+  scores:
+    Homepage: 19
+    Category: 17
+    Product: 16

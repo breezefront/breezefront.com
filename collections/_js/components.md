@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Components
 description: Writing Breeze JS Components
 order: 200

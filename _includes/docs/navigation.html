@@ -1,0 +1,63 @@
+<div class="nav-toggler ml-auto md:hidden">
+  <input class="hidden" type="checkbox" id="nav-toggler"/>
+  <label class="nav-icon block h-6 w-6 cursor-pointer relative z-50" for="nav-toggler">
+    <svg class="nav-open absolute w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <svg class="nav-close absolute w-6 h-6 opacity-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </label>
+  <label class="nav-overlay opacity-0 invisible pointer-events-none fixed bg-black/20 inset-0 z-30 transition-opacity" for="nav-toggler"></label>
+</div>
+
+<nav class="nav opacity-0 pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 md:mt-6 md:opacity-100 md:pointer-events-auto md:translate-y-0 md:block md:static md:shadow-none md:p-0 md:gap-3">
+  <ul class="space-y-6">
+    {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
+    {% for section in sections %}
+      {% assign draft = false %}
+      {%- if section.draft == true -%}
+        {%- assign draft = true -%}
+      {%- endif -%}
+      <li>
+        <h5 class="font-semibold {%- if draft %} draft {% endif -%}">{{ section.title }}</h5>
+        {%- assign articles = site[section.label] | sort: 'order' -%}
+        {%- if articles.size > 0 %}
+          <ul class="relative mt-3 ml-2 border-l">
+          {%- for article in articles %}
+            {%- if article.navigation == false -%}
+              {%- continue -%}
+            {%- endif -%}
+
+            {%- assign draft = false %}
+            {%- if section.draft == true or article.draft == true %}
+              {%- assign draft = true %}
+            {%- endif %}
+
+            {%- assign title = article.title -%}
+            {%- if article.navigation != true and article.navigation != null -%}
+              {%- assign title = article.navigation -%}
+            {%- endif -%}
+
+            {%- assign css = 'hover:before:bg-zinc-400' -%}
+            {%- if article.url == page.url -%}
+              {%- assign css = 'text-zinc-900 font-semibold before:bg-zinc-900' -%}
+            {%- endif -%}
+            <li>
+              <a class="flex items-center relative py-1 pl-4 text-sm text-zinc-600 hover:text-zinc-900 before:absolute before:-left-px before:w-px before:h-full {{ css }} {%- if draft %} draft {% endif -%}" {%- if draft %} tabindex="-1" {%- endif %} href="
+                {%- unless draft -%}
+                  {{ article.url | relative_url }}
+                {%- else -%}
+                  #
+                {%- endunless -%}
+              ">
+                {{- title -}}
+              </a>
+            </li>
+          {%- endfor %}
+          </ul>
+        {%- endif %}
+      </li>
+    {%- endfor %}
+  </ul>
+</nav>

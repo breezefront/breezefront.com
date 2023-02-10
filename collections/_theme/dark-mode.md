@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Dark Mode
 description: Dark color scheme in Breeze Theme
 order: 400

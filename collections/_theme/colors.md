@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: docs
 title: Colors
 description: Working with colors in Breeze theme
 order: 310
-disabled: true
+navigation: false
 ---
 
 # Colors

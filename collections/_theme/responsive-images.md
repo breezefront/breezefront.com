@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Responsive Images
 description: Using responsive images in Breeze Frontend
 order: 500

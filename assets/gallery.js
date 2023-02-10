@@ -2,9 +2,11 @@ import PhotoSwipeLightbox from '/assets/lib/photoswipe/photoswipe-lightbox.esm.m
 import ObjectPosition from '/assets/photoswipe-object-position.js';
 
 export default function (selector) {
+  const animation = document.querySelector(selector).dataset.animation;
   const lightbox = new PhotoSwipeLightbox({
     gallery: selector,
     children: 'a',
+    showHideAnimationType: animation || 'zoom',
     initialZoomLevel: (zoomLevelObject) => {
       const viewportWidth = document.documentElement.clientWidth - 50;
 

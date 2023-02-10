@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Email Styles
 description: How to add email styles using custom Breeze-based theme.
 order: 400

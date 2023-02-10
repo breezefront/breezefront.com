@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Installation
 description: Breeze installation instructions
 order: 200
@@ -27,8 +27,9 @@ download and enable Breeze package.
 
 Replace `swissup/breeze-blank` with theme you'd like to install:
 
- - Breeze Blank --- `swissup/breeze-blank` ([View screenshots](/screenshots#breeze-blank))
- - Breeze Evolution --- `swissup/breeze-evolution`([View screenshots](/screenshots#breeze-evolution))
+ <!-- - Breeze Module --- `swissup/breeze` [View demo](https://breeze.swissupdemo.com/default/){:target="_blank" rel="noopener"} -->
+ - Breeze Blank Theme --- `swissup/breeze-blank` [View demo](https://breeze.swissupdemo.com/breeze_blank/){:target="_blank" rel="noopener"}
+ - Breeze Evolution Theme --- `swissup/breeze-evolution` [View demo](https://breeze.swissupdemo.com/breeze_evolution/){:target="_blank" rel="noopener"}
 
 ```powershell
 composer require swissup/breeze-blank &&\
