@@ -24,7 +24,7 @@ description: High performance frontend for Magento 2
   </div>
 </section>
 
-<section class="max-w-4xl mx-auto py-8 sm:py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+<section class="max-w-4xl 2xl:max-w-5xl mx-auto py-8 sm:py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
   <div class="p-8 py-10 sm:p-12 sm:py-12 flex flex-col gap-2 items-center text-center text-white rounded-xl shadow-xl bg-gradient-to-bl from-green-500/80 via-green-500 to-green-600/90">
     <div class="p-1.5 px-3 rounded bg-white/20 font-bold uppercase text-sm tracking-wide">Blazing Fast</div>
     <h2 class="text-4xl font-bold max-w-xs">Boost your store performance</h2>
