@@ -179,14 +179,14 @@ details summary {
 .docs #markdown-toc a:hover {
     text-decoration: underline;
 }
-.docs #markdown-toc li.active > a {
-    @apply text-zinc-900;
-}
 .docs #markdown-toc > li:last-child > a:last-child {
     margin-bottom: 0;
 }
 
 @media (min-width: 1180px) {
+    #main {
+        overflow: visible;
+    }
     .docs #markdown-toc {
         font-size: .9rem;
         position: sticky;
@@ -209,6 +209,9 @@ details summary {
     .docs #markdown-toc a:hover {
         @apply text-zinc-800;
         text-decoration: none;
+    }
+    .docs #markdown-toc li.active > a {
+        @apply text-zinc-900;
     }
     .docs #markdown-toc + * {
         margin-top: 0;

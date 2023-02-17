@@ -6,15 +6,15 @@
   <body class="docs antialiased {%- if page.body %} {{ page.body }} {%- endif -%}">
     <a href="#main" class="skip-to-content">Skip to Content</a>
     <div class="max-w-7xl flex flex-col md:flex-row mx-auto">
-      <aside class="md:flex md:h-screen md:sticky md:top-0 md:left-0">
-        <div data-preserve-scroll class="flex items-center p-4 sm:px-6 sm:py-5 overscroll-contain md:px-8 md:py-6 lg:py-8 md:pointer-events-auto md:block md:w-64 lg:w-72 md:overflow-y-auto md:border-r md:border-zinc-900/10 xl:w-80">
+      <aside class="md:flex md:h-screen md:sticky md:top-0 md:left-0 md:w-64 lg:w-72 xl:w-80">
+        <div data-preserve-scroll class="flex w-full items-center p-4 sm:px-6 sm:py-5 overscroll-contain md:px-8 md:py-6 lg:py-8 md:pointer-events-auto md:block md:overflow-y-auto md:border-r md:border-zinc-900/10">
           <a class="rounded-full inline-block" href="{{ '/' | relative_url }}" aria-label="Home">
             {%- include logo-round.svg -%}
           </a>
           {% include docs/navigation.html %}
         </div>
       </aside>
-      <main id="main" class="prose prose-zinc xl:max-w-[70ch] 2xl:max-w-[80ch] p-4 sm:px-6 sm:py-5 md:px-8 md:py-7 lg:py-9">
+      <main id="main" class="prose prose-zinc overflow-auto w-full xl:max-w-[70ch] 2xl:max-w-[80ch] p-4 sm:px-6 sm:py-5 md:px-8 md:py-7 lg:py-9">
         {{ content }}
         {%- if page.pagination != false %}
           {%- include docs/pagination.html %}
