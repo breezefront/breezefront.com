@@ -23,7 +23,6 @@ Variable            | Description
 `$.storage`         | [Local storage manager](#local-storage)
 `$.cookies`         | [Cookie manager](#cookies)
 `$.sections`        | [Section/Customer data](#customer-data)
-`$.request`, `$.ajax` | [Ajax requests tool](#ajax-requests)
 `$.async()`         | [DOM watcher tool](#async)
 `$.translation`     | [Translation manager](#translate)
 `$t()`              | [Translate function](#translate)
@@ -116,37 +115,6 @@ $.sections.set(name, data);
 $.sections.reload(names, forceNewSectionTimestamp);
 $.sections.invalidate(names);
 $.sections.getAffectedSections(url);
-```
-
-## Ajax requests
-
-`$.request` --- is tool to work with ajax requests.
-
-Usage examples:
-
-```js
-// GET request
-var promise = $.request.get({
-    url: 'url',
-    type: 'html',
-    success: callback,
-    complete: callback,
-    error: callback
-});
-
-// POST request
-var promise = $.request.post({
-    url: 'url',
-    data: data,
-    success: callback,
-    complete: callback,
-    error: callback
-});
-
-// jQuery-friendly API
-$.[ajax|get|post]({
-    //
-});
 ```
 
 ## Async
