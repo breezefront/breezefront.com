@@ -21,7 +21,12 @@
       {%- endif -%}
       <li>
         <h5 class="font-semibold {%- if draft %} draft {% endif -%}">{{ section.title }}</h5>
-        {%- assign articles = site[section.label] | sort: 'order' -%}
+        {%- if site[section.label][0].order -%}
+          {%- assign articles = site[section.label] | sort: 'order' -%}
+        {%- else -%}
+          {%- assign articles = site[section.label] | sort: 'title' -%}
+        {%- endif -%}
+
         {%- if articles.size > 0 %}
           <ul class="relative mt-3 ml-2 border-l">
           {%- for article in articles %}

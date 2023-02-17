@@ -5,10 +5,10 @@ description: Theme folder structure
 order: 100
 ---
 
-# Structure
+# Theme Structure
 
-Breeze theme uses standard Magento theme structure and well known for
-every Magento developer:
+Breeze theme structure is well known for every Magento developer. We've only added
+a new entry points for custom styles and custom scripts:
 
 ```
 <theme_dir>/
@@ -40,5 +40,3 @@ Path                    | Description
 `composer.json`         | PHP package file
 `registration.php`      | Theme registration file
 `theme.xml`             | Theme name, parent theme code, etc.
-
-Let's review view.xml file structure first, and then move to styles organization.

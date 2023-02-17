@@ -17,17 +17,17 @@ collections:
   landings:
     output: true
     permalink: /:name
-  essentials:
+  getting-started:
     output: true
     permalink: /docs/:name
     navigation: true
-    title: Essentials
+    title: Getting Started
     order: 10
-  theme:
+  core-concepts:
     output: true
     permalink: /docs/:name
     navigation: true
-    title: Theme
+    title: Core Concepts
     order: 20
   js:
     output: true
@@ -41,6 +41,18 @@ collections:
     navigation: true
     title: Guides
     order: 40
+  theming:
+    output: true
+    permalink: /docs/:name
+    navigation: true
+    title: Theming
+    order: 50
+  components:
+    output: true
+    permalink: /docs/:name
+    navigation: true
+    title: Components
+    order: 60
 
 markdown: kramdown
 kramdown:

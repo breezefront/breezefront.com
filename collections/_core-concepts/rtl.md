@@ -2,7 +2,7 @@
 layout: docs
 title: RTL Direction
 description: RTL direction support in Breeze
-order: 600
+order: 700
 ---
 
 # RTL Direction

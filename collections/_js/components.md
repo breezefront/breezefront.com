@@ -10,28 +10,42 @@ order: 200
 * TOC
 {:toc}
 
-## General Approach
+## About
 
-When using Luma, the code below will be parsed by js DOM walker,
-then it will trigger resource loading via RequireJS, and then the component
-will be initialized:
+Before we start, let's recall Luma and its way to inject scripts to the page.
+
+The code below will trigger `Vendor_Module/js/component.js` and `mage/menu.js`
+resources loading (including all dependencies) using client-side RequireJS library:
 
 ```html
 <div data-mage-init='{"Vendor_Module/js/component": {}}'></div>
+<div data-mage-init='{"menu": {}}'></div>
 ```
 
-Unlike default Magento frontend, Breeze doesn't use RequireJS to dynamically
-inject a components into the page.
+Breeze will do the similar job on the server side: it will find js bundles that
+contain required resources for current page and inject them to the
+`<head>` section. To make this possible, developer should register
+`Vendor_Module/js/component` and `menu` components in `breeze_default.xml`
+layout update file:
 
-Instead, the code above will be parsed on the server-side, then Breeze will
-inject required scripts to the page's `<head>` section. You may think of it
-like server-side RequireJS.
+```xml
+<referenceBlock name="breeze.js">
+  <arguments>
+    <argument name="bundles" xsi:type="array">
+      <item name="default" xsi:type="array">
+        <item name="items" xsi:type="array">
+          <item name="Vendor_Module/js/component" xsi:type="string">Vendor_Module/js/breeze/file</item>
+          <item name="menu" xsi:type="string">Vendor_Module/js/breeze/menu</item>
+        </item>
+      </item>
+    </argument>
+  </arguments>
+</referenceBlock>
+```
 
-To make this possible, we register a path to the javascript file for each
-component using layout update instructions. These registrations are grouped
-into bundles to decrease network requests count.
+Let's review component registration syntax.
 
-## Component Registration
+## Component registration
 
 Each component must be registered in `breeze_default.xml` layout update file.
 Here is an example that register `Vendor_Module/js/component` component in
@@ -83,7 +97,7 @@ The following bundles are available:
 Additionally, you can declare your own bundles. Just make sure that its name is
 unique to prevent collisions with other third-party modules.
 
-## Component Declaration
+## Component declaration
 
 Every Breeze Component is declared using `$.widget` or `$.view` function. Widget
 is used to declare most type of components. View is used to declare component
@@ -120,7 +134,7 @@ $.view('wishlistView', {
 });
 ```
 
-## Component Initialization
+## Component initialization
 
 Breeze Components are the replacements for Luma Widgets and very basic
 uiComponents. In most cases Breeze Components initialization is fully compatible
@@ -167,7 +181,7 @@ $(document).on('breeze:load', function () {
 </script>
 ```
 
-## Programmatic Usage
+## Programmatic usage
 
 Sometimes you'll need to create new component instance or call some method of
 existing component programmatically. Breeze allows you to do this with a single

@@ -21,15 +21,12 @@ Variable            | Description
 `_`                 | [Underscore library](#underscore)
 `$()`               | [Cash library](#cash)
 `$.storage`         | [Local storage manager](#local-storage)
-`$.cookies`         | [Cookie Manager](#cookies)
-`$.sections`        | [Section/Customer Data](#customer-data)
+`$.cookies`         | [Cookie manager](#cookies)
+`$.sections`        | [Section/Customer data](#customer-data)
 `$.request`, `$.ajax` | [Ajax requests tool](#ajax-requests)
 `$.async()`         | [DOM watcher tool](#async)
 `$.translation`     | [Translation manager](#translate)
-`$.__()`            | [Translate function](#translate)
-`$.widget()`        | [Widget constructor](#widgets-and-views)
-`$.view()`          | [View constructor](#widgets-and-views)
-`$.mixin()`         | [Mixin](#mixin)
+`$t()`              | [Translate function](#translate)
 
 ## Underscore
 
@@ -69,7 +66,7 @@ $('button.continue')
     });
 ```
 
-## Local Storage
+## Local storage
 
 `$.storage` --- is a Breeze wrapper around `window.localStorage` that adds
 namespaces support and a few additional methods.
@@ -106,7 +103,7 @@ $.cookies.getJson(name);
 $.cookies.remove(name);
 ```
 
-## Customer Data
+## Customer data
 
 `$.customerData` or `$.sections` --- is an object to work with Magento's dynamic
 sections (Wishlist, Shopping Cart, Messages, etc).
@@ -168,72 +165,19 @@ $.async('.selector', function (node) {
 
 ## Translate
 
-`$.translation` --- is an object to work with js translations. There is a shorthand
-to the `$.translation.translate` method available: `$.__`.
+`$.translation` --- is an object to work with js translations. There is shorthand
+to the `$.translation.translate` method available: `$t`.
 
 Usage examples:
 
 ```js
 // get translated string
-var translated = $.translation.translate('Shopping Cart');
-// or
-var translated = $.__('Shopping Cart');
+var translated = $t('Shopping Cart');
 
 // Dynamically register translation for the 'key' phrase
 $.translation.add('key', 'value');
 // or
 $.translation.add({
     'key': 'value'
-});
-```
-
-## Widgets and Views
-
- -  `$.widget` --- is the function that registers Breeze Widget.
- -  `$.view` --- is the function that registers special Widget that has an
-    additional ability to render reactive view (KnockoutJS is used under the hood).
-
-```js
-// Declare a widget that will be automatically created
-// for each DOM node with data-mage-init='{"dropdown":{}}'
-$.widget('dropdown', {
-    component: 'dropdown',
-    create: function () {},
-    destroy: function () {}
-});
-
-// Declare a view that will be automatically created
-// for each DOM node with
-// data-mage-init='{"Vendor_Module/js/view/component":{}}'
-$.view('cmpName', {
-    component: 'Vendor_Module/js/view/component',
-    create: function () {},
-    destroy: function () {}
-});
-```
-
-You can read more information about Widgets and Views at the separate pages:
-
- -  [Widget](widgets)
- -  [View](views)
-
-## Mixin
-
-`$.mixin` --- is the utility to extend or override standard component functionality.
-You can use it to extend any Widget or View methods:
-
-```js
-$.mixin('dropdown', {
-    destroy: function (original) {
-        return original();
-    }
-});
-```
-
-You can also use mixin to completely disable any component:
-
-```js
-$.mixin('cmpName', {
-    component: false
 });
 ```

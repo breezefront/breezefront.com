@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: dark-mode
+permalink: docs/dark-mode
 redirect_to: docs/styles#dark-mode
 ---
