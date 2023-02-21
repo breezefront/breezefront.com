@@ -18,9 +18,6 @@ content to every section and how to customize it using LESS variables.
 ## Main styles
 
 ```scss
-@theme__brand-color: @blue-600;
-@theme__dark-color: @slate-900;
-
 @footer__dark: false;
 @footer__background: false;
 @footer__at-bottom: false;
@@ -47,9 +44,6 @@ as a background-color and invert text colors in the footer.
 ### LESS variables
 
 ```scss
-@theme__brand-color: @blue-600;
-@theme__dark-color: @slate-900;
-
 @footer-top__dark: false;
 @footer-top__padding: false;
 @footer-top__margin: false;
@@ -80,9 +74,6 @@ as a background-color and invert text colors in the footer.
 ### LESS variables
 
 ```scss
-@theme__brand-color: @blue-600;
-@theme__dark-color: @slate-900;
-
 @footer-middle__dark: false;
 @footer-middle__padding: false;
 @footer-middle__margin: false;
@@ -107,9 +98,6 @@ as a background-color and invert text colors in the footer.
 ### LESS variables
 
 ```scss
-@theme__brand-color: @blue-600;
-@theme__dark-color: @slate-900;
-
 @footer-bottom__dark: false;
 @footer-bottom__padding: false;
 @footer-bottom__margin: false;

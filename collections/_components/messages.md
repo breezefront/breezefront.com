@@ -1,0 +1,100 @@
+---
+layout: docs
+title: Messages
+description: Customizing messages styles
+---
+
+# Messages
+
+* TOC
+{:toc}
+
+## About
+
+Source code:
+
+ - [_messages.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/web/css/layout/_messages.less){:target="_blank" rel="noopener"}
+ - [_global-messages.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/web/css/layout/_global-messages.less){:target="_blank" rel="noopener"}
+
+## Global messages
+
+Global messages --- are the messages on the very top of your site. By default,
+it's a message about disabled javascript and cookie notice.
+
+```scss
+@global-message__background: ~"rgb(var(--yellow))";
+@global-message__color: #222;
+
+@global-cookie-message__position: fixed;
+@global-cookie-message__z-index: 40;
+@global-cookie-message__top: false;
+@global-cookie-message__bottom: 0;
+@global-cookie-message__left: 0;
+@global-cookie-message__right: 0;
+@global-cookie-message__border-radius: false;
+@global-cookie-message__box-shadow: false;
+```
+
+## Messages
+
+Messages --- are the messages that are shown after user interaction. It may be a 
+success or error message. In some places, Magento shows informational messages too.
+
+### Base styles
+
+```scss
+@message__font-family: false;
+@message__font-size: false;
+@message__font-weight: false;
+@message__text-transform: false;
+@message__text-align: false;
+@message__border-width: false;
+@message__border-radius: false;
+@message__box-shadow: false;
+@message__background: ~"rgb(var(--message-bg))";
+@message__color: ~"rgb(var(--message-color))";
+@message__border-color: ~"rgb(var(--message-border-color, var(--message-color)), var(--message-border-alpha, .1))";
+@message-link__color: ~"rgb(var(--message-color)) !important";
+```
+
+### Fixed position
+
+```scss
+@message__position: static; // static|fixed
+@message__fixed__container: true;
+@message__fixed__z-index: 810;
+@message__fixed__top: @4;
+@message__fixed__bottom: false;
+@message__fixed__left: 0;
+@message__fixed__right: 0;
+@message__fixed__hidden__transform: translateY(-50px);
+@message__fixed__visible__transform: translateY(0);
+@message__fixed__hide-delay: 5s; // 5s|false
+@message__fixed__hide-progress__delay: 1.5s;
+@message__fixed__hide-progress__duration: @message__fixed__hide-delay - @message__fixed__hide-progress__delay;
+@message__fixed__hide-progress__border-radius: false;
+```
+
+### Success message
+
+```scss
+@message-success__text-color: @success__text-color;
+@message-success__background-color: @success__background-color;
+@message-success__border-color: false;
+```
+
+### Informational message
+
+```scss
+@message-info__text-color: @info__text-color;
+@message-info__background-color: @info__background-color;
+@message-info__border-color: false;
+```
+
+### Error message
+
+```scss
+@message-error__text-color: @danger__text-color;
+@message-error__background-color: @danger__background-color;
+@message-error__border-color: false;
+```

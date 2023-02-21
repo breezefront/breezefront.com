@@ -18,9 +18,6 @@ header.
 ## Main styles
 
 ```scss
-@theme__brand-color: @blue-600;
-@theme__dark-color: @slate-900;
-
 @header__dark: false;
 @header__border: false;
 @header__border-width: false;
@@ -36,9 +33,6 @@ as a background-color and invert text colors in the header.
 ### LESS variables
 
 ```scss
-@theme__brand-color: @blue-600;
-@theme__dark-color: @slate-900;
-
 @header-panel__slideout: true;
 @header-panel__dark: false;
 @header-panel__background: false;
