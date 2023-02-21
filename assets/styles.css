@@ -272,10 +272,10 @@ details summary {
 }
 .docs .anchorjs-link {
     text-decoration: none;
-    position: absolute;
-    z-index: 40;
-    left: -2.9rem;
-    top: .125rem;
+    display: inline-flex;
+    position: relative;
+    left: .3rem;
+    top: .1rem;
     width: 28px;
     height: 28px;
     padding: 0 !important;
@@ -284,9 +284,8 @@ details summary {
 }
 .docs .anchorjs-link::after {
     font-size: 1.3rem !important;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    width: 3rem;
     padding: 2px 5px;
 }
 
