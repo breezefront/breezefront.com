@@ -11,11 +11,12 @@ git clone git@github.com:breezefront/breezefront.com.git && cd breezefront.com
 gem install bundler
 
 # Install dependencies
-bundle install
+bundle install && npm ci
 ```
 
 ## Running
 
 ```bash
 bundle exec jekyll serve --livereload
+npm run watch
 ```
