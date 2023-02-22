@@ -1,5 +1,12 @@
 - name: swissup/*
   url: https://swissuplabs.com/magento-extensions.html?cat=17
+  tags: >
+    layered navigation, filters, ajax add to cart, social login, checkout,
+    seo suite, pagespeed, megamenu, navigation, accordion, helpdesk, questions,
+    prolabels, badges, labels, landing pages, brand pages, banners, lightbox,
+    abandoned cart, email templates, captcha, recaptcha, review reminder,
+    sold together, gdpr, autocomplete, search, rich snippets, testimonials,
+    quick view
   description: >
     More than 40 compatible modules from Breeze frontend authors! All modules
     are compatible except of:
@@ -177,6 +184,7 @@
 
 - name: smile/elasticsuite
   url: https://elasticsuite.io/
+  tags: layered navigation, filters
   description: >
     The Ultimate eCommerce Searchandising Toolbox.
   require:
