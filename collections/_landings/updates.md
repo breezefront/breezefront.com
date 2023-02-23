@@ -9,6 +9,11 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## February 23, 2023
+
+ -  Fixed disabled submit button when google recaptcha module is active.
+ -  Improved styles when google recaptcha is added to the form.
+
 ## January 19, 2023
 
  -  Fixed possible bug when the same resource may load with different version number
