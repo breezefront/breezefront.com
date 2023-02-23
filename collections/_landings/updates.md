@@ -53,7 +53,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## November 15, 2022
 
-[2.0 Upgrade guide](/upgrade#upgrading-from-1xx-to-2xx)
+[2.0 Upgrade guide](/docs/upgrade-guide#upgrading-from-1xx-to-2xx)
 
 **Backward Incompatible Changes**
 
