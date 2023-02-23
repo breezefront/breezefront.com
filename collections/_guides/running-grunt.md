@@ -100,9 +100,9 @@ styles when you save the `less` files.
 grunt clean:breeze-evolution &&\
 grunt exec:breeze-evolution &&\
 grunt less:breeze-evolution &&\
-grunt watch
+grunt watch:breeze-evolution
 ```
 
 Result:
 
-![Screenshot](https://user-images.githubusercontent.com/306080/213136024-170325fd-bbfd-487f-92da-7b32dfe84355.png)
+![Screenshot](https://user-images.githubusercontent.com/306080/213136024-170325fd-bbfd-487f-92da-7b32dfe84355.png){:.border.rounded-md.overflow-hidden}
