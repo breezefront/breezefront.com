@@ -22,11 +22,6 @@
       </main>
     </div>
 
-    {%- if site.url != "http://localhost:4000" %}
-    <script>
-      gtag('set', 'page_path', location.pathname + location.search);
-      gtag('event', 'page_view');
-    </script>
-    {%- endif %}
+    {%- include before-body-end.html -%}
   </body>
 </html>
