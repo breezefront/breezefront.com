@@ -218,11 +218,11 @@ map: {
 
 ```js
 // component.js
-$.view('simpleComponent', {
+Component.extend({
     defaults: {
         template: 'Vendor_Module/template'
     },
-    initialize: function (config, messageContainer) {
+    initialize: function () {
         this.observe('isVisible');
     }
 });
@@ -251,13 +251,13 @@ Here is a Breeze equivalent in two steps:
  2. Add component code to the [new js file](#add-custom-js-file):
 
     ```js
-    Component.extend({
+    $.view('simpleComponent', {
         component: 'simpleComponent',
         defaults: {
             template: 'Vendor_Module/template'
         },
-        create: function () {
-            this.isVisible = ko.observable();
+        initialize: function () {
+            this.observe('isVisible');
         }
     });
     ```
