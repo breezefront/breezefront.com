@@ -219,7 +219,6 @@ map: {
 ```js
 // component.js
 $.view('simpleComponent', {
-    component: 'simpleComponent',
     defaults: {
         template: 'Vendor_Module/template'
     },
