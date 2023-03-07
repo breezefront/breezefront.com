@@ -48,6 +48,14 @@ _Partner_{:.badge}
 
 40+ Certified Magento developers team with 12+ Years of Magento eCommerce & web application developments. An award-winning team, synonymous with excellence in web design & development. We've launched hundreds of sites which received over 100% increase in conversions and results.
 
+
+**[Commercepundit.com](https://www.commercepundit.com/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+Commerce Pundit is a leading web services agency based in Atlanta, Georgia, which boasts a wealth of experience in design and development, with a particular focus on delivering eCommerce solutions. With a global workforce of over 500 highly skilled professionals, the company has completed more than 600 successful projects, earning an excellent reputation for driving business growth. Commerce Pundit's team of certified Magento (Adobe Commerce) specialists
+possess the expertise necessary to help clients develop and manage their online stores effectively. As an Adobe Partner organization, Commerce Pundit has been providing cutting-edge eCommerce solutions for over 12 years, cementing its status as a trusted industry leader.
+
+
 **[Magecomp.com](https://magecomp.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
 
