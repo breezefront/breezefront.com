@@ -7,6 +7,11 @@ order: 210
 
 # Custom Scripts
 
+* TOC
+{:toc}
+
+## Regular script
+
 > Make sure to [create and change](child-theme) your theme to `Local/breeze-custom`
 > before start.
 
@@ -42,4 +47,24 @@ Local/breeze-custom/
 ├── composer.json
 ├── registration.php
 └── theme.xml
+```
+
+## Miscellaneous HTML
+
+Magento provides two entry points to add your custom HTML code:
+
+ -  Content > Configuration > Head --- scripts added here will be processed once 
+    per turbo session. This is useful to import third-party library.
+ -  Content > Configuration > Footer --- scripts added here will be processed on 
+    every page. This is useful to call some method on every page.
+
+> Breeze provides lazy script evaluation feature. We recommend to use it
+> when importing third-party service script.
+
+Example:
+
+```html
+<script type="lazy">
+    console.log('hello');
+</script>
 ```

@@ -9,6 +9,27 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## March 13, 2023
+
+ -  Magento 2.4.6 and PHP 8.2 compatibility added.
+ -  Added ability to include third-party scripts [after user interaction](/docs/globals#lazy-script). 
+    This is a useful feature to include third-party scripts without
+    affecting pagespeed score. The following modules will use this feature out of the box:
+    - GoogleAnalytics
+    - GoogleTagManager
+    - Recaptcha
+ -  Show header icons without delay to decrease LCP value.
+ -  Fixed ability to select unavailable product in dropdown at configurable product page.
+ -  Fixed empty alt text in product main image. Product name will be used as a fallback now.
+ -  Fixed visible configurable variation qty when moved outside sku block.
+ -  Fixed jumping content when price label gets hidden.
+ -  Fixed invisible regular price for configurable products when discount is applied
+ -  Added missing minlength, maxlength, min, and max js validators.
+ -  Update all bundled js libraries.
+ -  Drastically reduced LCP value for Evolution theme.
+ -  Reduce noise at category listing for touch devices in Evolution theme - 
+    Add to cart button will use secondary button styles now.
+
 ## February 23, 2023
 
  -  Fixed disabled submit button when google recaptcha module is active.

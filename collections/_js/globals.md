@@ -25,6 +25,7 @@ Variable            | Description
 `$.sections`        | [Section/Customer data](#customer-data)
 `$.async()`         | [DOM watcher tool](#async)
 `$.translation`     | [Translation manager](#translate)
+`$.lazy`            | [Lazy script](#lazy-script)
 `$t()`              | [Translate function](#translate)
 
 ## Underscore
@@ -148,4 +149,26 @@ $.translation.add('key', 'value');
 $.translation.add({
     'key': 'value'
 });
+```
+
+## Lazy script
+
+`$.lazy` --- is a function that will evaluate passed function after first user 
+interaction. It's useful to postpone loading of not critical resources.
+[Read more information](https://www.patterns.dev/posts/import-on-interaction){:target="_blank" rel="noopener"}.
+
+Usage examples:
+
+```js
+$.lazy(function () {
+    console.log('hello!');
+});
+```
+
+Or, you can use `lazy` type attribute:
+
+```html
+<script type="lazy">
+    console.log('hello!');
+</script>
 ```
