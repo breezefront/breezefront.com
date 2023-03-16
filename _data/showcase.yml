@@ -139,12 +139,12 @@
     Category: 74
     Product: 75
 
-# - url: https://www.sirri.co.uk/
-#   description: Apparel store
-#   scores:
-#     Homepage: 65
-#     Category: 65
-#     Product: 74
+- url: https://www.sirri.co.uk/
+  description: Apparel store
+  scores:
+    Homepage: 65
+    Category: 65
+    Product: 74
 
 - url: https://www.spotix.com/
   description: Fire pits and outdoor cooking
