@@ -19,6 +19,13 @@
     Category: 100
     Product: 99
 
+- url: https://www.schilderijbestellen.nl/
+  description: Paintings, Art, and Photos
+  scores:
+    Homepage: 91
+    Category: 91
+    Product: 73
+
 - url: https://www.kellykettle.ca/
   description: Outdoor cooking
   scores:
