@@ -170,9 +170,9 @@
     stopwords and synonyms for search queries.
   note: Typeahead and Fullsize layout are not integrated.
   require:
-    - mirasvit/module-search-ultimate^1.2
+    - mirasvit/module-search-ultimate^2.1
     - swissup/breeze^2.0
-    - swissup/module-breeze-mirasvit-search-ultimate^1.0.1
+    - swissup/module-breeze-mirasvit-search-ultimate^1.0.2
 
 - name: paypal/braintree
   url: https://marketplace.magento.com/paypal-module-braintree.html
