@@ -59,7 +59,11 @@ possess the expertise necessary to help clients develop and manage their online 
 _Partner_{:.badge}
 
 We create cloud-native B2C and B2B commerce experiences from a single platform that is flexible, extensible, and scalable.  "Play smarter, not harder" Our e-commerce services are more productive because we use ready-made solutions for most tasks. From small startups to global B2B and B2C omnichannel solutions, our services are tailored to make your business succeed. 
- 
+
+**[SetuBridge Technolabs](https://www.setubridge.com/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+We are a professional eCommerce Development Agency providing all kinds of ecommerce services. Our expertise lies in providing fast, top-notch Magento and Shopify development services that meet the highest professional standards. We have  10+ years of experience and served more than 395+ projects with 70+ apps & modules. 
 
 **[Magecomp.com](https://magecomp.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
