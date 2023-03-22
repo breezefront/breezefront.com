@@ -11,8 +11,11 @@ description: High performance frontend for Magento 2
     default Magento frontend<br/>
     towards <span class="whitespace-nowrap text-green-500">all-green</span> performance
   </h1>
-  <div class="flex justify-center mt-6 sm:mt-10">
-    <a class="hero-button group inline-flex items-center px-7 py-3 bg-zinc-800 rounded-lg text-white text-lg font-bold shadow-xl transition hover:shadow-xl hover:shadow-green-300/50 hover:bg-green-500" href="{{ 'docs/installation' | relative_url }}">
+  <div class="flex items-center justify-center mt-6 sm:mt-10 gap-4">
+    <a class="group inline-flex items-center px-7 py-3 border-2 border-zinc-800 bg-white rounded-lg text-lg font-bold shadow-xl transition hover:shadow-xl hover:bg-zinc-100" href="{{ 'themes' | relative_url }}">
+      View Demos
+    </a>
+    <a class="hero-button group inline-flex items-center px-7 py-3 border-2 border-zinc-800 bg-zinc-800 rounded-lg text-white text-lg font-bold shadow-xl transition hover:shadow-xl hover:shadow-green-300/50 hover:bg-green-500 hover:border-green-500" href="{{ 'docs/installation' | relative_url }}">
       Get started
       <div class="relative w-3 h-5">
         <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
