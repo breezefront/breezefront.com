@@ -9,6 +9,15 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## March 23, 2023
+
+ -  Fixed possible js error when recently viewed widget is added via bakend widgets page.
+ -  Fixed incorrect static resource URL on multilingual site.
+ -  Fixed unclosable slideout menu when two menu's are added to the header.
+ -  Fixed ajax request when raw FormData is passed as data.
+ -  Fixed array and nested json serialization in ajax request.
+ -  Fixed ajax request when data key has `=` in its name.
+
 ## March 13, 2023
 
  -  Magento 2.4.6 and PHP 8.2 compatibility added.
