@@ -163,6 +163,15 @@
     - swissup/breeze^2.0
     - swissup/module-breeze-integrations^1.2
 
+- name: mirasvit/reward-points
+  url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
+  description: >
+    Reward points and referral program extension.
+  require:
+    - mirasvit/module-reward-points^3.0
+    - swissup/breeze^2.0
+    - swissup/module-breeze-mirasvit-rewards^1.0.0
+
 - name: mirasvit/search-ultimate
   url: https://mirasvit.com/magento-2-extensions/sphinx-search-ultimate.html
   description: >
