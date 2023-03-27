@@ -23,11 +23,14 @@ Extend your store functionality with our and third-party modules.
       <div>
         <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-x-8">
           <div class="sm:col-span-7">
-            <a class="group inline-flex items-center text-lg font-medium underline" href="{{ extension.url }}" target="_blank" rel="noopener nofollow">
-              <span class="name">{{ extension.name }}</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline w-5 h-5 opacity-0 group-hover:opacity-100 group-focus:opacity-100">
-                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-              </svg>
-            </a>
+            <h3 id="{{ extension.name | slugify }}" class="group inline-flex items-center text-lg font-medium underline">
+              <a href="#{{ extension.name | slugify }}"><span class="name">{{ extension.name }}</span></a>
+              <a href="{{ extension.url }}" tabindex="-1" target="_blank" rel="noopener nofollow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline w-5 h-5 opacity-0 group-hover:opacity-100 group-focus:opacity-100">
+                  <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </h3>
             <div class="description mt-1 text-base text-zinc-500 prose prose-zinc">
               {{ extension.description -}}
             </div>
@@ -51,7 +54,10 @@ Extend your store functionality with our and third-party modules.
 </div>
 
 <div class="p-8">
-  <h2 class="text-3xl tracking-tight text-center font-extrabold sm:font-black" id="cant-find-module">Can't find a module?</h2>
+  <h2 class="text-3xl tracking-tight text-center font-extrabold sm:font-black">
+    <a href="#cannot-find-module" id="cannot-find-module">#</a>
+    Can't find a module?
+  </h2>
   <p class="text-center text-xl text-zinc-500 mt-2 max-w-3xl mx-auto">
     There is a chance that your module is compatible out of the box. Follow the instructions below.
   </p>
