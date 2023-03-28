@@ -65,6 +65,12 @@ _Partner_{:.badge}
 
 We are a professional eCommerce Development Agency providing all kinds of ecommerce services. Our expertise lies in providing fast, top-notch Magento and Shopify development services that meet the highest professional standards. We have  10+ years of experience and served more than 395+ projects with 70+ apps & modules. 
 
+**[Bekome Digital](https://bekome.digital/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+Looking for an expert Magento development agency that provides top-class services and offers exceptional customer service? Look no further! Beköme Digital, based in Spain, specializes in developing first-class Magento solutions and providing red-carpet customer service that exceeds expectations. Our team of experienced developers has a passion for delivering proven and effective solutions that are easy to use, and we have a proven track record of success. Partnering with us means working with a team that is committed to your success and will go above and beyond to ensure your satisfaction. Contact us to learn more about how we can help your business succeed!
+
+
 **[Magecomp.com](https://magecomp.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
 
