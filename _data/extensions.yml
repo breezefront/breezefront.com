@@ -139,6 +139,17 @@
   require:
     - swissup/breeze^2.0
 
+- name: mirasvit/affiliate
+  url: https://mirasvit.com/magento-2-extensions/affiliate.html
+  description: >
+    Launch fully-featured affiliate programs in your store with the Magento 2 
+    affiliate program extension! No need to use a third-party service and pay additional fees. 
+    Increase sales from alternative channels and let your affiliates earn extra money.
+  note: Breeze should be disabled for `affiliate/account` pages.
+  require:
+    - mirasvit/affiliate^1.4
+    - swissup/breeze^2.0
+
 - name: mirasvit/cachewarmer
   url: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
   description: >
