@@ -9,6 +9,18 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 6, 2023
+
+ -  Calendar support added. We've used hative HTML date field, so it may be quite
+    limited compared to jQueryUI calendar. Please
+    [open a discussion](https://github.com/breezefront/community/discussions),
+    if it's not working good for you.
+ -  Fixed possible missing components in generated bundles when using
+    `setup:static-content:deploy` command.
+ -  CloudCommerce compatibility fixes. It's now possible to run static content
+    deployment during the [build phase without DB access](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/static-content.html?lang=en).
+ -  Code cleanup.
+
 ## March 23, 2023
 
  -  Fixed possible js error when recently viewed widget is added via bakend widgets page.
