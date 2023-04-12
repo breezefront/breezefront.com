@@ -9,7 +9,22 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 12, 2023
+
+> swissup/breeze:2.5.1<br>
+> swissup/breeze-blank:2.3.5
+
+ -  Fixed broken email styles in Magento 2.4.6.
+ -  CSS fix to prevent third-party fieldsets from hiding at account edit page.
+ -  Allow to create nested sliders.
+ -  Fixed empty date of birth field in customer edit page.
+ -  Allow to use `require()` function without callback.
+ -  Few fixes to calendar component.
+
 ## April 6, 2023
+
+> swissup/breeze:2.5.0<br>
+> swissup/breeze-blank:2.3.4
 
  -  Calendar support added. We've used hative HTML date field, so it may be quite
     limited compared to jQueryUI calendar. Please
@@ -23,6 +38,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## March 23, 2023
 
+> swissup/breeze:2.4.4
+
  -  Fixed possible js error when recently viewed widget is added via bakend widgets page.
  -  Fixed incorrect static resource URL on multilingual site.
  -  Fixed unclosable slideout menu when two menu's are added to the header.
@@ -31,6 +48,9 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  Fixed ajax request when data key has `=` in its name.
 
 ## March 13, 2023
+
+> swissup/breeze:2.4.3<br>
+> swissup/breeze-blank:2.3.3
 
  -  Magento 2.4.6 and PHP 8.2 compatibility added.
  -  Added ability to include third-party scripts [after user interaction](/docs/globals#lazy-script). 
