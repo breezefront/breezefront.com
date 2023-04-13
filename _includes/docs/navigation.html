@@ -11,7 +11,7 @@
   <label class="nav-overlay opacity-0 invisible pointer-events-none fixed bg-black/20 inset-0 z-30 transition-opacity" for="nav-toggler"></label>
 </div>
 
-<nav class="nav opacity-0 pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 md:mt-6 md:opacity-100 md:pointer-events-auto md:translate-y-0 md:block md:static md:shadow-none md:p-0 md:gap-3">
+<nav class="nav opacity-0 h-[calc(100dvh_-_8rem)] overflow-auto overscroll-contain pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 md:mt-6 md:opacity-100 md:h-auto md:pointer-events-auto md:translate-y-0 md:block md:static md:shadow-none md:p-0 md:gap-3">
   <ul class="space-y-6">
     {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
     {% for section in sections %}

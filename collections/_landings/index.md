@@ -11,7 +11,7 @@ description: High performance frontend for Magento 2
     default Magento frontend<br/>
     towards <span class="whitespace-nowrap text-green-500">all-green</span> performance
   </h1>
-  <div class="flex items-center justify-center mt-6 sm:mt-10 gap-4">
+  <div class="flex flex-col xs:flex-row items-center justify-center mt-6 sm:mt-10 gap-4">
     <a class="group inline-flex items-center px-7 py-3 border-2 border-zinc-800 bg-white rounded-lg text-lg font-bold shadow-xl transition hover:shadow-xl hover:bg-zinc-100" href="{{ 'themes' | relative_url }}">
       View Demos
     </a>

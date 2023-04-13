@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,6 +14,10 @@ module.exports = {
     './*.{html,md}',
   ],
   theme: {
+    screens: {
+      xs: '390px',
+      ...defaultTheme.screens
+    },
     extend: {
       screens: {
         'hover-none': {
