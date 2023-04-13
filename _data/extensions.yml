@@ -21,8 +21,8 @@
       </li>
     </ul>
   require:
-    - swissup/breeze^2.0
-    - swissup/module-breeze-integrations^1.2
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-integrations:^1.3
 
 - name: magento/*
   url: https://magento.com/
@@ -38,8 +38,8 @@
       </li>
     </ul>
   require:
-    - magento/project-community-edition^2.4.4
-    - swissup/breeze^2.0
+    - magento/project-community-edition:^2.4.4
+    - swissup/breeze:^2.0
 
 - name: amasty/mostviewed
   url: https://amasty.com/automatic-related-products-for-magento-2.html
@@ -49,9 +49,9 @@
     the website, thus motivating customers to
     complement their orders with extra items.
   require:
-    - amasty/mostviewed^2.13
-    - swissup/breeze^2.0
-    - swissup/module-breeze-amasty-mostviewed^1.0.0
+    - amasty/mostviewed:^2.13
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-amasty-mostviewed:^1.0.0
 
 - name: amasty/xnotif
   url: https://amasty.com/out-of-stock-notification-for-magento-2.html
@@ -61,9 +61,9 @@
     the "most wanted" products and "recent activity" subscriptions, and many more.
   note: Not tested with Breeze Theme.
   require:
-    - amasty/xnotif^1.14
-    - swissup/breeze^2.0
-    - swissup/module-breeze-amasty-xnotif^1.0.0
+    - amasty/xnotif:^1.14
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-amasty-xnotif:^1.0.0
 
 - name: amasty/xsearch
   url: https://amasty.com/advanced-search-for-magento-2.html
@@ -72,9 +72,9 @@
     website and quickly find desired products. Show related, recent, and popular
     keywords to upsell via flexibly customizable autocomplete popup.
   require:
-    - amasty/xsearch^1.18
-    - swissup/breeze^2.0
-    - swissup/module-breeze-amasty-xsearch^1.0.2
+    - amasty/xsearch:^1.18
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-amasty-xsearch:^1.0.2
 
 - name: backendorf/installment
   url: https://github.com/DaviBackendorf/magento2-installment
@@ -82,18 +82,18 @@
     This module allows you to view the values of installments and discounts
     on the frontend.
   require:
-    - backendorf/module-installment^1.0
-    - swissup/breeze^2.0
-    - swissup/module-breeze-backendorf-installment^1.0.1
+    - backendorf/module-installment:^1.0
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-backendorf-installment:^1.0.1
 
 - name: landofcoder/estimate-shipping-rate
   url: https://github.com/landofcoder/module-simple-calculate-shipping-rate
   description: >
     This module allows you to calculate shipping rates on product page.
   require:
-    - landofcoder/module-estimate-shipping-rate^1.0
-    - swissup/breeze^2.0
-    - swissup/module-breeze-landofcoder-estimate-shipping-rate^1.0.1
+    - landofcoder/module-estimate-shipping-rate:^1.0
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-landofcoder-estimate-shipping-rate:^1.0.1
 
 - name: magecomp/*
   url: https://magecomp.com/magento-2-extensions.html
@@ -101,7 +101,7 @@
     Magecomp company provides Breeze integrations for all of their modules.
   note: Contact the Magecomp company about additional requirements per each module.
   require:
-    - swissup/breeze^2.0
+    - swissup/breeze:^2.0
 
 - name: magefan/blog
   url: https://magefan.com/magento2-blog-extension
@@ -111,33 +111,33 @@
     There's no need to install WordPress or other platforms additionally in order
     to have a blog on the Magento store!
   require:
-    - magefan/blog^2.10
-    - swissup/breeze^2.0
-    - swissup/module-breeze-magefan-blog^1.0
+    - magefan/blog:^2.10
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-magefan-blog:^1.0
 
 - name: magenable/purchase-partner-url
   url: https://github.com/magenable/module-purchase-partner-url
   description: >
     This module allows you to calculate shipping rates on product page.
   require:
-    - magenable/purchase-partner-url^1.4.3
-    - swissup/breeze^2.0
+    - magenable/purchase-partner-url:^1.4.3
+    - swissup/breeze:^2.0
 
 - name: mageworx/advancedproductoptions
   url: https://www.mageworx.com/magento-2-advanced-product-options-suite.html
   description: >
     Powerful module to manage product customizable options.
   require:
-    - mageworx/advancedproductoptions^1.4.3
-    - swissup/breeze^2.0
-    - swissup/module-breeze-mageworx-advancedproductoptions^1.1.1
+    - mageworx/advancedproductoptions:^1.4.3
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-mageworx-advancedproductoptions:^1.1.1
 
 - name: meetanshi/*
   url: https://meetanshi.com/magento-2-extensions.html
   description: Meetanshi provides Breeze integrations for all of their modules.
   note: Contact the Meetanshi company about additional requirements per each module.
   require:
-    - swissup/breeze^2.0
+    - swissup/breeze:^2.0
 
 - name: mirasvit/affiliate
   url: https://mirasvit.com/magento-2-extensions/affiliate.html
@@ -147,8 +147,8 @@
     Increase sales from alternative channels and let your affiliates earn extra money.
   note: Breeze should be disabled for `affiliate/account` pages.
   require:
-    - mirasvit/affiliate^1.4
-    - swissup/breeze^2.0
+    - mirasvit/affiliate:^1.4
+    - swissup/breeze:^2.0
 
 - name: mirasvit/cachewarmer
   url: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
@@ -158,9 +158,9 @@
     variant will be loaded in a fraction of seconds from the cache.
   note: Debug toolbar is not integrated with Breeze Theme.
   require:
-    - mirasvit/cachewarmer^1.5
-    - swissup/breeze^2.0
-    - swissup/module-breeze-mirasvit-cachewarmer^1.0
+    - mirasvit/cachewarmer:^1.5
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-mirasvit-cachewarmer:^1.0
 
 - name: mirasvit/googletagmanager
   url: https://mirasvit.com/magento-2-google-tag-manager.html
@@ -170,18 +170,18 @@
     on your customers' behavior while they are shopping. See the bottlenecks of
     the shopping process in your store.
   require:
-    - mirasvit/googletagmanager^1.2
-    - swissup/breeze^2.0
-    - swissup/module-breeze-mirasvit-gtm^1.0
+    - mirasvit/googletagmanager:^1.2
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-mirasvit-gtm:^1.0
 
 - name: mirasvit/reward-points
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
   description: >
     Reward points and referral program extension.
   require:
-    - mirasvit/module-reward-points^3.0
-    - swissup/breeze^2.0
-    - swissup/module-breeze-mirasvit-rewards^1.0.0
+    - mirasvit/module-reward-points:^3.0
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-mirasvit-rewards:^1.0.0
 
 - name: mirasvit/search-ultimate
   url: https://mirasvit.com/magento-2-extensions/sphinx-search-ultimate.html
@@ -190,17 +190,17 @@
     stopwords and synonyms for search queries.
   note: Typeahead and Fullsize layout are not integrated.
   require:
-    - mirasvit/module-search-ultimate^2.1
-    - swissup/breeze^2.0
-    - swissup/module-breeze-mirasvit-search-ultimate^1.0.2
+    - mirasvit/module-search-ultimate:^2.1
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-mirasvit-search-ultimate:^1.0.2
 
 - name: paypal/braintree
   url: https://marketplace.magento.com/paypal-module-braintree.html
   description: Braintree payment method.
   require:
-    - paypal/module-braintree^4.2
-    - swissup/breeze^2.0
-    - swissup/module-breeze-paypal-braintree^1.0
+    - paypal/module-braintree:^4.2
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-paypal-braintree:^1.0
 
 - name: smile/elasticsuite
   url: https://elasticsuite.io/
@@ -208,9 +208,9 @@
   description: >
     The Ultimate eCommerce Searchandising Toolbox.
   require:
-    - smile/elasticsuite^2.10
-    - swissup/breeze^2.0
-    - swissup/module-breeze-smile-elasticsuite^1.0
+    - smile/elasticsuite:^2.10
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-smile-elasticsuite:^1.0
 
 - name: ulmod/bundle-item
   url: https://www.ulmod.com/magento-2-bundle-items-url.html
@@ -219,6 +219,6 @@
     the backend, allowing store admins to easily access and edit options of
     bundle products.
   require:
-    - ulmod/module-bundle-item^2.0
-    - swissup/breeze^2.0
-    - swissup/module-breeze-ulmod-bundle-item^1.0.2
+    - ulmod/module-bundle-item:^2.0
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-ulmod-bundle-item:^1.0.2
