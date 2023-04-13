@@ -51,7 +51,7 @@
   require:
     - amasty/mostviewed^2.13
     - swissup/breeze^2.0
-    - swissup/breeze-integrations^1.2.4
+    - swissup/module-breeze-amasty-mostviewed^1.0.0
 
 - name: amasty/xnotif
   url: https://amasty.com/out-of-stock-notification-for-magento-2.html
@@ -63,7 +63,7 @@
   require:
     - amasty/xnotif^1.14
     - swissup/breeze^2.0
-    - swissup/breeze-integrations^1.1.1
+    - swissup/module-breeze-amasty-xnotif^1.0.0
 
 - name: amasty/xsearch
   url: https://amasty.com/advanced-search-for-magento-2.html
@@ -160,7 +160,7 @@
   require:
     - mirasvit/cachewarmer^1.5
     - swissup/breeze^2.0
-    - swissup/module-breeze-integrations^1.1
+    - swissup/module-breeze-mirasvit-cachewarmer^1.0
 
 - name: mirasvit/googletagmanager
   url: https://mirasvit.com/magento-2-google-tag-manager.html
@@ -172,7 +172,7 @@
   require:
     - mirasvit/googletagmanager^1.2
     - swissup/breeze^2.0
-    - swissup/module-breeze-integrations^1.2
+    - swissup/module-breeze-mirasvit-gtm^1.0
 
 - name: mirasvit/reward-points
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
