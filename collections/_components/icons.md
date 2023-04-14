@@ -37,7 +37,9 @@ selector::before { .breeze-icon(@icon-s-home, @5); }
   <div>
     <div class="font-semibold mb-2">
       <span class="">{{ icons.title }}</span>
-      <code class="font-normal text-zinc-500 bg-zinc-50">{{ icons.code }}</code>
+      <code class="font-normal text-zinc-500 bg-zinc-50">
+        .breeze-icon(@icon, @{{ icons.size }})
+      </code>
     </div>
     <div class="grid grid-cols-4 gap-1.5 gap-y-2">
     {%- for data in icons.icons %}
