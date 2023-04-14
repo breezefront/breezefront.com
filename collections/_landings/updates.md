@@ -9,6 +9,25 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 13, 2023
+
+> swissup/breeze:2.5.2<br>
+> swissup/module-breeze-integrations:1.3.0
+
+ -  For easier third-party modules integrations management we've moved all
+    integrations to their own packages. Breeze integrations package is now contains
+    Swissup integrations only.
+
+    - Amasty_Mostviewed moved to `swissup/module-breeze-amasty-mostviewed`
+    - Amasty_Xotif moved to `swissup/module-breeze-amasty-xnotif`
+    - Magezon_Builder example moved to `swissup/module-breeze-magezon-builder`
+    - Magezon_Pagebuilder example moved to `swissup/module-breeze-magezon-pagebuilder`
+    - Mirasvit_Cachewarmer moved to `swissup/module-breeze-mirasvit-cachewarmer`
+    - Mirasvit_GoogleTagManager moved to `swissup/module-breeze-mirasvit-gtm`
+
+   If you used one of these integrations, you will need to install it manually
+   with `composer require` command.
+
 ## April 12, 2023
 
 > swissup/breeze:2.5.1<br>
