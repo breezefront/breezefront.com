@@ -41,7 +41,7 @@ selector::before { .breeze-icon(@icon-s-home, @5); }
         .breeze-icon(@icon, @{{ icons.size }})
       </code>
     </div>
-    <div class="grid grid-cols-4 gap-1.5 gap-y-2">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 gap-y-2">
     {%- for data in icons.icons %}
       <div class="relative group text-center" title="@{{ data[0] }}">
         <div class="flex items-center border rounded-lg aspect-square">
