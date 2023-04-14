@@ -11,30 +11,33 @@ description: Media queries
 
 ## About
 
-Media queries help to build responsive layout that works well across different
-devices. Here is an example of common media queries:
+Media queries help to build design that works well across different
+devices. Most common media queries (responsive breakpoints) based on viewport
+widths.
+
+## Responsive breakpoints
 
 ```scss
 & when (@critical) {
-    @media @media-md {
-        // min-with 768px
-    }
+    // min-width queries
+    @media @media-xs { ... } // (min-width: 480px) @xs
+    @media @media-sm { ... } // (min-width: 640px) @sm
+    @media @media-md { ... } // (min-width: 768px) @md
+    @media @media-lg { ... } // (min-width: 1024px) @lg
+    @media @media-xl { ... } // (min-width: 1280px) @xl
+    @media @media-xxl { ... } // (min-width: 1536px) @xxl
 
-    @media @media-xs-down {
-        // max-with 479.98px
-    }
-
-    @media @media-hover {
-        // devices with ability to hover pointer over element
-    }
-
-    @media @media-retina {
-        // devices high DPI ratio
-    }
+    // max-width queries
+    @media @media-xxl-down { ... } // (max-width: 1535.98px) @xl-max
+    @media @media-xl-down { ... } // (max-width: 1279.98px) @lg-max
+    @media @media-lg-down { ... } // (max-width: 1023.98px) @md-max
+    @media @media-md-down { ... } // (max-width: 767.98px) @sm-max
+    @media @media-sm-down { ... } // (max-width: 639.98px) @xs-max
+    @media @media-xs-down { ... } // (max-width: 479.98px) @xxs-max
 }
 ```
 
-## Screen sizes
+You can customize breakpoint values using LESS variables:
 
 ```scss
 @xs:  480px;
@@ -52,33 +55,30 @@ devices. Here is an example of common media queries:
 @xl-max: (@xxl - 0.02);
 ```
 
-## Min-width queries
-
-```scss
-@media-xs:  ~"(min-width: @{xs})";
-@media-sm:  ~"(min-width: @{sm})";
-@media-md:  ~"(min-width: @{md})";
-@media-lg:  ~"(min-width: @{lg})";
-@media-xl:  ~"(min-width: @{xl})";
-@media-xxl: ~"(min-width: @{xxl})";
-```
-
-## Max-width queries
-
-```scss
-@media-xs-down: ~"(max-width: @{xxs-max})";
-@media-sm-down: ~"(max-width: @{xs-max})";
-@media-md-down: ~"(max-width: @{sm-max})";
-@media-lg-down: ~"(max-width: @{md-max})";
-@media-xl-down: ~"(max-width: @{lg-max})";
-@media-xxl-down: ~"(max-width: @{xl-max})";
-```
-
 ## Hover behavior
 
 ```scss
-@media-hover: ~"(hover: hover)";
-@media-hover-none: ~"(hover: none)";
+@media-hover: ~"(hover: hover)"; // devices with pointer device (mouse)
+@media-hover-none: ~"(hover: none)"; // touch devices without a pointer
+```
+
+This media query is useful to prevent hover-reveal effects on touch devices:
+
+```scss
+& when (@critical) {
+    @media @media-hover {
+        .parent .child {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+& when not (@critical) {
+    .parent:hover .child {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
 ```
 
 ## Screen density
