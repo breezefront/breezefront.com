@@ -70,6 +70,11 @@ _Partner_{:.badge}
 
 Looking for an expert Magento development agency that provides top-class services and offers exceptional customer service? Look no further! Beköme Digital, based in Spain, specializes in developing first-class Magento solutions and providing red-carpet customer service that exceeds expectations. Our team of experienced developers has a passion for delivering proven and effective solutions that are easy to use, and we have a proven track record of success. Partnering with us means working with a team that is committed to your success and will go above and beyond to ensure your satisfaction. Contact us to learn more about how we can help your business succeed!
 
+**[tbbAgency](https://tbb.agency){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+tbbAgency is a digital marketing agency based in Barcelona- its primary objective is to co-create and develop innovative digital products and services. We design unique digital strategies for each client through a wide range of services including Paid Media & PPC Management, Strategic Consulting, Social Media, and SEO Positioning. We specialize in the design and development of E-commerce stores and web pages, providing services such as custom E-commerce design, store migration to Magento 2, customized UI/UX design, and HTML layout. We are committed to providing creative and personalized digital marketing solutions that tailor to the needs of each client. We give utmost attention to innovation and customer satisfaction.
+
 
 **[Magecomp.com](https://magecomp.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
