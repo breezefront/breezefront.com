@@ -56,6 +56,22 @@ Here is an example that register `Vendor_Module/js/component` component in
   <arguments>
     <argument name="bundles" xsi:type="array">
       <item name="customer" xsi:type="array">
+        <item name="items" xsi:type="array">
+          <item name="Vendor_Module/js/component" xsi:type="string">Vendor_Module/js/breeze/file</item>
+        </item>
+      </item>
+    </argument>
+  </arguments>
+</referenceBlock>
+```
+
+<details markdown=1><summary>View full featured example</summary>
+
+```xml
+<referenceBlock name="breeze.js">
+  <arguments>
+    <argument name="bundles" xsi:type="array">
+      <item name="customer" xsi:type="array">
         <!-- Optional. Declare and set to true to force bundle injection on all pages. -->
         <item name="active" xsi:type="boolean">true</item>
 
@@ -84,6 +100,8 @@ Here is an example that register `Vendor_Module/js/component` component in
   </arguments>
 </referenceBlock>
 ```
+</details>
+
 
 The following bundles are available:
 
