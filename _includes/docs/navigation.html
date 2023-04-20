@@ -1,4 +1,4 @@
-<div class="nav-toggler ml-auto md:hidden">
+<div class="nav-toggler p-2 ml-auto md:hidden">
   <input class="hidden" type="checkbox" id="nav-toggler"/>
   <label class="nav-icon block h-6 w-6 cursor-pointer relative z-50" for="nav-toggler">
     <svg class="nav-open absolute w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -11,58 +11,68 @@
   <label class="nav-overlay opacity-0 invisible pointer-events-none fixed bg-black/20 inset-0 z-30 transition-opacity" for="nav-toggler"></label>
 </div>
 
-<nav class="nav opacity-0 h-[calc(100dvh_-_8rem)] overflow-auto overscroll-contain pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 md:mt-6 md:opacity-100 md:h-auto md:pointer-events-auto md:translate-y-0 md:block md:static md:shadow-none md:p-0 md:gap-3">
-  <ul class="space-y-6">
-    {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
-    {% for section in sections %}
-      {% assign draft = false %}
-      {%- if section.draft == true -%}
-        {%- assign draft = true -%}
-      {%- endif -%}
-      <li>
-        <h5 class="font-semibold {%- if draft %} draft {% endif -%}">{{ section.title }}</h5>
-        {%- if site[section.label][0].order -%}
-          {%- assign articles = site[section.label] | sort: 'order' -%}
-        {%- else -%}
-          {%- assign articles = site[section.label] | sort: 'title' -%}
-        {%- endif -%}
-
-        {%- if articles.size > 0 %}
-          <ul class="relative mt-3 ml-2 border-l">
-          {%- for article in articles %}
-            {%- if article.navigation == false -%}
-              {%- continue -%}
+<div class="nav pointer-events-none absolute opacity-0 z-40 -translate-y-4 transition top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg md:opacity-100 md:static md:contents md:pointer-events-auto md:shadow-none md:translate-y-0">
+  <div data-preserve-scroll class="flex-grow w-inherit overflow-y-auto h-[calc(100dvh_-_12rem)] md:h-full overscroll-contain">
+    <div class="px-5 py-3 lg:px-8 lg:py-6">
+      <ul class="space-y-6">
+        {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
+        {% for section in sections %}
+          {% assign draft = false %}
+          {%- if section.draft == true -%}
+            {%- assign draft = true -%}
+          {%- endif -%}
+          <li>
+            <h5 class="font-semibold {%- if draft %} draft {% endif -%}">{{ section.title }}</h5>
+            {%- if site[section.label][0].order -%}
+              {%- assign articles = site[section.label] | sort: 'order' -%}
+            {%- else -%}
+              {%- assign articles = site[section.label] | sort: 'title' -%}
             {%- endif -%}
 
-            {%- assign draft = false %}
-            {%- if section.draft == true or article.draft == true %}
-              {%- assign draft = true %}
+            {%- if articles.size > 0 %}
+              <ul class="relative mt-3 ml-2 border-l">
+              {%- for article in articles %}
+                {%- if article.navigation == false -%}
+                  {%- continue -%}
+                {%- endif -%}
+
+                {%- assign draft = false %}
+                {%- if section.draft == true or article.draft == true %}
+                  {%- assign draft = true %}
+                {%- endif %}
+
+                {%- assign title = article.title -%}
+                {%- if article.navigation != true and article.navigation != null -%}
+                  {%- assign title = article.navigation -%}
+                {%- endif -%}
+
+                {%- assign css = 'hover:before:bg-zinc-400' -%}
+                {%- if article.url == page.url -%}
+                  {%- assign css = 'text-zinc-900 font-semibold before:bg-zinc-900' -%}
+                {%- endif -%}
+                <li>
+                  <a class="flex items-center relative py-1 pl-4 text-sm text-zinc-600 hover:text-zinc-900 before:absolute before:-left-px before:w-px before:h-full {{ css }} {%- if draft %} draft {% endif -%}" {%- if draft %} tabindex="-1" {%- endif %} href="
+                    {%- unless draft -%}
+                      {{ article.url | relative_url }}
+                    {%- else -%}
+                      #
+                    {%- endunless -%}
+                  ">
+                    {{- title -}}
+                  </a>
+                </li>
+              {%- endfor %}
+              </ul>
             {%- endif %}
-
-            {%- assign title = article.title -%}
-            {%- if article.navigation != true and article.navigation != null -%}
-              {%- assign title = article.navigation -%}
-            {%- endif -%}
-
-            {%- assign css = 'hover:before:bg-zinc-400' -%}
-            {%- if article.url == page.url -%}
-              {%- assign css = 'text-zinc-900 font-semibold before:bg-zinc-900' -%}
-            {%- endif -%}
-            <li>
-              <a class="flex items-center relative py-1 pl-4 text-sm text-zinc-600 hover:text-zinc-900 before:absolute before:-left-px before:w-px before:h-full {{ css }} {%- if draft %} draft {% endif -%}" {%- if draft %} tabindex="-1" {%- endif %} href="
-                {%- unless draft -%}
-                  {{ article.url | relative_url }}
-                {%- else -%}
-                  #
-                {%- endunless -%}
-              ">
-                {{- title -}}
-              </a>
-            </li>
-          {%- endfor %}
-          </ul>
-        {%- endif %}
-      </li>
-    {%- endfor %}
-  </ul>
-</nav>
+          </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="px-2 lg:px-6">
+    <div class="py-4 px-3 border-t border-zinc-200 flex gap-4 justify-between text-sm text-zinc-600 lg:py-5 lg:px-4">
+      <a class="hover:text-zinc-800" href="{{ '/' | relative_url }}" target="_blank" rel="noopener">breezefront.com</a>
+      <a class="hover:text-zinc-800" href="https://github.com/breezefront/community/discussions" target="_blank" rel="noopener">Support</a>
+    </div>
+  </div>
+</div>
