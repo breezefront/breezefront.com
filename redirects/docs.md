@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: docs
+permalink: docs/index
 redirect_to: docs/installation
 ---
