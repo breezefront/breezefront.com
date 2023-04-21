@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {%- include head.html -%}
+    {%- include head.html algolia=true -%}
   </head>
   <body class="docs antialiased {%- if page.body %} {{ page.body }} {%- endif -%}">
     <a href="#main" class="skip-to-content">Skip to Content</a>
@@ -14,7 +14,8 @@
         </div>
         {% include docs/navigation.html %}
       </aside>
-      <main id="main" class="prose prose-zinc overflow-auto w-full xl:max-w-[70ch] 2xl:max-w-[80ch] p-4 pb-0 sm:px-6 sm:pt-5 md:px-8 md:pt-7 lg:pt-9">
+      <main id="main" class="prose prose-zinc overflow-auto w-full max-w-none md:max-w-[70ch] 2xl:max-w-[80ch] p-4 pb-0 sm:pt-5 md:px-8 md:pt-7 lg:pt-9">
+        <div class="-mt-2 mb-3 sm:-mx-1 sm:-mt-3 md:m-0 md:mt-1 md:ml-2 h-9" data-search></div>
         {{ content }}
         {%- if page.pagination != false %}
           {%- include docs/pagination.html %}

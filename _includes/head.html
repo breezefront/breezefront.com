@@ -13,11 +13,26 @@
 {%- if page.search == true %}
 <script src="{{ '/assets/lib/list.min.js' | relative_url }}" defer></script>
 {%- endif %}
-<link rel="stylesheet" href="{{ '/assets/dist/styles.css?v=12' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/dist/styles.css?v=13' | relative_url }}">
 <script src="{{ '/assets/lib/turbolinks.min.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/lib/anchor.min.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/lib/gumshoe.min.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/scripts.js?v=2' | relative_url }}" defer></script>
+
+{%- if include.algolia == true %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="module">
+  document.addEventListener('turbolinks:load', () => {
+    docsearch({
+      appId: 'VRK4XXKQ3E',
+      apiKey: '0acb0c8bc253a1c4f264abdbb8cc0fb5',
+      indexName: 'breezefront',
+      container: '[data-search]'
+    });
+  });
+</script>
+{%- endif %}
 
 {%- if site.url != "http://localhost:4000" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HLVK26JBW"></script>
