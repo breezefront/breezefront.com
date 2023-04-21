@@ -1,6 +1,17 @@
 var spy = false,
   scrollTop = 0;
 
+// https://stackoverflow.com/a/22841712
+(function() {
+  window._addEventListener = window.addEventListener;
+  window.addEventListener = function(a,b,c) {
+    this._addEventListener(a,b,c);
+    if(!this.eventListenerList) this.eventListenerList = {};
+    if(!this.eventListenerList[a]) this.eventListenerList[a] = [];
+    this.eventListenerList[a].push(b);
+  };
+})();
+
 addEventListener("turbolinks:before-render", function () {
   if (document.querySelector('[data-preserve-scroll]')) {
     scrollTop = document.querySelector('[data-preserve-scroll]').scrollTop;
@@ -38,6 +49,19 @@ document.addEventListener('turbolinks:load', () => {
   // fix not working click on anchor after back button
   if (window.location.hash && document.querySelector(window.location.hash)) {
     document.querySelector(window.location.hash).scrollIntoView();
+  }
+
+  if (typeof docsearch !== 'undefined' && document.querySelector('[data-search]')) {
+    (window.eventListenerList.keydown || []).forEach(fn => {
+      window.removeEventListener('keydown', fn);
+    });
+
+    docsearch({
+      appId: 'VRK4XXKQ3E',
+      apiKey: '0acb0c8bc253a1c4f264abdbb8cc0fb5',
+      indexName: 'breezefront',
+      container: '[data-search]'
+    });
   }
 });
 
