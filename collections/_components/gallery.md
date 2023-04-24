@@ -2,7 +2,6 @@
 layout: docs
 title: Gallery
 description: Gallery
-# order: 700
 ---
 
 # Gallery

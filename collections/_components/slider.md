@@ -2,7 +2,6 @@
 layout: docs
 title: Slider
 description: Slider
-# order: 700
 ---
 
 # Slider

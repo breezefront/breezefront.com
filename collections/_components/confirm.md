@@ -2,7 +2,6 @@
 layout: docs
 title: Confirm
 description: Confirm Component
-# order: 700
 ---
 
 # Confirm

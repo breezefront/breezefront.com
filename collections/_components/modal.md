@@ -2,7 +2,6 @@
 layout: docs
 title: Modal
 description: Modal Component
-# order: 700
 ---
 
 # Modal
