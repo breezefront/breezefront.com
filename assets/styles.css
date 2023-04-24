@@ -156,6 +156,7 @@ main .DocSearch-Button {
 }
 @media (min-width: 769px) {
     body.DocSearch--active { overflow: unset !important; }
+    main [data-search] { width: 200px; }
 }
 @media (min-width: 1180px) {
     main [data-search] {
