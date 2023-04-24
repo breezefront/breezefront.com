@@ -21,14 +21,22 @@
           {%- if section.draft == true -%}
             {%- assign draft = true -%}
           {%- endif -%}
-          <li>
-            <h5 class="font-semibold {%- if draft %} draft {% endif -%}">{{ section.title }}</h5>
-            {%- if site[section.label][0].order -%}
-              {%- assign articles = site[section.label] | sort: 'order' -%}
-            {%- else -%}
-              {%- assign articles = site[section.label] | sort: 'title' -%}
-            {%- endif -%}
 
+          {%- if site[section.label][0].order -%}
+            {%- assign articles = site[section.label] | sort: 'order' -%}
+          {%- else -%}
+            {%- assign articles = site[section.label] | sort: 'title' -%}
+          {%- endif -%}
+
+          {%- assign parentCSS = '' -%}
+          {%- for article in articles %}
+            {%- if article.url == page.url -%}
+              {%- assign parentCSS = 'nav-active' -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor %}
+          <li>
+            <div class="{{ parentCSS }} font-semibold {%- if draft %} draft {% endif -%}">{{ section.title }}</div>
             {%- if articles.size > 0 %}
               <ul class="relative mt-3 ml-2 border-l">
               {%- for article in articles %}
@@ -48,7 +56,7 @@
 
                 {%- assign css = 'hover:before:bg-zinc-400' -%}
                 {%- if article.url == page.url -%}
-                  {%- assign css = 'text-zinc-900 font-semibold before:bg-zinc-900' -%}
+                  {%- assign css = 'nav-active text-zinc-900 font-semibold before:bg-zinc-900' -%}
                 {%- endif -%}
                 <li>
                   <a class="flex items-center relative py-1 pl-4 text-sm text-zinc-600 hover:text-zinc-900 before:absolute before:-left-px before:w-px before:h-full {{ css }} {%- if draft %} draft {% endif -%}" {%- if draft %} tabindex="-1" {%- endif %} href="
