@@ -143,7 +143,6 @@ details summary {
 }
 
 /* Search */
-body.DocSearch--active { overflow: unset !important; }
 main .DocSearch-Button-Placeholder { display: block !important; }
 main .DocSearch-Button {
     width: 100%;
@@ -154,6 +153,9 @@ main .DocSearch-Button {
         width: 160px;
         float: right;
     }
+}
+@media (min-width: 769px) {
+    body.DocSearch--active { overflow: unset !important; }
 }
 @media (min-width: 1180px) {
     main [data-search] {
