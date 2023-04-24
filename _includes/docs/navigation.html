@@ -13,7 +13,7 @@
 
 <div class="nav pointer-events-none absolute opacity-0 z-40 -translate-y-4 transition top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg md:opacity-100 md:static md:contents md:pointer-events-auto md:shadow-none md:translate-y-0">
   <div data-preserve-scroll class="flex-grow w-inherit overflow-y-auto h-[calc(100dvh_-_12rem)] md:h-full overscroll-contain">
-    <div class="px-5 py-3 lg:px-8 lg:py-6">
+    <nav class="px-5 py-3 lg:px-8 lg:py-6">
       <ul class="space-y-6">
         {%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
         {% for section in sections %}
@@ -75,7 +75,7 @@
           </li>
         {%- endfor %}
       </ul>
-    </div>
+    </nav>
   </div>
   <div class="px-2 lg:px-6">
     <div class="py-4 px-3 border-t border-zinc-200 flex gap-4 justify-between text-sm text-zinc-600 lg:py-5 lg:px-4">
