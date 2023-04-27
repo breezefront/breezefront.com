@@ -7,8 +7,34 @@ order: 400
 
 # Performance
 
+* TOC
+{:toc}
+
 When your store is ready to sell, do not forget properly configure Magento
 and enable production mode.
+
+## Defer third-party scripts
+
+If you have some inline scripts in `Miscellaneous HTML` field, we recommend to 
+use ["lazy" script feature](custom-javascript#miscellaneous-html).
+This is a very useful technic to delay loading of third-party analytics, chats, 
+captcha's, etc.
+
+Here is an example:
+
+```html
+<!-- 🐌 Without "lazy" feature -->
+<script>
+    (function(){...})();
+</script>
+
+<!-- 🦸 With "lazy" feature -->
+<script type="lazy">
+    (function(){...})();
+</script>
+```
+
+## Enable performance settings
 
 Here is a one-line command that will set configuration to the recommended
 values:
@@ -18,10 +44,13 @@ bin/magento config:set dev/template/minify_html 1 &&\
 bin/magento config:set dev/js/merge_files 1 &&\
 bin/magento config:set dev/js/enable_js_bundling 0 &&\
 bin/magento config:set dev/js/minify_files 1 &&\
+bin/magento config:set dev/js/move_script_to_bottom 1 &&\
 bin/magento config:set dev/css/merge_css_files 1 &&\
 bin/magento config:set dev/css/minify_files 1 &&\
 bin/magento config:set dev/css/use_css_critical_path 1
 ```
+
+## Switch to production mode
 
 The next command will switch your store to the production mode:
 
@@ -44,5 +73,35 @@ to warm up Magento's cache.
 You can then check your score at
 [Google PageSpeed Insights](https://pagespeed.web.dev/){:target="_blank" rel="noopener"}
 and [share your result with us on Twitter][twitter]{:target="_blank" rel="noopener"} 😉.
+
+## Troubleshooting
+
+Third-party pagespeed modules may broke Breeze scripts. Make sure that the the 
+following settings are disabled in third-party modules:
+
+ -  Defer js, rocket scripts --- Breeze frontend uses native js defer out of the box.
+ -  Move js to bottom --- Breeze frontend uses default Magento option for this.
+
+## Reset to developer mode
+
+When you need to make a changes, use this command to revert recommended values 
+to their defaults:
+
+```powershell
+bin/magento config:set dev/template/minify_html 0 &&\
+bin/magento config:set dev/js/merge_files 0 &&\
+bin/magento config:set dev/js/enable_js_bundling 0 &&\
+bin/magento config:set dev/js/minify_files 0 &&\
+bin/magento config:set dev/js/move_script_to_bottom 0 &&\
+bin/magento config:set dev/css/merge_css_files 0 &&\
+bin/magento config:set dev/css/minify_files 0 &&\
+bin/magento config:set dev/css/use_css_critical_path 0 &&\
+bin/magento deploy:mode:set developer &&\
+bin/magento cache:clean &&\
+rm -rf generated/code &&\
+rm -rf generated/metadata &&\
+rm -rf var/view_preprocessed/pub/static/frontend/ &&\
+rm -rf pub/static/frontend
+```
 
 [twitter]: https://twitter.com/intent/tweet?&text={{"Hey @breezefront, my pagespeed score is now 95! Take a look:" | url_encode }}

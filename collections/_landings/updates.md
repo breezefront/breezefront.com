@@ -9,6 +9,27 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 27, 2023
+
+> swissup/breeze:2.5.4, swissup/breeze-blank:2.3.6<br>
+> swissup/breeze-evolution:2.1.2, swissup/module-breeze-integrations:1.3.1
+
+**Performance improvements**
+
+ -  Allow using ["Move js to bottom" option](docs/performance#enable-performance-settings) 
+    starting from Magento 2.4.1. In older Magento versions this option is not 
+    supported and will cause js error.
+ -  Improve image preload feature on the homepage.
+ -  Prevent CLS when breadcrumbs are too long for the single line in Evolution theme.
+
+**Fixes and minor improvements**
+
+ -  Improve styles for accordion and collapsible elements when [using in CMS page](docs/cms-elements).
+ -  Improve email validation, add pattern validation support.
+ -  Improved integration with Swissup_Pagespeed module.
+ -  Fixed js error on configurable product page when some images were excluded from display.
+ -  Fixed broken range slider styles in Firefox browser.
+
 ## April 13, 2023
 
 > swissup/breeze:2.5.2<br>
