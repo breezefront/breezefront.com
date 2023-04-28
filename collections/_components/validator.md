@@ -201,6 +201,17 @@ $.validator.validators['validation-rule'] = [fn, message];
     (value, el, settings) => $t('Validation failed')
     ```
 
+To apply rule for the field add the rule name to `data-validate` or `class` attribute:
+
+```html
+<!-- Rule without settings -->
+<input name=".." class="validation-rule"/>
+<input name=".." data-validate='{"validation-rule":true}'/>
+
+<!-- Rule with settings -->
+<input name=".." data-validate='{"validation-rule":{key:"value"}}'/>
+```
+
 ### Example
 
 Let's create url validation rule based on Magento's `validate-clean-url` rule.
