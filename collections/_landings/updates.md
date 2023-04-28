@@ -9,6 +9,13 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 28, 2023
+
+> swissup/breeze:2.5.5
+
+ -  Hotfix release that fixes js error in third-party module integrations. This error
+    was added in previous 2.5.4 release.
+
 ## April 27, 2023
 
 > swissup/breeze:2.5.4, swissup/breeze-blank:2.3.6<br>
