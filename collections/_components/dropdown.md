@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Dropdown
-description: Customizing dropdown styles
+description: Dropdown component
 ---
 
 # Dropdown

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Slider
-description: Slider
+description: Scrollable carousel with pagination and arrows
 ---
 
 # Slider

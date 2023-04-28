@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Blocks
-description: Customizing block styles
+description: Sidebar and content blocks customization
 ---
 
 # Blocks

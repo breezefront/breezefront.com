@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Price
-description: Customizing price styles
+description: Product price styles
 ---
 
 # Price

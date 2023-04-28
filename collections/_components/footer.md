@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Footer
-description: Customizing footer content and styles
+description: Footer customization
 ---
 
 # Footer

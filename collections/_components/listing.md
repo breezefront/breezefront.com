@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Listing
-description: Product listing customization in Breeze-based themes
+description: Product listing customization
 ---
 
 # Listing

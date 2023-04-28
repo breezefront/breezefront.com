@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Modal
-description: Modal Component
+description: Modal popup component
 ---
 
 # Modal

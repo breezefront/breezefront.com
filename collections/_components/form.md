@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Form
-description: Customizing form styles
+description: HTML forms customization
 ---
 
 # Form

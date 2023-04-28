@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Calendar
-description: Calendar
+description: Date field with calendar popup
 ---
 
 # Calendar

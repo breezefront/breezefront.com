@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Icons
-description: Icons
+description: SVG icons
 ---
 
 # Icons

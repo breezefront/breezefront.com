@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Spinner
-description: Spinner
+description: Spinner to indicate the loading state
 ---
 
 # Spinner

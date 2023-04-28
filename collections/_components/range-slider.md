@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Range Slider
-description: Range Slider
+description: Range slider component to create range filter
 ---
 
 # Range Slider

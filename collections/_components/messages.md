@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Messages
-description: Customizing messages styles
+description: Messages and notifications styles
 ---
 
 # Messages

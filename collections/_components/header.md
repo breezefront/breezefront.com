@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Header
-description: Customizing header styles
+description: Header customization
 ---
 
 # Header

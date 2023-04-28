@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Menu
-description: Customizing menu styles
+description: Menu customization
 ---
 
 # Menu

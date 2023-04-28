@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Checkout
-description: Customizing checkout styles
+description: Checkout customization
 ---
 
 # Checkout

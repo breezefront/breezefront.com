@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Page Layout
-description: Customizing page layout styles
+description: Page layout and sidebar customization
 ---
 
 # Page Layout

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Alert
-description: Alert Component
+description: Modal component to show important messages
 ---
 
 # Alert

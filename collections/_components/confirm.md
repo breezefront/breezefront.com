@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Confirm
-description: Confirm Component
+description: Modal component to ask confirmation question
 ---
 
 # Confirm

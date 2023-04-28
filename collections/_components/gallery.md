@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Gallery
-description: Gallery
+description: Product page gallery
 ---
 
 # Gallery

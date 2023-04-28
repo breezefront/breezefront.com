@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Breadcrumbs
-description: Breadcrumbs is used to indicate the current page’s location within a site.
+description: Breadcrumbs customization
 ---
 
 # Breadcrumbs
