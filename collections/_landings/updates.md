@@ -15,6 +15,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
  -  Hotfix release that fixes js error in third-party module integrations. This error
     was added in previous 2.5.4 release.
+ -  Allow to call field validation [without showing the errors](docs/validator#manual-validation)
+ -  Fixed missing active class in manually added menu items.
 
 ## April 27, 2023
 
