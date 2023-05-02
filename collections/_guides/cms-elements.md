@@ -61,3 +61,11 @@ Looking for [accordion component](#accordion)?
   <div data-role="content">Content 2</div>
 </div>
 ```
+
+## Youtube video
+
+We recommend using `lite-youtube` tag to keep high pagespeed score:
+
+```html
+<lite-youtube videoid="ogfYd705cRs" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube>
+```
