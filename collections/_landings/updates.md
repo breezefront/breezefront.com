@@ -9,6 +9,39 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## May 22, 2023
+
+> swissup/breeze:2.6.0<br>
+> swissup/breeze-blank:2.4.0
+
+**New Features**
+
+ -  Shopping cart page support added with the following Magento OpenSource features:
+    - Discount block
+    - Shipping and Tax Estimation block
+    - Gift Messages
+ -  Added "Video as background" and "Parallax" PageBuilder features support.
+
+**Improvements**
+
+ -  Price styles improved when Incl. tax and Excl tax are used.
+ -  Added ability to initialize and render nested UI components.
+ -  Added missing 'validate-one-required-by-name' validator.
+ -  Added ability to persist collapsible element state using `saveState` option.
+ -  Prevent jumping content when loading mask is added to the form.
+ -  Fixed incorrect blocks sort order when using tab to navigate at the cart page.
+ -  Few accessebilty errors where fixed.
+
+**Bugfixes**
+
+ -  Fixed possibile duplicate price labels inside confiruable product's dropdown options.
+ -  Fixed not working "Add to cart" from msrp popup when tier prices are used.
+ -  Fixed possible incorrect gallery images when using with configurable product.
+ -  Fixed incorrect active image after choosing an option/swatch if main image is not first.
+ -  Fixed few edge cases when saving data via ajax request.
+ -  Fixed spinning minicart icon when trying to buy not available bundle product.
+ -  Fixed ability to read/write boolean values in the local storage.
+
 ## April 28, 2023
 
 > swissup/breeze:2.5.5
