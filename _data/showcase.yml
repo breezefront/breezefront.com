@@ -5,6 +5,20 @@
     Category: 98
     Product: 97
 
+- url: https://doulton.com/
+  description: Healthy water
+  scores:
+    Homepage: 89
+    Category: 67
+    Product: 73
+
+- url: https://refurbished.mediamarkt.ch/
+  description: Refurbished electronics
+  scores:
+    Homepage: 73
+    Category: 69
+    Product: 59
+
 - url: https://www.made-in-meubles.com/
   description: Furniture
   scores:
@@ -12,12 +26,54 @@
     Category: 35
     Product: 58
 
+- url: https://www.copesan.es/
+  description: Bathroom and ceramics
+  scores:
+    Homepage: 78
+    Category: 88
+    Product: 85
+
+- url: https://www.nenz24.ch/
+  description: Smart household devices
+  scores:
+    Homepage: 70
+    Category: 49
+    Product: 64
+
+- url: https://baindustrie.fr/
+  description: Bathroom, and kitchen plumbing
+  scores:
+    Homepage: 93
+    Category: 84
+    Product: 96
+
 - url: https://www.e35shop.com/
   description: Fashion clothes and accessories
   scores:
     Homepage: 96
     Category: 100
     Product: 99
+
+- url: https://audiophile.dk/
+  description: Hi-Fi sound
+  scores:
+    Homepage: 74
+    Category: 90
+    Product: 83
+
+- url: https://www.mishimoto.co.uk/
+  description: Car parts and accessories
+  scores:
+    Homepage: 37
+    Category: 27
+    Product: 43
+
+- url: https://gone.com.br/
+  description: Footwear
+  scores:
+    Homepage: 46
+    Category: 52
+    Product: 57
 
 - url: https://www.schilderijbestellen.nl/
   description: Paintings and photos
@@ -32,6 +88,13 @@
     Homepage: 99
     Category: 85
     Product: 96
+
+- url: https://www.target-darts.co.uk/
+  description: Darts
+  scores:
+    Homepage: 25
+    Category: 46
+    Product: 47
 
 - url: https://www.lithobee.com/
   description: Printed wall art
