@@ -76,6 +76,13 @@ _Partner_{:.badge}
 tbbAgency is a digital marketing agency based in Barcelona- its primary objective is to co-create and develop innovative digital products and services. We design unique digital strategies for each client through a wide range of services including Paid Media & PPC Management, Strategic Consulting, Social Media, and SEO Positioning. We specialize in the design and development of E-commerce stores and web pages, providing services such as custom E-commerce design, store migration to Magento 2, customized UI/UX design, and HTML layout. We are committed to providing creative and personalized digital marketing solutions that tailor to the needs of each client. We give utmost attention to innovation and customer satisfaction.
 
 
+**[Scommerce Mage ](https://www.scommerce-mage.com/){:target="_blank" rel="noopener"}**
+_Vendor_{:.badge}
+
+Scommerce Mage is a UK based company, specialised in Magento e-commerce. We have
+been working on the Magento platform since it was officially launched in 2008.
+
+
 **[Magecomp.com](https://magecomp.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
 
