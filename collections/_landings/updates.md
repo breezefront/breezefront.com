@@ -9,6 +9,26 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 5, 2023
+
+> swissup/breeze:2.7.0<br>
+> swissup/breeze-blank:2.5.0
+
+ -  [Auth popup](docs/login-popup) added with Captcha, reCaptcha,
+    [Swissup_ReCaptcha](https://docs.swissuplabs.com/m2/extensions/recaptcha/), and
+    [Swissup_SocialLogin](https://docs.swissuplabs.com/m2/extensions/social-login/)
+    modules support.
+ -  Improved layout processing logic: prevent initializing of disabled components.
+ -  Improved integration of Luma-based code:
+    - [Object-based component](docs/integration-tips#object)
+    - [Function-based component](docs/integration-tips#function)
+    - [Utility function](docs/integration-tips#utility)
+ -  Fixed ability to set [initially focused element](docs/modal#options) inside modal popup.
+ -  JS fixes at checkout/cart/configure page.
+ -  Minor form styles fixes.
+ -  Fixed possible js errors in browser console when navigate using back and forward buttons.
+ -  Fixed ability to create js components with more than one inheritance level.
+
 ## May 22, 2023
 
 > swissup/breeze:2.6.0<br>

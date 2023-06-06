@@ -397,9 +397,7 @@ other components.
          //
      };
 +
-+    if ($.breezemap) {
-+        $.breezemap['Vendor_Module/js/utility'] = result;
-+    }
++    result.component = 'Vendor_Module/js/utility';
 +
 +    return result;
  });
@@ -443,11 +441,9 @@ the following changes:
 +    var result = function (options, element) {
      };
 +
-+    $(document).on('breeze:mount:Vendor_Module/js/function', (e, data) => {
-+        result(data.settings, data.el);
-+    });
++    result.component = 'Vendor_Module/js/function';
 +
-+   return result;
++    return result;
  });
 ```
 
@@ -465,16 +461,10 @@ the following changes:
  ], function ($, ko, action) {
      'use strict';
  
--    return {
-+    var result = {
+     return {
++        component: 'Vendor_Module/js/object',
          'Vendor_Module/js/object': function (options, element) {}
      };
-+
-+    $(document).on('breeze:mount:Vendor_Module/js/object', (e, data) => {
-+        result['Vendor_Module/js/object'](data.settings, data.el);
-+    });
-+
-+   return result;
  });
 ```
 
