@@ -9,6 +9,13 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 15, 2023
+
+> swissup/breeze:2.7.1
+
+ -  Fixed not working "Clear Shopping Cart" button at "Shopping Cart" page.
+ -  Fixed Zip/Email switcher at "Orders and Returns" page.
+
 ## June 5, 2023
 
 > swissup/breeze:2.7.0<br>
