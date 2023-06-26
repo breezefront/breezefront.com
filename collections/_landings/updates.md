@@ -9,6 +9,19 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 26, 2023
+
+> swissup/breeze:2.7.2<br>
+> swissup/breeze-blank:2.5.1
+
+ -  Added compatibility with custom checkout fields styles.
+ -  Improved messages styles inside modal.
+ -  Added `.nested-counter` helper to create nested ordered lists.
+ -  Various improvements to prices styles:
+    - Fixed Product Tax style improved.
+    - Manufacturer's Suggested Retail Price output improved.
+    - Complex Tier Price output improvements.
+
 ## June 15, 2023
 
 > swissup/breeze:2.7.1
