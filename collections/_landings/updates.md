@@ -9,6 +9,17 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 27, 2023
+
+> swissup/breeze:2.7.3<br>
+> swissup/breeze-blank:2.5.2,swissup/breeze-blank:2.1.3
+
+ -  Improved print order styles.
+ -  Fixed automatic print dialog appearance on all print pages.
+ -  Fixed incorrect `component.destroy` logic that prevented initializing the component once again.
+ -  Fixed inability to collapse accordion item when all items were initially active.
+ -  Improve MSRP styles when the price is hidden until checkout.
+
 ## June 26, 2023
 
 > swissup/breeze:2.7.2<br>
