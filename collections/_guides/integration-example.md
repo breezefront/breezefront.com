@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: Integration Module
+title: Integration Example
 description: How to create integration with third-party module
 order: 590
 ---
 
-# Integration Module
+# Integration Example
 
 * TOC
 {:toc}
