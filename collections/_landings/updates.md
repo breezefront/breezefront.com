@@ -9,10 +9,20 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## July 4, 2023
+
+> swissup/breeze:2.8.0<br>
+> swissup/breeze-evolution:2.1.4
+
+ -  Added ability to drag slider with mouse.
+ -  Fixed "Cannot apply bindings" error when scripts moved to the bottom.
+ -  Fixed possible incorrect products price when using Wageworx_AdvancedProductOptions.
+ -  Added focus state style for input fields in BreezeEvolution theme.
+
 ## June 27, 2023
 
 > swissup/breeze:2.7.3<br>
-> swissup/breeze-blank:2.5.2,swissup/breeze-blank:2.1.3
+> swissup/breeze-blank:2.5.2,swissup/breeze-evolution:2.1.3
 
  -  Improved print order styles.
  -  Fixed automatic print dialog appearance on all print pages.
