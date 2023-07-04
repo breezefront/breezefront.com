@@ -11,7 +11,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## July 4, 2023
 
-> swissup/breeze:2.8.0<br>
+> swissup/breeze:2.8.1<br>
 > swissup/breeze-evolution:2.1.4
 
  -  Added ability to drag slider with mouse.
