@@ -9,6 +9,19 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## July 10, 2023
+
+> swissup/breeze:2.8.2<br>
+> swissup/breeze-blank:2.5.3
+
+ -  `breeze:config:dump` [command added](/docs/cloud-commerce).
+
+    > This command is useful when using
+    [pipeline deployment without DB access](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=en){:target="_blank" rel="noopener"}.
+
+ -  Added missing `$.fn.uniqueId` and `$.fn.removeUniqueId` methods.
+ -  Fixed not visible global loading indicator when modal or slide panel is opened.
+
 ## July 4, 2023
 
 > swissup/breeze:2.8.1<br>
