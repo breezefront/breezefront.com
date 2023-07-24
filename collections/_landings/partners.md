@@ -14,6 +14,12 @@ class: prose prose-zink max-w-3xl mx-auto
 Here you can view a list of companies that work with Breeze and provide
 module integration services.
 
+**[storeframe.iom](https://www.storeframe.io){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+StoreFrame is a PAAS Platform designed to streamline the process of creating and managing online stores. Leveraging the power and flexibility of Magento 2, StoreFrame simplifies tasks like Magento 2 installation, hosting,  configuration, integration, management and store launch. All following best-practices and providing you with the best possible performance. Host at StoreFrame or on your own server. 
+
+
 **[2buy1click.com](https://www.2buy1click.com/){:target="_blank" rel="noopener"}**
 _Partner_{:.badge}
 
