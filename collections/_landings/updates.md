@@ -9,6 +9,22 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## July 25, 2023
+
+> swissup/breeze:2.8.4<br>
+> swissup/breeze-blank:2.5.4
+
+ -  Fixed not working [GoogleAnalytics](/docs/google-analytics) when using
+    `google/gtag/analytics4/active` option.
+ -  Fixed email validation logic when email may be empty.
+ -  Fixed not working gallery in ajax popup when `customer` pages are exluded
+    from Breeze.
+ -  Fixed js error when `authenticationPopup` or `checkoutConfig` options are
+    not available on the page.
+ -  Fixed double reload at shopping cart page after discount code.
+ -  Added ability to store objects using `$(element).data` function.
+ -  Added ability to change turbo status programmatically using PHP plugin.
+
 ## July 10, 2023
 
 > swissup/breeze:2.8.2<br>
