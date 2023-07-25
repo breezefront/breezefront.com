@@ -1,0 +1,26 @@
+---
+layout: docs
+title: Google Analytics
+description: Fixing Google Analytics when turbo mode is used
+order: 810
+---
+
+# Google Analytics
+
+When [Turbo mode is enabled](settings), Breeze is working as SPA and traditional
+page load events between page visits are not fired at all. This results in not
+working GoogleAnalytics or GoogleTag data streams.
+
+To fix the issue, open GoogleAnalytics admin panel and open your Data Stream:
+
+![GoogleAnalytics admin panel screeshot](/assets/img/google-analytics/admin-panel.webp){:width="1023" height="373"}
+
+Next, enable "Enhanced measurement" event, and click the configure icon:
+
+![GoogleAnalytics admin panel screeshot](/assets/img/google-analytics/data-stream-events.webp){:width="846" height="432"}
+
+Open Advanced settings, enable "history events", and save the changes:
+
+![GoogleAnalytics admin panel screeshot](/assets/img/google-analytics/enhanced-measurement.webp){:width="617" height="270"}
+
+That's all. Google will now send pageview events regardless of turbo mode status.
