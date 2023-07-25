@@ -17,10 +17,17 @@ To fix the issue, open GoogleAnalytics admin panel and open your Data Stream:
 
 Next, enable "Enhanced measurement" event, and click the configure icon:
 
-![GoogleAnalytics admin panel screeshot](/assets/img/google-analytics/data-stream-events.webp){:width="846" height="432"}
+![Data stream events screeshot](/assets/img/google-analytics/data-stream-events.webp){:width="846" height="432"}
 
 Open Advanced settings, enable "history events", and save the changes:
 
-![GoogleAnalytics admin panel screeshot](/assets/img/google-analytics/enhanced-measurement.webp){:width="617" height="270"}
+![Enhanced measurement settings screenshot](/assets/img/google-analytics/enhanced-measurement.webp){:width="617" height="270"}
 
 That's all. Google will now send pageview events regardless of turbo mode status.
+
+## Google Tag Manager
+
+If you are using Google Tag Manager, you also need need to add "History Change" trigger
+to the GA4 Configuration tag:
+
+![GA4 tag settings in the Google Tag Manager](/assets/img/google-analytics/tag-manager.webp){:width="792" height="633"}
