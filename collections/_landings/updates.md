@@ -9,10 +9,10 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## July 25, 2023
+## July 28, 2023
 
 > swissup/breeze:2.8.4<br>
-> swissup/breeze-blank:2.5.4
+> swissup/breeze-blank:2.5.5
 
  -  Fixed not working [GoogleAnalytics](/docs/google-analytics) when using
     `google/gtag/analytics4/active` option.
@@ -22,6 +22,8 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  Fixed js error when `authenticationPopup` or `checkoutConfig` options are
     not available on the page.
  -  Fixed double reload at shopping cart page after discount code.
+ -  Removed `:hover` styles from buttons on touch devices to prevent stuck "active" state
+    when clicked the button.
  -  Added ability to store objects using `$(element).data` function.
  -  Added ability to change turbo status programmatically using PHP plugin.
 
