@@ -16,7 +16,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
  -  Fixed not working [GoogleAnalytics](/docs/google-analytics) when using
     `google/gtag/analytics4/active` option.
- -  Fixed email validation logic when email may be empty.
+ -  Fixed email validation logic when email is not required.
  -  Fixed not working gallery in ajax popup when `customer` pages are exluded
     from Breeze.
  -  Fixed js error when `authenticationPopup` or `checkoutConfig` options are
