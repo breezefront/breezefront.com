@@ -34,6 +34,7 @@ You can configure gallery options using `view.xml` file in your theme:
         <var name="loop">true</var>
         <var name="nav">true</var> <!-- true/false -->
         <var name="navdir">horizontal</var> <!-- horizontal/vertical -->
+        <var name="caption">false</var> <!-- true/false -->
     </var>
     <var name="magnifier">
         <var name="enabled">false</var> <!-- true/false -->
