@@ -1,17 +1,23 @@
 ---
 layout: docs
 title: Google Analytics
-description: Fixing Google Analytics when turbo mode is used
+description: Fixing Google Analytics and Google Tag Manager when turbo mode is used
 order: 810
 ---
 
 # Google Analytics
 
+* TOC
+{:toc}
+
 When [Turbo mode is enabled](settings), Breeze is working as SPA and traditional
 page load events between page visits are not fired at all. This results in not
-working GoogleAnalytics or GoogleTag data streams.
+working GoogleAnalytics or GoogleTag data streams. To fix the issue, follow the
+guides below.
 
-To fix the issue, open GoogleAnalytics admin panel and open your Data Stream:
+## Google Analytics
+
+Open GoogleAnalytics admin panel and open your Data Stream:
 
 ![GoogleAnalytics admin panel screeshot](/assets/img/google-analytics/admin-panel.webp){:width="1023" height="373"}
 
