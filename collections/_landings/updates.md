@@ -9,6 +9,20 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Aug 17, 2023
+
+> swissup/breeze:2.9.0<br>
+> swissup/breeze-blank:2.5.6,swissup/breeze-evolution:2.1.5
+
+ -  New gallery features added:
+    -  [Expanded mode](/docs/gallery#expanded-gallery-mode)
+    -  [Caption support](/docs/gallery#options)
+    -  [Thumbnails as dots](/docs/gallery#options)
+ -  Fixed inability to translate "items\|item" phrase.
+ -  Allow to get validator instance using `.data('validator')` method.
+ -  Added `validateElement` method to validator class.
+ -  Fixed script execution when using `ko.html` binding.
+
 ## July 28, 2023
 
 > swissup/breeze:2.8.4<br>
