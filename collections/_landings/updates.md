@@ -11,13 +11,14 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## Aug 17, 2023
 
-> swissup/breeze:2.9.0<br>
+> swissup/breeze:2.9.1<br>
 > swissup/breeze-blank:2.5.6,swissup/breeze-evolution:2.1.5
 
  -  New gallery features added:
     -  [Expanded mode](/docs/gallery#expanded-gallery-mode)
     -  [Caption support](/docs/gallery#options)
     -  [Thumbnails as dots](/docs/gallery#options)
+ -  Allow to use jQuery-like `$.ajax().done|$.ajax().fail|$.ajax().always` callbacks.
  -  Fixed inability to translate "items\|item" phrase.
  -  Allow to get validator instance using `.data('validator')` method.
  -  Added `validateElement` method to validator class.
