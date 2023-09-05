@@ -299,5 +299,6 @@
     Enhanced E-commerce, Google Remarketing, Google Analytics 4(GA4), Facebook Pixel, Facebook
     Conversion, Google Ads Enhanced Conversion and many more trackings with GTM.
   require:
-    - scommerce/breeze-tracking-base: 2.0.*
-    - scommerce/googletagmanagerpro: 3.0.*
+    - swissup/breeze:^2.0
+    - scommerce/breeze-tracking-base:2.0.*
+    - scommerce/googletagmanagerpro:3.0.*
