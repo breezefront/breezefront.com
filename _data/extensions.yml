@@ -53,6 +53,30 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-amasty-mostviewed:^1.0.0
 
+- name: amasty/shopby
+  url: https://amasty.com/improved-layered-navigation-for-magento-2.html
+  description: >
+    Build the ultimate customer shopping experience and boost your store SEO rankings
+    with a feature-rich navigation system. Display multiple filters and handy widgets
+    to help visitors instantly find the products they need.
+  note: Module files patch is required. Enable Ajax is not integrated.
+  require:
+    - amasty/shopby:^2.21
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-amasty-shopby:^1.0.0
+
+- name: amasty/stockstatus
+  url: https://amasty.com/custom-stock-status-for-magento-2.html
+  description: >
+    Provide precise information about stock availability of particular products
+    using custom stock statuses. Create custom rules to automatically assign statuses,
+    attract customers' attention with catchy icons.
+  note: Module files patch is required
+  require:
+    - amasty/stockstatus:^2.5
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-amasty-stockstatus:^1.0.0
+
 - name: amasty/xnotif
   url: https://amasty.com/out-of-stock-notification-for-magento-2.html
   description: >
@@ -86,6 +110,27 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-backendorf-installment:^1.0.1
 
+- name: firebear/configurableproducts
+  url: https://firebearstudio.com/improved-configurable-products-for-magento-2.html
+  description: >
+    The successor of Simple Configurable Products and the most valuable
+    Magento 2 Configurable Product extension.
+    Use configurable products to full potential, take advantage of B2B bulk ordering,
+    with dynamic attribute changes, improved SEO, and advertising options.
+  require:
+    - firebear/configurableproducts:^1.6
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-firebear-configurableproducts:^1.0.0
+
+- name: klaviyo/magento2-extension
+  url: https://github.com/klaviyo/magento2-klaviyo
+  description: >
+    Klaviyo extension for Magento 2. Allows pushing newsletters to Klaviyo's platform and more.
+  require:
+    - klaviyo/magento2-extension:^4.0
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-klaviyo-reclaim:^1.0.0
+
 - name: landofcoder/estimate-shipping-rate
   url: https://github.com/landofcoder/module-simple-calculate-shipping-rate
   description: >
@@ -94,6 +139,20 @@
     - landofcoder/module-estimate-shipping-rate:^1.0
     - swissup/breeze:^2.0
     - swissup/module-breeze-landofcoder-estimate-shipping-rate:^1.0.1
+
+- name: landofcoder/request-for-quote
+  url: https://landofcoder.com/magento-2-quote-extension.html
+  description: >
+    Magento 2 Request For Quote (RFQ) allows both guests and logged-in customers
+    to submit request for quotation forms on product pages.
+    Customers can add multiple products to quote with custom price and quantity.
+    Facilitating two face interaction between sellers and buyers,
+    the module personalizes customers' orders and increases their retention, loyalty.
+  note: Module files patch is required. Breeze should be disabled for `/quotation/quote/` pages.
+  require:
+    - landofcoder/module-request-for-quote:^1.1
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-lof-requestforquote:^1.0.0
 
 - name: magecomp/*
   url: https://magecomp.com/magento-2-extensions.html
@@ -142,8 +201,8 @@
 - name: mirasvit/affiliate
   url: https://mirasvit.com/magento-2-extensions/affiliate.html
   description: >
-    Launch fully-featured affiliate programs in your store with the Magento 2 
-    affiliate program extension! No need to use a third-party service and pay additional fees. 
+    Launch fully-featured affiliate programs in your store with the Magento 2
+    affiliate program extension! No need to use a third-party service and pay additional fees.
     Increase sales from alternative channels and let your affiliates earn extra money.
   note: Breeze should be disabled for `affiliate/account` pages.
   require:
@@ -211,6 +270,16 @@
     - smile/elasticsuite:^2.10
     - swissup/breeze:^2.0
     - swissup/module-breeze-smile-elasticsuite:^1.0
+
+- name: stripe/module-payments
+  url: https://github.com/stripe/stripe-magento2-releases
+  tags: payment method
+  description: >
+    Shared component for accepting online payments in Magento 2 using the Stripe payment gateway.
+  require:
+    - stripe/module-payments:^3.4
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-stripe-payments:^1.0
 
 - name: ulmod/bundle-item
   url: https://www.ulmod.com/magento-2-bundle-items-url.html
