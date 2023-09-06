@@ -110,6 +110,17 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-backendorf-installment:^1.0.1
 
+- name: extend/module-warranty
+  url: https://github.com/helloextend/magento-extension
+  description: >
+    Extend provides an easy way for any merchant to offer extended protection plans,
+    generating new revenue, increasing purchase conversion, and dramatically
+    improving the customer experience.
+  require:
+    - extend/module-warranty:^2.0
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-extend-warranty:^1.0.0
+
 - name: firebear/configurableproducts
   url: https://firebearstudio.com/improved-configurable-products-for-magento-2.html
   description: >
