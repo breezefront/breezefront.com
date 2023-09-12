@@ -87,6 +87,10 @@ _Partner_{:.badge}
 
 7Span is a trailblazing eCommerce development agency that breaks barriers and infuses vibrancy and creativity into every project. With a team of experts led by certified Magento (Adobe Commerce) specialists, 7Span delivers swift, top-quality eCommerce development services. 7Span empowers clients to craft and navigate online stores with unmatched effectiveness. Step into the realm of 7Span and unlock limitless possibilities for your eCommerce journey.
 
+**[iFlair ](https://www.iflair.com/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+iFlair is the leading Magento Development Company offering complete eCommerce solutions to brands, businesses, and sellers across the World Since 2004. AOver 300+ Magento 1 & 2 consulting projects have been served by us including services such as migration, payment gateway integration, custom themes, and extensions, real-time order import from marketplaces, inventory management, and providing proper technical solutions to the client according to arisen glitches.
 
 **[Scommerce Mage ](https://www.scommerce-mage.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
