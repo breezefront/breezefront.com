@@ -9,7 +9,7 @@ module.exports = {
   content: [
     './_includes/**/*.html',
     './_layouts/*.html',
-    './_assets/*.{css,js}',
+    './assets/*.{css,js}',
     './collections/**/*.{html,md}',
     './*.{html,md}',
   ],

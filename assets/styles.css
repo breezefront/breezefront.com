@@ -278,6 +278,11 @@ main .DocSearch-Button {
 .language-powershell .n { color: #ae81ff }
 .language-bash .o { color: #66d9ef }
 
+/* Copy button */
+div.highlighter-rouge {
+    position: relative;
+}
+
 /* Prose */
 .chained pre {
     border-bottom-left-radius: 0;
