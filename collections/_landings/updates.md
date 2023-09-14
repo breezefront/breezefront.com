@@ -9,6 +9,17 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Sep 14, 2023
+
+> swissup/breeze:2.10.0<br>
+> swissup/breeze-blank:2.5.7
+
+ -  Performance improvement for mid/low-end mobile devices. Total blocking time
+    was reduced by 50-200ms. It's is a 2x improvement for these devices!
+ -  Turbolinks.js is no longer included when disabled in backend settings.
+ -  Added ability to [abort unfinished ajax request](/docs/ajax#aborting-request).
+ -  Fixed possible js error when creating spinner.
+
 ## Aug 17, 2023
 
 > swissup/breeze:2.9.1<br>
