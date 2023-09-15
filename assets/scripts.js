@@ -64,6 +64,7 @@ document.addEventListener('turbolinks:load', () => {
     });
   }
 
+  document.querySelectorAll('div.highlighter-rouge [data-copy-code]').forEach(el => el.remove());
   document.querySelectorAll('div.highlighter-rouge:not(.nocopy)').forEach(div => {
     div.classList.add('group');
     div.insertAdjacentHTML('beforeend', `
