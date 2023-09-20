@@ -96,6 +96,7 @@ server {
         if ($arg_width != '') {
             set $width $arg_width;
         }
+        # comment the section below to resize by width only
         if ($arg_height != '') {
             set $height $arg_height;
         }
@@ -118,6 +119,7 @@ server {
         if ($arg_width != '') {
             set $width $arg_width;
         }
+        # comment the section below to resize by width only
         if ($arg_height != '') {
             set $height $arg_height;
         }
