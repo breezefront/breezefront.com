@@ -140,6 +140,7 @@ parameters. We recommend updating config according to your view.xml file:
 if ($arg_width ~ "290|325|350|380|480|525|575|650|512|960") {
     set $width $arg_width;
 }
+# comment the section below to resize by width only
 if ($arg_height ~ "290|325|350|380|480|525|575|650|512|960") {
     set $height $arg_height;
 }
