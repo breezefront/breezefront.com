@@ -13,14 +13,10 @@ order: 400
 When your store is ready to sell, do not forget properly configure Magento
 and enable production mode.
 
-## Defer third-party scripts
+## Delay third-party scripts
 
-If you have some inline scripts in `Miscellaneous HTML` field, we recommend to 
-use ["lazy" script feature](custom-javascript#miscellaneous-html).
-This is a very useful technic to delay loading of third-party analytics, chats, 
-captcha's, etc.
-
-Here is an example:
+If you have some inline scripts in `Miscellaneous HTML` field, we recommend using
+"lazy" script feature. It will delay script execution until user interaction:
 
 ```html
 <!-- 🐌 Without "lazy" feature -->
@@ -84,6 +80,7 @@ You can then check your score at
 [Google PageSpeed Insights](https://pagespeed.web.dev/){:target="_blank" rel="noopener"}
 and [share your result with us on Twitter][twitter]{:target="_blank" rel="noopener"} 😉.
 
+<!--
 ## Troubleshooting
 
 Third-party pagespeed modules may broke Breeze scripts. Make sure that the the 
@@ -91,6 +88,7 @@ following settings are disabled in third-party modules:
 
  -  Defer js, rocket scripts --- Breeze frontend uses native js defer out of the box.
  -  Move js to bottom --- Breeze frontend uses default Magento option for this.
+-->
 
 ## Reset to developer mode
 
