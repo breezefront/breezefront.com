@@ -34,7 +34,17 @@ Here is an example:
 </script>
 ```
 
-## Enable performance settings
+## Use next-gen images
+
+There are few ways to get next-gen images in Breeze theme:
+
+ -  Third-party module for Magento. You can try our
+    [Pagespeed](https://swissuplabs.com/page-speed-magento-2.html){:target="_blank" rel="noopener"} module.
+ -  Third-party service. [Cloudflare](https://developers.cloudflare.com/images/){:target="_blank" rel="noopener"}
+    for example.
+ -  Nginx-based image resize and optimization. [View our guide](/docs/next-gen-images/){:target="_blank" rel="noopener"}.
+
+## Use optimal settings
 
 Here is a one-line command that will set configuration to the recommended
 values:
