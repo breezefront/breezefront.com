@@ -85,18 +85,14 @@ document.addEventListener('click', (e) => {
 
   if (target = e.target.closest('[data-gallery]')) {
     document.querySelector(`#gallery-${target.dataset.gallery} img`).click();
-  }
-
-  if (target = e.target.closest('[data-copy]')) {
+  } else if (target = e.target.closest('[data-copy]')) {
     navigator.clipboard.writeText(target.dataset.copy).then(() => {
       target.classList.add('copied');
       setTimeout(() => {
         target.classList.remove('copied');
       }, 2000);
     });
-  }
-
-  if (target = e.target.closest('[data-copy-code]')) {
+  } else if (target = e.target.closest('[data-copy-code]')) {
     const text = target.closest('.highlighter-rouge').querySelector('code').innerText;
 
     navigator.clipboard.writeText(text).then(() => {
