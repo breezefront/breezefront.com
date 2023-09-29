@@ -38,7 +38,7 @@ There are few ways to get next-gen images in Breeze theme:
     [Pagespeed](https://swissuplabs.com/page-speed-magento-2.html){:target="_blank" rel="noopener"} module.
  -  Third-party service. [Cloudflare](https://developers.cloudflare.com/images/){:target="_blank" rel="noopener"}
     for example.
- -  Nginx-based image resize and optimization. [View our guide](/docs/next-gen-images/){:target="_blank" rel="noopener"}.
+ -  Nginx-based image resize and optimization. [View our guide](next-gen-images){:target="_blank" rel="noopener"}.
 
 ## Use optimal settings
 
