@@ -32,7 +32,7 @@ description: High performance frontend for Magento 2
     <div class="p-1.5 px-3 rounded bg-white/20 font-bold uppercase text-sm tracking-wide">Blazing Fast</div>
     <h2 class="text-4xl font-bold max-w-xs">Boost your store performance</h2>
     <p class="mt-1 text-white/70 text-xl">
-      We've reduced JS stack complexity and decresed scripts evaluation time
+      We've reduced JS stack complexity and decreased scripts evaluation time
       from 2 seconds to 100 milliseconds!
     </p>
   </div>
