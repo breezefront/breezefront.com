@@ -237,6 +237,19 @@ this.focusTrap.deactivate();
 > this.popup.one('transitionend', this.focusTrap.activate);
 > ```
 
+### onReveal
+
+A method that accepts element and callback to execute them this element enters the
+visible area. You can skip the element parameter. In that case `this.element` will
+be used:
+
+```js
+this.onReveal(() => console.log('Hello!'));
+this.onReveal($('.selector'), () => console.log('Hello!'));
+```
+
+> Please note, this method runs only once per visit.
+
 ### \_option
 
 A method to get the value of specified option. Useful when option is nested deeply

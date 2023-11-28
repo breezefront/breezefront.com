@@ -64,7 +64,17 @@ a lot of customization options for listing out of the box.
 @listing-grid-item__hover__margin: -@listing-grid-item__hover__padding;
 
 @listing-grid-item-swatches__position: static;
-@listing-grid-item-swatches__z-index: 1;
+@listing-grid-item-swatches__absolute__z-index: 1;
+@listing-grid-item-swatches__absolute__top: false;
+@listing-grid-item-swatches__absolute__bottom: 0;
+@listing-grid-item-swatches__absolute__left: 0;
+@listing-grid-item-swatches__absolute__right: 0;
+@listing-grid-item-swatches__absolute__padding: @3;
+@listing-grid-item-swatches__absolute__border: false;
+@listing-grid-item-swatches__absolute__border-radius: false;
+@listing-grid-item-swatches__absolute__box-shadow: false;
+@listing-grid-item-swatches__absolute__background: @z-layer__background;
+@listing-grid-item-swatches__absolute__background-opacity: .85;
 ```
 
 ### Product name
@@ -78,11 +88,27 @@ a lot of customization options for listing out of the box.
 @listing-grid-item-name__hover__line-clamp: 7;
 ```
 
-### Primary actions
+### Actions (Primary and Secondary)
 
 ```scss
 @listing-grid-item-actions__gap: @1;
+@listing-grid-item-actions__position: static; // static|absolute
+@listing-grid-item-actions__hover-none__position: false; // static|false
+@listing-grid-item-actions__absolute__opacity: 0;
+@listing-grid-item-actions__absolute__z-index: 5;
+@listing-grid-item-actions__absolute__flex-direction: column;
+@listing-grid-item-actions__absolute__align-items: flex-end;
+@listing-grid-item-actions__absolute__top: @1;
+@listing-grid-item-actions__absolute__right: @1;
+@listing-grid-item-actions__absolute__left: false;
+@listing-grid-item-actions__absolute__transform: false;
+@listing-grid-item-actions__absolute__visible__transform: false;
+@listing-grid-item-actions__absolute__tocart-icon: @icon-shopping-cart;
+```
 
+### Primary actions
+
+```scss
 @listing-grid-item-actions-primary__position: static; // static|absolute
 
 // When using absolute position for the primary actions
@@ -91,7 +117,7 @@ a lot of customization options for listing out of the box.
 @listing-grid-item-actions-primary__hover-none__position: false; // static|false
 
 @listing-grid-item-actions-primary__absolute__opacity: 0;
-@listing-grid-item-actions-primary__absolute__z-index: 5;
+@listing-grid-item-actions-primary__absolute__z-index: @listing-grid-item-actions__absolute__z-index;
 @listing-grid-item-actions-primary__absolute__top: 33%;
 @listing-grid-item-actions-primary__absolute__centered-x: true;
 @listing-grid-item-actions-primary__absolute__left: false; // used when centered-x is false
@@ -103,6 +129,7 @@ a lot of customization options for listing out of the box.
 @listing-grid-item-tocart__absolute__background-alpha: false;
 @listing-grid-item-tocart__absolute__background-color: false;
 @listing-grid-item-tocart__absolute__border-color: false;
+@listing-grid-item-tocart__absolute__border-radius: false;
 @listing-grid-item-tocart__absolute__hover__background-alpha: false;
 @listing-grid-item-tocart__absolute__box-shadow: false;
 @listing-grid-item-tocart__absolute__font-weight: false;

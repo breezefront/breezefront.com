@@ -61,6 +61,7 @@ success or error message. In some places, Magento shows informational messages t
 
 ```scss
 @message__position: static; // static|fixed
+@message__icon-size: @5;
 @message__fixed__container: true;
 @message__fixed__z-index: 810;
 @message__fixed__top: @4;
@@ -78,6 +79,7 @@ success or error message. In some places, Magento shows informational messages t
 ### Success message
 
 ```scss
+@message-success__icon: @icon-s-check;
 @message-success__text-color: @success__text-color;
 @message-success__background-color: @success__background-color;
 @message-success__border-color: false;
@@ -86,6 +88,7 @@ success or error message. In some places, Magento shows informational messages t
 ### Informational message
 
 ```scss
+@message-info__icon: @icon-s-information-circle;
 @message-info__text-color: @info__text-color;
 @message-info__background-color: @info__background-color;
 @message-info__border-color: false;
@@ -94,6 +97,7 @@ success or error message. In some places, Magento shows informational messages t
 ### Error message
 
 ```scss
+@message-error__icon: @icon-s-exclamation-circle;
 @message-error__text-color: @danger__text-color;
 @message-error__background-color: @danger__background-color;
 @message-error__border-color: false;

@@ -20,6 +20,7 @@ location within a site.
 
 ```scss
 @breadcrumbs__min-height: @9;
+@breadcrumbs__gap: @2;
 @breadcrumbs__wrap: true;
 @breadcrumbs__border: false;
 @breadcrumbs__border-width: false;
@@ -31,6 +32,12 @@ location within a site.
 @breadcrumbs__text-transform: false;
 @breadcrumbs__padding-top: false;
 @breadcrumbs__padding-bottom: false;
+
+@breadcrumbs-item__gap: @1;
+@breadcrumbs-item-separator__content: '';
+@breadcrumbs-item-separator__icon: @icon-chevron;
+@breadcrumbs-item-separator__width: @3;
+@breadcrumbs-item-separator__height: @breadcrumbs-item-separator__width;
 
 @breadcrumbs-item__hover__color: false;
 @breadcrumbs-item__hover__text-decoration: underline;

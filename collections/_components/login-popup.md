@@ -24,7 +24,7 @@ If you would like to show popup in other scenarios you need to write the followi
 js code:
 
 ```js
-$('.block-authentication').modal('openModal');
+$('#authenticationPopup').authPopup('showModal')
 ```
 
 Example:
@@ -32,6 +32,6 @@ Example:
 ```js
 $(document).on('click', '.authorization-link', (event) => {
     event.preventDefault();
-    $('.block-authentication').modal('openModal');
+    $('#authenticationPopup').authPopup('showModal');
 });
 ```

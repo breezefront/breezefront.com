@@ -125,6 +125,7 @@ as a background-color and invert text colors in the footer.
 @footer-newsletter-title__mode: hidden; // hidden|hero|false
 @footer-newsletter-form__max-width: 420px;
 @footer-newsletter-form__margin: 0 auto;
+@footer-newsletter-form__display: flex;
 @footer-newsletter-form__flex-wrap: wrap;
 @footer-newsletter-form__justify-content: center;
 @footer-newsletter-input-icon: false;

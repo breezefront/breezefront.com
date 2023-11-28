@@ -9,6 +9,57 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Nov 28, 2023
+
+> swissup/breeze:2.11.0<br>
+> swissup/breeze-blank:2.6.0,swissup/breeze-evolution:2.2.0
+
+**Breaking Changes**
+
+ -  We've changed the code that will show login popup:
+
+    ```js
+    // old code
+    $('.block-authentication').modal('openModal');
+
+    // new code
+    $('#authenticationPopup').authPopup('showModal')
+    ```
+
+    The old code will not work anymore because of performance optimizations -
+    `.block-authentication` is no longer exists in DOM structure until popup is shown.
+
+    So, if you've used `$('.block-authentication').modal('openModal');` to show
+    login popup, you need to replace it with new call.
+
+**New Features and Improvements**
+
+ -  The message about proper performance setup added to the backend panel.
+ -  Improve critical image preload on homepage and category pages.
+ -  [$(el).lineClamp()](/docs/line-clamp) widget added to use in pair with new `line-clamp-[1..6]` utilities.
+ -  Improve [$.lazy](/docs/globals#lazy-script) behavior:
+    - If user was active before lazy call - callback will run immediately.
+    - Utilize single event listener for all lazy callbacks.
+    - `breeze-inactive` class added to the body until first user interaction.
+ -  Ability to run some logic in the widget when element [appears in viewport](/docs/widgets#onreveal).
+ -  Color swatches are now render its options when element is visible.
+ -  Added ability to hide currency title using `currency-separator` and `currency-title` classes.
+ -  Added ability to use `absolute` position for [actions block](/docs/listing#actions-primary-and-secondary) when using grid listing.
+
+**Fixes**
+
+ -  Fixed js bundle redeployment during `setup:static-content:deploy` command.
+ -  Fixed possible incorrect scroll offset on the product page.
+ -  Fixed incorrectly processed tab clicks, when multiple tabs instances with same ids found on the page.
+ -  Fixed not working slider for related products block.
+ -  Fixed possible content jumping when closing collapsible element.
+ -  Fixed inability to use `Home|End` keyboard keys to edit search query in the header's minisearch form.
+ -  Fixed flash of unstyled jarallax video.
+ -  Fixed inability to create optional date field.
+ -  Fixed inverted input style when chrome's autofill is used.
+ -  Fixed not working align-self property for pagebuilder columns.
+ -  Fixed possible scrollbar caused by hidden swatch input.
+
 ## Sep 14, 2023
 
 > swissup/breeze:2.10.0<br>

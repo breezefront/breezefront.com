@@ -34,6 +34,13 @@ Source code:
 <div class="prose">...</div>
 <div class="text-reset">...</div>
 <div class="note">Muted text</div>
+<div class="text-[xs|sm|base|lg|xs|2xl|3xl|4xl|5xl]">Font size</div>
+<div class="text-[left|right|center]">Aligned text</div>
+<div class="font-[sans|serif|mono]">Text with selected font-face</div>
+<div class="font-[thin|extralight|light]">Thin font weights</div>
+<div class="font-[normal|medium|semibold]">Normal font weights</div>
+<div class="font-[bold|extrabold|black]">Bold font weights</div>
+<div class="leading-[tight|snug|normal|relaxed|loose]">Line heights</div>
 ```
 
 ## Icon
