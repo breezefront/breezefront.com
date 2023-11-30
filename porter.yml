@@ -1,0 +1,6 @@
+services:
+- name: jekyll
+  command: npm run jekyll
+- name: css
+  command: npm run css
+
