@@ -34,8 +34,11 @@ If you have some inline scripts in `Miscellaneous HTML` field, we recommend usin
 
 There are few ways to get next-gen images in Breeze theme:
 
- -  Third-party module for Magento. You can try our
-    [Pagespeed](https://swissuplabs.com/page-speed-magento-2.html){:target="_blank" rel="noopener"} module.
+ -  Third-party Magento module:
+    - [Pagespeed](https://swissuplabs.com/page-speed-magento-2.html){:target="_blank" rel="noopener"}
+      module --- resize the images using your server.
+    - [Wsrv](https://github.com/swissup/module-wsrv/){:target="_blank" rel="noopener"}
+      module --- resize the images using free [wsrv.nl](https://wsrv.nl/) service.
  -  Third-party service. [Cloudflare](https://developers.cloudflare.com/images/){:target="_blank" rel="noopener"}
     for example.
  -  Nginx-based image resize and optimization. [View our guide](next-gen-images){:target="_blank" rel="noopener"}.

@@ -15,6 +15,13 @@ order: 310
 This guide will show you how to configure image resizing and optimization using
 Nginx.
 
+> Looking for simpler solutions? Try one of these:
+>   - [Pagespeed module](https://swissuplabs.com/page-speed-magento-2.html){:target="_blank" rel="noopener"}
+>     --- resize the images using your server.
+>   - [Wsrv module](https://github.com/swissup/module-wsrv/){:target="_blank" rel="noopener"}
+>     --- resize the images using free [wsrv.nl](https://wsrv.nl/) service.
+>   - [Cloudflare service](https://developers.cloudflare.com/images/){:target="_blank" rel="noopener"}
+
 ![Network requests](/assets/img/next-gen-images/network.webp){:width="655" height="189" class="ring-1 ring-gray-300 rounded-md overflow-hidden mx-auto"}
 
 ## Change image resizing mode
