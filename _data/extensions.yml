@@ -240,9 +240,9 @@
     on your customers' behavior while they are shopping. See the bottlenecks of
     the shopping process in your store.
   require:
-    - mirasvit/googletagmanager:^1.2
+    - mirasvit/module-gtm:^2.0
     - swissup/breeze:^2.0
-    - swissup/module-breeze-mirasvit-gtm:^1.0
+    - swissup/module-breeze-mirasvit-gtm:^2.0
 
 - name: mirasvit/reward-points
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
