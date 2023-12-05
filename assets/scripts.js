@@ -47,8 +47,8 @@ document.addEventListener('turbolinks:load', () => {
   }
 
   // fix not working click on anchor after back button
-  if (window.location.hash && document.querySelector(window.location.hash)) {
-    document.querySelector(window.location.hash).scrollIntoView();
+  if (window.location.hash) {
+    document.getElementById(window.location.hash.substr(1))?.scrollIntoView();
   }
 
   if (typeof docsearch !== 'undefined' && document.querySelector('[data-search]')) {
