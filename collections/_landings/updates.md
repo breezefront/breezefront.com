@@ -666,7 +666,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 > swissup/breeze:1.5.0
 
- -  **Singe-page application support added!** [New option](/docs/settings/)
+ -  **Singe-page application support added!** [New option](/docs/settings)
     allows to transform your store into a site that doesn't reload the page during its use.
     This means faster browsing and better user experience!
     ([Turbolinks.js](https://github.com/turbolinks/turbolinks#turbolinks) is used under the hood).
@@ -676,7 +676,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 > swissup/breeze:1.4.0
 
- -  Added ability to disable Breeze for [specified URLs](/docs/settings/).
+ -  Added ability to disable Breeze for [specified URLs](/docs/settings).
  -  Magento_Captcha integration added.
  -  Magento_ReCaptcha integration added.
  -  Magento_LoginAsCustomer integration added.
@@ -714,7 +714,7 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  Component inheritance implemented.
  -  Small fixes in js components.
  -  $.async function added.
- -  Ability to force breeze status via [query parameter](/docs/settings/).
+ -  Ability to force breeze status via [query parameter](/docs/settings).
 
 ### April 13, 2021
 
