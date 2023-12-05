@@ -371,6 +371,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## November 15, 2022
 
+> swissup/breeze:2.0.0
+
 [2.0 Upgrade guide](/docs/upgrade-guide#upgrading-from-1xx-to-2xx)
 
 **Backward Incompatible Changes**
@@ -555,6 +557,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## February 17, 2022
 
+> swissup/breeze:1.10.0
+
 **Module Updates**
 
  -  🚀 Added critical images preloading. This feature decreases time of
@@ -573,6 +577,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## February 8, 2022
 
+> swissup/breeze:1.9.1
+
  -  **Added minimalistic email styles.** We've took Magento/blank email structure
     as a base, so you will find it super easy to integrate with existing blank/luma
     customizations. See the tutorial on [how to add email customizations from child theme](/email-styles).
@@ -581,6 +587,8 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  Fixed error at homepage about unknown "new" attribute on fresh Magento installations.
 
 ## January 28, 2022
+
+> swissup/breeze:1.9.0
 
 **Theme Updates**
 
@@ -596,9 +604,144 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  Improved click handling inside modal popups.
  -  Improved SPA experience.
 
-## January 14, 2021
+## January 14, 2022
+
+> swissup/breeze:1.8.4
 
  -  Allow to create nested view components.
  -  Fixed js error when recaptcha is enabled in product review form.
  -  Fixed "getTemplate" error when third-party component is not available in Breeze.
  -  Fixed responsive images sizes on the homepage.
+
+## December 13, 2021
+
+> swissup/breeze:1.8.0
+
+ -  Remove lazyload attribute from main image in gallery since it's rendered above the fold.
+ -  Focus trap added to the modal popups.
+ -  Improved image loader when click on the swatch attribute.
+ -  Added responsive image support.
+ -  Keyboard navigation improvements.
+ -  Prevent button resize when press add to cart.
+ -  Underscore library updated to the latest version.
+ -  Small fixes in various js components.
+
+### October 21, 2021
+
+> swissup/breeze:1.7.4
+
+ -  Prevent page jumping when showing modal popup.
+ -  Keyboard navigation improvements for modal and dropdown components.
+ -  Fixed rare error when caret is stuck inside search input.
+ -  Do not close dropdowns behind overlay when click in modal.
+ -  Amasty_Xnotif (Out of Stock Notification) integration added.
+
+### September 14, 2021
+
+> swissup/breeze:1.7.0
+
+ -  Added Pagebuilder's Slider and Carousel support.
+ -  Swipe gestures added to product page gallery
+ -  Use tiny scrollbar for product gallery.
+ -  Prevent page zoom when double click on slider or gallery arrows/dots.
+ -  Fixed js error when third-party module uses minicart/content.html template.
+ -  Improved js bundles invalidation. Previously you had to remove old bundles manually.
+    Now new bundles updated automatically after cache cleanup.
+ -  Cleanup dom structure from js templates to improve dev expirience when using
+    Elements panel in dev tools.
+ -  Added ability to disable component via mixin.
+ -  Lazy mixins and widget declarations. You can now declare mixins and components
+    before parent class is loaded.
+ -  Code refactoring.
+
+### August 15, 2021
+
+> swissup/breeze:1.6.1
+
+ -  Bundle products are now supported.
+ -  Fixed not working "Add to cart" button on initial product page load when Turbo mode is enabled.
+ -  Fixed ability to add configurable products to the wishlist without losing selected options.
+
+### August 6, 2021
+
+> swissup/breeze:1.5.0
+
+ -  **Singe-page application support added!** [New option](/docs/settings/)
+    allows to transform your store into a site that doesn't reload the page during its use.
+    This means faster browsing and better user experience!
+    ([Turbolinks.js](https://github.com/turbolinks/turbolinks#turbolinks) is used under the hood).
+ -  Fixed visible plus symbols in success messages on some server setups.
+
+### July 15, 2021
+
+> swissup/breeze:1.4.0
+
+ -  Added ability to disable Breeze for [specified URLs](/docs/settings/).
+ -  Magento_Captcha integration added.
+ -  Magento_ReCaptcha integration added.
+ -  Magento_LoginAsCustomer integration added.
+ -  Added modal, alert, and confirm components.
+ -  When debug mode is enabled and '?breeze=1' parameter is set, Breeze will work
+    regardless if current page is from exluded urls list.
+ -  Fixed not working 'Add all to cart' button at wishlist page.
+ -  Fixed js error at customer account page.
+ -  Fixed not working gallery on wishlist/configure page.
+ -  Fixed failed form validation when checkbox with empty value is required.
+ -  Prevent layout shift in gallery component when critical CSS is enabled.
+
+### June 3, 2021
+
+> swissup/breeze:1.3.0
+
+ -  Magento_GoogleTagManager integration added.
+ -  Fixed ability to activate multiple collapsibles at once.
+ -  Fixed invalid image ratio at product page on iOS devices.
+ -  Fixed undefined 'priceUtils' js error.
+ -  Fixed not working address delete and add actions at customer account page.
+
+### May 19, 2021
+
+> swissup/breeze:1.2.0
+
+ -  Configurable products support added.
+ -  Colorswatches support added.
+
+### May 14, 2021
+
+> swissup/breeze:1.1.0
+
+ -  Improved flexibility of bundled components for better third-party modules integration.
+ -  Component inheritance implemented.
+ -  Small fixes in js components.
+ -  $.async function added.
+ -  Ability to force breeze status via [query parameter](/docs/settings/).
+
+### April 13, 2021
+
+> swissup/breeze:1.0.0
+
+ -  Initial Release.
+ -  Supported pages (All except Shopping Cart and Checkout):
+   - Home and other CMS pages
+   - Category
+   - Product
+   - Search and Advanced Search
+   - Account
+   - Contact us
+ -  Supported products (All except Configurable and Bundle):
+   - Simple
+   - Virtual
+   - Downloadable
+   - Grouped
+ -  Supported features:
+   - Add to cart, compare, and wishlist
+   - Minicart popup
+   - Recently viewed products
+   - Product page gallery
+   - Form validators
+   - Quick search
+   - Google analytics
+   - Cookie restriction mode
+   - MAP popup
+   - Paypal buttons
+   - Varnish cache (ESI blocks)
