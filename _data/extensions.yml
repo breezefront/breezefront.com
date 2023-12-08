@@ -41,6 +41,16 @@
     - magento/project-community-edition:^2.4.4
     - swissup/breeze:^2.0
 
+- name: algolia/algoliasearch
+  url: https://www.algolia.com/search-solutions/adobe-commerce-magento/
+  description: >
+    The Algolia extension replaces the default search in Magento Open Source and
+    Adobe Commerce with a robust autocomplete search menu and Instantsearch results page.
+  require:
+    - algolia/algoliasearch-magento-2:^3.12
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-algoliasearch:^1.0.0
+
 - name: amasty/mostviewed
   url: https://amasty.com/automatic-related-products-for-magento-2.html
   description: >
