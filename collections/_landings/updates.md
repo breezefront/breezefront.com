@@ -9,6 +9,20 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Jan 17, 2023
+
+> swissup/breeze:2.12.0
+
+ -  Allow using `@` in html attribute names.
+ -  Improved `$(document).on('breeze:load')` event listener. It will now trigger callback even if "load"
+    was triggered before event was attached. Similar to `$(document).ready()` from jQuery.
+ -  Allow using body CSS class in `$.async('classname')` calls.
+ -  Allow storing functions using `$.fn.data` method.
+ -  Register all components constructors in $.breezemap.
+ -  Improved `$.loadScript` function to prevent duplicate requests and preserve script execution order.
+ -  Added [debug mode](/docs/settings) support for ajax requests.
+ -  Small fixes to improve integration with Luma-based modules.
+
 ## Nov 28, 2023
 
 > swissup/breeze:2.11.0<br>
