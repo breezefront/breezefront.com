@@ -75,6 +75,13 @@
     Category: 82
     Product: 97
 
+- url: https://www.alovea.de/
+  description: Health and skincare
+  scores:
+    Homepage: 98
+    Category: 99
+    Product: 99
+
 - url: https://www.mishimoto.co.uk/
   description: Car parts and accessories
   scores:
@@ -207,13 +214,6 @@
     Homepage: 31
     Category: 38 # https://www.rainclear.co.uk/fascia/skyline-aluminium-fascia/skyline-sf1-fascia.html
     Product: 52 # https://www.rainclear.co.uk/75-180mm-sf1-profile-skyline-aluminium-fascia-external-corner.html
-
-- url: https://www.alovea.de/
-  description: Health and skincare
-  scores:
-    Homepage: 98
-    Category: 99
-    Product: 99
 
 - url: https://vasser.pro/
   description: Bathroom, and kitchen plumbing
