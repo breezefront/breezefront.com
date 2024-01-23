@@ -26,47 +26,12 @@
     Category: 88
     Product: 85
 
-- url: https://www.nenz24.ch/
-  description: Smart household devices
+- url: https://www.creative-activity.ie/
+  description: Children's education and activities
   scores:
-    Homepage: 70
-    Category: 49
-    Product: 64
-
-- url: https://baindustrie.fr/
-  description: Bathroom, and kitchen plumbing
-  scores:
-    Homepage: 93
-    Category: 84
-    Product: 96
-
-- url: https://www.e35shop.com/
-  description: Fashion clothes and accessories
-  scores:
-    Homepage: 96
-    Category: 100
-    Product: 99
-
-- url: https://audiophile.dk/
-  description: Hi-Fi sound
-  scores:
-    Homepage: 74
-    Category: 90
-    Product: 83
-
-- url: https://www.mishimoto.co.uk/
-  description: Car parts and accessories
-  scores:
-    Homepage: 42
-    Category: 27
-    Product: 43
-
-- url: https://www.schilderijbestellen.nl/
-  description: Paintings and photos
-  scores:
-    Homepage: 91
-    Category: 91
-    Product: 73
+    Homepage: 54
+    Category: 67
+    Product: 56
 
 - url: https://www.kellykettle.ca/
   description: Outdoor cooking
@@ -75,6 +40,62 @@
     Category: 85
     Product: 96
 
+- url: https://www.nenz24.ch/
+  description: Smart household devices
+  scores:
+    Homepage: 70
+    Category: 49
+    Product: 64
+
+- url: https://systemsprintmedia.co.uk/
+  description: Printers
+  scores:
+    Homepage: 89
+    Category: 94
+    Product: 93
+
+- url: https://www.yourmacstore.nl/
+  description: Apple devices and accessories
+  scores:
+    Homepage: 61
+    Category: 51
+    Product: 60
+
+- url: https://www.e35shop.com/
+  description: Fashion clothes and accessories
+  scores:
+    Homepage: 96
+    Category: 100
+    Product: 99
+
+- url: https://www.cognac-paradise.de/
+  description: Alcohol
+  scores:
+    Homepage: 67
+    Category: 82
+    Product: 97
+
+- url: https://www.mishimoto.co.uk/
+  description: Car parts and accessories
+  scores:
+    Homepage: 42
+    Category: 27
+    Product: 43
+
+- url: https://www.lithobee.com/
+  description: Printed wall art
+  scores:
+    Homepage: 60
+    Category: 59
+    Product: 84
+
+- url: https://www.schilderijbestellen.nl/
+  description: Paintings and photos
+  scores:
+    Homepage: 91
+    Category: 91
+    Product: 73
+
 - url: https://www.target-darts.co.uk/
   description: Darts
   scores:
@@ -82,12 +103,26 @@
     Category: 46
     Product: 47
 
-- url: https://www.lithobee.com/
-  description: Printed wall art
+- url: https://www.lysmesteren.dk/
+  description: Lamps
   scores:
-    Homepage: 84
-    Category: 84
-    Product: 84
+    Homepage: 48
+    Category: 69
+    Product: 65
+
+- url: https://audiophile.dk/
+  description: Hi-Fi sound
+  scores:
+    Homepage: 74
+    Category: 90
+    Product: 83
+
+- url: https://aquariumdealer.nl/
+  description: Aquariums
+  scores:
+    Homepage: 62
+    Category: 88
+    Product: 86
 
 - url: https://millingandturningtech.com/
   description: Milling machinery
@@ -95,13 +130,6 @@
     Homepage: 97
     Category: 92
     Product: 94
-
-- url: https://awsupply.com/
-  description: Building maintenance supply
-  scores:
-    Homepage: 66
-    Category: 91
-    Product: 93
 
 - url: https://eleather.it/
   description: Leather apparel
@@ -118,7 +146,7 @@
     Product: 98
 
 - url: https://www.impressionslast.com/
-  description: Decanters and barware
+  description: Alcohol, decanters, and barware
   scores:
     Homepage: 99
     Category: 74
@@ -166,27 +194,6 @@
     Category: 82
     Product: 78
 
-- url: https://altitec.no/
-  description: Batteries and chargers supplier
-  scores:
-    Homepage: 66
-    Category: 70
-    Product: 60
-
-- url: https://premiumkilts.com/
-  description: Premium kilts
-  scores:
-    Homepage: 90
-    Category: 96
-    Product: 96
-
-- url: https://www.sirri.co.uk/
-  description: Apparel store
-  scores:
-    Homepage: 65
-    Category: 65
-    Product: 74
-
 - url: https://www.spotix.com/
   description: Fire pits and outdoor cooking
   scores:
@@ -200,3 +207,17 @@
     Homepage: 31
     Category: 38 # https://www.rainclear.co.uk/fascia/skyline-aluminium-fascia/skyline-sf1-fascia.html
     Product: 52 # https://www.rainclear.co.uk/75-180mm-sf1-profile-skyline-aluminium-fascia-external-corner.html
+
+- url: https://www.alovea.de/
+  description: Health and skincare
+  scores:
+    Homepage: 98
+    Category: 99
+    Product: 99
+
+- url: https://vasser.pro/
+  description: Bathroom, and kitchen plumbing
+  scores:
+    Homepage: 61
+    Category: 70
+    Product: 62
