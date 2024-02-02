@@ -47,17 +47,22 @@ Let's review component registration syntax.
 
 ## Component registration
 
-Each component must be registered in `breeze_default.xml` layout update file.
-Here is an example that register `Vendor_Module/js/component` component in
-`customer` bundle:
+Each component must be registered in js file. Each js file is declared in
+`breeze_default.xml` layout update. Here is an example that register
+`Vendor_Module/js/component` component in `default` bundle:
+
+
+### Minimal example
 
 ```xml
 <referenceBlock name="breeze.js">
   <arguments>
     <argument name="bundles" xsi:type="array">
-      <item name="customer" xsi:type="array">
+      <item name="default" xsi:type="array">
         <item name="items" xsi:type="array">
-          <item name="Vendor_Module/js/component" xsi:type="string">Vendor_Module/js/breeze/file</item>
+          <item name="Vendor_Module/js/component" xsi:type="string">
+            Vendor_Module/js/breeze/file
+          </item>
         </item>
       </item>
     </argument>
@@ -65,33 +70,48 @@ Here is an example that register `Vendor_Module/js/component` component in
 </referenceBlock>
 ```
 
-<details markdown=1><summary>View full featured example</summary>
+In result of code above, Breeze will inject `Vendor_Module/js/breeze/file.js`
+file to the head section.
+
+### Full featured example
 
 ```xml
 <referenceBlock name="breeze.js">
   <arguments>
     <argument name="bundles" xsi:type="array">
-      <item name="customer" xsi:type="array">
-        <!-- Optional. Declare and set to true to force bundle injection on all pages. -->
-        <item name="active" xsi:type="boolean">true</item>
-
+      <!-- Bundle name -->
+      <item name="default" xsi:type="array">
         <item name="items" xsi:type="array">
-          <!-- 'Vendor_Module/js/component' - is the name used in data-mage-init or x-magento-init -->
+          <!-- Component name -->
           <item name="Vendor_Module/js/component" xsi:type="array">
-            <!-- Path to file with component declaration -->
+            <!-- Path to our JS file -->
             <item name="path" xsi:type="string">Vendor_Module/js/breeze/file</item>
-
-            <!-- A flag that tells Breeze if the component should be used -->
-            <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
-              <param name="path">config/path/enabled</param>
+            <!-- Config paths to check before injecting JS file -->
+            <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isAnyEnabled">
+              <param name="0">config/path1/enabled</param>
+              <param name="1">config/path2/enabled</param>
             </item>
-
-            <!-- Optional. Helpful if you use multiple names for the same component -->
-            <!-- 1. data-mage-init='{"vendorModule": {}}'  -->
-            <!-- 2. data-mage-init='{"Vendor_Module/js/component": {}}' -->
-            <item name="names" xsi:type="array">
+            <!-- JS files to add before our file -->
+            <item name="import" xsi:type="array">
+              <item name="dependency" xsi:type="string">Vendor_Module/js/lib</item>
+            </item>
+            <!-- Component names that we declare inside our JS file -->
+            <item name="export" xsi:type="array">
               <item name="fullname" xsi:type="string">Vendor_Module/js/component</item>
               <item name="shortname" xsi:type="string">vendorModule</item>
+            </item>
+            <!-- Dynamic JS: do not inject the file until one of the following condition is met -->
+            <item name="load" xsi:type="array">
+              <item name="onInteraction" xsi:type="boolean">true</item>
+              <item name="onRequire" xsi:type="boolean">true</item>
+              <item name="onEvent" xsi:type="array">
+                <item name="0" xsi:type="string">click .selector</item>
+                <item name="1" xsi:type="string">customEventName</item>
+              </item>
+              <item name="onReveal" xsi:type="array">
+                  <item name="0" xsi:type="string">selector1</item>
+                  <item name="1" xsi:type="string">selector2</item>
+              </item>
             </item>
           </item>
         </item>
@@ -100,8 +120,8 @@ Here is an example that register `Vendor_Module/js/component` component in
   </arguments>
 </referenceBlock>
 ```
-</details>
 
+### Bundle name
 
 The following bundles are available:
 
@@ -114,6 +134,59 @@ The following bundles are available:
 
 Additionally, you can declare your own bundles. Just make sure that its name is
 unique to prevent collisions with other third-party modules.
+
+## Dynamic component
+
+When you add `<item name="load" xsi:type="array">` section to the
+[component registration](#full-featured-example), Breeze will not add js file
+to the head section. Instead, it will dynamically inject it after certain
+condition is met.
+
+### onInteraction
+
+After the first user interaction (mousemove, scroll, click, keydown):
+
+```xml
+<item name="load" xsi:type="array">
+  <item name="onInteraction" xsi:type="boolean">true</item>
+</item>
+```
+
+### onRequire
+
+After `require()|define()` will ask for this component:
+
+```xml
+<item name="load" xsi:type="array">
+  <item name="onRequire" xsi:type="boolean">true</item>
+</item>
+```
+
+### onEvent
+
+When one of js events will be triggered:
+
+```xml
+<item name="load" xsi:type="array">
+  <item name="onEvent" xsi:type="array">
+    <item name="0" xsi:type="string">click .selector</item>
+    <item name="1" xsi:type="string">customEventName</item>
+  </item>
+</item>
+```
+
+### onReveal
+
+When one of matched elements is about to enter the viewport:
+
+```xml
+<item name="load" xsi:type="array">
+  <item name="onReveal" xsi:type="array">
+      <item name="0" xsi:type="string">selector1</item>
+      <item name="1" xsi:type="string">selector2</item>
+  </item>
+</item>
+```
 
 ## Component declaration
 

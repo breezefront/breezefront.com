@@ -9,7 +9,58 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## Jan 17, 2023
+## Feb 2, 2024
+
+> swissup/breeze:2.13.0<br>
+> swissup/breeze-blank:2.6.3
+
+**🚀 Performance improvements**
+
+ -  **[Dynamic JS](/docs/components#dynamic-component) feature added.**
+
+    This feature allows to dynamically inject js components after specified event,
+    or when some element is revealed in the viewport, or after first user interaction.
+
+    Super useful for complex themes packed with tens of modules. Take a look at
+    javascript size reduction on initial page load in our themes:
+
+    Theme           | v2.12     | v2.13 | Improvement
+    ----------------|-----------|-------|------------
+    BreezeEvolution | 129kB     | 108kB | 16%
+    ArgentoChic     | 225kB     | 111kB | 51%
+    ArgentoForce    | 168kB     | 111kB | 34%
+    ArgentoStripes  | 167kB     | 111kB | 34%
+
+ -  **Added lazyload backgrounds for pagebuilder elements.**
+
+    Pagebuilder slider, banner, and other components use background image
+    property to create image. This makes impossible to use loading=lazy attribute
+    and browser download all images on intial page load. We postpone loading of
+    these background images until visitor scrolls to them.
+
+    Theme           | v2.12     | v2.13 | Improvement
+    ----------------|-----------|-------|------------
+    BreezeEvolution | 276kB     | 169kB | 39%
+    ArgentoChic     | 477kB     | 380kB | 21%
+    ArgentoForce    | 691kB     | 432kB | 38%
+    ArgentoStripes  | 712kB     | 410kB | 42%
+
+**🏗️ Improved developer experiece**
+
+ -  Allow extending custom uiComponents using `.extend()` function.
+ -  Allow registering anonymous uiComponent using `Component.register` function.
+ -  `uiRegistry` component added.
+ -  Added/improved jQuery polyfills: `$.each, $.now, $.isObjectEmpty, $.get, $.post`
+ -  `$.fn.onReveal` function added with an ability to pass IntersectionObserver options.
+
+**🐛 Fixes**
+
+ -  Fixed possible missing items in the header Account dropdown.
+ -  Fixed possible infinite spinner on initial page load.
+ -  Fixed possible horizontal scroll on customer registration page when DOB field is shown.
+ -  Fixed js errors after multiple fast clicks on the same link.
+
+## Jan 17, 2024
 
 > swissup/breeze:2.12.0
 

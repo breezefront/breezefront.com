@@ -10,7 +10,42 @@ order: 210
 * TOC
 {:toc}
 
-## Regular script
+## General approach
+
+You can add any custom js file to the Breeze theme using
+[component registration](components#component-registration) approach.
+Create `breeze_default.xml` layout update file with the following code inside:
+
+```xml
+<referenceBlock name="breeze.js">
+    <arguments>
+        <argument name="bundles" xsi:type="array">
+            <item name="default" xsi:type="array">
+                <item name="items" xsi:type="array">
+                    <item name="js-from-theme-folder" xsi:type="string">
+                        js/breeze/my-custom-file
+                    </item>
+                    <item name="js-from-module-folder" xsi:type="string">
+                        Vendor_Module/js/breeze/my-custom-file
+                    </item>
+                </item>
+            </item>
+        </argument>
+    </arguments>
+</referenceBlock>
+```
+
+Keep one of `js-from-theme-folder` and `js-from-theme-folder` items depending on
+your needs.
+
+Create js file. If you use `js-from-theme-folder` item, the path is
+`<theme>/web/js/breeze/my-custom-file.js`. Otherwise, the path is
+`<module>/view/frontend/web/js/breeze/my-custom-file.js`.
+
+## Theme customization script
+
+This is the easiest way to add custom script to your theme. No need to create
+layout update file.
 
 > Make sure to [create and change](child-theme) your theme to `Local/breeze-custom`
 > before start.
