@@ -47,8 +47,29 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 **🏗️ Improved developer experiece**
 
- -  Allow extending custom uiComponents using `.extend()` function.
- -  Allow registering anonymous uiComponent using `Component.register` function.
+ -  **Allow extending custom uiComponents using `.extend()` function.**
+
+    The code below is now fully compatible with Breeze:
+
+    ```js
+    define([
+        'customComponent'
+    ], function (customComponent) {
+        'use strict';
+
+        return customComponent.extend({...})
+    })
+    ```
+
+    See real usage in [our repo](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/cart/totals.js).
+
+ -  **Allow registering anonymous uiComponent using `Component.register` function.**
+
+    This tricky mechanism allows to reuse Luma-based files. Take look on how we
+    reuse files in our integrations with [AmastyXsearch](https://github.com/breezefront/module-breeze-amasty-xsearch/tree/master/view/frontend/web/js),
+    [MagefanBlog](https://github.com/breezefront/module-breeze-magefan-blog/tree/master/view/frontend/web/js),
+    [SmileElasticSuite](https://github.com/breezefront/module-breeze-smile-elasticsuite/tree/master/view/frontend/web/js).
+
  -  `uiRegistry` component added.
  -  Added/improved jQuery polyfills: `$.each, $.now, $.isObjectEmpty, $.get, $.post`
  -  `$.fn.onReveal` function added with an ability to pass IntersectionObserver options.
