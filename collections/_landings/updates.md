@@ -9,6 +9,17 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Feb 6, 2024
+
+> swissup/breeze:2.13.1<br>
+> swissup/breeze-blank:2.6.4
+
+ -  Added ability to set custom position for field validation message using `data-errors-message-box`
+    attribute: `<input ... data-errors-message-box="#element-selector"/>`
+ -  Fixed ability to drag slider with mouse in Firefox browser.
+ -  Fixed downloadable product page styles and scripts when each link is sold separately.
+ -  Fixed possible missing dependencies of dynamic components.
+
 ## Feb 2, 2024
 
 > swissup/breeze:2.13.0<br>
