@@ -282,6 +282,17 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-paypal-braintree:^1.0
 
+- name: scommerce/googletagmanagerpro
+  url: https://www.scommerce-mage.com/magento-2-google-tag-manager.html
+  description: >
+    Magento 2 Google Tag Manager (GTM) GA4 extension helps you integrate
+    Enhanced E-commerce, Google Remarketing, Google Analytics 4(GA4), Facebook Pixel, Facebook
+    Conversion, Google Ads Enhanced Conversion and many more trackings with GTM.
+  require:
+    - swissup/breeze:^2.0
+    - scommerce/breeze-tracking-base:2.0.*
+    - scommerce/googletagmanagerpro:3.0.*
+
 - name: smile/elasticsuite
   url: https://elasticsuite.io/
   tags: layered navigation, filters
@@ -312,14 +323,3 @@
     - ulmod/module-bundle-item:^2.0
     - swissup/breeze:^2.0
     - swissup/module-breeze-ulmod-bundle-item:^1.0.2
-
-- name: scommerce/googletagmanagerpro
-  url: https://www.scommerce-mage.com/magento-2-google-tag-manager.html
-  description: >
-    Magento 2 Google Tag Manager (GTM) GA4 extension helps you integrate
-    Enhanced E-commerce, Google Remarketing, Google Analytics 4(GA4), Facebook Pixel, Facebook
-    Conversion, Google Ads Enhanced Conversion and many more trackings with GTM.
-  require:
-    - swissup/breeze:^2.0
-    - scommerce/breeze-tracking-base:2.0.*
-    - scommerce/googletagmanagerpro:3.0.*
