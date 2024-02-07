@@ -323,3 +323,12 @@
     - ulmod/module-bundle-item:^2.0
     - swissup/breeze:^2.0
     - swissup/module-breeze-ulmod-bundle-item:^1.0.2
+
+- name: weltpixel/ga4
+  url: https://www.weltpixel.com/google-analytics-4-ga4-with-gtm-support-for-magento-2.html
+  description: >
+    Google Analytics 4 (GA4) with Google Tag Manager (GTM) Support.
+  require:
+    - weltpixel/ga4
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-weltpixel-ga4:^1.0.0
