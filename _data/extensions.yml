@@ -120,6 +120,15 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-backendorf-installment:^1.0.1
 
+- name: bsscommerce/quantity-dropdown
+  url: https://bsscommerce.com/magento-2-quantity-dropdown-extension.html
+  description: >
+    Quantity Dropdown is an additional feature for Magento that allows store owners control over the number of items customers can select to purchase.
+  require:
+    - bsscommerce/quantity-dropdown
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-bss-quantity-dropdown:^1.0.0
+
 - name: extend/module-warranty
   url: https://github.com/helloextend/magento-extension
   description: >
