@@ -183,18 +183,16 @@ define(['jquery', 'jquery-ui-modules/widget'], function($) {
 });
 ```
 
-Here is a Breeze equivalent added to [new js file](#add-custom-js-file):
+Here is a both Breeze and Luma compatible js file:
 
 ```js
-$.widget('widgetName', {
-    component: 'Vendor_Module/js/widget',
-    create: function() {
-        console.log('Widget Created!');
-    }
+define(['jquery', 'jquery-ui-modules/widget'], function($) {
+    $.widget('widgetName', {
+        component: 'Vendor_Module/js/widget', // <-- add this line
+        _create: function() {}
+    });
 });
 ```
-
-Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
 
 ## Migrate uiComponents
 
@@ -236,23 +234,21 @@ Component.extend({
 </div>
 ```
 
-Breeze doesn't support uiComponents. Hovewer, we have a lightweight
-replacement that can render the same html or knockout template. Read more
-about [view components](views).
-
 Here is a Breeze equivalent in two steps:
 
  1. Pre-render html template using special block and layout update:
 
     ```xml
-    <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.Vendor_Module_template" template="Vendor_Module::template.html"/>
+    <block class="Swissup\Breeze\Block\HtmlTemplate"
+        name="breeze.Vendor_Module_template"
+        template="Vendor_Module::template.html"/>
     ```
 
- 2. Add component code to the [new js file](#add-custom-js-file):
+ 2. And here is a both Breeze and Luma compatible js file:
 
     ```js
-    $.view('simpleComponent', {
-        component: 'simpleComponent',
+    Component.extend({
+        component: 'simpleComponent', // <-- add this line
         defaults: {
             template: 'Vendor_Module/template'
         },
@@ -261,8 +257,6 @@ Here is a Breeze equivalent in two steps:
         }
     });
     ```
-
-    Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
 
 ## Migrate functions
 
@@ -276,22 +270,19 @@ define(['jquery'], function ($) {
 });
 ```
 
-Here is a Breeze equivalent added to the [new js file](#add-custom-js-file):
+Here is a both Breeze and Luma compatible js file:
 
 ```js
-(function () {
-    var init = function (options, element) {
+define(['jquery'], function ($) {
+    var result = function (options, element) {
         //
     };
 
-    // Automatically mount on elements with data-mage-init='{"Vendor_Module/js/component"}'
-    $(document).on('breeze:mount:Vendor_Module/js/component', (e, data) => {
-        init(data.settings, data.el);
-    });
-})();
-```
+    result.component = 'Vendor_Module/js/component';
 
-Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
+    return result;
+});
+```
 
 ## Migrate objects
 
@@ -305,22 +296,16 @@ define(['jquery'], function ($) {
 });
 ```
 
-Here is a Breeze equivalent added to the [new js file](#add-custom-js-file):
+Here is a both Breeze and Luma compatible js file:
 
 ```js
-(function () {
-    var result = {
-        'Vendor_Module/js/component': function (settings, element) {}
+define(['jquery'], function ($) {
+    return {
+        component: 'Vendor_Module/js/component', // <-- add this line
+        'Vendor_Module/js/component': function () {}
     };
-
-    // Automatically mount on elements with data-mage-init='{"Vendor_Module/js/component"}'
-    $(document).on('breeze:mount:Vendor_Module/js/component', (e, data) => {
-        result['Vendor_Module/js/component'](data.settings, data.el);
-    });
-})();
+});
 ```
-
-Or, you can [reuse the same Luma-based file](#reusing-luma-files)!
 
 ## Migrate inline scripts
 
@@ -335,152 +320,12 @@ require(['myCustomDependency'], (dependency) => {
 ```
 
 In Breeze, you have to register the `myCustomDependency` in the $.breezemap object.
-You can do that by adding the `component` property to your dependency.
+You can do that by adding the `component` property to your dependency like in the
+examples above.
 
-## Reusing Luma files
+## Migrate html template
 
-Breeze has a [simple `define` function](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/core/define.js){:target="_blank" rel="noopener"}.
-This allows to reuse some of Luma-based widgets and components with
-minimum changes.
-
-In order to reuse Luma-based js files you need to register all js files using
-`breeze_default.xml` layout update:
-
-> The order of files is important. In the example below, `Vendor_Module/js/utility`
-> is added on the top because it's used inside other components.
-
-```xml
-<referenceBlock name="breeze.js">
-    <arguments>
-        <argument name="bundles" xsi:type="array">
-            <item name="default" xsi:type="array">
-                <item name="items" xsi:type="array">
-                    <item name="Vendor_Module/js/utility" xsi:type="string">Vendor_Module/js/utility</item>
-                    <item name="Vendor_Module/js/widget" xsi:type="string">Vendor_Module/js/widget</item>
-                    <item name="Vendor_Module/js/function" xsi:type="string">Vendor_Module/js/function</item>
-                    <item name="Vendor_Module/js/object" xsi:type="string">Vendor_Module/js/object</item>
-                    <item name="Vendor_Module/js/ui" xsi:type="string">Vendor_Module/js/ui</item>
-                </item>
-            </item>
-        </argument>
-    </arguments>
-</referenceBlock>
-```
-
-Then you have to add compatibility changes into Luma-based files. Take a look
-at the examples below.
-
-### Utility
-
-We need to register our component in `$.breezemap` object. By doing this we allow
-to resolve `'Vendor_Module/js/utility'` string in `define` statements of all
-other components.
-
-```diff
- define([
-     'jquery'
- ], function ($) {
-     'use strict';
- 
--    return function () {
-+    var result = function () {
-         //
-     };
-+
-+    result.component = 'Vendor_Module/js/utility';
-+
-+    return result;
- });
-```
-
-### Widget
-
-We need to add `component: 'Vendor_Module/js/widget'` to the widget code.
-With this change Breeze will mount the widget on all
-`data-mage-init='{"Vendor_Module/js/widget": {}}'` elements.
-
-```diff
- define([
-     'jquery',
-     'Vendor_Module/js/utility' // taken from $.breezemap
- ], function ($, action) {
-     'use strict';
-
-     $.widget('widgetName', {
-+        component: 'Vendor_Module/js/widget',
-         _create: function () {}
-     });
- });
-```
-
-### Function
-
-If we want to mount our function on all
-`data-mage-init='{"Vendor_Module/js/function": {}}'` elements, we need to apply
-the following changes:
-
-```diff
- define([
-     'jquery',
-     'knockout',
-     'Vendor_Module/js/utility' // taken from $.breezemap
- ], function ($, ko, action) {
-     'use strict';
- 
--    return function (options, element) {
-+    var result = function (options, element) {
-     };
-+
-+    result.component = 'Vendor_Module/js/function';
-+
-+    return result;
- });
-```
-
-### Object
-
-If we want to mount our object on all
-`data-mage-init='{"Vendor_Module/js/object": {}}'` elements, we need to apply
-the following changes:
-
-```diff
- define([
-     'jquery',
-     'knockout',
-     'Vendor_Module/js/utility' // taken from $.breezemap
- ], function ($, ko, action) {
-     'use strict';
- 
-     return {
-+        component: 'Vendor_Module/js/object',
-         'Vendor_Module/js/object': function (options, element) {}
-     };
- });
-```
-
-### uiComponent
-
-If we want to mount our component on all
-`data-mage-init='{"Vendor_Module/js/ui": {}}'` elements, we need to apply
-the following changes:
-
-```diff
- define([
-     'uiComponent',
-     'Vendor_Module/js/utility' // taken from $.breezemap
- ], function (Component, action) {
-     'use strict';
-
-     return Component.extend({
-+        component: 'Vendor_Module/js/ui',
-         initialize: function () {}
-     });
- });
-```
-
-### Html template
-
-Breeze can pre-render html template from `web/template` folder using layout update 
+You have to pre-render html template from `web/template` folder using layout update
 instruction:
 
 ```xml
@@ -488,14 +333,14 @@ instruction:
     <block
         class="Swissup\Breeze\Block\HtmlTemplate"
         name="breeze.Vendor_Module_template_confirmation_html"
-        template="Vendor_Module::confirmation.html" />
+        template="Vendor_Module::confirmation.html"/>
 </referenceContainer>
 ```
 
 Then you can use this template as usual:
 
 ```js
-define(['text!Vendor_Module/template/name.html'], function (template) {
+define(['text!Vendor_Module/template/confirmation.html'], function (template) {
     console.log(template);
 });
 ```
