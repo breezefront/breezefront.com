@@ -46,25 +46,7 @@ require(['Vendor_Module/js/component'], function () {
 When you'll find the main entry point in the module you want to integrate,
 you may proceed to the next step.
 
-## 2. Allow inline script
-
-If the module is using inline scripts with `require` calls, you need to add
-`data-breeze` attribute to the script tag:
-
-```html
-<script data-breeze>
-require(...);
-</script>
-
-<!-- OR -->
-```
-{:.chained}
-
-```php
-echo $secureRenderer->renderTag('script', ['data-breeze' => true], ...);
-```
-
-## 3. Register js components
+## 2. Register js components
 
 When you know the main entry point and path to the js file where it's located,
 you need to register it in
@@ -92,7 +74,7 @@ you need to register it in
 </page>
 ```
 
-## 4. Add component name
+## 3. Add component name
 
 Open `Vendor_Module/js/component` file and add the following line:
 
@@ -107,7 +89,7 @@ define(['jquery'], function ($) {
 })
 ```
 
-## 5. Prepare dependencies
+## 4. Prepare dependencies
 
 Sometimes it's not enough to add component name. For example, if component
 requires additional dependencies:
@@ -177,6 +159,6 @@ We need to register `Vendor_Module/js/function` and
 ```
 </details>
 
-## 6. That's all
+## 5. That's all
 
 Clear the cache and try to refresh the page on frontend.

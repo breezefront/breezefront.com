@@ -328,24 +328,14 @@ Let's assume you have the following code that works on Luma theme:
 
 ```html
 <script>
-require(['jquery'], ($) => {
+require(['myCustomDependency'], (dependency) => {
     //
 });
 </script>
 ```
 
-Here is a Breeze compatible equivalent:
-
-```html
-<script data-breeze>
-require(['jquery'], ($) => {
-    //
-});
-</script>
-```
-
-> Using custom dependencies in require call? You should [register them](#utility)
-> in $.breezemap.
+In Breeze, you have to register the `myCustomDependency` in the $.breezemap object.
+You can do that by adding the `component` property to your dependency.
 
 ## Reusing Luma files
 
