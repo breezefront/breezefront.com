@@ -9,6 +9,40 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Mar 4, 2024
+
+> swissup/breeze:2.14.1<br>
+> swissup/breeze-blank:2.7.1
+
+**👔 Added compatiblity with AdobeCommerce.**
+
+ -  Requires
+    [swissup/module-breeze-magento-enterprise](https://github.com/breezefront/module-breeze-magento-enterprise)
+    package installation. You can see the list of supported features in the readme
+    section if the repository.
+
+**🏗️ Improved developer experience**
+
+ -  Inline scripts with `require()` calls are **no longer removed** from the DOM
+    structure. This was done to simplify integration of third-party modules.
+ -  Improved javascript `$().find|$().is` methods for better support of jQuery
+    specific selectors like `:input`, `:button`, `:image` etc.
+ -  Added missing `validateSingleElement` function.
+ -  Added missing `prompt` component.
+ -  Align `.trigger('submit')` with jQuery - it will submit the form the the server now.
+ -  Allow extending widget from prototype: `$.widget('name', $.mage.name, {})`
+ -  `$.Deferred` object added.
+
+**🐛 Fixes**
+
+ -  Fixed not working first click on review stars when iOS device.
+ -  Fixed incorrect breadcrumbs at products page when opening multiple browser tabs.
+ -  Fixed incorrect date in calendar when year format is using two-digits.
+ -  Fixed incorrect count of active ajax `$.active` requests when some is failed.
+ -  Fixed not working `onInteraction` JS load rule.
+ -  Fixed incorrect execution order of multiple large dynamic js components.
+ -  Improved carousel styles.
+
 ## Feb 6, 2024
 
 > swissup/breeze:2.13.1<br>
@@ -56,7 +90,7 @@ class: prose prose-zinc max-w-3xl mx-auto
     ArgentoForce    | 691kB     | 432kB | 38%
     ArgentoStripes  | 712kB     | 410kB | 42%
 
-**🏗️ Improved developer experiece**
+**🏗️ Improved developer experience**
 
  -  **Allow extending custom uiComponents using `.extend()` function.**
 

@@ -41,6 +41,16 @@
     - magento/project-community-edition:^2.4.4
     - swissup/breeze:^2.0
 
+- name: magento/project-enterprise-edition
+  url: https://business.adobe.com/ua/products/magento/magento-commerce.html
+  description: >
+    Adobe Commerce is a flexible and scalable commerce platform that extends
+    Magento Open Source with various B2B and B2C solutions.
+  require:
+    - magento/project-enterprise-edition|magento/magento-cloud-metapackage
+    - swissup/breeze:^2.14
+    - swissup/module-breeze-magento-enterprise:^1.0
+
 - name: algolia/algoliasearch
   url: https://www.algolia.com/search-solutions/adobe-commerce-magento/
   description: >
