@@ -9,6 +9,16 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Mar 15, 2024
+
+> swissup/breeze:2.14.4<br>
+> swissup/breeze-blank:2.7.3
+
+ -  Fixed persistent error message across all pages after checkout error.
+ -  Fixed infinite cart page reload when third-party module changes 'customerData.cart' on each page reload.
+ -  Fixed missing "block" styles when using [grunt](https://breezefront.com/docs/running-grunt#running-grunt)
+    for the frontend developement.
+
 ## Mar 4, 2024
 
 > swissup/breeze:2.14.1<br>
