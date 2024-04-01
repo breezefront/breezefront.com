@@ -26,6 +26,7 @@ Variable            | Description
 `$.async()`         | [DOM watcher tool](#async)
 `$.translation`     | [Translation manager](#translate)
 `$.lazy`            | [Lazy script](#lazy-script)
+`$.Deferred`        | [Deferred function](#deferred)
 `$t()`              | [Translate function](#translate)
 
 ## Underscore
@@ -171,4 +172,17 @@ Or, you can use `lazy` type attribute:
 <script type="lazy">
     console.log('hello!');
 </script>
+```
+
+## Deferred
+
+`$.Deferred` --- is a function that creates and returns a new deferred object.
+It has a [jQuery-compatible API](https://api.jquery.com/jQuery.Deferred/){:target="_blank" rel="noopener"}.
+
+Usage examples:
+
+```js
+var resolvedPromise = $.Deferred().resolve();
+
+console.log(resolvedPromise.state());
 ```

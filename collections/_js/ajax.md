@@ -20,9 +20,9 @@ Breeze provides a wrapper around `fetch` function to make requests in jQuery-lik
 
 ```js
 $.ajax(url|options);
-$.ajax(url|options, options|successFn);
-$.get(url|options, options|successFn);
-$.post(url|options, options|successFn);
+$.ajax(url|options, data|successFn);
+$.get(url|options, data|successFn);
+$.post(url|options, data|successFn);
 ```
 
 ## Options
@@ -70,7 +70,8 @@ Ajax function returns a `Promise` with custom `abort` method. Use it to abort
 unfinished request:
 
 ```js
-var promise = $.get(url, {
+var promise = $.get({
+    url: url,
     error: function (response, error) {
         // response is undefined when request is aborted
         console.log(error);

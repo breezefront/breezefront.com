@@ -15,14 +15,15 @@ order: 450
 Mixin --- is a powerful feature that allows you to override or disable any built-in
 or third-party Breeze component.
 
-The syntax is very simple:
+The syntax is:
 
 ```js
-$.mixin('componentName', propsToExtend);
+$.mixin('componentName|component', propsToExtend);
 ```
 
- - `componentName` -- is the name of component that you want to modify.
- - `propsToExtend` -- an object with methods to override.
+ -  `componentName` -- is the name of component that you want to modify,
+    or the component object itself.
+ -  `propsToExtend` -- an object with methods to override.
 
 ## Example
 

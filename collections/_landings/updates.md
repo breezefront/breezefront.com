@@ -9,6 +9,63 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Apr 1, 2024
+
+> swissup/breeze:2.15.0<br>
+> swissup/breeze-blank:2.7.4,swissup/breeze-evolution:2.1.9
+
+**Backward Incompatible Changes**
+
+ -  $.post and $.get functions no longer accept second argument as ajax request options.
+    Now, it's always parsed as ajax request data to send. This change aligns the functions
+    with jQuery Ajax API.
+
+    Old, incorrect way:
+
+    ```js
+    $.post(url, {
+        data: {},
+        success: () => {}
+    });
+    ```
+
+    New, correct way:
+
+    ```js
+    $.post({
+        url: url,
+        data: {},
+        success: () => {}
+    });
+    ```
+
+**🎉 Fixes and Improvements**
+
+ -  Magento 2.4.7 compatibility.
+ -  Paypal-in-context integration added.
+ -  ShowPassword component added.
+ -  Out of stock items in product listing are now displayed in gray colors in BreezeEvolution theme.
+ -  Fixed large margins between form fields when some fieldsets are empty.
+ -  Fixed overlapped msrp price when it's shown aside of product name.
+ -  Added missing styles for MultiSourceInventory StorePickup module.
+ -  Fixed incorrect js dictionary file url.
+ -  Fixed missing cookie messages on initial page load.
+ -  Fixed js errors at "Paypal review order" page.
+ -  Fixed incorrect breadcrumbs at product page when turbo is disabled.
+
+**🏗️ Improved developer experience**
+
+ -  Autoregister dynamic components for easier third-party modules integration.
+ -  New [dynamic js bundle added](/docs/components#bundle-name) to simplify third-party modules integration.
+ -  Added missing `mage/storage` component.
+ -  Added ability to write [mixin for certain object only](/docs/mixins).
+ -  Fixed duplicate "add to cart" action when using `$(form).trigger('submit')`.
+ -  Added `Magento_Ui/js/model/messages` for easier third-party integrations.
+ -  Added minimal `uiLayout` function implementation.
+ -  Align [$.post, $.get functions and callbacks](/docs/ajax) with jQuery API.
+ -  Improved [$.Deferred API](/docs/globals#deferred).
+ -  Allow passing ko.observable in ajax request data.
+
 ## Mar 15, 2024
 
 > swissup/breeze:2.14.4<br>

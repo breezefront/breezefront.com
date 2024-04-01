@@ -131,6 +131,8 @@ The following bundles are available:
  -  product-configurable --- for the configurable products.
  -  customer --- for the scripts added on customer/login pages.
  -  cms --- for scripts used across CMS pages.
+ -  dynamic --- you may use it to simplify [dynamic components](/docs/components#onrequire) creation.
+    Useful, when you want to use `onRequire` in all of your components.
 
 Additionally, you can declare your own bundles. Just make sure that its name is
 unique to prevent collisions with other third-party modules.
