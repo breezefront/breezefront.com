@@ -14,7 +14,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 > swissup/breeze:2.15.0<br>
 > swissup/breeze-blank:2.7.4,swissup/breeze-evolution:2.1.9
 
-**Backward Incompatible Changes**
+**🚨 Backward Incompatible Changes**
 
  -  $.post and $.get functions no longer accept second argument as ajax request options.
     Now, it's always parsed as ajax request data to send. This change aligns the functions
