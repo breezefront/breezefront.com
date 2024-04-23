@@ -9,6 +9,19 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Apr 23, 2024
+
+> swissup/breeze:2.16.0<br>
+> swissup/breeze-blank:2.7.5
+
+ -  Magento 2.4.7: Fixed broken checkout styles when critical CSS is enabled.
+ -  Paypal-pay-later integration added.
+ -  Improved "Add to cart" button positioning. when some products have swatches and some don't.
+ -  Fixed paypal buttons overlapping over third-party Megamenu dropdown.
+ -  Fixed incorrect url returned by `.toUrl()` when minification is enabled.
+ -  Optimize `$.async` and `$.onReveal` logic.
+ -  `js` class added to `html` element when js is enabled in browser.
+
 ## Apr 1, 2024
 
 > swissup/breeze:2.15.0<br>
