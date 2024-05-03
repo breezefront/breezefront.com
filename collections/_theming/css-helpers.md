@@ -19,6 +19,11 @@ Source code:
  - [helpers.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/web/css/base/_helpers.less){:target="_blank" rel="noopener"}
  - [typography.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/web/css/base/_typography.less){:target="_blank" rel="noopener"}
 
+## Animations
+
+Read more about [scroll reveal](/docs/scroll-reveal) and
+[zoom on hover](/docs/zoom-on-hover) animations.
+
 ## Typography
 
 ```html

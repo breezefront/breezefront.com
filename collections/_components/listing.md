@@ -173,6 +173,12 @@ a lot of customization options for listing out of the box.
 @listing-grid-item__reveal-on-hover__aspect-ratio: 236 / 296; // image-width / image-height
 ```
 
+### Zoom on hover
+
+```scss
+@listing-grid-item__zoom-on-hover: false;
+```
+
 ## Examples
 
 

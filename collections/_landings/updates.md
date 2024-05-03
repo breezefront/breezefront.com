@@ -9,6 +9,20 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## May 3, 2024
+
+> swissup/breeze:2.16.1<br>
+> swissup/breeze-blank:2.8.0,swissup/breeze-evolution:2.2.0
+
+ -  [Scroll reveal](/docs/scroll-reveal) and [zoom on hover](/docs/zoom-on-hover) animations added.
+ -  Improve Paypal In Context integration.
+ -  Fixed message alignment when it's centered.
+ -  Fixed not working markers for unavailable swatches.
+ -  Fixed js errors caused by turbo library.
+ -  Added missing `$.fn.serializeArray` function.
+ -  Fixed inheritance of nested objects in ui components.
+ -  Fixed incorrectly working `.one` function.
+
 ## Apr 23, 2024
 
 > swissup/breeze:2.16.0<br>
