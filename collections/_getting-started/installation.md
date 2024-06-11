@@ -33,7 +33,7 @@ Replace `swissup/breeze-blank` with theme you'd like to install:
 
 ```powershell
 composer require swissup/breeze-blank &&\
-bin/magento setup:upgrade --safe-mode=1 &&\
+bin/magento module:enable Swissup_Breeze Swissup_Rtl &&\
 bin/magento marketplace:package:install swissup/breeze-blank
 ```
 
