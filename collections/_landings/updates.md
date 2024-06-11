@@ -9,6 +9,58 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 11, 2024
+
+> swissup/breeze:2.17.0<br>
+> swissup/breeze-blank:2.8.0,swissup/breeze-evolution:2.2.0
+
+ -  Performance improvements for slow internet connections.
+ -  Improve product page performance when it has a lot of reviews.
+ -  Fixed possible flash of scroll reveal elements on initial page load.
+ -  Fixed redirect loop at "Login as Customer" page.
+ -  Stability improvements in js code.
+
+**🚨 Backward Incompatible Changes**
+
+ -  All scripts except `core` and `knockout` bundles are now asynchronously loaded.
+    This means that you have to define dependencies of your scripts using `import`
+    section:
+
+    ```diff
+     <item name="Vendor_Module/js/catalog-add-to-cart" xsi:type="array">
+         <item name="path" xsi:type="string">Vendor_Module/path/to/file</item>
+    +    <item name="import" xsi:type="array">
+    +       <item name="priceUtils" xsi:type="string">Magento_Catalog/js/price-utils</item>
+    +    </item>
+     </item>
+    ```
+
+ -  In case if your js creates mixin for built-in component, you need to add
+    `mixins` property to your js declaration:
+
+    ```diff
+     <item name="Vendor_Module/js/catalog-add-to-cart" xsi:type="array">
+         <item name="path" xsi:type="string">Vendor_Module/path/to/file</item>
+    +    <item name="mixins" xsi:type="array">
+    +       <item name="catalogAddToCart" xsi:type="string">catalogAddToCart</item>
+    +    </item>
+     </item>
+    ```
+
+ -  Scripts are no longer automatically loaded unless used in `require()`, or `data-mage-init`.
+    If you have the scripts that are not used in `data-mage-init` and `require()` calls,
+    and you want to load it every time when bundle is loaded, you need to add
+    `autoload` property to your js declaration:
+
+    ```diff
+     <item name="items" xsi:type="array">
+         <item name="custom-js" xsi:type="array">
+             <item name="path" xsi:type="string">js/path/to/file</item>
+    +        <item name="autoload" xsi:type="boolean">true</item>
+         </item>
+     </item>
+    ```
+
 ## May 3, 2024
 
 > swissup/breeze:2.16.1<br>
