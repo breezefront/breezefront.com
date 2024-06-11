@@ -12,12 +12,14 @@ class: prose prose-zinc max-w-3xl mx-auto
 ## June 11, 2024
 
 > swissup/breeze:2.17.0<br>
-> swissup/breeze-blank:2.8.0,swissup/breeze-evolution:2.2.0
+> swissup/breeze-blank:2.8.1
 
  -  Performance improvements for slow internet connections.
  -  Improve product page performance when it has a lot of reviews.
  -  Fixed possible flash of scroll reveal elements on initial page load.
  -  Fixed redirect loop at "Login as Customer" page.
+ -  Fixed image jumping when jarallax video is used on cms row element.
+ -  Fixed missing styles for "Login as Customer" panel.
  -  Stability improvements in js code.
 
 **🚨 Backward Incompatible Changes**
