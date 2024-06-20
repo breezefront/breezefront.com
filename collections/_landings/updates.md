@@ -11,9 +11,10 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## June 20, 2024
 
-> swissup/breeze:2.17.2
+> swissup/breeze:2.17.3
 
  -  Fixed js errors with third-party integration modules.
+ -  Fixed js error when `requirejs` call is used in inline scripts.
  -  Added missing `customerData.initStorage` method.
  -  Fixed not running callback when requiring component using absolute URL.
  -  Added ability to [create shim](requirejs#amd-dependencies) for component
