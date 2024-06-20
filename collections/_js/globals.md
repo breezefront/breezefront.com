@@ -1,33 +1,30 @@
 ---
 layout: docs
-title: Globals
+title: Global Variables
 description: Global JS variables in Breeze
 order: 100
 ---
 
-# Globals
+# Global Variables
 
 * TOC
 {:toc}
 
 ## About
 
-Since Breeze doesn't use modern JS techniques to load js dependencies, you will
-work with global js variables. For the sake of simplicity, most of globals declared
-under `$` scope:
+Some functions and objects are registered in `window` namespace and available globally:
 
 Variable            | Description
 --------------------|----------------
 `_`                 | [Underscore library](#underscore)
-`$()`               | [Cash library](#cash)
+`$`                 | [Cash library](#cash)
+`$.ajax|post|get`   | [Ajax request functions](#ajax)
+`$.Deferred()`      | [Deferred function](#deferred)
 `$.storage`         | [Local storage manager](#local-storage)
 `$.cookies`         | [Cookie manager](#cookies)
-`$.sections`        | [Section/Customer data](#customer-data)
 `$.async()`         | [DOM watcher tool](#async)
-`$.translation`     | [Translation manager](#translate)
-`$.lazy`            | [Lazy script](#lazy-script)
-`$.Deferred`        | [Deferred function](#deferred)
-`$t()`              | [Translate function](#translate)
+`$.lazy()`          | [On interaction script](#on-interaction-script)
+`$.onReveal()`      | [On reveal script](#on-reveal-script)
 
 ## Underscore
 
@@ -67,6 +64,24 @@ $('button.continue')
     });
 ```
 
+## Ajax
+
+`$.ajax|$.post|$.get` --- are the functions for ajax requests with jQuery-like API.
+See more on the [separate page](ajax).
+
+## Deferred
+
+`$.Deferred()` --- is a function that creates and returns a new deferred object.
+It has a [jQuery-compatible API](https://api.jquery.com/jQuery.Deferred/){:target="_blank" rel="noopener"}.
+
+Usage examples:
+
+```js
+var resolvedPromise = $.Deferred().resolve();
+
+console.log(resolvedPromise.state());
+```
+
 ## Local storage
 
 `$.storage` --- is a Breeze wrapper around `window.localStorage` that adds
@@ -104,24 +119,9 @@ $.cookies.getJson(name);
 $.cookies.remove(name);
 ```
 
-## Customer data
-
-`$.customerData` or `$.sections` --- is an object to work with Magento's dynamic
-sections (Wishlist, Shopping Cart, Messages, etc).
-
-Usage examples:
-
-```js
-$.sections.get(name);
-$.sections.set(name, data);
-$.sections.reload(names, forceNewSectionTimestamp);
-$.sections.invalidate(names);
-$.sections.getAffectedSections(url);
-```
-
 ## Async
 
-`$.async` --- is a handy function to watch for selector appearance in DOM structure.
+`$.async` --- is a function that will execute passed function when selector is found in DOM structure.
 It uses [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
 under the hood.
 
@@ -133,28 +133,9 @@ $.async('.selector', function (node) {
 });
 ```
 
-## Translate
+## On interaction script
 
-`$.translation` --- is an object to work with js translations. There is shorthand
-to the `$.translation.translate` method available: `$t`.
-
-Usage examples:
-
-```js
-// get translated string
-var translated = $t('Shopping Cart');
-
-// Dynamically register translation for the 'key' phrase
-$.translation.add('key', 'value');
-// or
-$.translation.add({
-    'key': 'value'
-});
-```
-
-## Lazy script
-
-`$.lazy` --- is a function that will evaluate passed function after first user 
+`$.lazy()` --- is a function that will execute passed function after first user
 interaction. It's useful to postpone loading of not critical resources.
 [Read more information](https://www.patterns.dev/posts/import-on-interaction){:target="_blank" rel="noopener"}.
 
@@ -174,15 +155,21 @@ Or, you can use `lazy` type attribute:
 </script>
 ```
 
-## Deferred
+## On reveal script
 
-`$.Deferred` --- is a function that creates and returns a new deferred object.
-It has a [jQuery-compatible API](https://api.jquery.com/jQuery.Deferred/){:target="_blank" rel="noopener"}.
+`$.onReveal()` --- is a function that will execute passed function when passed element
+appear in viewport area.
 
 Usage examples:
 
 ```js
-var resolvedPromise = $.Deferred().resolve();
+$.onReveal('.selector', function () {
+    console.log('hello!');
+});
 
-console.log(resolvedPromise.state());
+$.onReveal('.selector', function (elements) {
+    console.log('hello, we will appear soon!', elements);
+}, {
+    rootMargin: '150px'
+});
 ```

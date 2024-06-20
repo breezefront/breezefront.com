@@ -3,6 +3,7 @@ layout: docs
 title: Structure
 description: Theme folder structure
 order: 100
+navigation: false
 ---
 
 # Theme Structure

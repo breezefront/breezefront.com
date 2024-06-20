@@ -29,6 +29,31 @@ $.mixin('componentName|component', propsToExtend);
 
 > [Where to place my custom scripts?](custom-javascript)
 
+When creating mixin, you need to set `mixins` property in `breeze_default.xml` file.
+For example, if you are writing mixin for `collapsible` component, you must
+register it:
+
+```xml
+<referenceBlock name="breeze.js">
+  <arguments>
+    <argument name="bundles" xsi:type="array">
+      <item name="default" xsi:type="array">
+        <item name="items" xsi:type="array">
+          <item name="my-mixins" xsi:type="array">
+            <item name="path" xsi:type="string">Vendor_Module/js/breeze/mixins-file</item>
+            <item name="mixins" xsi:type="array">
+              <item name="collapsible" xsi:type="string">collapsible</item>
+            </item>
+          </item>
+        </item>
+      </item>
+    </argument>
+  </arguments>
+</referenceBlock>
+```
+
+And here is the contents of `Vendor_Module/js/breeze/mixins-file`:
+
 ```js
 $.mixin('collapsible', {
     create: function (parent) {

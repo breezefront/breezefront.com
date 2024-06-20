@@ -18,7 +18,7 @@ develop Luma-themes.
 
 ## Theme entry points
 
-Breeze provides ready-to-use CSS entry points for theme development. Just create
+We provide ready-to-use CSS entry points for theme development. Just create
 one of the following files inside your custom theme, and it will be automatically
 included to the theme styles:
 

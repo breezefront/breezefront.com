@@ -3,6 +3,8 @@ layout: docs
 title: Views
 description: Creating a View Component in Breeze
 order: 400
+redirect_to: /docs/ui-components
+navigation: false
 ---
 
 # Views

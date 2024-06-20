@@ -114,10 +114,12 @@ We need to register `Vendor_Module/js/function` and
 ```diff
            <item name="default" xsi:type="array">
              <item name="items" xsi:type="array">
-+              <item name="Vendor_Module/js/function" xsi:type="string">Vendor_Module/js/function</item>
-+              <item name="Vendor_Module/js/object" xsi:type="string">Vendor_Module/js/object</item>
                <item name="Vendor_Module/js/component" xsi:type="array">
                  <item name="path" xsi:type="string">Vendor_Module/js/component</item>
++                <item name="import" xsi:type="array">
++                  <item name="Vendor_Module/js/function" xsi:type="string">Vendor_Module/js/function</item>
++                  <item name="Vendor_Module/js/object" xsi:type="string">Vendor_Module/js/object</item>
++                </item>
                </item>
              </item>
            </item>

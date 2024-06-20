@@ -124,7 +124,7 @@ Example:
 }
 ```
 
-## JS components
+## Components
 
 > Please read the [JS components page](components) before you proceed further.
 
@@ -158,7 +158,7 @@ for your component. See the list of available bundles at [JS components page](co
 Now, let's view a basic example of `js/breeze/component.js` file:
 
 ```js
-(function () {
+define(['uiComponent'], (Component) => {
     'use strict';
 
     $.widget('uniqueComponentName', {
@@ -169,7 +169,7 @@ Now, let's view a basic example of `js/breeze/component.js` file:
         }
     });
 
-    $.view('uniqueComponentName', {
+    Component.extend({
         component: 'Vendor_Module/js/component', // an alias that's used in the initialization instructions.
         defaults: {
             template: 'Vendor_Module/component' // see "Knockout templates" section below
@@ -179,19 +179,19 @@ Now, let's view a basic example of `js/breeze/component.js` file:
             // this.options - object
         }
     });
-})();
+});
 ```
 
-> Please review [Widgets](widgets) and [Views](views) pages to get more information
-> about these components.
+> Please review [Widgets](widgets) and [UI Components](ui-components) pages to
+> get more information about these components.
 
 ## Knockout templates
 
 > Think twice before using knockout templates. We think that they are overused
-> in Luma's codebase and we will remove their usages from Breeze in the future.
-> Usually `_.template` is more than enough for the majority of the modules.
+> in Luma's codebase and we will remove their usages from built-in Breeze components
+> in the future. Usually, simple `_.template` is what you need for the majority of the modules.
 
-If your JS component is using knockout template, you should prerender it at the page.
+If your JS component is using KnockoutJS template, you should prerender it.
 To do that you need to use layout update instructions and our HTML block renderer.
 
 Here is an example that will render knockout or raw html template and will
@@ -202,3 +202,5 @@ make it visible for view component from the previous example:
     <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.Vendor_Module_component" template="Vendor_Module::component.html"/>
 </referenceContainer>
 ```
+
+See more information at [UI Components](ui-components#rendering-html-template) page.

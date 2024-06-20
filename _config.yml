@@ -6,6 +6,9 @@ baseurl: ""
 url: "https://breezefront.com"
 github_username: swissup
 
+plugins:
+  - jekyll-redirect-from
+
 defaults:
   - scope:
       path: "assets/img"

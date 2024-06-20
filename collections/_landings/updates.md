@@ -9,6 +9,16 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 20, 2024
+
+> swissup/breeze:2.17.2
+
+ -  Fixed js errors with third-party integration modules.
+ -  Added missing `customerData.initStorage` method.
+ -  Fixed not running callback when requiring component using absolute URL.
+ -  Added ability to [create shim](requirejs#amd-dependencies) for component
+    loaded with absolute URL.
+
 ## June 11, 2024
 
 > swissup/breeze:2.17.0<br>
@@ -16,6 +26,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
  -  Performance improvements for slow internet connections.
  -  Improve product page performance when it has a lot of reviews.
+ -  New rule for dynamic component initialization: [onDom](/docs/components#ondom).
  -  Fixed possible flash of scroll reveal elements on initial page load.
  -  Fixed redirect loop at "Login as Customer" page.
  -  Fixed image jumping when jarallax video is used on cms row element.

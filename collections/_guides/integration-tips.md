@@ -54,19 +54,25 @@ Use `breeze_default.xml` layout update to add new js file:
 
 ```xml
 <referenceBlock name="breeze.js">
-    <arguments>
-        <argument name="bundles" xsi:type="array">
-            <item name="default" xsi:type="array">
-                <item name="items" xsi:type="array">
-                    <!-- Adding file from custom module -->
-                    <item name="module-js-file" xsi:type="string">Vendor_Module/js/breeze/new-js-file</item>
+  <arguments>
+    <argument name="bundles" xsi:type="array">
+      <item name="default" xsi:type="array">
+        <item name="items" xsi:type="array">
+          <!-- Adding file from custom module -->
+          <item name="module-js-file" xsi:type="array">
+            <item name="path" xsi:type="string">Vendor_Module/js/breeze/new-js-file</item>
+            <item name="autload" xsi:type="boolean">true</item>
+          </item>
 
-                    <!-- Adding file from custom theme -->
-                    <item name="theme-js-file" xsi:type="string">js/breeze/new-js-file</item>
-                </item>
-            </item>
-        </argument>
-    </arguments>
+          <!-- Adding file from custom theme -->
+          <item name="theme-js-file" xsi:type="array">
+            <item name="path" xsi:type="string">js/breeze/new-js-file</item>
+            <item name="autload" xsi:type="boolean">true</item>
+          </item>
+        </item>
+      </item>
+    </argument>
+  </arguments>
 </referenceBlock>
 ```
 
@@ -135,7 +141,7 @@ Let's assume you have the following code that works on Luma theme:
 ```js
 // requirejs-config.js
 mixins: {
-    'component': {
+    'catalogAddToCart': {
         'Vendor_Module/js/mixin': true
     }
 }
@@ -157,11 +163,32 @@ define(['mage/utils/wrapper'], function (wrapper) {
 Here is a Breeze equivalent added to [new js file](#add-custom-js-file):
 
 ```js
-$.mixin('component', {
+$.mixin('catalogAddToCart', {
     method: function (original, arg) {
         console.log('Mixin!');
     }
 });
+```
+
+Additionally, you need to add `mixins` property:
+
+```diff
+ <referenceBlock name="breeze.js">
+   <arguments>
+     <argument name="bundles" xsi:type="array">
+       <item name="default" xsi:type="array">
+         <item name="items" xsi:type="array">
+           <item name="my-mixins" xsi:type="array">
+             <item name="path" xsi:type="string">Vendor_Module/js/breeze/mixins-file</item>
++            <item name="mixins" xsi:type="array">
++              <item name="catalogAddToCart" xsi:type="string">catalogAddToCart</item>
++            </item>
+           </item>
+         </item>
+       </item>
+     </argument>
+   </arguments>
+ </referenceBlock>
 ```
 
 ## Migrate widgets
@@ -236,7 +263,8 @@ Component.extend({
 
 Here is a Breeze equivalent in two steps:
 
- 1. Pre-render html template using special block and layout update:
+ 1. [Pre-render html template](ui-components#rendering-html-template) using
+    layout update instruction:
 
     ```xml
     <block class="Swissup\Breeze\Block\HtmlTemplate"
@@ -244,7 +272,7 @@ Here is a Breeze equivalent in two steps:
         template="Vendor_Module::template.html"/>
     ```
 
- 2. And here is a both Breeze and Luma compatible js file:
+ 2. And here is a both Breeze and Luma compatible code:
 
     ```js
     Component.extend({
@@ -319,9 +347,8 @@ require(['myCustomDependency'], (dependency) => {
 </script>
 ```
 
-In Breeze, you have to register the `myCustomDependency` in the $.breezemap object.
-You can do that by adding the `component` property to your dependency like in the
-examples above.
+In Breeze, you have to register the `myCustomDependency` in `breeze_default.xml`
+and add the `component` property to your dependency like in the examples above.
 
 ## Migrate html template
 

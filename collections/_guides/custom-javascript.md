@@ -18,20 +18,22 @@ Create `breeze_default.xml` layout update file with the following code inside:
 
 ```xml
 <referenceBlock name="breeze.js">
-    <arguments>
-        <argument name="bundles" xsi:type="array">
-            <item name="default" xsi:type="array">
-                <item name="items" xsi:type="array">
-                    <item name="js-from-theme-folder" xsi:type="string">
-                        js/breeze/my-custom-file
-                    </item>
-                    <item name="js-from-module-folder" xsi:type="string">
-                        Vendor_Module/js/breeze/my-custom-file
-                    </item>
-                </item>
-            </item>
-        </argument>
-    </arguments>
+  <arguments>
+    <argument name="bundles" xsi:type="array">
+      <item name="default" xsi:type="array">
+        <item name="items" xsi:type="array">
+          <item name="js-from-theme-folder" xsi:type="array">
+            <item name="path" xsi:type="string">js/breeze/my-custom-file</item>
+            <item name="autload" xsi:type="boolean">true</item>
+          </item>
+          <item name="js-from-module-folder" xsi:type="array">
+            <item name="path" xsi:type="string">Vendor_Module/js/breeze/my-custom-file</item>
+            <item name="autload" xsi:type="boolean">true</item>
+          </item>
+        </item>
+      </item>
+    </argument>
+  </arguments>
 </referenceBlock>
 ```
 

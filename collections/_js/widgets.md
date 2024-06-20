@@ -14,7 +14,7 @@ order: 300
 ## About
 
 Widget --- is the main interface to create JS Component. Breeze widgets are very
-similar to Luma's jQuery UI based widgets. Sometimes, you can even
+similar to Luma's jQuery UI based widgets. In most cases you can even
 [reuse the same file](integration-tips#how-to-reuse-js-widgets) for both
 Luma and Breeze Themes
 
@@ -23,22 +23,22 @@ Luma and Breeze Themes
 `$.widget` --- is a function that is usually used to declare a new widget:
 
 ```js
-$.widget('name', {});
+$.widget('uniqueName', {});
 ```
 
-However, you can also retrieve all widget instances using this function:
+You can also retrieve all widget instances using this function:
 
 ```js
 // iterate over all instances
-$.widget('name').each(function (widget) {
+$.widget('uniqueName').each(function (widget) {
     console.log(widget);
 });
 
 // call for specified method in all instances
-$.widget('name').invoke('close');
+$.widget('uniqueName').invoke('close');
 
 // destroy all instances
-$.widget('name').destroy();
+$.widget('uniqueName').destroy();
 ```
 
 ## Declaration
@@ -52,14 +52,24 @@ There are three main parts in widget declaration:
     widget instance.
 
 ```js
-$.widget('name', {});
+$.widget('uniqueName', {
+    component: 'Vendor_Module/js/component'
+});
 ```
 
 Sometimes you'll want to create a widget as a child of some built-in widget. In
 this case parent name should be added to the declaration:
 
+> You must also add `import` section to your `breeze_default.xml` file.
+
 ```js
-$.widget('name', 'parentName', {});
+define(['Magento_Ui/js/modal/modal'], (parentWidget) => {
+    'use strict';
+
+    $.widget('uniqueName', parentWidget, {
+        component: 'Vendor_Module/js/component'
+    });
+});
 ```
 
 Prototype object is usually consist from:
@@ -77,7 +87,7 @@ built-in properties and methods, and then review each peace of code.
 
 
 ```js
-$.widget('widgetName', 'parentWidgetName', {
+$.widget('uniqueName', {
     component: 'Vendor_Module/js/component',
 
     options: {
@@ -135,15 +145,6 @@ You should use the following corresponding values for `component` property:
 component: 'Vendor_Module/js/component'
 component: 'dropdown'
 ```
-
-> If you don't want to use `component` property, you'll need to create Widget manually
-> using `breeze:mount` event listener:
->
-> ```js
-> $(document).on('breeze:mount:Vendor_Module/js/component', function (event, data) {
->     $(data.el).widgetName(data.settings);
-> });
-> ```
 
 ### options
 
