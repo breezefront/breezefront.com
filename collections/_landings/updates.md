@@ -9,9 +9,19 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 21, 2024
+
+> swissup/breeze:2.17.5
+
+ -  Fixed not working login popup when guest checkout is disabled.
+ -  Show spinner while login popup is loading on slow internet connections.
+ -  Added `$.fn.scroll` method.
+ -  Fixed `this.element` property in "plain object components" initialization.
+ -  Improved compatibility with third-party UI components.
+
 ## June 20, 2024
 
-> swissup/breeze:2.17.3
+> swissup/breeze:2.17.4
 
  -  Fixed js errors with third-party integration modules.
  -  Fixed js error when `requirejs` call is used in inline scripts.
