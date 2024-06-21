@@ -11,10 +11,11 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## June 21, 2024
 
-> swissup/breeze:2.17.5
+> swissup/breeze:2.17.6
 
  -  Fixed not working login popup when guest checkout is disabled.
  -  Show spinner while login popup is loading on slow internet connections.
+ -  Promise is now retuned by `customerData.reload` method.
  -  Added `$.fn.scroll` method.
  -  Fixed `this.element` property in "plain object components" initialization.
  -  Improved compatibility with third-party UI components.
