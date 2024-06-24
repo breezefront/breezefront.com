@@ -301,6 +301,17 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-paypal-braintree:^1.0
 
+- name: plumrocket/module-estimateddelivery
+  url: https://plumrocket.com/magento-estimated-delivery-date
+  description: >
+    Display expected delivery and shipping date on any page you like,
+    i.e product page, shopping cart page, transactional emails,
+    and other pages of your store.
+  require:
+    - plumrocket/module-estimateddelivery:^2.5
+    - swissup/breeze:^2.17.7
+    - aqeltech/module-breeze-plumrocket-estimated-delivery:^1.0
+
 - name: scommerce/googletagmanagerpro
   url: https://www.scommerce-mage.com/magento-2-google-tag-manager.html
   description: >
