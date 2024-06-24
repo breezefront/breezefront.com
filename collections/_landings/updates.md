@@ -9,6 +9,16 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 24, 2024
+
+> swissup/breeze:2.17.7
+
+ -  Added support for the UI Components returned from the constructor function.
+ -  Fixed page reload when removing item from header cart.
+ -  Fixed posibility of missing formkey.
+ -  Fixed js error when ajax request failed and response is not available.
+ -  Fixed js error when selector by attribute value is not wrapped into quotes.
+
 ## June 21, 2024
 
 > swissup/breeze:2.17.6
