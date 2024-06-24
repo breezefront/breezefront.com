@@ -264,14 +264,14 @@
 - name: mirasvit/googletagmanager
   url: https://mirasvit.com/magento-2-google-tag-manager.html
   description: >
-    The Google Tag Manager & Facebook Pixel extension is a simple way to get
-    eCommerce Tracking in Google Analytics for your store. Get in-depth reports
+    The Google Tag Manager (GTM) & Facebook Pixel extension is a simple way to get
+    eCommerce Tracking in Google Analytics (GA) for your store. Get in-depth reports
     on your customers' behavior while they are shopping. See the bottlenecks of
     the shopping process in your store.
   require:
-    - mirasvit/module-gtm:^2.0
-    - swissup/breeze:^2.0
-    - swissup/module-breeze-mirasvit-gtm:^2.0
+    - mirasvit/module-gtm:^2.0.17
+    - swissup/breeze:^2.17.6
+    - aqeltech/module-breeze-mirasvit-gtm:^1.0.0
 
 - name: mirasvit/reward-points
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
