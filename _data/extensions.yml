@@ -273,6 +273,16 @@
     - swissup/breeze:^2.17.6
     - aqeltech/module-breeze-mirasvit-gtm:^1.0.0
 
+- name: mirasvit/helpdesk
+  url: https://mirasvit.com/magento-2-extensions/helpdesk.html
+  description: >
+    Provide your online store customers with outstanding support. Collect and
+    process all inquiries, emails, and offline chats in one place!
+  require:
+    - mirasvit/module-helpdesk:^1.2.36
+    - swissup/breeze:^2.17.6
+    - aqeltech/module-breeze-mirasvit-helpdesk:^1.0.0
+
 - name: mirasvit/reward-points
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
   description: >
