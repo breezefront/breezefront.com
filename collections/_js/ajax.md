@@ -31,7 +31,7 @@ Here is a list of available options:
 
 ```js
 $.ajax({
-    url: $.breeze.url.build('destination/url'),
+    url: 'url',
     method: 'get|post|put|delete|head',
     headers: {
         'X-Requested-With': 'XMLHttpRequest'
@@ -71,7 +71,7 @@ unfinished request:
 
 ```js
 var promise = $.get({
-    url: url,
+    url: 'url',
     error: function (response, error) {
         // response is undefined when request is aborted
         console.log(error);
