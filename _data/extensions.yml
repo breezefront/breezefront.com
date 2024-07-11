@@ -364,6 +364,15 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-ulmod-bundle-item:^1.0.2
 
+- name: webkul/module-orderby-whatsappbot
+  url: https://store.webkul.com/magento2-whatsapp-shopping-bot-order-notifications.html
+  description: >
+    Integrate WhatsApp with your Magento 2 store and provide a seamless web and mobile commerce experience.
+  require:
+    - webkul/module-orderby-whatsappbot:^5.0.4
+    - swissup/breeze:^2.17.9
+    - swissup/module-breeze-webkul-order-by-whatsapp-bot:^1.0.0
+
 - name: weltpixel/ga4
   url: https://www.weltpixel.com/google-analytics-4-ga4-with-gtm-support-for-magento-2.html
   description: >
