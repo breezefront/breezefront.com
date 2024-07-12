@@ -9,16 +9,18 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## July 11, 2024
+## July 12, 2024
 
-> swissup/breeze:2.17.9
-> swissup/breeze-blank:2.8.2
+> swissup/breeze:2.17.10
+> swissup/breeze-blank:2.8.3
 
  -  Added `Magento_Ui/js/lib/validation/validator` component.
  -  Improve `$.async` method performance.
  -  Fixed incorrect dependencies resolver when bundle is enabled.
  -  Fixed bug when disabled js mixin may be added to the page.
  -  Do not process components from jsLayout with missing `component` property.
+ -  Fixed incorrect sorting of ui component children elements.
+ -  Fixed possible incorrect activation of dropdown element.
 
 ## June 24, 2024
 
