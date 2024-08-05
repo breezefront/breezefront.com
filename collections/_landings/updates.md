@@ -9,6 +9,14 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## August 5, 2024
+
+> swissup/breeze:2.17.11
+
+ -  Fixed possibly missing third-party widget that extends one of the core widgets.
+ -  Fixed possible not working mixin due to the race condition when mixin written
+    for dynamic component.
+
 ## July 12, 2024
 
 > swissup/breeze:2.17.10
