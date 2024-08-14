@@ -209,3 +209,18 @@ magnifier with inner zoom option:
 ```
 
 Save the file and clear Magento cache.
+
+### Show thumbnails as dots
+
+If you want to use `dots` mode for mobile devices only, instead of using
+the `<var name="nav">dots</var>` xml you need to use `LESS` mixin in your theme:
+
+```scss
+& when (@critical) {
+    @media @media-md-down {
+        .breeze-gallery:not(.opened) .thumbnails {
+            .bz-gallery-nav-dots();
+        }
+    }
+}
+```

@@ -9,6 +9,60 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## August 13, 2024
+
+> swissup/breeze:2.17.12
+
+ -  Allow method chaining when using $.Deferred object:
+
+    ```js
+    $.Deferred().then(fn1).fail(fn2);
+    ```
+
+ -  Fixed not working combined [onInteraction](/docs/components#oninteraction)
+    and [onReveal](/docs/components#onreveal) load rules:
+
+    ```xml
+    <item name="load" xsi:type="array">
+        <item name="onInteraction" xsi:type="boolean">true</item>
+        <item name="onReveal" xsi:type="array">
+            <item name="0" xsi:type="string">.selector</item>
+        </item>
+    </item>
+    ```
+
+ -  Allow resolving js dependencies from nested properties:
+
+    ```xml
+    <item name="braintree" xsi:type="array">
+        <item name="path" xsi:type="string">https://js.braintreegateway.com/web/3.97.2/js/client.min.js</item>
+        <item name="global" xsi:type="string">braintree.client</item>
+    </item>
+    ```
+
+    Now, the following code will work as expected:
+
+    ```js
+    define(['braintree'], (client) => {
+        // Breeze will load remote js and properly resolve
+        // exposed window.braintree.client property
+        console.log(client);
+    });
+    ```
+
+ -  Gallery dots styles moved to separate `.bz-gallery-nav-dots()` mixin for easier
+    reuse per media query:
+
+    ```scss
+    & when (@critical) {
+        @media @media-md-down {
+            .breeze-gallery:not(.opened) .thumbnails {
+                .bz-gallery-nav-dots();
+            }
+        }
+    }
+    ```
+
 ## August 5, 2024
 
 > swissup/breeze:2.17.11
