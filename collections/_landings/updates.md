@@ -9,6 +9,15 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## September 3, 2024
+
+> swissup/breeze:2.17.14
+
+ -  Fixed broken styles at checkout page when `use_css_critical_path` is enabled
+    and Magento_CSP module is used.
+ -  Fixed possibly broken HTML code after DOMDocument parser.
+ -  Non-critical CSS styles are now deferred even if `use_css_critical_path` is disabled.
+
 ## August 13, 2024
 
 > swissup/breeze:2.17.12
