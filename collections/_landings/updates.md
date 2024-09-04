@@ -9,6 +9,13 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## September 4, 2024
+
+> swissup/breeze:2.17.16
+
+ -  Fixed PHP error when Magento_CSP module exists but disabled.
+ -  Improved error reporting when unable to load js component.
+
 ## September 3, 2024
 
 > swissup/breeze:2.17.14
