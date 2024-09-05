@@ -223,6 +223,29 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-magefan-blog:^1.0
 
+- name: mageme/module-webforms-3
+  url: https://mageme.com/magento-2-form-builder.html
+  description: >
+    A powerful and flexible form builder for Magento 2. Create custom forms for
+    various purposes such as contact forms, surveys, and product inquiries.
+  require:
+    - mageme/module-webforms-3:^3.2
+    - mageme/module-webforms-3-breeze:^1.1
+    - swissup/breeze:^2.0
+
+- name: mageme/module-webforms-3-product-options
+  url: https://mageme.com/magento-2-advanced-product-options.html
+  description: >
+    An extension for Magento 2 that provides advanced product options. It
+    features option templates, 27+ field types, dependent options,
+    image swatches, multi-step forms, and popup options.
+  require:
+    - mageme/module-webforms-3:^3.2
+    - mageme/module-webforms-3-product-options:^3.1
+    - mageme/module-webforms-3-breeze:^1.1
+    - mageme/module-webforms-3-product-options-breeze:^1.1
+    - swissup/breeze:^2.0
+
 - name: magenable/purchase-partner-url
   url: https://github.com/magenable/module-purchase-partner-url
   description: >
