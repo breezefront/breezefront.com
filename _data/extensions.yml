@@ -82,6 +82,15 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-amasty-mostviewed:^1.0.0
 
+- name: amasty/module-promo-countdown
+  url: https://amasty.com/countdown-timer-for-magento-2.html
+  description: >
+    Countdown timer widget for Magento.
+  require:
+    - amasty/module-promo-countdown:^1.2
+    - swissup/breeze:^2.17
+    - swissup/module-breeze-amasty-promo-countdown:^1.0.0
+
 - name: amasty/shopby
   url: https://amasty.com/improved-layered-navigation-for-magento-2.html
   description: >
