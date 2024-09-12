@@ -31,11 +31,6 @@
     edition. Here is the list of partially/not supported modules:
     <ul>
       <li>magento/multishipping is not supported by Breeze Themes.</li>
-      <li>
-        magento/paypal - smart button at product page is not supported due to
-        extra large amount of JS code required.
-        We recommend to use old paypal express button instead.
-      </li>
     </ul>
   require:
     - magento/project-community-edition:^2.4.4
