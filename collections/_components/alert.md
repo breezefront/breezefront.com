@@ -19,9 +19,11 @@ and autoOpen/autoRemove behavior.
 ## Initialization
 
 ```js
-$.alert({
-    title: $t('Title'),
-    content: $t('Content')
+require(['Magento_Ui/js/modal/alert'], (alert) => {
+    alert({
+        title: $t('Title'),
+        content: $t('Content')
+    });
 });
 ```
 
@@ -30,16 +32,18 @@ $.alert({
 Here is a list of alert options:
 
 ```js
-$.alert({
-    title: $t('Title'),
-    content: $t('Content'),
-    modalClass: 'alert',
-    focus: '.action-accept',
-    buttons: [{
-        text: $t('OK'),
-        class: 'action-primary action-accept',
-        click: function (event) {...}
-    }]
+require(['Magento_Ui/js/modal/alert'], (alert) => {
+    alert({
+        title: $t('Title'),
+        content: $t('Content'),
+        modalClass: 'alert',
+        focus: '.action-accept',
+        buttons: [{
+            text: $t('OK'),
+            class: 'action-primary action-accept',
+            click: function (event) {...}
+        }]
+    });
 });
 ```
 

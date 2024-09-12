@@ -19,7 +19,9 @@ calendar. Unlike default Luma theme we use native calendar provided by the brows
 ## Initialization
 
 ```js
-$('.selector').calendar();
+require(['mage/calendar'], () => {
+    $('.selector').calendar();
+});
 ```
 
 ## Options
@@ -27,11 +29,13 @@ $('.selector').calendar();
 Here is a list of calendar options:
 
 ```js
-$(el).calendar({
-    maxDate: '+1M +10D',
-    minDate: '-1Y',
-    dateFormat: 'M/dd/y',
-    showsTime: false,
+require(['mage/calendar'], () => {
+    $(el).calendar({
+        maxDate: '+1M +10D',
+        minDate: '-1Y',
+        dateFormat: 'M/dd/y',
+        showsTime: false,
+    });
 });
 ```
 

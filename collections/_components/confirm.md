@@ -19,13 +19,15 @@ and autoOpen/autoRemove behavior.
 ## Initialization
 
 ```js
-$.confirm({
-    title: $t('Question'),
-    content: $t('Are you sure?'),
-    actions: {
-        confirm: () => alert('Confirmed'),
-        cancel: () => alert('Rejected')
-    }
+require(['Magento_Ui/js/modal/confirm'], (confirm) => {
+    confirm({
+        title: $t('Question'),
+        content: $t('Are you sure?'),
+        actions: {
+            confirm: () => alert('Confirmed'),
+            cancel: () => alert('Rejected')
+        }
+    });
 });
 ```
 
@@ -34,25 +36,31 @@ $.confirm({
 Here is a list of confirm options:
 
 ```js
-$.confirm({
-    title: $t('Title'),
-    content: $t('Content'),
-    modalClass: 'confirm',
-    focus: '.action-accept',
-    actions: {
-        always: function () {},
-        confirm: function () {},
-        cancel: function () {}
-    },
-    buttons: [{
-        text: $t('Cancel'),
-        class: 'action-secondary action-dismiss',
-        click: function (event) {...}
-    }, {
-        text: $t('OK'),
-        class: 'action-primary action-accept',
-        click: function (event) {...}
-    }]
+require(['Magento_Ui/js/modal/confirm'], (confirm) => {
+    confirm({
+        title: $t('Title'),
+        content: $t('Content'),
+        modalClass: 'confirm',
+        focus: '.action-accept',
+        actions: {
+            always: function () {},
+            confirm: function () {},
+            cancel: function () {}
+        },
+        buttons: [{
+            text: $t('Cancel'),
+            class: 'action-secondary action-dismiss',
+            click: function (event) {
+                this.closeModal(event);
+            }
+        }, {
+            text: $t('OK'),
+            class: 'action-primary action-accept',
+            click: function (event) {
+                this.closeModal(event, true);
+            }
+        }]
+    });
 });
 ```
 
