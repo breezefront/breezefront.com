@@ -143,6 +143,17 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-backendorf-installment:^1.0.1
 
+- name: best4mage/ucps
+  url: https://www.best4mage.com/magento-2-ultimate-configurable-products-suite.html
+  description: >
+    Dynamic content updates for product name, sku, long and short description etc.,
+    unique user defined preselect feature. Advanced tier pricing and minimum quantity
+    for configurable product.
+  require:
+    - best4mage/ucps:^1.1.4
+    - swissup/breeze:^2.17.17
+    - swissup/module-breeze-best4mage-ucps:^1.0.0
+
 - name: bsscommerce/quantity-dropdown
   url: https://bsscommerce.com/magento-2-quantity-dropdown-extension.html
   description: >
