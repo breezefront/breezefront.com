@@ -19,11 +19,34 @@ The syntax is:
 
 ```js
 $.mixin('componentName|component', propsToExtend);
+// Or
+$.mixinSuper('componentName|component', propsToExtend);
 ```
 
  -  `componentName` -- is the name of component that you want to modify,
     or the component object itself.
  -  `propsToExtend` -- an object with methods to override.
+
+The difference between `$.mixin` and `$.mixinSuper` is how you would call original
+method from overriden. The first one will pass original method as the first argument
+into overriden function. In the second example, parent method will be accessible via
+`this._super()` function:
+
+```js
+$.mixin('collapsible', {
+    someMethod: function (parent, ...) {
+        parent();
+    }
+});
+
+// Or
+
+$.mixinSuper('collapsible', {
+    someMethod: function (...) {
+        this._super();
+    }
+});
+```
 
 ## Example
 

@@ -9,6 +9,35 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## September 18, 2024
+
+> swissup/breeze:2.18.0
+
+**🎉 Improvements**
+
+ -  Added missing `inventory/configurable-variation-qty` mixin.
+ -  Do not stop the next inline script execution when one is broken.
+
+**🐛 Fixes**
+
+ -  Fixed possible "Maximum call stack size exceeded" error.
+ -  Fixed double "totals-information" reload at the cart page.
+ -  Fixed disabled "Submit Review" button when recaptcha is active.
+
+**🏗️ Improved developer experience**
+
+ -  Fixed ability to pass function as a second argument in `$.get|$.post` functions.
+ -  Added `$.mixinSuper` utility. It works in the same way as [`$.mixin`](/docs/mixins)
+    except parent method is not passed as a first argument, but available via
+    `this._super()` call.
+ -  Added `mage/utils/wrapper` utilities:
+
+    ```js
+    define(['mage/utils/wrapper'], (wrapper) => {
+        console.log(wrapper);
+    });
+    ```
+
 ## September 4, 2024
 
 > swissup/breeze:2.17.16
