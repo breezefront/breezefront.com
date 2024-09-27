@@ -350,6 +350,14 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-mirasvit-search-ultimate:^1.0.2
 
+- name: paradoxlabs/authnetcim
+  url: https://github.com/ParadoxLabs-Inc/authnetcim
+  description: Authorize.net CIM payments.
+  require:
+    - paradoxlabs/authnetcim:^5.0
+    - swissup/breeze:^2.18.1
+    - swissup/module-breeze-paradoxlabs-authnetcim:^1.0
+
 - name: paypal/braintree
   url: https://marketplace.magento.com/paypal-module-braintree.html
   description: Braintree payment method.
