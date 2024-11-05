@@ -7,6 +7,30 @@ order: 5000
 
 # Upgrade Guide
 
+## Upgrading from 2.18.0 to 2.19.0
+
+Update `swissup/theme-frontend-breeze-blank` to version 2.19:
+
+```bash
+composer update swissup/theme-frontend-breeze-blank -W
+```
+
+Search and replace deprecated variables inside your theme folder:
+
+Old Name                                    | New Name
+--------------------------------------------|------------------------------------------
+@listing-swatch-wrapper__media-hidden       | @swatch-wrapper__listing__media-hidden
+@listing-swatch-wrapper__margin             | @swatch-wrapper__listing__margin
+@listing-swatch-options__margin-bottom      | @swatch-options__listing__margin-bottom
+@listing-swatch-options__justify-content    | @swatch-options__listing__justify-content
+@listing-swatch-options__min-height         | @swatch-options__listing__min-height
+@listing-swatch__font-size                  | @swatch__listing__font-size
+@listing-swatch__font-weight                | @swatch__listing__font-weight
+@listing-swatch__size                       | @swatch__listing__size
+@listing-swatch__gap                        | @swatch__listing__gap
+@listing-swatch__border-offset              | @swatch__listing__border-offset
+@listing-swatch__text__size                 | @swatch__text__listing__size
+
 ## Upgrading from 1.x.x to 2.x.x
 
 ### How to upgrade

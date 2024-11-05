@@ -9,6 +9,66 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Draft
+
+> swissup/breeze:2.19.0<br>
+> swissup/breeze-blank:2.9.0 swissup/breeze-evolution:2.3.0
+
+**🚨 Backward incompatible changes**
+
+ -  We've renamed `@listing-swatch-` variables.
+    While old variables working well for now, you should update your themes and
+    rename LESS variables according to [our guide](/docs/upgrade-guide#upgrading-from-2180-to-2190).
+
+**🎉 Improvements**
+
+ -  Improved color contrast to pass WCAG tests.
+ -  Improved navigation using the keyboard.
+ -  We've disabled Turbo. You can still enable it from Breeze configuration, but
+    we will remove it eventually according to the [Turbo deprecation](https://github.com/breezefront/module-breeze/issues/72).
+ -  Removed layout shift on product and category pages caused by ColorSwatches.
+    To accomplish this task we've added two new LESS variables:
+
+    ```sass
+    @swatch-options__min-height: @16;
+    @swatch-options__listing__min-height: @swatch__listing__size;
+    ```
+
+**🐛 Fixes**
+
+ -  Fixed "Contact" page styles when third-party module replaces Contact Form.
+ -  Fixed hardcoded `.breeze-block-hero-title` icon dimensions. Fixed by [Filippo Bovo](https://github.com/Pirosauro).
+ -  Fixed not working region updater in ParadoxLabs_Authnetcim module.
+ -  Fixed js error when submitting the form with `<input name="method"/>`.
+ -  Fixed `undefined is not an object` js error when using Paypal_PayLater module.
+ -  Fixed incorrect path to preload image when it contains `@` symbol.
+ -  Fixed address data loss after first visit to the shopping cart page.
+
+**🏗️ Improved developer experience**
+
+ -  New `require.async` function added for easier loading of dynamic dependencies.
+    Usage example:
+
+    ```js
+    click: async function () {
+        const [a, b] = await require.async(['a', 'b']);
+        // ...
+    }
+    ```
+
+ -  Added ability to activate/deactivate focus trap using Cash widget:
+
+    ```js
+    $(el).focusTrap(true|false);
+    ```
+
+ -  Added ability to load [`tabbable` library](https://github.com/focus-trap/tabbable)
+    without `focus-trap`:
+
+    ```js
+    const [tabbable] = await require.async(['tabbable']);
+    ```
+
 ## September 18, 2024
 
 > swissup/breeze:2.18.0
