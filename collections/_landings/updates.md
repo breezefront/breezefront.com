@@ -36,6 +36,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 **🐛 Fixes**
 
+ -  Fixed missing `active` class on active menu item.
+ -  Fixed not working "Print" button on the "Compare products" page. Fixed by [Ibrahim Saleh](https://github.com/IbrahimS2).
  -  Fixed "Contact" page styles when third-party module replaces Contact Form.
  -  Fixed hardcoded `.breeze-block-hero-title` icon dimensions. Fixed by [Filippo Bovo](https://github.com/Pirosauro).
  -  Fixed not working region updater in ParadoxLabs_Authnetcim module.
