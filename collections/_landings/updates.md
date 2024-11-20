@@ -9,7 +9,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## Draft
+## November 20, 2024
 
 > swissup/breeze:2.19.0<br>
 > swissup/breeze-blank:2.9.0 swissup/breeze-evolution:2.3.0
@@ -36,6 +36,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 **🐛 Fixes**
 
+ -  Fixed not working links on the first `tap` event in iOS when recently viewed block is rendered on the page.
  -  Fixed missing `active` class on active menu item.
  -  Fixed not working "Print" button on the "Compare products" page. Fixed by [Ibrahim Saleh](https://github.com/IbrahimS2).
  -  Fixed "Contact" page styles when third-party module replaces Contact Form.
@@ -54,7 +55,8 @@ class: prose prose-zinc max-w-3xl mx-auto
     ```js
     click: async function () {
         const [a, b] = await require.async(['a', 'b']);
-        // ...
+        // or
+        const a = await require.async('a');
     }
     ```
 
