@@ -9,6 +9,27 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## December 12, 2024
+
+> swissup/breeze:2.19.1<br>
+> swissup/breeze-blank:2.9.1 swissup/breeze-evolution:2.3.2
+
+**🐛 Fixes**
+
+ -  Fixed not working first tap on some items in Safari when scroll reveal is used.
+ -  Fixed slow performance for slideout menu animation in Safari.
+ -  Fixed z-index of the slideout overlay to cover Compare and Wishlist buttons.
+ -  Fixed possible js error when component depends on `priceUtils`.
+ -  Fixed possible duplicates in image preload links.
+
+**🏗️ Improved developer experience**
+
+ -  Allow using named define calls:
+
+    ```js
+    define('name', [], () => {});
+    ```
+
 ## November 20, 2024
 
 > swissup/breeze:2.19.0<br>
