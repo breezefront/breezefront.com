@@ -9,6 +9,28 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## December 13, 2024
+
+> swissup/breeze:2.19.2
+
+**🐛 Fixes**
+
+ -  Fixed possible not working "Checkout" in the minicart dropdown.
+
+**🏗️ Improved developer experience**
+
+ -  Better compatibility with jquery.validate plugin API.
+ -  Align ajax data preprocessing with jQuery Ajax API.
+ -  Allow create HTML elements with second argument:
+
+    ```js
+    $('<div>', {
+        id: 'id',
+        title: 'title',
+        class: 'class names'
+    });
+    ```
+
 ## December 12, 2024
 
 > swissup/breeze:2.19.1<br>
