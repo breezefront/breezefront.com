@@ -65,6 +65,27 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-algoliasearch:^1.0.0
 
+- name: amasty/age-verification
+  url: https://amasty.com/age-verification-for-magento-2.html
+  description: >
+    If your store sells products that have age restrictions, it's vital to set
+    strong age verification measures to comply with the laws and regulations
+    surrounding the sale of such items.
+  require:
+    - amasty/age-verification:^2.13
+    - swissup/breeze:^2.19
+    - swissup/module-breeze-amasty-age-verification:^1.0.0
+
+- name: amasty/hide-price
+  url: https://amasty.com/hide-price-for-magento-2.html
+  description: >
+    Hide product prices and "Add to cart" button for specific products or whole
+    categories. Manage prices display depending on customer groups.
+  require:
+    - amasty/hide-price:^1.6
+    - swissup/breeze:^2.19
+    - swissup/module-breeze-amasty-hide-price:^1.0.0
+
 - name: amasty/mostviewed
   url: https://amasty.com/automatic-related-products-for-magento-2.html
   description: >
@@ -85,6 +106,26 @@
     - amasty/module-promo-countdown:^1.2
     - swissup/breeze:^2.17
     - swissup/module-breeze-amasty-promo-countdown:^1.0.0
+
+- name: amasty/request-quote
+  url: https://amasty.com/request-a-quote-for-magento-2.html
+  description: >
+    Easily interact with customers regarding new best prices for products with
+    Magento 2 Quote Extension.
+  require:
+    - amasty/request-quote:^2.0
+    - swissup/breeze:^2.19
+    - swissup/module-breeze-amasty-request-quote:^1.0.2
+
+- name: amasty/rewards
+  url: https://amasty.com/reward-points-for-magento-2.html
+  description: >
+    Encourage customers to purchase more and return to your store by implementing
+    an effective loyalty program with Magento 2 Reward Points extension.
+  require:
+    - amasty/rewards:^2.0
+    - swissup/breeze:^2.19
+    - swissup/module-breeze-amasty-rewards:^1.0.0
 
 - name: amasty/shopby
   url: https://amasty.com/improved-layered-navigation-for-magento-2.html
@@ -132,6 +173,15 @@
     - amasty/xsearch:^1.18
     - swissup/breeze:^2.0
     - swissup/module-breeze-amasty-xsearch:^1.0.2
+
+- name: avalara/avatax
+  url: https://github.com/avadev/Avalara-AvaTax-for-Magento2
+  description: >
+    Tax calculation at the shopping cart page.
+  require:
+    - avalara/avatax-magento:^2.0
+    - swissup/breeze:^2.19
+    - swissup/module-breeze-avalara-avatax:^1.0.0
 
 - name: backendorf/installment
   url: https://github.com/DaviBackendorf/magento2-installment
@@ -226,6 +276,16 @@
   require:
     - swissup/breeze:^2.0
 
+- name: magedelight/membership-subscription
+  url: https://www.magedelight.com/membership-subscription-magento-2.html
+  description: >
+    Magento 2 Membership subscription Extension allows the store owner to create
+    membership subscription plans and discounts on different products.
+  require:
+    - magedelight/membership-subscription:^2.0.3
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-magedelight-membership-subscription:^1.0.2
+
 - name: magefan/blog
   url: https://magefan.com/magento2-blog-extension
   description: >
@@ -277,6 +337,15 @@
     - mageworx/advancedproductoptions:^1.4.3
     - swissup/breeze:^2.0
     - swissup/module-breeze-mageworx-advancedproductoptions:^1.1.1
+
+# - name: mageworx/shippingcalculator
+#   url: https://www.mageworx.com/magento-2-shipping-cost-calculator.html
+#   description: >
+#     Shipment cost calculator right on product pages.
+#   require:
+#     - mageworx/shippingcalculator:^1.0
+#     - swissup/breeze:^2.19
+#     - swissup/module-breeze-mageworx-shippingcalculator:
 
 - name: meetanshi/*
   url: https://meetanshi.com/magento-2-extensions.html
@@ -350,6 +419,16 @@
     - swissup/breeze:^2.0
     - swissup/module-breeze-mirasvit-search-ultimate:^1.0.2
 
+- name: nosto/module-nostotagging
+  url: https://github.com/Nosto/nosto-magento2
+  description: >
+    Increase your conversion rate and average order value by delivering your
+    customers personalized product recommendations throughout their shopping journey.
+  require:
+    - nosto/module-nostotagging:^7.0
+    - swissup/breeze:^2.19
+    - swissup/module-breeze-nosto:^1.0.0
+
 - name: paradoxlabs/authnetcim
   url: https://github.com/ParadoxLabs-Inc/authnetcim
   description: Authorize.net CIM payments.
@@ -357,6 +436,14 @@
     - paradoxlabs/authnetcim:^5.0
     - swissup/breeze:^2.18.1
     - swissup/module-breeze-paradoxlabs-authnetcim:^1.0
+
+- name: partnerads/magento2
+  url: https://github.com/PartnerAds/Magento2
+  description: Magento2 module for Partner Ads tracking
+  require:
+    - partnerads/magento2:^2.2
+    - swissup/breeze:^2.19.0
+    - swissup/module-breeze-partnerads-magento2:^1.0
 
 - name: paypal/braintree
   url: https://marketplace.magento.com/paypal-module-braintree.html
@@ -397,6 +484,15 @@
     - smile/elasticsuite:^2.10
     - swissup/breeze:^2.0
     - swissup/module-breeze-smile-elasticsuite:^1.0
+
+- name: sparsh/buy-now
+  url: https://www.sparsh-technologies.com/magento-extensions/magento-2-buy-now-extension
+  description: >
+    Buy now button on the product listings, product, and search pages.
+  require:
+    - sparsh/buy-now
+    - swissup/breeze:^2.19
+    - swissup/module-breeze-sparsh-buy-now:^1.0
 
 - name: stripe/module-payments
   url: https://github.com/stripe/stripe-magento2-releases
