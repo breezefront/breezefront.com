@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "jekyll": "bundle exec jekyll serve --livereload",
+    "jekyll": "bundle exec jekyll serve --port 4189 --livereload --livereload-port 4190",
     "css": "npx tailwindcss -i ./assets/styles.css -o ./assets/dist/styles.css --minify --watch"
   },
   "devDependencies": {
