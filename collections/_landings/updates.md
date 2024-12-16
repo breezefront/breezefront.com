@@ -9,6 +9,15 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## December 16, 2024
+
+> swissup/breeze-blank:2.9.2
+
+**🐛 Fixes**
+
+ -  Fixed incorrect selected sort order and the search results page.
+ -  Fixed empty search results page when using Abobe LiveSearch module.
+
 ## December 13, 2024
 
 > swissup/breeze:2.19.2
