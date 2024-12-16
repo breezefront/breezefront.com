@@ -1,4 +1,4 @@
-{%- if site.url != "http://localhost:4000" %}
+{%- unless site.url contains "localhost" %}
   <script>
     gtag('set', 'page_path', location.pathname + location.search);
     gtag('event', 'page_view');
@@ -8,4 +8,4 @@
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=305215493166947&ev=PageView&noscript=1"/></noscript>
-{%- endif %}
+{%- endunless %}
