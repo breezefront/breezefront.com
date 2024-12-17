@@ -41,6 +41,16 @@ details summary {
 .nav-toggler:has(:checked) .nav-close { @apply opacity-100; }
 .nav-toggler:has(:checked) .nav-overlay { @apply opacity-100 visible pointer-events-auto; }
 
+body:not(.docs) .DocSearch-Button {
+    margin-left: 12px;
+}
+@media (min-width: 768px) and (max-width: 1050px) {
+    body:not(.docs) .DocSearch-Button-Placeholder,
+    body:not(.docs) .DocSearch-Button-Keys {
+        display: none;
+    }
+}
+
 .badge {
     font-weight: 400;
     font-style: normal;
