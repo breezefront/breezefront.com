@@ -9,6 +9,31 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## December 20, 2024
+
+> swissup/breeze:2.19.3
+
+**🚀 Performance**
+
+ -  Significant performance boost for the menu's with large category count.
+
+    We tested performance with 3000 categories and 1000 dropdown items and here are the results:
+
+    - One large task - 600ms.
+    - Eight seprate microtasks - 10-40ms each.
+
+**🏗️ Improved developer experience**
+
+ -  Added missing `require.defined` function.
+ -  Added `$.fn.microtasks` to move heavy operations into separate async task:
+
+    ```js
+    $('selector').microtasks(1000).append('html').addClass('class');
+    ```
+
+    This function will split `$('selector')` items into chunks (1000 per chunk)
+    and perform `append` and `addClass` methods in separate **async tasks**.
+
 ## December 16, 2024
 
 > swissup/breeze-blank:2.9.2
