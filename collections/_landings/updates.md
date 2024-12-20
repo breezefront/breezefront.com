@@ -19,8 +19,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
     We tested performance with 3000 categories and 1000 dropdown items and here are the results:
 
-    - One large task - 600ms.
-    - Eight seprate microtasks - 10-40ms each.
+    - **Before:** One large task - 600ms. **TBT - 550ms.**
+    - **After:** Eight seprate microtasks - 10-40ms each. **TBT - 0ms.**
 
 **🏗️ Improved developer experience**
 
