@@ -46,6 +46,15 @@
     - swissup/breeze:^2.14
     - swissup/module-breeze-magento-enterprise:^1.0
 
+- name: affirm/magento2
+  url: https://github.com/Affirm/Magento2_Affirm
+  description: >
+    Affirm's extension for the Magento 2.
+  require:
+    - affirm/magento2:^3.3
+    - swissup/breeze:^2.17.0
+    - aqeltech/module-breeze-astound-affirm:^1.0.1
+
 - name: afterpay-global/module-afterpay
   url: https://github.com/afterpay/afterpay-magento-2
   description: >
