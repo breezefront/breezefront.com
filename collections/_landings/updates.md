@@ -9,6 +9,15 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## January 3, 2025
+
+> swissup/breeze:2.19.4<br>
+> swissup/breeze-blank:2.9.3
+
+**🚀 Performance**
+
+ -  Reduced TBT on mobile devices by postponing menu and dropdown dialog initializations.
+
 ## December 20, 2024
 
 > swissup/breeze:2.19.3
