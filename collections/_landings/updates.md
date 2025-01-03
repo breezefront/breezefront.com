@@ -11,7 +11,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## January 3, 2025
 
-> swissup/breeze:2.19.4<br>
+> swissup/breeze:2.19.5<br>
 > swissup/breeze-blank:2.9.3
 
 **🚀 Performance**
