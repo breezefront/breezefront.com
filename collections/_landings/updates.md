@@ -17,6 +17,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 **🚀 Performance**
 
  -  Reduced TBT on mobile devices by postponing menu and dropdown dialog initializations.
+ -  Reduced amount of layout recalculation tasks by adding a `display: none` style for all dropdown elements.
 
 ## December 20, 2024
 
