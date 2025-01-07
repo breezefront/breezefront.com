@@ -85,6 +85,17 @@
     - swissup/breeze:^2.19
     - swissup/module-breeze-amasty-age-verification:^1.0.0
 
+- name: amasty/blog
+  url: https://amasty.com/blog-pro-for-magento-2.html
+  description: >
+    Amasty Blog is the perfect blog extension to boost SEO,
+    share news, articles, and create engaging blog pages directly within
+    your Magento 2 store.
+  require:
+    - amasty/blog:^2.14.1
+    - swissup/breeze:^2.19.6
+    - swissup/module-breeze-amasty-blog:^1.0.0
+
 - name: amasty/hide-price
   url: https://amasty.com/hide-price-for-magento-2.html
   description: >
