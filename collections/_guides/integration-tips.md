@@ -61,13 +61,13 @@ Use `breeze_default.xml` layout update to add new js file:
           <!-- Adding file from custom module -->
           <item name="module-js-file" xsi:type="array">
             <item name="path" xsi:type="string">Vendor_Module/js/breeze/new-js-file</item>
-            <item name="autload" xsi:type="boolean">true</item>
+            <item name="autoload" xsi:type="boolean">true</item>
           </item>
 
           <!-- Adding file from custom theme -->
           <item name="theme-js-file" xsi:type="array">
             <item name="path" xsi:type="string">js/breeze/new-js-file</item>
-            <item name="autload" xsi:type="boolean">true</item>
+            <item name="autoload" xsi:type="boolean">true</item>
           </item>
         </item>
       </item>

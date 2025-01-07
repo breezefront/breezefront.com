@@ -24,11 +24,11 @@ Create `breeze_default.xml` layout update file with the following code inside:
         <item name="items" xsi:type="array">
           <item name="js-from-theme-folder" xsi:type="array">
             <item name="path" xsi:type="string">js/breeze/my-custom-file</item>
-            <item name="autload" xsi:type="boolean">true</item>
+            <item name="autoload" xsi:type="boolean">true</item>
           </item>
           <item name="js-from-module-folder" xsi:type="array">
             <item name="path" xsi:type="string">Vendor_Module/js/breeze/my-custom-file</item>
-            <item name="autload" xsi:type="boolean">true</item>
+            <item name="autoload" xsi:type="boolean">true</item>
           </item>
         </item>
       </item>
