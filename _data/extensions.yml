@@ -253,8 +253,8 @@
     with dynamic attribute changes, improved SEO, and advertising options.
   require:
     - firebear/configurableproducts:^1.6
-    - swissup/breeze:^2.0
-    - swissup/module-breeze-firebear-configurableproducts:^1.0.0
+    - swissup/breeze:^2.19.6
+    - swissup/module-breeze-firebear-configurableproducts:^1.0.2
 
 - name: klaviyo/magento2-extension
   url: https://github.com/klaviyo/magento2-klaviyo
