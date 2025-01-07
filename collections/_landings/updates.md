@@ -9,6 +9,25 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## January 7, 2025
+
+> swissup/breeze:2.19.6
+
+**🐛 Fixes**
+
+ -  Fixed not working `$.ajax` when method is using caps `POST`.
+ -  Fixed not working `$('[property="og:image"]')` selector.
+ -  Fixed not working `$.mixinSuper` function for lazy loaded components.
+
+**🏗️ Improved developer experience**
+
+ -  Added missing `$.mage.formKey` and `$.mage.loader` functions.
+ -  Added jQueryUI `:data` selector support `$(':data(price-box)')`.
+ -  Ability to enable dev mode using `#breeze` hash. This is useful when the page removes all query parameters.
+ -  Added missing `activate` and `deactivate` methods to the collapsible component.
+ -  Added missing `matchMedia` component.
+ -  Added missing `$.fn.toArray` method.
+
 ## January 3, 2025
 
 > swissup/breeze:2.19.5<br>
