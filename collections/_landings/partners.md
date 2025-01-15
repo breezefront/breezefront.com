@@ -92,6 +92,12 @@ _Partner_{:.badge}
 
 iFlair is the leading Magento Development Company offering complete eCommerce solutions to brands, businesses, and sellers across the World Since 2004. AOver 300+ Magento 1 & 2 consulting projects have been served by us including services such as migration, payment gateway integration, custom themes, and extensions, real-time order import from marketplaces, inventory management, and providing proper technical solutions to the client according to arisen glitches.
 
+**[AQELTech ](https://www.aqeltech.com/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+Are you looking for a top-tier Magento development agency with exceptional customer service? AQELTech, based in the UK and Jordan, specializes in end-to-end Magento solutions, including UX and marketing. As a full-service agency, our expert team delivers effective, user-friendly solutions tailored to your business needs. Partner with AQELTech for a dedicated team committed to your success and satisfaction. Contact us today to elevate your business!
+
+
 **[Scommerce Mage ](https://www.scommerce-mage.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
 
