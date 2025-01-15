@@ -19,7 +19,6 @@ _Partner_{:.badge}
 
 StoreFrame is a PAAS Platform designed to streamline the process of creating and managing online stores. Leveraging the power and flexibility of Magento 2, StoreFrame simplifies tasks like Magento 2 installation, hosting,  configuration, integration, management and store launch. All following best-practices and providing you with the best possible performance. Host at StoreFrame or on your own server. 
 
-
 **[2buy1click.com](https://www.2buy1click.com/){:target="_blank" rel="noopener"}**
 _Partner_{:.badge}
 
@@ -54,7 +53,6 @@ _Partner_{:.badge}
 
 40+ Certified Magento developers team with 12+ Years of Magento eCommerce & web application developments. An award-winning team, synonymous with excellence in web design & development. We've launched hundreds of sites which received over 100% increase in conversions and results.
 
-
 **[Commercepundit.com](https://www.commercepundit.com/){:target="_blank" rel="noopener"}**
 _Partner_{:.badge}
 
@@ -81,7 +79,6 @@ _Partner_{:.badge}
 
 tbbAgency is a digital marketing agency based in Barcelona- its primary objective is to co-create and develop innovative digital products and services. We design unique digital strategies for each client through a wide range of services including Paid Media & PPC Management, Strategic Consulting, Social Media, and SEO Positioning. We specialize in the design and development of E-commerce stores and web pages, providing services such as custom E-commerce design, store migration to Magento 2, customized UI/UX design, and HTML layout. We are committed to providing creative and personalized digital marketing solutions that tailor to the needs of each client. We give utmost attention to innovation and customer satisfaction.
 
-
 **[7Span ](https://7span.com/){:target="_blank" rel="noopener"}**
 _Partner_{:.badge}
 
@@ -95,15 +92,13 @@ iFlair is the leading Magento Development Company offering complete eCommerce so
 **[AQELTech ](https://www.aqeltech.com/){:target="_blank" rel="noopener"}**
 _Partner_{:.badge}
 
-Are you looking for a top-tier Magento development agency with exceptional customer service? AQELTech, based in the UK and Jordan, specializes in end-to-end Magento solutions, including UX and marketing. As a full-service agency, our expert team delivers effective, user-friendly solutions tailored to your business needs. Partner with AQELTech for a dedicated team committed to your success and satisfaction. Contact us today to elevate your business!
-
+AQELTech is a UK & Jordan-based full-service agency specializing in end-to-end Magento development. We excel in UX/UI and graphic design, and digital marketing, and provide managed hosting with guaranteed SLAs to ensure your e-commerce site runs smoothly. Our expert team delivers tailored, user-friendly Magento solutions that drive your business forward. We're committed to exceptional customer service and partner with you to achieve your goals and ensure your complete satisfaction. Choose AQELTech for a dedicated team that supports your success every step of the way. Contact us today to elevate your online presence!
 
 **[Scommerce Mage ](https://www.scommerce-mage.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
 
 Scommerce Mage is a UK based company, specialised in Magento e-commerce. We have
 been working on the Magento platform since it was officially launched in 2008.
-
 
 **[Magecomp.com](https://magecomp.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
