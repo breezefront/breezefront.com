@@ -27,6 +27,12 @@ solutions that are both effective and easy to use. Working with UK clients from
 Fashion, Beauty, Giftware, we are proud to say our clients have voted us on
 Clutch for Top UK Magento Agency.
 
+**[hobiri.com](https://www.hobiri.com/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+At Hobiri, we believe digital growth should be easy and accessible. 
+That’s why we work to simplify the complicated. With over a decade experience in e-commerce platforms, systems integration, and automation, we're here to provide you with all the support you need! Our services go beyond merely building online stores. Whether you need to upgrade your online store with Adobe Commerce (Magento 2), refresh it using a headless or JAMstack solution, or streamline workflows with AI, we have just the right tools and expertise for the job. Our dedicated international team is committed to transforming challenges into opportunities. 
+
 **[BurgessCommerce.com](https://burgesscommerce.com/){:target="_blank" rel="noopener"}**
 _Partner_{:.badge}
 
