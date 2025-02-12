@@ -384,6 +384,7 @@
   require:
     - mirasvit/affiliate:^1.4
     - swissup/breeze:^2.0
+    - swissup/module-breeze-mirasvit-affiliate:^1.0
 
 - name: mirasvit/cachewarmer
   url: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
