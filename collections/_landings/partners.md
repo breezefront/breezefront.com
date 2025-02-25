@@ -105,6 +105,13 @@ _Partner_{:.badge}
 
 MageMontreal is a specialized eCommerce development agency based in Quebec, Canada. We build, optimize, and support eCommerce websites on Magento, Adobe Commerce, Shopify, WooCommerce, and BigCommerce—ensuring seamless scalability and success. Driven by clear communication and a commitment to quality, we deliver results that exceed expectations—on time and within budget.
 
+
+**[Venhancer ](https://venhancer.com/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+Venhancer is a trusted partner specializing in e-commerce, delivering end-to-end solutions with Magento 2 technology. We design innovative, custom extensions and applications to provide tailored solutions that drive sustainable business growth. With years of experience, an innovative approach, and strong partnerships, Venhancer delivers comprehensive solutions for Magento technology users. Whether you are a small entrepreneur or a large enterprise, we aim to create value for e-commerce businesses of all sizes.
+
+
 **[Scommerce Mage ](https://www.scommerce-mage.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
 
