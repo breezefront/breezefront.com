@@ -100,6 +100,11 @@ _Partner_{:.badge}
 
 AQELTech is a UK & Jordan-based full-service agency specializing in end-to-end Magento development. We excel in UX/UI and graphic design, and digital marketing, and provide managed hosting with guaranteed SLAs to ensure your e-commerce site runs smoothly. Our expert team delivers tailored, user-friendly Magento solutions that drive your business forward. We're committed to exceptional customer service and partner with you to achieve your goals and ensure your complete satisfaction. Choose AQELTech for a dedicated team that supports your success every step of the way. Contact us today to elevate your online presence!
 
+**[Mage Montreal ](https://magemontreal.com/){:target="_blank" rel="noopener"}**
+_Partner_{:.badge}
+
+MageMontreal is a specialized eCommerce development agency based in Quebec, Canada. We build, optimize, and support eCommerce websites on Magento, Adobe Commerce, Shopify, WooCommerce, and BigCommerce—ensuring seamless scalability and success. Driven by clear communication and a commitment to quality, we deliver results that exceed expectations—on time and within budget.
+
 **[Scommerce Mage ](https://www.scommerce-mage.com/){:target="_blank" rel="noopener"}**
 _Vendor_{:.badge}
 
