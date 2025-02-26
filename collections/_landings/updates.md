@@ -9,6 +9,61 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## February 26, 2025
+
+> swissup/breeze:2.20.0<br/>
+> swissup/breeze-blank:2.10.0,swissup/breeze-evolution:2.4.0
+
+**🚀 Performance improvements**
+
+ -  EarlyEventsProxy feature added &mdash; a small inline script that "pauses"
+    interaction events with known DOM elements and shows the spinning loader
+    until the requested component is ready to respond.
+ -  Fixed performance score for the configurable product pages when it has preselected options.
+ -  Most of js dependencies are now loading asynchronously to improve TBT score.
+ -  Optimize `$.async` function logic.
+ -  All of these components using lazy initialization now:
+     - Form validators
+     - Dayjs library
+     - Range slider
+     - Gallery and its sub-components &mdash; Magnifier, and Panzoom.
+ -  Slider:
+     -  Fixed TBT caused by slider.
+     -  Improved drag performance.
+
+**🎉 Improvements**
+
+ -  Improved layout in mobile slideout panel:
+     -  Move mobile content to the bottom of the slideout menu.
+     -  Do not reset scroll position in the slideout menu.
+     -  Prevent dropdowns outside of the viewport.
+ -  Better styles for built-in cookie message in Evolution theme.
+
+**🐛 Fixes**
+
+ -  Fixed compatibility with Adobe Live Search.
+ -  Fixed the flash of the cookie message when cookie is already accepted.
+ -  Fixed missing messages when first message was hidden automatically.
+ -  Fixed horizontal scroll in Safari after zooming the gallery.
+ -  Fixed mobile menu if slideout was opened before menu is initialized.
+ -  Fixed incorrectly visible minicart subtotal when msrp note must be shown instead.
+ -  Fixed inability to close menu dropdown when clicking on the chevron icon.
+ -  Fixed layout shift when product has a non-swatch option.
+ -  Fixed possible js error when using filters on slow internet connections.
+ -  Fixed misaligned listing toolbar when using 1column layout.
+
+**🏗️ Improved developer experience**
+
+ -  Turbo was removed from the code completely according to [deprecation note](https://github.com/breezefront/module-breeze/issues/72).
+ -  $.focusTrap renamed into $.breeze.focusTrap.
+ -  Align `contentUpdated` event with Magento - update whole DOM tree.
+ -  Align `$.fn.trigger()` with jQuery. Now it properly invoke all listeners.
+ -  Ability to add validators using `addMethod` function.
+ -  Fixed not working `.mage('validation', { errorPlacement })` settings.
+ -  Share the same component instance when multiple elements use same `scope:`.
+ -  Align `x-magento-init` with Magento Luma. If the `x-magento-init` script uses
+    selector - it must be merged into the element config before processing.
+
 ## January 7, 2025
 
 > swissup/breeze:2.19.6
