@@ -153,6 +153,17 @@ body:not(.docs) .DocSearch-Button {
 }
 
 /* Search */
+header {
+    [data-search] {
+        width: 48px;
+    }
+    @media (min-width: 1051px) {
+        [data-search] {
+            width: 178px;
+        }
+    }
+}
+
 main .DocSearch-Button-Placeholder { display: block !important; }
 main .DocSearch-Button {
     width: 100%;
