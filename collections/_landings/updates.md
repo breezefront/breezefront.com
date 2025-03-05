@@ -9,6 +9,18 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## March 5, 2025
+
+> swissup/breeze:2.20.2
+
+**🐛 Fixes**
+
+ -  Fixed missing files from js bundle when site is protected with http auth password.
+ -  Fixed missing failed validation messages after pressing "Add to cart".
+ -  Fixed sections update using asterisk symbol.
+ -  Preserve selected options of configurable product after validation redirect.
+ -  Improve EarlyEvents spinner styles when target element uses clip-path style.
+
 ## February 28, 2025
 
 > swissup/breeze:2.20.1
