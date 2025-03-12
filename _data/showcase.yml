@@ -61,12 +61,6 @@
     Category: 51
     Product: 60
 
-- url: https://www.e35shop.com/
-  description: Fashion clothes and accessories
-  scores:
-    Homepage: 96
-    Category: 100
-    Product: 99
 
 - url: https://www.cognac-paradise.de/
   description: Alcohol
@@ -173,26 +167,12 @@
     Category: 82
     Product: 73
 
-- url: https://www.colorit.ro/
-  description: Painting materials for artists
-  scores:
-    Homepage: 82
-    Category: 71
-    Product: 71
-
 - url: https://ecrystal.pl/
   description: Lamps and ceiling lights
   scores:
     Homepage: 68
     Category: 74
     Product: 75
-
-- url: https://www.optimill-uk.com/
-  description: Land Rover parts
-  scores:
-    Homepage: 80
-    Category: 95
-    Product: 89
 
 - url: https://www.minisport.com/
   description: Mini Cooper parts
