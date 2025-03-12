@@ -85,6 +85,17 @@
     - swissup/breeze:^2.19
     - swissup/module-breeze-amasty-age-verification:^1.0.0
 
+- name: amasty/ga4
+  url: https://amasty.com/google-tag-manager-for-magento-2.html
+  description: >
+    Unlock the full potential of your Magento store with the seamless integration
+    to Google Analytics and GTM. Get access to a variety of built-in
+    events and extended performance reports.
+  require:
+    - amasty/module-ga4:^2.3
+    - swissup/breeze:^2.21
+    - swissup/module-breeze-amasty-ga4:^1.0.0
+
 - name: amasty/blog
   url: https://amasty.com/blog-pro-for-magento-2.html
   description: >
