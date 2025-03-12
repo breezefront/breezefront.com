@@ -14,7 +14,7 @@ order: 590
 
 On this page, you’ll find out how to integrate third-party Luma-based module.
 
-## 1. Find the main entry points
+## 1. Find components to integrate
 
 Every Magento component starts its lifecycle from initialization in `*.phtml`
 template. It may be written as a `data-mage-init` or `x-magento-init` configs,
@@ -41,16 +41,21 @@ require(['Vendor_Module/js/component'], function () {
 </script>
 ```
 
-`Vendor_Module/js/component` --- is a main entry point in the examples above.
+`Vendor_Module/js/component` --- is a component name in the examples above.
 
-When you'll find the main entry point in the module you want to integrate,
-you may proceed to the next step.
+The easiest way to find component names to integrate is to add `?breeze=1`
+parameter to your URL and checl the browser developer console output:
+
+![Unknown components reported by Breeze](/assets/img/integration-example/unknown-components.webp){:width="835" height="267"}
+
+When you'll find the component names you want to integrate, you may proceed
+to the next step.
 
 ## 2. Register js components
 
-When you know the main entry point and path to the js file where it's located,
-you need to register it in
-`Vendor_Module/view/frontend/layout/breeze_default.xml` layout update file.
+When you know the component name and path to the js file where it's located,
+you need to register it in the `Vendor_Module/view/frontend/layout/breeze_default.xml`
+layout update file.
 
 ```xml
 <?xml version="1.0"?>
@@ -76,18 +81,64 @@ you need to register it in
 
 ## 3. Add component name
 
-Open `Vendor_Module/js/component` file and add the following line:
+Open `Vendor_Module/js/component` file and add component name. See the
+corresponding section below:
 
-```js
-define(['jquery'], function ($) {
-  'use strict';
+<details markdown=1><summary>Adding component name to widget-based component</summary>
 
-  $.widget('widgetName', {
-    component: 'Vendor_Module/js/component', // <-- add this line
-    create: function () {}
-  });
-})
+```diff
+ define(['jquery'], function ($) {
+     'use strict';
+
+     $.widget('widgetName', {
++        component: 'Vendor_Module/js/component',
+     });
+ });
 ```
+</details>
+
+<details markdown=1><summary>Adding component name to uiComponent-based component</summary>
+
+```diff
+ define(['uiComponent'], function (Component) {
+     'use strict';
+
+     return Component.extend({
++        component: 'Vendor_Module/js/component',
+     });
+ });
+```
+</details>
+
+<details markdown=1><summary>Adding component name to function-based component</summary>
+
+```diff
+ define(['jquery'], function ($) {
+     'use strict';
+
+-    return function (options, element) {
++    var result = function (options, element) {
+     };
++
++    result.component = 'Vendor_Module/js/component';
++
++    return result;
+ });
+```
+</details>
+
+<details markdown=1><summary>Adding component name to object-based component</summary>
+
+```diff
+ define(['jquery'], function ($) {
+     'use strict';
+
+     return {
++        component: 'Vendor_Module/js/component',
+     };
+ });
+```
+</details>
 
 ## 4. Prepare dependencies
 
@@ -107,7 +158,8 @@ define([
 ```
 
 We need to register `Vendor_Module/js/function` and
-`Vendor_Module/js/object` files, and make some changes:
+`Vendor_Module/js/object` files, and add corresponsing component names to
+each of these files:
 
 <details markdown=1><summary>Vendor_Module/view/frontend/layout/breeze_default.xml</summary>
 

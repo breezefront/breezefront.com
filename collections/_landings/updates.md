@@ -9,6 +9,28 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## March 12, 2025
+
+> swissup/breeze:2.21.0
+
+**🐛 Fixes**
+
+ -  Fixed gallery accessibility errors when using `dots` instead of thumbnails.
+ -  Added `aria-invalid` and `aria-describedby` attributes for invalid form elements.
+ -  Fixes possible js error with third-party modules that sends early post request on initial page load.
+ -  Fixed thumbnail styles in gallery component for video element when `dots` are used.
+ -  Fixed js error caused by incorrect merge strategy for component settings.
+
+**🏗️ Improved developer experience**
+
+ -  Allow submit ajax request using `URLSearchParams` as data.
+ -  Better global ajax events alignment with jQuery API.
+ -  Improve reporting about unknown components when using `?breeze=1` query parameter.
+    See updated [integration example manual](/docs/integration-example).
+ -  Allow using mass components registration to simplify third-party modules integration.
+    See example in [Amasty_GA4 integration module](https://github.com/breezefront/module-breeze-amasty-ga4/blob/master/view/frontend/layout/breeze_default.xml#L10-L15){:target="_blank" rel="noopener"}.
+ -  Improve output of the `breeze:theme:create` and `breeze:module:create` commands.
+
 ## March 5, 2025
 
 > swissup/breeze:2.20.2
