@@ -164,11 +164,11 @@
     Build the ultimate customer shopping experience and boost your store SEO rankings
     with a feature-rich navigation system. Display multiple filters and handy widgets
     to help visitors instantly find the products they need.
-  note: Module files patch is required. Enable Ajax is not integrated.
+  note: Module files patch is required.
   require:
-    - amasty/shopby:^2.21
-    - swissup/breeze:^2.0
-    - swissup/module-breeze-amasty-shopby:^1.0.0
+    - amasty/shopby:^3.3
+    - swissup/breeze:^2.21.1
+    - swissup/module-breeze-amasty-shopby:^1.3.0
 
 - name: amasty/stockstatus
   url: https://amasty.com/custom-stock-status-for-magento-2.html
