@@ -9,6 +9,31 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Draft
+
+> swissup/breeze<br/>
+> swissup/breeze-blank,swissup/breeze-evolution
+
+**🎉 Improvements**
+
+ -  Magento 2.4.8 compatibility.
+
+**🐛 Fixes**
+
+ -  Fixed not working tabs when accordion component is added inside tab.
+ -  Fixed rare case when some elements were not initialized due to idle timeout.
+ -  Fixed small issues with `lineClamp` component.
+ -  Stability fixes to the `pagebuilderSlider` component.
+ -  Fixed broken product and category pages when `full-width` layout is selected.
+
+**🏗️ Improved developer experience**
+
+ -  Added ability to pass collection/array to `$.fn.find`.
+ -  Allow passing element selector to the `applyFor` method.
+ -  Allow padding object to the `$.parseQuery` method.
+ -  Improved `$.serializeArray` method to work properly with multiple forms.
+ -  New [CSS helpers](/docs/css-helpers) added.
+
 ## March 12, 2025
 
 > swissup/breeze:2.21.0

@@ -21,10 +21,12 @@ with html content.
 Use the following wrapper around your html content:
 
 ```html
-<div class="line-clamp-[1..6]" data-mage-init='{"lineClamp":{}}'>
+<div class="line-clamp-1" data-mage-init='{"lineClamp":{}}'>
     ...
 </div>
 ```
+
+Line clamps from `line-clamp-1` to `line-clamp-6` are supported.
 
 ## JS Usage
 

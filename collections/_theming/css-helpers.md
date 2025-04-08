@@ -39,7 +39,12 @@ Read more about [scroll reveal](/docs/scroll-reveal) and
 <div class="prose">...</div>
 <div class="text-reset">...</div>
 <div class="note">Muted text</div>
-<div class="text-[xs|sm|base|lg|xs|2xl|3xl|4xl|5xl]">Font size</div>
+<div class="nowrap">No wraps inside</div>
+<div class="underline">Underlined</div>
+<div class="uppercase">Uppercased</div>
+<div class="lowercase">Lowercased</div>
+<div class="capitalize">Capitalized</div>
+<div class="text-[xs|sm|base|lg|xl|2xl|3xl|4xl|5xl]">Font size</div>
 <div class="text-[left|right|center]">Aligned text</div>
 <div class="font-[sans|serif|mono]">Text with selected font-face</div>
 <div class="font-[thin|extralight|light]">Thin font weights</div>
@@ -63,7 +68,16 @@ Read more about [scroll reveal](/docs/scroll-reveal) and
 ## Colors
 
 ```html
-<div class="color-invert">Dark section</div>
+<div class="color-base">Base color</div>
+<div class="color-brand">Brand color</div>
+<div class="color-heading">Heading color</div>
+<div class="color-link">Link color</div>
+<div class="color-muted">Muted color</div>
+<div class="color-danger">Danger color</div>
+<div class="color-success">Success color</div>
+<div class="color-info">Info color</div>
+<div class="color-inherit">Inherited color</div>
+<div class="color-invert" style="background: #000">Dark section</div>
 ```
 
 ## Positioning
@@ -73,6 +87,16 @@ Read more about [scroll reveal](/docs/scroll-reveal) and
 <div class="relative z-10 z-20 z-30 z-40 z-50"></div>
 ```
 
+## Dimensions
+
+```html
+<div class="max-w-[xs|sm|md|lg|xl|xxl|40|80] mx-auto"></div>
+<div class="w-full h-full"></div>
+<div class="aspect-auto"></div>
+<div class="aspect-square"></div>
+<div class="aspect-video"></div>
+```
+
 ## Display
 
 ```html
@@ -80,9 +104,9 @@ Read more about [scroll reveal](/docs/scroll-reveal) and
 <div class="show"></div>
 <div class="abs-visually-hidden"></div>
 <div class="grid grid-cols-2 grid-cols-3 grid-cols-4"></div>
-<div class="flex flex-wrap flex-nowrap items-start items-end items-center"></div>
-<div class="justify-around justify-between justify-evenly"></div>
-<div class="shrink-0 grow-0 gap-1..gap-8"></div>
+<div class="flex flex-wrap flex-nowrap items-start items-end items-center items-baseline"></div>
+<div class="justify-around justify-center justify-between justify-end justify-evenly"></div>
+<div class="shrink-0 grow-0 gap-1..gap-8 row-gap-1..row-gap-8"></div>
 ```
 
 ## Shadow
@@ -101,15 +125,4 @@ Read more about [scroll reveal](/docs/scroll-reveal) and
 <div class="shadow-lg-around"></div>
 <div class="shadow-xl-around"></div>
 <div class="shadow-2xl-around"></div>
-```
-
-## Width
-
-```html
-<div class="max-w-xs mx-auto"></div>
-<div class="max-w-sm mx-auto"></div>
-<div class="max-w-md mx-auto"></div>
-<div class="max-w-lg mx-auto"></div>
-<div class="max-w-xl mx-auto"></div>
-<div class="max-w-xxl mx-auto"></div>
 ```
