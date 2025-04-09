@@ -9,13 +9,14 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## Draft
+## April 9, 2025
 
-> swissup/breeze<br/>
-> swissup/breeze-blank,swissup/breeze-evolution
+> swissup/breeze:2.22.0<br/>
+> swissup/breeze-blank:2.11.0,swissup/breeze-evolution:2.5.0
 
 **🎉 Improvements**
 
+ -  PHP 8.4 compatibility.
  -  Magento 2.4.8 compatibility.
 
 **🐛 Fixes**
@@ -29,10 +30,10 @@ class: prose prose-zinc max-w-3xl mx-auto
 **🏗️ Improved developer experience**
 
  -  Added ability to pass collection/array to `$.fn.find`.
- -  Allow passing element selector to the `applyFor` method.
- -  Allow padding object to the `$.parseQuery` method.
+ -  Allow passing element selector to the `mage.applyFor` method.
+ -  Allow passing object to the `$.parseQuery` method.
  -  Improved `$.serializeArray` method to work properly with multiple forms.
- -  New [CSS helpers](/docs/css-helpers) added.
+ -  Few new [CSS helpers](/docs/css-helpers) added.
 
 ## March 12, 2025
 
