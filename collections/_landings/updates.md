@@ -9,6 +9,40 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 18, 2025
+
+> swissup/breeze-blank:2.11.1,swissup/breeze-evolution:2.5.1
+
+**🚨 This update may require updating your theme code**
+
+ -  Background of the hovered button state is now controlled by `--button-hover-bg` css prop.
+
+    If you used the following code:
+
+    ```less
+    .mybutton:hover {
+        .lib-rgb(--button-bg, #f00);
+    }
+    ```
+
+    You should update it as follows:
+
+    ```less
+    .mybutton {
+        .lib-rgb(--button-hover-bg, #f00);
+    }
+    ```
+
+ -  Fixed invalid color values passed to `rgba()` function for a `button-link` component.
+ -  `@button__hover__background-alpha` default value is now 1. Previouly is was `0.9`.
+ -  `@button-secondary__hover__background-color` default value is `var(--gray-300)`. Previouly is was `false`.
+    You may need to declare this variable with proper color code if the background of
+    the secondary button in hovered state is not correct:
+
+    ```less
+    @button-secondary__hover__background-color: #f00;
+    ```
+
 ## April 9, 2025
 
 > swissup/breeze:2.22.0<br/>
