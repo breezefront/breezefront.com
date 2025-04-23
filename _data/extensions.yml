@@ -385,6 +385,18 @@
   require:
     - swissup/breeze:^2.0
 
+- name: meta/meta-for-magento2
+  url: https://commercemarketplace.adobe.com/meta-meta-for-magento2.html
+  description: >
+    Meta builds technologies that help people connect, find communities and grow businesses.
+    The Facebook & Instagram Extension enables users to set up Conversions API, Pixel, Catalog,
+    and enables Adobe Commerce (on-prem) and Magento Open Source users to create and manage
+    a checkout-enabled Shop on Facebook & Instagram.
+  require:
+    - meta/meta-for-magento2:^1.4
+    - swissup/breeze:^2.22
+    - aqeltech/module-breeze-meta-conversion:^1.0
+
 - name: mirasvit/affiliate
   url: https://mirasvit.com/magento-2-extensions/affiliate.html
   description: >
