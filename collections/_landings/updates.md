@@ -9,6 +9,28 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 23, 2025
+
+> swissup/module-breeze:2.22.3
+
+**🏗️ Improved developer experience**
+
+ -  Allow using Luma-based components without `component:` declaration inside bundles.
+    To use this feature, make sure that all of the dependencies listed in the `import` section.
+
+    Usage example:
+
+    ```xml
+    <item name="algoliaAutocomplete" xsi:type="array">
+        <item name="path" xsi:type="string">Algolia_AlgoliaSearch/js/autocomplete</item>
+        <item name="anonymous" xsi:type="boolean">true</item>
+        <item name="import" xsi:type="array">...</item>
+    </item>
+    ```
+
+ -  Fixed js error when passing success and error callbacks to the `require()` function.
+ -  Improve resolving dependencies from global `window` object.
+
 ## April 18, 2025
 
 > swissup/breeze-blank:2.11.1,swissup/breeze-evolution:2.5.1
