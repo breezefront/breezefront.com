@@ -255,6 +255,8 @@
     Magento 2 Request For Quote (RFQ) allows both guests and logged-in customers
     to submit request for quotation forms on product pages.
     Customers can add multiple products to quote with custom price and quantity.
+    Facilitating two face interaction between sellers and buyers,
+    the module personalizes customers' orders and increases their retention, loyalty.
   note: Module files patch is required. Breeze should be disabled for `/quotation/quote/` pages.
   require:
     - landofcoder/module-request-for-quote:^1.1
