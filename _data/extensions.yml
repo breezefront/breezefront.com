@@ -1,51 +1,3 @@
-- name: swissup/*
-  url: https://swissuplabs.com/magento-extensions.html?cat=17
-  tags: >
-    layered navigation, filters, ajax add to cart, social login, checkout,
-    seo suite, pagespeed, megamenu, navigation, accordion, helpdesk, questions,
-    prolabels, badges, labels, landing pages, brand pages, banners, lightbox,
-    abandoned cart, email templates, captcha, recaptcha, review reminder,
-    sold together, gdpr, autocomplete, search, rich snippets, testimonials,
-    quick view
-  description: >
-    More than 40 compatible modules from Breeze frontend authors! All modules
-    are compatible except of:
-    <ul>
-      <li>
-        Lightboxpro is not supported because we use our own lightweight
-        gallery in Breeze.
-      </li>
-      <li>
-        Pagebuilder is not supported because it's not a finished product,
-        and we focus on magento/pagebuilder support for now.
-      </li>
-    </ul>
-  require:
-    - swissup/breeze:^2.0
-    - swissup/module-breeze-integrations:^1.3
-
-- name: magento/*
-  url: https://magento.com/
-  description: >
-    Breeze supports almost all modules that are the part of Magento OpenSource
-    edition. Here is the list of partially/not supported modules:
-    <ul>
-      <li>magento/multishipping is not supported by Breeze Themes.</li>
-    </ul>
-  require:
-    - magento/project-community-edition:^2.4.4
-    - swissup/breeze:^2.0
-
-- name: magento/project-enterprise-edition
-  url: https://business.adobe.com/ua/products/magento/magento-commerce.html
-  description: >
-    Adobe Commerce is a flexible and scalable commerce platform that extends
-    Magento Open Source with various B2B and B2C solutions.
-  require:
-    - magento/project-enterprise-edition|magento/magento-cloud-metapackage
-    - swissup/breeze:^2.14
-    - swissup/module-breeze-magento-enterprise:^1.0
-
 - name: affirm/magento2
   url: https://github.com/Affirm/Magento2_Affirm
   description: >
@@ -85,17 +37,6 @@
     - swissup/breeze:^2.19
     - swissup/module-breeze-amasty-age-verification:^1.0.0
 
-- name: amasty/ga4
-  url: https://amasty.com/google-tag-manager-for-magento-2.html
-  description: >
-    Unlock the full potential of your Magento store with the seamless integration
-    to Google Analytics and GTM. Get access to a variety of built-in
-    events and extended performance reports.
-  require:
-    - amasty/module-ga4:^2.3
-    - swissup/breeze:^2.21
-    - swissup/module-breeze-amasty-ga4:^1.0.0
-
 - name: amasty/blog
   url: https://amasty.com/blog-pro-for-magento-2.html
   description: >
@@ -107,6 +48,17 @@
     - swissup/breeze:^2.19.6
     - swissup/module-breeze-amasty-blog:^1.0.0
 
+- name: amasty/ga4
+  url: https://amasty.com/google-tag-manager-for-magento-2.html
+  description: >
+    Unlock the full potential of your Magento store with the seamless integration
+    to Google Analytics and GTM. Get access to a variety of built-in
+    events and extended performance reports.
+  require:
+    - amasty/module-ga4:^2.3
+    - swissup/breeze:^2.21
+    - swissup/module-breeze-amasty-ga4:^1.0.0
+
 - name: amasty/hide-price
   url: https://amasty.com/hide-price-for-magento-2.html
   description: >
@@ -116,6 +68,26 @@
     - amasty/hide-price:^1.6
     - swissup/breeze:^2.19
     - swissup/module-breeze-amasty-hide-price:^1.0.0
+
+- name: amasty/module-faq-product-questions
+  url: https://amasty.com/faq-and-product-questions-for-magento-2.html
+  description: >
+    Equip product pages with the advanced SEO-optimized FAQ section.
+    Convert visitors into customers by displaying well-organized information on products and services,
+    and get valuable insights about your audience.
+  require:
+    - amasty/module-faq-product-questions:^2.13
+    - swissup/breeze:^2.19.6
+    - aqeltech/module-breeze-amasty-faq:^1.0.0
+
+- name: amasty/module-promo-countdown
+  url: https://amasty.com/countdown-timer-for-magento-2.html
+  description: >
+    Countdown timer widget for Magento.
+  require:
+    - amasty/module-promo-countdown:^1.2
+    - swissup/breeze:^2.17
+    - swissup/module-breeze-amasty-promo-countdown:^1.0.0
 
 - name: amasty/mostviewed
   url: https://amasty.com/automatic-related-products-for-magento-2.html
@@ -128,15 +100,6 @@
     - amasty/mostviewed:^2.13
     - swissup/breeze:^2.0
     - swissup/module-breeze-amasty-mostviewed:^1.0.0
-
-- name: amasty/module-promo-countdown
-  url: https://amasty.com/countdown-timer-for-magento-2.html
-  description: >
-    Countdown timer widget for Magento.
-  require:
-    - amasty/module-promo-countdown:^1.2
-    - swissup/breeze:^2.17
-    - swissup/module-breeze-amasty-promo-countdown:^1.0.0
 
 - name: amasty/request-quote
   url: https://amasty.com/request-a-quote-for-magento-2.html
@@ -238,7 +201,8 @@
 - name: bsscommerce/quantity-dropdown
   url: https://bsscommerce.com/magento-2-quantity-dropdown-extension.html
   description: >
-    Quantity Dropdown is an additional feature for Magento that allows store owners control over the number of items customers can select to purchase.
+    Quantity Dropdown is an additional feature for Magento that allows store owners
+    control over the number of items customers can select to purchase.
   require:
     - bsscommerce/quantity-dropdown
     - swissup/breeze:^2.0
@@ -291,8 +255,6 @@
     Magento 2 Request For Quote (RFQ) allows both guests and logged-in customers
     to submit request for quotation forms on product pages.
     Customers can add multiple products to quote with custom price and quantity.
-    Facilitating two face interaction between sellers and buyers,
-    the module personalizes customers' orders and increases their retention, loyalty.
   note: Module files patch is required. Breeze should be disabled for `/quotation/quote/` pages.
   require:
     - landofcoder/module-request-for-quote:^1.1
@@ -359,6 +321,28 @@
   require:
     - magenable/purchase-partner-url:^1.4.3
     - swissup/breeze:^2.0
+
+- name: magento/*
+  url: https://magento.com/
+  description: >
+    Breeze supports almost all modules that are the part of Magento OpenSource
+    edition. Here is the list of partially/not supported modules:
+    <ul>
+      <li>magento/multishipping is not supported by Breeze Themes.</li>
+    </ul>
+  require:
+    - magento/project-community-edition:^2.4.4
+    - swissup/breeze:^2.0
+
+- name: magento/project-enterprise-edition
+  url: https://business.adobe.com/ua/products/magento/magento-commerce.html
+  description: >
+    Adobe Commerce is a flexible and scalable commerce platform that extends
+    Magento Open Source with various B2B and B2C solutions.
+  require:
+    - magento/project-enterprise-edition|magento/magento-cloud-metapackage
+    - swissup/breeze:^2.14
+    - swissup/module-breeze-magento-enterprise:^1.0
 
 - name: mageworx/advancedproductoptions
   url: https://www.mageworx.com/magento-2-advanced-product-options-suite.html
@@ -547,6 +531,32 @@
     - stripe/module-payments:^3.4
     - swissup/breeze:^2.0
     - swissup/module-breeze-stripe-payments:^1.0
+
+- name: swissup/*
+  url: https://swissuplabs.com/magento-extensions.html?cat=17
+  tags: >
+    layered navigation, filters, ajax add to cart, social login, checkout,
+    seo suite, pagespeed, megamenu, navigation, accordion, helpdesk, questions,
+    prolabels, badges, labels, landing pages, brand pages, banners, lightbox,
+    abandoned cart, email templates, captcha, recaptcha, review reminder,
+    sold together, gdpr, autocomplete, search, rich snippets, testimonials,
+    quick view
+  description: >
+    More than 40 compatible modules from Breeze frontend authors! All modules
+    are compatible except of:
+    <ul>
+      <li>
+        Lightboxpro is not supported because we use our own lightweight
+        gallery in Breeze.
+      </li>
+      <li>
+        Pagebuilder is not supported because it's not a finished product,
+        and we focus on magento/pagebuilder support for now.
+      </li>
+    </ul>
+  require:
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-integrations:^1.3
 
 - name: ulmod/bundle-item
   url: https://www.ulmod.com/magento-2-bundle-items-url.html
