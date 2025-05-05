@@ -1,3 +1,51 @@
+- name: swissup/*
+  url: https://swissuplabs.com/magento-extensions.html?cat=17
+  tags: >
+    layered navigation, filters, ajax add to cart, social login, checkout,
+    seo suite, pagespeed, megamenu, navigation, accordion, helpdesk, questions,
+    prolabels, badges, labels, landing pages, brand pages, banners, lightbox,
+    abandoned cart, email templates, captcha, recaptcha, review reminder,
+    sold together, gdpr, autocomplete, search, rich snippets, testimonials,
+    quick view
+  description: >
+    More than 40 compatible modules from Breeze frontend authors! All modules
+    are compatible except of:
+    <ul>
+      <li>
+        Lightboxpro is not supported because we use our own lightweight
+        gallery in Breeze.
+      </li>
+      <li>
+        Pagebuilder is not supported because it's not a finished product,
+        and we focus on magento/pagebuilder support for now.
+      </li>
+    </ul>
+  require:
+    - swissup/breeze:^2.0
+    - swissup/module-breeze-integrations:^1.3
+
+- name: magento/*
+  url: https://magento.com/
+  description: >
+    Breeze supports almost all modules that are the part of Magento OpenSource
+    edition. Here is the list of partially/not supported modules:
+    <ul>
+      <li>magento/multishipping is not supported by Breeze Themes.</li>
+    </ul>
+  require:
+    - magento/project-community-edition:^2.4.4
+    - swissup/breeze:^2.0
+
+- name: magento/project-enterprise-edition
+  url: https://business.adobe.com/ua/products/magento/magento-commerce.html
+  description: >
+    Adobe Commerce is a flexible and scalable commerce platform that extends
+    Magento Open Source with various B2B and B2C solutions.
+  require:
+    - magento/project-enterprise-edition|magento/magento-cloud-metapackage
+    - swissup/breeze:^2.14
+    - swissup/module-breeze-magento-enterprise:^1.0
+
 - name: affirm/magento2
   url: https://github.com/Affirm/Magento2_Affirm
   description: >
@@ -324,18 +372,6 @@
     - magenable/purchase-partner-url:^1.4.3
     - swissup/breeze:^2.0
 
-- name: magento/*
-  url: https://magento.com/
-  description: >
-    Breeze supports almost all modules that are the part of Magento OpenSource
-    edition. Here is the list of partially/not supported modules:
-    <ul>
-      <li>magento/multishipping is not supported by Breeze Themes.</li>
-    </ul>
-  require:
-    - magento/project-community-edition:^2.4.4
-    - swissup/breeze:^2.0
-
 - name: magento/project-enterprise-edition
   url: https://business.adobe.com/ua/products/magento/magento-commerce.html
   description: >
@@ -533,32 +569,6 @@
     - stripe/module-payments:^3.4
     - swissup/breeze:^2.0
     - swissup/module-breeze-stripe-payments:^1.0
-
-- name: swissup/*
-  url: https://swissuplabs.com/magento-extensions.html?cat=17
-  tags: >
-    layered navigation, filters, ajax add to cart, social login, checkout,
-    seo suite, pagespeed, megamenu, navigation, accordion, helpdesk, questions,
-    prolabels, badges, labels, landing pages, brand pages, banners, lightbox,
-    abandoned cart, email templates, captcha, recaptcha, review reminder,
-    sold together, gdpr, autocomplete, search, rich snippets, testimonials,
-    quick view
-  description: >
-    More than 40 compatible modules from Breeze frontend authors! All modules
-    are compatible except of:
-    <ul>
-      <li>
-        Lightboxpro is not supported because we use our own lightweight
-        gallery in Breeze.
-      </li>
-      <li>
-        Pagebuilder is not supported because it's not a finished product,
-        and we focus on magento/pagebuilder support for now.
-      </li>
-    </ul>
-  require:
-    - swissup/breeze:^2.0
-    - swissup/module-breeze-integrations:^1.3
 
 - name: ulmod/bundle-item
   url: https://www.ulmod.com/magento-2-bundle-items-url.html
