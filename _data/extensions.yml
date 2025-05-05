@@ -85,17 +85,6 @@
     - swissup/breeze:^2.19
     - swissup/module-breeze-amasty-age-verification:^1.0.0
 
-- name: amasty/ga4
-  url: https://amasty.com/google-tag-manager-for-magento-2.html
-  description: >
-    Unlock the full potential of your Magento store with the seamless integration
-    to Google Analytics and GTM. Get access to a variety of built-in
-    events and extended performance reports.
-  require:
-    - amasty/module-ga4:^2.3
-    - swissup/breeze:^2.21
-    - swissup/module-breeze-amasty-ga4:^1.0.0
-
 - name: amasty/blog
   url: https://amasty.com/blog-pro-for-magento-2.html
   description: >
@@ -107,6 +96,17 @@
     - swissup/breeze:^2.19.6
     - swissup/module-breeze-amasty-blog:^1.0.0
 
+- name: amasty/ga4
+  url: https://amasty.com/google-tag-manager-for-magento-2.html
+  description: >
+    Unlock the full potential of your Magento store with the seamless integration
+    to Google Analytics and GTM. Get access to a variety of built-in
+    events and extended performance reports.
+  require:
+    - amasty/module-ga4:^2.3
+    - swissup/breeze:^2.21
+    - swissup/module-breeze-amasty-ga4:^1.0.0
+
 - name: amasty/hide-price
   url: https://amasty.com/hide-price-for-magento-2.html
   description: >
@@ -116,6 +116,26 @@
     - amasty/hide-price:^1.6
     - swissup/breeze:^2.19
     - swissup/module-breeze-amasty-hide-price:^1.0.0
+
+- name: amasty/module-faq-product-questions
+  url: https://amasty.com/faq-and-product-questions-for-magento-2.html
+  description: >
+    Equip product pages with the advanced SEO-optimized FAQ section.
+    Convert visitors into customers by displaying well-organized information on products and services,
+    and get valuable insights about your audience.
+  require:
+    - amasty/module-faq-product-questions:^2.13
+    - swissup/breeze:^2.19.6
+    - aqeltech/module-breeze-amasty-faq:^1.0.0
+
+- name: amasty/module-promo-countdown
+  url: https://amasty.com/countdown-timer-for-magento-2.html
+  description: >
+    Countdown timer widget for Magento.
+  require:
+    - amasty/module-promo-countdown:^1.2
+    - swissup/breeze:^2.17
+    - swissup/module-breeze-amasty-promo-countdown:^1.0.0
 
 - name: amasty/mostviewed
   url: https://amasty.com/automatic-related-products-for-magento-2.html
@@ -128,15 +148,6 @@
     - amasty/mostviewed:^2.13
     - swissup/breeze:^2.0
     - swissup/module-breeze-amasty-mostviewed:^1.0.0
-
-- name: amasty/module-promo-countdown
-  url: https://amasty.com/countdown-timer-for-magento-2.html
-  description: >
-    Countdown timer widget for Magento.
-  require:
-    - amasty/module-promo-countdown:^1.2
-    - swissup/breeze:^2.17
-    - swissup/module-breeze-amasty-promo-countdown:^1.0.0
 
 - name: amasty/request-quote
   url: https://amasty.com/request-a-quote-for-magento-2.html
