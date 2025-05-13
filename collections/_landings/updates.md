@@ -9,6 +9,36 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## May 13, 2025
+
+> swissup/module-breeze:2.23.0
+
+ -  **Infinite slider** support added.
+ -  Improve performance of the slider initialization function.
+ -  Fixes missing `+` in the phone validation message.
+ -  Fixed A11y errors reported by Wave tool.
+
+**🚨 Breaking changes**
+
+ -  Since the sliders are working asynchroniously, the following code will
+    not work as expected:
+
+    ```js
+    $(element).pagebuilderCarousel(options);
+    $(element).pagebuilderCarousel('instance').slider(); // may return null
+    ```
+
+    The proper way is to listen to `pagebuilderSlider:ready` event to get the slider
+    instance:
+
+    ```js
+    $(element)
+        .on('pagebuilderSlider:ready', () => {
+            $(element).pagebuilderCarousel('instance').slider();
+        })
+        .pagebuilderCarousel(options);
+    ```
+
 ## April 23, 2025
 
 > swissup/module-breeze:2.22.3
