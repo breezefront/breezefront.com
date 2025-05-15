@@ -9,6 +9,15 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## May 15, 2025
+
+> swissup/module-breeze:2.24.0
+
+🚀 Added flexible ways to manually lazyload non-critical images and preload LCP image:
+
+ -  [Image lazyload block added](/docs/image-lazyload)
+ -  [Image preload block added](/docs/image-preload)
+
 ## May 13, 2025
 
 > swissup/module-breeze:2.23.0

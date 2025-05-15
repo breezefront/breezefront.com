@@ -43,6 +43,12 @@ There are few ways to get next-gen images in Breeze theme:
     for example.
  -  Nginx-based image resize and optimization. [View our guide](next-gen-images){:target="_blank" rel="noopener"}.
 
+## Use image lazyload and preload
+
+ -  [Image Lazyload](image-lazyload) --- lazyload all images that are not visible
+    on initial page load.
+ -  [Image Preload](image-preload) --- preload LCP image.
+
 ## Use optimal settings
 
 Here is a one-line command that will set configuration to the recommended
