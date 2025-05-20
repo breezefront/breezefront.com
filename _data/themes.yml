@@ -14,6 +14,12 @@
   description: Light theme with rounded shapes and contrast forms
   media: evolution
 
+- demo: https://argento-breeze-m2.swissupdemo.com/business_breeze/
+  title: Argento Business Theme
+  description: Premium theme for enterprise clients built on top of Breeze Blank
+  media: argento-business
+  buy: https://argentotheme.com/order/
+
 - demo: https://argento-breeze-m2.swissupdemo.com/force_breeze/
   title: Argento Force Theme
   description: Premium theme with dynamic accents built on top of Breeze Blank
