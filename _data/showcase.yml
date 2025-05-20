@@ -1,3 +1,108 @@
+- url: https://www.jabea.de/
+  description: Skincare
+  scores:
+    Homepage: 99
+    Category: 97
+    Product: 98
+
+- url: https://occasion.m-budget.migros.ch/ch_fr/
+  description: Electronics
+  scores:
+    Homepage: 75
+    Category: 63
+    Product: 57
+
+- url: https://fusers.uk/
+  description: Printers and Fuser Units
+  scores:
+    Homepage: 95
+    Category: 91
+    Product: 94
+
+- url: https://missionsurfshop.com/
+  description: Outdoor activities
+  scores:
+    Homepage: 60
+    Category: 72
+    Product: 52
+
+- url: https://officesleek.com/
+  description: Apparel store
+  scores:
+    Homepage: 98
+    Category: 97
+    Product: 97
+
+- url: https://www.woodandbeyond.com/
+  description: Flooring
+  scores:
+    Homepage: 65
+    Category: 87
+    Product: 73
+
+- url: https://www.girlmerry.com/
+  description: Women's apparel store
+  scores:
+    Homepage: 58
+    Category: 69
+    Product: 61
+
+- url: https://www.goridemotorsports.com/
+  description: Motorcycle parts and tires
+  scores:
+    Homepage: 67
+    Category: 53
+    Product: 53
+
+- url: https://www.goodrxmedicine.com/
+  description: Health and vitamines
+  scores:
+    Homepage: 57
+    Category: 72
+    Product: 63
+
+- url: https://lichtbrennerei.at/
+  description: Wooden souvenirs
+  scores:
+    Homepage: 74
+    Category: 95
+    Product: 85
+
+- url: https://shop.artuk.org/
+  description: Art
+  scores:
+    Homepage: 55
+    Category: 58
+    Product: 36
+
+- url: https://shop.poptarts.com/
+  description: Pop-tarts merch and food
+  scores:
+    Homepage: 51
+    Category: 58
+    Product: 61
+
+- url: https://www.bensnaturalhealth.co.uk/
+  description: Health supplements
+  scores:
+    Homepage: 73
+    Category: 52
+    Product: 59
+
+- url: https://enneagroupe.com/
+  description: Professional equipment
+  scores:
+    Homepage: 68
+    Category: 98
+    Product: 66
+
+- url: https://www.fragrancesamplesuk.com/
+  description: Fragrances
+  scores:
+    Homepage: 63
+    Category: 69
+    Product: 77
+
 - url: https://signsupplier.co.uk/
   description: High quality business signs
   scores:
@@ -40,27 +145,12 @@
     Category: 85
     Product: 96
 
-- url: https://www.nenz24.ch/
-  description: Smart household devices
-  scores:
-    Homepage: 70
-    Category: 49
-    Product: 64
-
 - url: https://systemsprintmedia.co.uk/
   description: Printers
   scores:
     Homepage: 89
     Category: 94
     Product: 93
-
-- url: https://www.yourmacstore.nl/
-  description: Apple devices and accessories
-  scores:
-    Homepage: 61
-    Category: 51
-    Product: 60
-
 
 - url: https://www.cognac-paradise.de/
   description: Alcohol
@@ -83,13 +173,6 @@
     Category: 27
     Product: 43
 
-- url: https://www.lithobee.com/
-  description: Printed wall art
-  scores:
-    Homepage: 60
-    Category: 59
-    Product: 84
-
 - url: https://www.schilderijbestellen.nl/
   description: Paintings and photos
   scores:
@@ -110,20 +193,6 @@
     Homepage: 48
     Category: 69
     Product: 65
-
-- url: https://audiophile.dk/
-  description: Hi-Fi sound
-  scores:
-    Homepage: 74
-    Category: 90
-    Product: 83
-
-- url: https://aquariumdealer.nl/
-  description: Aquariums
-  scores:
-    Homepage: 62
-    Category: 88
-    Product: 86
 
 - url: https://millingandturningtech.com/
   description: Milling machinery
