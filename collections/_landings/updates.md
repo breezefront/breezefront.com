@@ -9,6 +9,17 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## May 22, 2025
+
+> swissup/module-breeze:2.24.1<br/>
+> swissup/breeze-blank:2.11.2,swissup/breeze-evolution:2.5.2
+
+ -  [Speculation rules](https://developer.mozilla.org/en-US/docs/Web/API/Speculation_Rules_API) added.
+    No need to activate them separately. They just works.
+ -  Fixed possible incorrect diplayed price when changing the quantity at the bundle product page.
+ -  Fixed incorrect hover background for StorePickup toggler at checkout page.
+ -  Evolution theme: Fixed missing store switcher and not working recaptcha for newsletter.
+
 ## May 15, 2025
 
 > swissup/module-breeze:2.24.0
