@@ -1,3 +1,10 @@
+- url: https://shop.kew.org/
+  description: Garden and Craft Food
+  scores:
+    Homepage: 63
+    Category: 62
+    Product: 47
+
 - url: https://www.jabea.de/
   description: Skincare
   scores:
