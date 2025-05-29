@@ -2,7 +2,9 @@
 layout: docs
 title: Analytics
 parent_title: Extensions
-description:
+description: >
+    Analytics integrations: Google Tag Manager, Google Analytics, Google Ads
+    Facebook Pixel, Instagram.
 ---
 
 # Analytics
