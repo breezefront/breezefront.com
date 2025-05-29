@@ -1,0 +1,29 @@
+{% assign extensions = site.data.extensions | where: 'category', include.category | sort_natural: 'name' %}
+
+{%- for extension in extensions %}
+<section class="p-3 py-1 pb-1.5 -mx-3 my-6 relative group rounded-2xl outline-blue-600 has-[:target]:bg-blue-50 has-[:target]:outline has-[:target]:outline-2 has-[:target]:outline-offset-2" markdown=1>
+### {{ extension.name }}
+{%- unless extension.integration_url -%}
+<span aria-label="Made for Breeze" data-microtip-position="top-left" role="tooltip" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 inline text-blue-500 relative top-px shrink-0"><path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd"/></svg></span>
+{%- endunless %}
+{:class="mt-0 mb-1 flex items-baseline gap-1"}
+
+  <div class="mb-2 leading-tight">
+    <a href="{{ extension.url }}" class="font-normal" target="_blank" rel="noopener nofollow">
+      {{ extension.url }}
+    </a>
+  </div>
+
+  {%- if extension.integration_url -%}
+    <div class="flex mb-1.5 md:absolute top-1 right-1 transition md:hover-hover:opacity-0 group-hover:opacity-100 group-has-[:focus-within]:opacity-100 group-has-[:target]:opacity-100">
+      <a href="{{ extension.integration_url }}" class="md:px-3 md:py-0.5 flex items-center rounded-full outline-offset-0 md:bg-zinc-100 md:group-has-[:target]:text-white md:group-has-[:target]:bg-blue-500 font-normal md:font-medium md:no-underline" target="_blank" rel="noopener nofollow">
+        Integration instructions
+      </a>
+    </div>
+  {%- endif -%}
+
+  <div>
+    {{ extension.description }}
+  </div>
+</section>
+{%- endfor %}

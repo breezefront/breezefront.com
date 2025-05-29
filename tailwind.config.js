@@ -23,6 +23,9 @@ module.exports = {
         'hover-none': {
           raw: '(hover: none)',
         },
+        'hover-hover': {
+          raw: '(hover: hover)',
+        },
       },
       typography: {
         // see https://github.com/tailwindlabs/tailwindcss-typography/blob/master/src/styles.js

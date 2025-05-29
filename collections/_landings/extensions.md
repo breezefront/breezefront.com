@@ -4,7 +4,6 @@ title: Extensions
 description: The list of Breeze-compatible third-party modules
 order: 30
 class: max-w-4xl mx-auto
-search: true
 ---
 
 # Extensions
@@ -13,44 +12,20 @@ search: true
 Extend your store functionality with our and third-party modules.
 {:.text-center.text-zinc-500.text-lg.mt-1.sm:mx-10}
 
-<div id="modules">
-  <div class="text-center py-8">
-    <input class="search px-4 py-2 text-lg border border-zinc-300 rounded-full w-full max-w-md" type="text" placeholder="Search..."/>
-  </div>
+{% assign grouped_extensions = site.data.extensions | group_by: 'category' | sort: 'name' %}
 
-  <div class="list space-y-6 sm:space-y-10 my-12 empty:hidden">
-    {%- for extension in site.data.extensions %}
-      <div>
-        <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-x-8">
-          <div class="sm:col-span-7">
-            <h3 id="{{ extension.name | slugify }}" class="group inline-flex items-center text-lg font-medium underline">
-              <a href="#{{ extension.name | slugify }}"><span class="name">{{ extension.name }}</span></a>
-              <a href="{{ extension.url }}" tabindex="-1" target="_blank" rel="noopener nofollow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline w-5 h-5 opacity-0 group-hover:opacity-100 group-focus:opacity-100">
-                  <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </h3>
-            <div class="description mt-1 text-base text-zinc-500 prose prose-zinc">
-              {{ extension.description -}}
-            </div>
-            <div class="tags" style="display: none">{{ extension.tags }}</div>
-          </div>
-          <div class="mt-2 sm:mt-0.5 sm:col-span-5">
-            <span class="inline-block px-3 py-0.5 bg-zinc-100 rounded-full text-sm text-zinc-500">Requirements</span>
-            <ul class="ml-2 mt-1 pl-3 text-sm text-zinc-500 list-disc marker:text-zinc-400">
-              {%- for require in extension.require %}
-                <li class="before:inline before:-ml-0.5">{{ require }}</li>
-              {%- endfor %}
-            </ul>
-            {%- if extension.note != nil %}
-              <div class="mt-2 text-sm text-zinc-500">Note: {{ extension.note }}</div>
-            {%- endif %}
-          </div>
-        </div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 my-10 md:my-16">
+  {%- for group in grouped_extensions %}
+    <a href="docs/extensions/{{ group.name }}" class="group flex flex-col gap-2">
+      <div class="relative rounded shadow-[rgb(0_0_0_/_30%)_0px_10px_20px_-20px] after:rounded after:border after:border-black/8 after:absolute after:inset-0 after:pointer-events-none">
+        <img class="inline-block rounded" src="/assets/img/extensions/{{ group.name }}.svg" width="500" height="500" alt="{{ group.name }} extensions illustration"/>
       </div>
-    {%- endfor %}
-  </div>
+      <h3 id="{{ extension.name | slugify }}" class="text-lg font-medium group-hover:underline">
+        {{ group.name | replace: '-and-', '-&amp;-' | replace: '-', ' ' | capitalize }}
+        ({{ group.size }})
+      </h3>
+    </a>
+  {%- endfor %}
 </div>
 
 <div class="p-8">
@@ -63,7 +38,7 @@ Extend your store functionality with our and third-party modules.
   </p>
   <div class="mt-4 prose prose-zinc prose-lg max-w-2xl mx-auto">
     <ol>
-      <li>Backend modules will work fine.</li>
+      <li>Backend modules will work fine without integration.</li>
       <li>If the module doesn't use JS or CSS it will work without additional integration.</li>
       <li>Most checkout modules will work without additional integration.</li>
       <li>Ask your extension vendor for a compatibility update.</li>
@@ -71,14 +46,3 @@ Extend your store functionality with our and third-party modules.
     </ol>
   </div>
 </div>
-
-<script type="module">
-  const modules = new List('modules', {
-    valueNames: ['name', 'description', 'tags']
-  });
-
-  document.addEventListener('turbolinks:before-cache', () => {
-    modules.search();
-    modules.listContainer.getElementsByClassName(modules.searchClass)[0].value = '';
-  });
-</script>

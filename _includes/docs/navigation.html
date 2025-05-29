@@ -89,6 +89,19 @@
     </div>
   </div>
   <script>
-    document.querySelector('[data-preserve-scroll]').scrollTop = localStorage.getItem('breeze-scroll-top') || 0;
+    var scroller = document.querySelector('[data-preserve-scroll]'),
+      activeNav = document.querySelector('a.nav-active');
+
+    scroller.scrollTop = localStorage.getItem('breeze-scroll-top') || 0;
+
+    const isElementVisibleInContainer = (el) => {
+        const rect = el.getBoundingClientRect();
+        const containerRect = scroller.getBoundingClientRect();
+        return rect.top >= containerRect.top && rect.bottom <= containerRect.bottom;
+    };
+
+    if (!scroller.scrollTop && activeNav && !isElementVisibleInContainer(activeNav)) {
+      scroller.scrollTop = activeNav.getBoundingClientRect().top - 150;
+    }
   </script>
 </div>

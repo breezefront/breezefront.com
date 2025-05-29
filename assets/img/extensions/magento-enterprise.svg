@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="500"
+   height="500"
+   viewBox="0 0 15 15"
+   role="img"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="magento-enterprise.svg"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.46375"
+     inkscape:cx="314.6029"
+     inkscape:cy="236.03757"
+     inkscape:window-width="2490"
+     inkscape:window-height="1376"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">Magento icon</title>
+  <rect
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:0.0250292;stroke-linecap:square;paint-order:fill markers stroke"
+     id="rect1"
+     width="14.974971"
+     height="14.974971"
+     x="0.0125146"
+     y="0.0125146" />
+  <path
+     d="M 7.3604186,11.12895 5.8614689,10.263563 V 6.225988 L 6.8607687,5.6489513 V 9.6868622 L 7.3604186,9.9903541 7.8600684,9.6868622 V 5.6489513 L 8.8597047,6.225988 v 4.037575 z M 10.856622,5.0725876 V 9.1101624 L 9.8576587,9.6868622 V 5.6489513 L 7.3604186,4.2078736 4.8618327,5.6489513 V 9.6868622 L 3.8642153,9.1101624 V 5.0725876 L 7.3604186,3.0538002 Z"
+     id="path1"
+     style="stroke-width:0.33645;stroke-dasharray:none;fill:#f22e0f;fill-opacity:1"
+     inkscape:label="path1" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Magento icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

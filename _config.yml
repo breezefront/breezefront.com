@@ -56,6 +56,12 @@ collections:
     navigation: true
     title: Components
     order: 60
+  extensions:
+    output: true
+    permalink: /docs/extensions/:name
+    navigation: true
+    title: Extensions
+    order: 70
 
 markdown: kramdown
 kramdown:
