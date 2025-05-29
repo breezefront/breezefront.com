@@ -1,0 +1,48 @@
+---
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- assign items = site.landings | sort: 'order' -%}
+{% for item in items %}
+  {%- if item.navigation == false -%}
+    {%- continue -%}
+  {%- endif -%}
+
+  {%- assign title = item.title -%}
+  {%- if item.navigation != true and item.navigation != null -%}
+    {%- assign title = item.navigation -%}
+  {%- endif %}
+  <url>
+    <loc>{{ item.url | absolute_url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+{%- endfor %}
+
+{%- assign sections = site.collections | where: "navigation", true | sort: 'order' -%}
+{%- for section in sections %}
+    {%- if site[section.label][0].order -%}
+      {%- assign articles = site[section.label] | sort: 'order' -%}
+    {%- else -%}
+      {%- assign articles = site[section.label] | sort: 'title' -%}
+    {%- endif -%}
+
+    {%- for article in articles %}
+      {%- if article.navigation == false -%}
+        {%- continue -%}
+      {%- endif -%}
+
+      {%- if section.draft == true or article.draft == true %}
+        {%- continue %}
+      {%- endif %}
+  <url>
+    <loc>{{ article.url | absolute_url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    {%- endfor %}
+{%- endfor %}
+</urlset>
