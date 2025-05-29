@@ -214,14 +214,17 @@ main .DocSearch-Button {
     padding-left: 1rem;
 }
 .docs #markdown-toc a {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 0.125rem;
+    display: inline-block;
     text-decoration: none;
     margin: 0 0 .3rem;
     font-weight: 400;
     color: #2563eb;
     word-break: break-word;
+}
+.docs #markdown-toc a:has(svg) {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.125rem;
 }
 .docs #markdown-toc a svg {
     width: .75rem;
