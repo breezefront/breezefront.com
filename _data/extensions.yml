@@ -60,6 +60,14 @@
     Hide product prices and "Add to cart" button for specific products or whole
     categories. Manage prices display depending on customer groups.
 
+- name: amasty/module-custom-forms-pro
+  url: https://amasty.com/custom-form-for-magento-2.html
+  integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-custom-forms-integration#installation
+  integration_name: aqeltech/module-breeze-amasty-custom-forms
+  category: support-and-communication
+  description: >
+    Use Magento 2 Form Builder to create web questionnaires of various types and effectively collect customer info.
+
 - name: amasty/module-faq-product-questions
   url: https://amasty.com/faq-and-product-questions-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-faq-integration#installation
@@ -358,6 +366,16 @@
     Provide your online store customers with outstanding support. Collect and
     process all inquiries, emails, and offline chats in one place!
 
+- name: mirasvit/module-gdpr
+  url: https://mirasvit.com/magento-2-gdpr.html
+  integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/mirasvit-gdpr-integration#installation
+  integration_name: aqeltech/module-breeze-mirasvit-gdpr
+  category: security-and-compliance
+  description: >
+    This extension allows your online store to comply with the most common GDPR &
+    CCPA (California Consumer Privacy Act) regulations and guidelines for user
+    data protection, CNIL and LGPD standards.
+
 - name: mirasvit/reward-points
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-rewards#installation
@@ -423,6 +441,15 @@
     Display expected delivery and shipping date on any page you like,
     i.e product page, shopping cart page, transactional emails,
     and other pages of your store.
+
+- name: plumrocket/module-prnewsletterpopup
+  url: https://plumrocket.com/magento-newsletter-popup
+  integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/plumrocket-newsletter-popup-integration#installation
+  integration_name: aqeltech/module-breeze-plumrocket-newsletter-popup
+  category: marketing
+  description: >
+    Boost your sales by increasing email subscriptions, and engage new customers
+    through offering special deals and promotions.
 
 - name: scommerce/googletagmanagerpro
   url: https://www.scommerce-mage.com/magento-2-google-tag-manager.html
