@@ -197,6 +197,15 @@
     generating new revenue, increasing purchase conversion, and dramatically
     improving the customer experience.
 
+- name: fishpig/magento2-wordpress-integration
+  url: https://fishpig.com/magento-2-wordpress-integration
+  integration_url: https://github.com/breezefront/module-breeze-fishpig-wordpress
+  integration_name: swissup/module-breeze-fishpig-wordpress
+  category: content-management
+  description: >
+    Securely integrate a local or external (separate server) WordPress blog into
+    your Magento 2 website with this free Magento 2 extension.
+
 - name: firebear/configurableproducts
   url: https://firebearstudio.com/improved-configurable-products-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-firebear-configurableproducts#installation
