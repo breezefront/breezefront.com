@@ -14,9 +14,14 @@ description: Scrollable carousel with pagination and arrows
 Slider or Carousel --- is a [widget component](widgets) to show a number of
 elements in a scrollable carousel view.
 
-[View Source Code](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/pagebuilder/slider.js){:target="_blank" rel="noopener"}
+ -  [slider.js](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/pagebuilder/slider.js){:target="_blank" rel="noopener"}
+    --- Main slider component.
+ -  [carousel.js](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/pagebuilder/carousel.js){:target="_blank" rel="noopener"}
+    --- Subcomponent optimized for product carousels.
 
 ## Initialization
+
+### Slider
 
 Static HTML initialization:
 
@@ -34,6 +39,24 @@ JS initialization:
 
 ```js
 $('.selector').pagebuilderSlider();
+```
+
+### Product carousel
+
+Static HTML initialization:
+
+```html
+{% raw %}<div data-content-type="slider" data-appearance="carousel" data-mage-init='{"Magento_PageBuilder/js/content-type/products/appearance/carousel/widget":{"arrows":true,"dots":true}}'>
+  <ol class="product-items slick-list">
+    <!-- ... -->
+  </ol>
+</div>{% endraw %}
+```
+
+JS initialization:
+
+```js
+$('.selector').pagebuilderCarousel();
 ```
 
 ## Options
