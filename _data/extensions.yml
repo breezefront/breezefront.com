@@ -60,6 +60,16 @@
     Hide product prices and "Add to cart" button for specific products or whole
     categories. Manage prices display depending on customer groups.
 
+- name: amasty/aminvisiblecaptcha
+  url: https://amasty.com/google-invisible-recaptcha-for-magento-2.html
+  integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-invisible-captcha-integration#installation
+  integration_name: aqeltech/module-breeze-amasty-invisible-captcha
+  category: security-and-compliance
+  description: >
+    Protect your store from bots and fraudulent activities with Google Invisible reCaptcha
+    — the most advanced security tool. As it's invisible for inconspicuous users,
+    your website security becomes more user-friendly.
+
 - name: amasty/module-custom-forms-pro
   url: https://amasty.com/custom-form-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-custom-forms-integration#installation
