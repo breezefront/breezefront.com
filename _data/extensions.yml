@@ -615,6 +615,15 @@
     the backend, allowing store admins to easily access and edit options of
     bundle products.
 
+- name: walkwizus/magento2-module-meilisearch
+  url: https://github.com/walkwizus/magento2-module-meilisearch
+  integration_url: https://github.com/walkwizus/magento2-module-breeze-meilisearch#prerequisites
+  integration_name: walkwizus/magento2-module-meilisearch-breeze
+  category: search-and-navigation
+  description: >
+    The Meilisearch extension for Magento 2 enables replacing Magento's default
+    search engine (OpenSearch) with Meilisearch.
+
 - name: webkul/module-orderby-whatsappbot
   url: https://store.webkul.com/magento2-whatsapp-shopping-bot-order-notifications.html
   integration_url: https://github.com/breezefront/module-breeze-webkul-order-by-whatsapp-bot#installation
