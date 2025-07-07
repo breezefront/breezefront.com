@@ -9,6 +9,14 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## July 7, 2025
+
+> swissup/module-breeze:2.24.9
+
+ -  Multiple fixes the the component resolving logic.
+ -  Cleanup old files before deploying new bundles.
+ -  Added missing `$.parseJSON` function.
+
 ## May 22, 2025
 
 > swissup/module-breeze:2.24.1<br/>
