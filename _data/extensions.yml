@@ -283,6 +283,16 @@
     There's no need to install WordPress or other platforms additionally in order
     to have a blog on the Magento store!
 
+- name: mageme/module-easyquote
+  url: https://mageme.com/magento-2-quote-extension.html
+  integration_url: https://docs.mageme.com/easyquote/breeze-compatibility
+  integration_name: mageme/module-easyquote-breeze
+  category: sales-and-checkout
+  description: >
+    Easily manage quote requests directly from the regular cart with a
+    user-friendly solution featuring customizable forms, PDF export, and
+    powerful admin tools for fast, efficient customer interaction.
+
 - name: mageme/module-webforms-3
   url: https://mageme.com/magento-2-form-builder.html
   integration_url: https://docs.mageme.com/webforms-pro-3/breeze-compatibility
