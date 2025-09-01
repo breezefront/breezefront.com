@@ -1,7 +1,12 @@
 ---
 layout: docs
 title: Extensions
-navigation: false
-redirect_to: extensions
 order: 100
 ---
+
+# Extensions
+
+* TOC
+{:toc}
+
+{% include docs/extensions.html %}

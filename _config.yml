@@ -58,7 +58,7 @@ collections:
     order: 60
   extensions:
     output: true
-    permalink: /docs/extensions/:name
+    permalink: /docs/extensions
     navigation: true
     title: Extensions
     order: 70

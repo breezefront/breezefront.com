@@ -250,6 +250,8 @@ main .DocSearch-Button {
         font-size: .9rem;
         position: sticky;
         top: 1rem;
+        max-height: 80vh;
+        overflow:  auto;
         z-index: 10;
         padding: 1rem;
         width: 14rem;

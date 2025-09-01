@@ -1,4 +1,4 @@
-{% assign extensions = site.data.extensions | where: 'category', include.category | sort_natural: 'name' %}
+{% assign extensions = site.data.extensions | sort_natural: 'name' %}
 
 {%- for extension in extensions %}
 <section class="p-3 py-1 pb-1.5 -mx-3 my-6 relative group rounded-2xl outline-blue-600 has-[:target]:bg-blue-50 has-[:target]:outline has-[:target]:outline-2 has-[:target]:outline-offset-2" markdown=1>

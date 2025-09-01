@@ -4,6 +4,7 @@ title: Extensions
 description: The list of Breeze-compatible third-party modules
 order: 30
 class: max-w-4xl mx-auto
+search: true
 ---
 
 # Extensions
@@ -12,20 +13,45 @@ class: max-w-4xl mx-auto
 Extend your store functionality with our and third-party modules.
 {:.text-center.text-zinc-500.text-lg.mt-1.sm:mx-10}
 
-{% assign grouped_extensions = site.data.extensions | group_by: 'category' | sort: 'name' %}
+{% assign extensions = site.data.extensions | sort_natural: 'name' %}
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 my-10 md:my-16">
-  {%- for group in grouped_extensions %}
-    <a href="docs/extensions/{{ group.name }}" class="group flex flex-col gap-2">
-      <div class="relative rounded shadow-[rgb(0_0_0_/_30%)_0px_10px_20px_-20px] after:rounded after:border after:border-black/8 after:absolute after:inset-0 after:pointer-events-none">
-        <img class="inline-block rounded" src="/assets/img/extensions/{{ group.name }}.svg" width="500" height="500" alt="{{ group.name }} extensions illustration"/>
-      </div>
-      <h3 id="{{ extension.name | slugify }}" class="text-lg font-medium group-hover:underline">
-        {{ group.name | replace: '-and-', '-&amp;-' | replace: '-', ' ' | capitalize }}
-        ({{ group.size }})
+<div id="modules">
+  <div class="text-center py-8">
+    <input class="search px-4 py-2 text-lg border border-zinc-300 rounded-full w-full max-w-md" type="text" placeholder="Search..."/>
+  </div>
+
+  <div class="list space-y-6 sm:space-y-10 mx-auto my-12 empty:hidden prose max-w-4xl">
+  {%- for extension in extensions %}
+    <section class="p-3 py-1 pb-1.5 my-6 relative group rounded-2xl outline-blue-600 has-[:target]:bg-blue-50 has-[:target]:outline has-[:target]:outline-2 has-[:target]:outline-offset-2">
+      <h3 id="{{ extension.name | slugify }}" class="font-medium mt-0 mb-1 flex items-baseline gap-1 scroll-mt-4">
+        <span class="name">{{ extension.name }}</span>
+        {%- unless extension.integration_url -%}
+          <span aria-label="Made for Breeze. No additional integration" data-microtip-position="top-left" role="tooltip" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 inline text-blue-500 relative top-px shrink-0"><path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd"/></svg></span>
+        {%- endunless %}
       </h3>
-    </a>
+
+      <ul class="p-0 list-none mb-2 leading-tight text-gray-500">
+        <li class="p-0">
+          Site: <a href="{{ extension.url }}" class="font-normal text-gray-600 hover-hover:hover:underline" target="_blank" rel="noopener nofollow">
+            {{ extension.url }}
+          </a>
+        </li>
+        {%- if extension.integration_url -%}
+          <li class="p-0">
+            Integration:
+            <a href="{{ extension.integration_url }}" class="font-normal text-gray-600 hover-hover:hover:underline" target="_blank" rel="noopener nofollow">
+              {{ extension.integration_url }}
+            </a>
+          </li>
+        {%- endif -%}
+      </ul>
+
+      <div class="description">
+        {{ extension.description }}
+      </div>
+    </section>
   {%- endfor %}
+  </div>
 </div>
 
 <div class="p-8">
@@ -46,3 +72,9 @@ Extend your store functionality with our and third-party modules.
     </ol>
   </div>
 </div>
+
+<script type="module">
+  const modules = new List('modules', {
+    valueNames: ['name', 'description', 'tags']
+  });
+</script>
