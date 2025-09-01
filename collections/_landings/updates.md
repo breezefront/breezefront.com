@@ -9,6 +9,16 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## September 1, 2025
+
+> swissup/module-breeze:2.24.12
+
+ -  Fixed slider behavior on RTL locales.
+ -  Fixed double animation issue when using infinite slider.
+ -  Reduce style recalculation tasks on initial page load.
+ -  Split inline scripts into separate tasks to improve TBT score.
+ -  Postpone tabs initialization until they're revealed to improve TBT score.
+
 ## July 7, 2025
 
 > swissup/module-breeze:2.24.9
