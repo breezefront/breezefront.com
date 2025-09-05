@@ -9,6 +9,43 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Draft
+
+> swissup/module-breeze:2.25.0<br/>
+> swissup/theme-frontend-breeze-blank:2.11.5,swissup/theme-frontend-breeze-evolution:2.5.3
+
+**🎉 Improvements**
+
+ -  Accessibility improvements.
+ -  Improved compatibility with third-party modules that extend built-in components.
+ -  Allow using url in `.breeze-icon()` mixin: `.breeze-icon('../images/hello.svg')`
+ -  H1 tag added to the homepage in Blank and Evolution themes to fix SEO warning.
+
+**🚨 Breaking changes**
+
+ -  We've aligned `$.ajax|$.post|$.get` functions with jQuery to allow using them
+    with `await` keyword:
+
+    ```js
+    var data = await $.ajax(...);
+    ```
+
+    This results in the following backward incompatible change when using `.then()`:
+
+    ```js
+    // Old way to use $.ajax.then
+    // Callback receives full response object
+    $.ajax(...).then(response => {
+      var data = response.body;
+    });
+
+    // New way to use $.ajax.then
+    // Callback receives only response body
+    $.ajax(...).then(data => {
+      //
+    });
+    ```
+
 ## September 1, 2025
 
 > swissup/module-breeze:2.24.12
