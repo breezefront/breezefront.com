@@ -9,7 +9,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## Draft
+## September 8, 2025
 
 > swissup/module-breeze:2.25.0<br/>
 > swissup/theme-frontend-breeze-blank:2.11.5,swissup/theme-frontend-breeze-evolution:2.5.3
@@ -18,8 +18,21 @@ class: prose prose-zinc max-w-3xl mx-auto
 
  -  Accessibility improvements.
  -  Improved compatibility with third-party modules that extend built-in components.
+    [Paypal_BrainTree](https://github.com/breezefront/module-breeze-paypal-braintree)
+    module is now working with Breeze without any overrides!
  -  Allow using url in `.breeze-icon()` mixin: `.breeze-icon('../images/hello.svg')`
  -  H1 tag added to the homepage in Blank and Evolution themes to fix SEO warning.
+ -  Expanded gallery mode is now using one column to match modern fashion sites style
+    by default.
+
+**🏗️ Improved developer experience**
+
+ -  `.componentAsync()` method added. Useful to retrieve dynamic component that
+    may not initialized yet:
+
+    ```js
+    const gallery = await $('.selector').componentAsync('gallery');
+    ```
 
 **🚨 Breaking changes**
 
