@@ -1,22 +1,16 @@
 - name: affirm/magento
   url: https://github.com/Affirm/Magento2_Affirm
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/astound-affirm-integration#installation
-  integration_name: aqeltech/module-breeze-astound-affirm
-  category: sales-and-checkout
   description: Affirm for the Magento 2.
 
 - name: afterpay-global/module-afterpay
   url: https://github.com/afterpay/afterpay-magento-2
   integration_url: https://github.com/breezefront/module-breeze-afterpay#installation
-  integration_name: swissup/module-breeze-afterpay
-  category: sales-and-checkout
   description: Official Afterpay payment extension.
 
 - name: algolia/algoliasearch
   url: https://www.algolia.com/search-solutions/adobe-commerce-magento/
   integration_url: https://github.com/breezefront/module-breeze-algoliasearch#installation
-  integration_name: swissup/module-breeze-algoliasearch
-  category: search-and-navigation
   description: >
     The Algolia extension replaces the default search in Magento Open Source and
     Adobe Commerce with a robust autocomplete search menu and Instantsearch results page.
@@ -24,8 +18,6 @@
 - name: amasty/age-verification
   url: https://amasty.com/age-verification-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-age-verification#installation
-  integration_name: swissup/module-breeze-amasty-age-verification
-  category: security-and-compliance
   description: >
     If your store sells products that have age restrictions, it's vital to set
     strong age verification measures to comply with the laws and regulations
@@ -34,8 +26,6 @@
 - name: amasty/blog
   url: https://amasty.com/blog-pro-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-blog#installation
-  integration_name: swissup/module-breeze-amasty-blog
-  category: content-management
   description: >
     Amasty Blog is the perfect blog extension to boost SEO,
     share news, articles, and create engaging blog pages directly within
@@ -44,8 +34,6 @@
 - name: amasty/ga4
   url: https://amasty.com/google-tag-manager-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-ga4#installation
-  integration_name: swissup/module-breeze-amasty-ga4
-  category: analytics
   description: >
     Unlock the full potential of your Magento store with the seamless integration
     to Google Analytics and GTM. Get access to a variety of built-in
@@ -54,8 +42,6 @@
 - name: amasty/hide-price
   url: https://amasty.com/hide-price-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-hide-price#installation
-  integration_name: swissup/module-breeze-amasty-hide-price
-  category: security-and-compliance
   description: >
     Hide product prices and "Add to cart" button for specific products or whole
     categories. Manage prices display depending on customer groups.
@@ -63,8 +49,6 @@
 - name: amasty/aminvisiblecaptcha
   url: https://amasty.com/google-invisible-recaptcha-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-invisible-captcha-integration#installation
-  integration_name: aqeltech/module-breeze-amasty-invisible-captcha
-  category: security-and-compliance
   description: >
     Protect your store from bots and fraudulent activities with Google Invisible reCaptcha
     — the most advanced security tool. As it's invisible for inconspicuous users,
@@ -73,16 +57,12 @@
 - name: amasty/module-custom-forms-pro
   url: https://amasty.com/custom-form-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-custom-forms-integration#installation
-  integration_name: aqeltech/module-breeze-amasty-custom-forms
-  category: support-and-communication
   description: >
     Use Magento 2 Form Builder to create web questionnaires of various types and effectively collect customer info.
 
 - name: amasty/module-faq-product-questions
   url: https://amasty.com/faq-and-product-questions-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-faq-integration#installation
-  integration_name: aqeltech/module-breeze-amasty-faq
-  category: support-and-communication
   description: >
     Equip product pages with the advanced SEO-optimized FAQ section.
     Convert visitors into customers by displaying well-organized information on products and services,
@@ -91,15 +71,11 @@
 - name: amasty/module-promo-countdown
   url: https://amasty.com/countdown-timer-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-promo-countdown#installation
-  integration_name: swissup/module-breeze-amasty-promo-countdown
-  category: marketing
   description: Countdown timer widget for Magento.
 
 - name: amasty/mostviewed
   url: https://amasty.com/automatic-related-products-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-mostviewed#installation
-  integration_name: swissup/module-breeze-amasty-mostviewed
-  category: marketing
   description: >
     Automatic Related Products extension dynamically showcase
     related product offers and enables smart personalized recommendations on
@@ -109,8 +85,6 @@
 - name: amasty/request-quote
   url: https://amasty.com/request-a-quote-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-request-quote#required-patches
-  integration_name: swissup/module-breeze-amasty-request-quote
-  category: sales-and-checkout
   description: >
     Easily interact with customers regarding new best prices for products with
     Magento 2 Quote Extension.
@@ -118,8 +92,6 @@
 - name: amasty/rewards
   url: https://amasty.com/reward-points-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-rewards#installation
-  integration_name: swissup/module-breeze-amasty-rewards
-  category: marketing
   description: >
     Encourage customers to purchase more and return to your store by implementing
     an effective loyalty program with Magento 2 Reward Points extension.
@@ -127,8 +99,6 @@
 - name: amasty/shopby
   url: https://amasty.com/improved-layered-navigation-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-shopby#required-patches
-  integration_name: swissup/module-breeze-amasty-shopby
-  category: search-and-navigation
   description: >
     Build the ultimate customer shopping experience and boost your store SEO rankings
     with a feature-rich navigation system. Display multiple filters and handy widgets
@@ -137,8 +107,6 @@
 - name: amasty/stockstatus
   url: https://amasty.com/custom-stock-status-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-stockstatus#required-patches
-  integration_name: swissup/module-breeze-amasty-stockstatus
-  category: catalog
   description: >
     Provide precise information about stock availability of particular products
     using custom stock statuses. Create custom rules to automatically assign statuses,
@@ -147,8 +115,6 @@
 - name: amasty/xnotif
   url: https://amasty.com/out-of-stock-notification-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-xnotif#installation
-  integration_name: swissup/module-breeze-amasty-xnotif
-  category: catalog
   description: >
     Stock notification module. Check the number of new stock and price
     subscriptions, view the list of subscribers for a particular product, see
@@ -157,8 +123,6 @@
 - name: amasty/xsearch
   url: https://amasty.com/advanced-search-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-xsearch#installation
-  integration_name: swissup/module-breeze-amasty-xsearch
-  category: search-and-navigation
   description: >
     Advanced Search module helps customers smoothly navigate through the
     website and quickly find desired products. Show related, recent, and popular
@@ -167,15 +131,11 @@
 - name: avalara/avatax
   url: https://github.com/avadev/Avalara-AvaTax-for-Magento2
   integration_url: https://github.com/breezefront/module-breeze-avalara-avatax#installation
-  integration_name: swissup/module-breeze-avalara-avatax
-  category: sales-and-checkout
   description: Tax calculation at the shopping cart page.
 
 - name: backendorf/installment
   url: https://github.com/backendorf/magento2-installment
   integration_url: https://github.com/breezefront/module-breeze-backendorf-installment#installation
-  integration_name: swissup/module-breeze-backendorf-installment
-  category: sales-and-checkout
   description: >
     This module allows you to view the values of installments and discounts
     on the frontend.
@@ -183,8 +143,6 @@
 - name: best4mage/ucps
   url: https://www.best4mage.com/magento-2-ultimate-configurable-products-suite.html
   integration_url: https://github.com/breezefront/module-breeze-best4mage-ucps#installation
-  integration_name: swissup/module-breeze-best4mage-ucps
-  category: catalog
   description: >
     Dynamic content updates for product name, sku, long and short description etc.,
     unique user defined preselect feature. Advanced tier pricing and minimum quantity
@@ -193,14 +151,11 @@
 - name: bsscommerce/simple-detail-configurable
   url: https://bsscommerce.com/magento-2-simple-details-on-configurable-product-extension.html
   integration_url: https://github.com/breezefront/module-breeze-bss-simple-detail-configurable#installation
-  category: catalog
   description: Simple details on configurable product.
 
 - name: bsscommerce/quantity-dropdown
   url: https://bsscommerce.com/magento-2-quantity-dropdown-extension.html
   integration_url: https://github.com/breezefront/module-breeze-bss-quantity-dropdown#installation
-  integration_name: swissup/module-breeze-bss-quantity-dropdown
-  category: catalog
   description: >
     Quantity Dropdown is an additional feature for Magento that allows store
     owners control over the number of items customers can select to purchase.
@@ -208,8 +163,6 @@
 - name: extend/module-warranty
   url: https://github.com/helloextend/magento-extension
   integration_url: https://github.com/breezefront/module-breeze-extend-warranty#installation
-  integration_name: swissup/module-breeze-extend-warranty
-  category: sales-and-checkout
   description: >
     Extend provides an easy way for any merchant to offer extended protection plans,
     generating new revenue, increasing purchase conversion, and dramatically
@@ -218,8 +171,6 @@
 - name: fishpig/magento2-wordpress-integration
   url: https://fishpig.com/magento-2-wordpress-integration
   integration_url: https://github.com/breezefront/module-breeze-fishpig-wordpress
-  integration_name: swissup/module-breeze-fishpig-wordpress
-  category: content-management
   description: >
     Securely integrate a local or external (separate server) WordPress blog into
     your Magento 2 website with this free Magento 2 extension.
@@ -227,8 +178,6 @@
 - name: firebear/configurableproducts
   url: https://firebearstudio.com/improved-configurable-products-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-firebear-configurableproducts#installation
-  integration_name: swissup/module-breeze-firebear-configurableproducts
-  category: catalog
   description: >
     The successor of Simple Configurable Products and the most valuable
     Magento 2 Configurable Product extension.
@@ -238,8 +187,6 @@
 - name: klaviyo/magento2-extension
   url: https://github.com/klaviyo/magento2-klaviyo
   integration_url: https://github.com/breezefront/module-breeze-klaviyo-reclaim#installation
-  integration_name: swissup/module-breeze-klaviyo-reclaim
-  category: marketing
   description: >
     Klaviyo extension for Magento 2. Allows pushing newsletters to Klaviyo's
     platform and more.
@@ -247,15 +194,11 @@
 - name: landofcoder/estimate-shipping-rate
   url: https://github.com/landofcoder/module-simple-calculate-shipping-rate
   integration_url: https://github.com/breezefront/module-breeze-landofcoder-estimate-shipping-rate#installation
-  integration_name: swissup/module-breeze-landofcoder-estimate-shipping-rate
-  category: sales-and-checkout
   description: This module allows you to calculate shipping rates on product page.
 
 - name: landofcoder/request-for-quote
   url: https://landofcoder.com/magento-2-quote-extension.html
   integration_url: https://github.com/breezefront/module-breeze-lof-requestforquote?tab=readme-ov-file#installation
-  integration_name: swissup/module-breeze-lof-requestforquote
-  category: sales-and-checkout
   description: >
     Magento 2 Request For Quote (RFQ) allows both guests and logged-in customers
     to submit request for quotation forms on product pages.
@@ -266,8 +209,6 @@
 - name: magedelight/membership-subscription
   url: https://www.magedelight.com/membership-subscription-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-magedelight-membership-subscription#installation
-  integration_name: swissup/module-breeze-magedelight-membership-subscription
-  category: sales-and-checkout
   description: >
     Magento 2 Membership subscription Extension allows the store owner to create
     membership subscription plans and discounts on different products.
@@ -275,8 +216,6 @@
 - name: magefan/blog
   url: https://magefan.com/magento2-blog-extension
   integration_url: https://github.com/breezefront/module-breeze-magefan-blog#installation
-  integration_name: swissup/module-breeze-magefan-blog
-  category: content-management
   description: >
     This extension allows you to manage your store together
     with a blog from one place without having to rely on any second platform.
@@ -286,8 +225,6 @@
 - name: mageme/module-easyquote
   url: https://mageme.com/magento-2-quote-extension.html
   integration_url: https://docs.mageme.com/easyquote/breeze-compatibility
-  integration_name: mageme/module-easyquote-breeze
-  category: sales-and-checkout
   description: >
     Easily manage quote requests directly from the regular cart with a
     user-friendly solution featuring customizable forms, PDF export, and
@@ -296,8 +233,6 @@
 - name: mageme/module-webforms-3
   url: https://mageme.com/magento-2-form-builder.html
   integration_url: https://docs.mageme.com/webforms-pro-3/breeze-compatibility
-  integration_name: mageme/module-webforms-3-breeze
-  category: support-and-communication
   description: >
     A powerful and flexible form builder for Magento 2. Create custom forms for
     various purposes such as contact forms, surveys, and product inquiries.
@@ -305,8 +240,6 @@
 - name: mageme/module-webforms-3-product-options
   url: https://mageme.com/magento-2-advanced-product-options.html
   integration_url: https://docs.mageme.com/webforms-pro-3/breeze-compatibility
-  integration_name: mageme/module-webforms-3-product-options-breeze
-  category: catalog
   description: >
     An extension for Magento 2 that provides advanced product options. It
     features option templates, 27+ field types, dependent options,
@@ -314,7 +247,6 @@
 
 - name: magenable/purchase-partner-url
   url: https://github.com/magenable/module-purchase-partner-url
-  category: sales-and-checkout
   description: >
     This module allows you to replace standard "Add to Cart" button with links
     to external websites where visitors may purchase the products.
@@ -322,8 +254,6 @@
 - name: magento/project-enterprise-edition
   url: https://business.adobe.com/ua/products/magento/magento-commerce.html
   integration_url: https://github.com/breezefront/module-breeze-magento-enterprise#installation
-  integration_name: swissup/module-breeze-magento-enterprise
-  category: magento-enterprise
   description: >
     Adobe Commerce is a flexible and scalable commerce platform that extends
     Magento Open Source with various B2B and B2C solutions.
@@ -331,15 +261,11 @@
 - name: mageworx/advancedproductoptions
   url: https://www.mageworx.com/magento-2-advanced-product-options-suite.html
   integration_url: https://github.com/breezefront/module-breeze-mageworx-advancedproductoptions#description
-  integration_name: swissup/module-breeze-mageworx-advancedproductoptions
-  category: catalog
   description: Powerful module to manage product customizable options.
 
 - name: meta/meta-for-magento2
   url: https://commercemarketplace.adobe.com/meta-meta-for-magento2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/meta-conversion-integration#installation
-  integration_name: aqeltech/module-breeze-meta-conversion
-  category: analytics
   description: >
     Meta builds technologies that help people connect, find communities and grow businesses.
     The Facebook & Instagram Extension enables users to set up Conversions API, Pixel, Catalog,
@@ -349,8 +275,6 @@
 - name: mirasvit/affiliate
   url: https://mirasvit.com/magento-2-extensions/affiliate.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-affiliate#installation
-  integration_name: swissup/module-breeze-mirasvit-affiliate
-  category: sales-and-checkout
   description: >
     Launch fully-featured affiliate programs in your store with the Magento 2
     affiliate program extension! No need to use a third-party service and pay additional fees.
@@ -359,8 +283,6 @@
 - name: mirasvit/cachewarmer
   url: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-cachewarmer#installation
-  integration_name: swissup/module-breeze-mirasvit-cachewarmer
-  category: performance
   description: >
     This extension automatically adds pages to the cache and thus, speeds up
     your store! Whenever your customer or Google visits a page, its most recent
@@ -369,8 +291,6 @@
 - name: mirasvit/googletagmanager
   url: https://mirasvit.com/magento-2-google-tag-manager.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/mirasvit-gtm-integration#description
-  integration_name: aqeltech/module-breeze-mirasvit-gtm
-  category: analytics
   description: >
     The Google Tag Manager (GTM) & Facebook Pixel extension is a simple way to get
     eCommerce Tracking in Google Analytics (GA) for your store. Get in-depth reports
@@ -380,8 +300,6 @@
 - name: mirasvit/helpdesk
   url: https://mirasvit.com/magento-2-extensions/helpdesk.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/mirasvit-helpdesk-integration#installation
-  integration_name: aqeltech/module-breeze-mirasvit-helpdesk
-  category: support-and-communication
   description: >
     Provide your online store customers with outstanding support. Collect and
     process all inquiries, emails, and offline chats in one place!
@@ -389,8 +307,6 @@
 - name: mirasvit/module-gdpr
   url: https://mirasvit.com/magento-2-gdpr.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/mirasvit-gdpr-integration#installation
-  integration_name: aqeltech/module-breeze-mirasvit-gdpr
-  category: security-and-compliance
   description: >
     This extension allows your online store to comply with the most common GDPR &
     CCPA (California Consumer Privacy Act) regulations and guidelines for user
@@ -399,15 +315,11 @@
 - name: mirasvit/reward-points
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-rewards#installation
-  integration_name: swissup/module-breeze-mirasvit-rewards
-  category: marketing
   description: Reward points and referral program extension.
 
 - name: mirasvit/search-ultimate
   url: https://mirasvit.com/magento-2-extensions/sphinx-search-ultimate.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-search-ultimate#installation
-  integration_name: swissup/module-breeze-mirasvit-search-ultimate
-  category: search-and-navigation
   description: >
     Incredibly relevant search results, ultra-fast search autocomplete,
     stopwords and synonyms for search queries.
@@ -415,8 +327,6 @@
 - name: nosto/module-nostotagging
   url: https://github.com/Nosto/nosto-magento2
   integration_url: https://github.com/breezefront/module-breeze-nosto#installation
-  integration_name: swissup/module-breeze-nosto
-  category: marketing
   description: >
     Increase your conversion rate and average order value by delivering your
     customers personalized product recommendations throughout their shopping journey.
@@ -424,29 +334,21 @@
 - name: paradoxlabs/authnetcim
   url: https://github.com/ParadoxLabs-Inc/authnetcim
   integration_url: https://github.com/breezefront/module-breeze-paradoxlabs-authnetcim#installation
-  integration_name: swissup/module-breeze-paradoxlabs-authnetcim
-  category: sales-and-checkout
   description: Authorize.net CIM payments.
 
 - name: partnerads/magento2
   url: https://github.com/PartnerAds/Magento2
   integration_url: https://github.com/breezefront/module-breeze-partnerads-magento2#installation
-  integration_name: swissup/module-breeze-partnerads-magento2
-  category: marketing
   description: Magento2 module for Partner Ads tracking.
 
 - name: paypal/braintree
   url: https://marketplace.magento.com/paypal-module-braintree.html
   integration_url: https://github.com/breezefront/module-breeze-paypal-braintree#installation
-  integration_name: swissup/module-breeze-paypal-braintree
-  category: sales-and-checkout
   description: Braintree payment method.
 
 - name: plumrocket/module-call-for-price
   url: https://plumrocket.com/magento-call-for-price
   integration_url: https://github.com/breezefront/module-breeze-plumrocket-call-for-price#installation
-  integration_name: swissup/module-breeze-plumrocket-call-for-price
-  category: security-and-compliance
   description: >
     Hide the price and the "add to cart" button, and display the "call for price"
     button for specific products, categories, brands, customer groups,
@@ -455,8 +357,6 @@
 - name: plumrocket/module-estimateddelivery
   url: https://plumrocket.com/magento-estimated-delivery-date
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/plumrocket-estimated-delivery-integration#installation
-  integration_name: aqeltech/module-breeze-plumrocket-estimated-delivery
-  category: sales-and-checkout
   description: >
     Display expected delivery and shipping date on any page you like,
     i.e product page, shopping cart page, transactional emails,
@@ -465,8 +365,6 @@
 - name: plumrocket/module-prnewsletterpopup
   url: https://plumrocket.com/magento-newsletter-popup
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/plumrocket-newsletter-popup-integration#installation
-  integration_name: aqeltech/module-breeze-plumrocket-newsletter-popup
-  category: marketing
   description: >
     Boost your sales by increasing email subscriptions, and engage new customers
     through offering special deals and promotions.
@@ -474,8 +372,6 @@
 - name: scommerce/googletagmanagerpro
   url: https://www.scommerce-mage.com/magento-2-google-tag-manager.html
   integration_url: https://docs.scommerce-mage.com/magento-2-extensions/analytics-and-tracking-extensions/magento-2-google-tag-manager-gtm-ga4-ecommerce-tracking#bookmark0
-  integration_name: scommerce/breeze-tracking-base
-  category: analytics
   description: >
     Magento 2 Google Tag Manager (GTM) GA4 extension helps you integrate
     Enhanced E-commerce, Google Remarketing, Google Analytics 4(GA4), Facebook Pixel, Facebook
@@ -484,34 +380,26 @@
 - name: smile/elasticsuite
   url: https://elasticsuite.io/
   integration_url: https://github.com/breezefront/module-breeze-smile-elasticsuite#installation
-  integration_name: swissup/module-breeze-smile-elasticsuite
-  category: search-and-navigation
   description: The Ultimate eCommerce Searchandising Toolbox.
 
 - name: sparsh/buy-now
   url: https://www.sparsh-technologies.com/magento-extensions/magento-2-buy-now-extension
   integration_url: https://github.com/breezefront/module-breeze-sparsh-buy-now#installation
-  integration_name: swissup/module-breeze-sparsh-buy-now
-  category: sales-and-checkout
   description: Buy now button on the product listings, product, and search pages.
 
 - name: stripe/module-payments
   url: https://github.com/stripe/stripe-magento2-releases
   integration_url: https://github.com/breezefront/module-breeze-stripe-payments#installation
-  integration_name: swissup/module-breeze-stripe-payments
-  category: sales-and-checkout
   description: >
     Shared component for accepting online payments in Magento 2 using the
     Stripe payment gateway.
 
 - name: swissup/address-field-manager
   url: https://swissuplabs.com/m2-address-fields-manager.html
-  category: customer
   description: Add additional or hide useless address fields.
 
 - name: swissup/ajaxlayerednavigation
   url: https://swissuplabs.com/layered-navigation-extension-for-magento-2.html
-  category: search-and-navigation
   description: >
     Advanced layered navigation, multiple filter values, price slider, infinite scroll
     and much more.
@@ -519,60 +407,50 @@
 - name: swissup/ajaxpro
   url: https://swissuplabs.com/ajax-pro-extension-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-integrations#installation
-  integration_name: swissup/module-breeze-integrations
-  category: catalog
   description: >
     Ajax "Add to cart", "Add to compare", "Add to wishlist". Quick view popup.
 
 - name: swissup/ajaxsearch
   url: https://swissuplabs.com/ajax-search-and-autocomplete-extension-for-magento-2.html
-  category: search-and-navigation
   description: >
     Search dropdown and autocomplete with products, categories, and CMS pages.
 
 - name: swissup/askit
   url: https://swissuplabs.com/product-question-extension-for-magento-2.html
-  category: support-and-communication
   description: >
     Product questions and anwers. Reduce support requests by showing the popular
     product questions in questions block.
 
 - name: swissup/cache-warmer
   url: https://swissuplabs.com/magento-2-cache-warmer.html
-  category: performance
   description: >
     Warmup your pages to deliver top performance for your visitors.
 
 - name: swissup/customer-field-manager
   url: https://swissuplabs.com/m2-customer-fields-manager.html
-  category: customer
   description: >
     Add additional or hide useless customer fields. It allows you capture more
     information about a client, that can be used as the basis for your marketing strategy.
 
 - name: swissup/easybanner
   url: https://swissuplabs.com/magento-2-banners-and-custom-blocks-extension.html
-  category: marketing
   description: >
     Display banners, custom content in three banner types. Flexible conditions
     included!
 
 - name: swissup/gdpr
   url: https://swissuplabs.com/m2-gdpr-extension.html
-  category: security-and-compliance
   description: >
     GDPR compliance module. Cookie consent includes Google Consent V2 support.
 
 - name: swissup/helpdesk
   url: https://swissuplabs.com/magento-2-help-desk.html
-  category: support-and-communication
   description: >
     The module provides easy-to-use ticketing system and reliable support
     request management.
 
 - name: swissup/navigationpro
   url: https://swissuplabs.com/magento-2-navigation-pro-extension.html
-  category: search-and-navigation
   description: >
     Create simple and complex menu's in just a few clicks. Megamenu,
     Amazon-like menu, simple menu, sidebar navigation. Unlimited possibilites!
@@ -580,46 +458,36 @@
 - name: swissup/pagespeed
   url: https://swissuplabs.com/page-speed-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-integrations#installation
-  integration_name: swissup/module-breeze-integrations
-  category: performance
   description: All-in-one optimization tool.
 
 - name: swissup/prolabels
   url: https://swissuplabs.com/product-labels-extension-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-integrations#installation
-  integration_name: swissup/module-breeze-integrations
-  category: catalog
   description: Bring more attention to products using colorful badges and labels.
 
 - name: swissup/recaptcha
   url: https://swissuplabs.com/recaptcha-magento-2.html
-  category: security-and-compliance
   description: >
     Stop unwanted spam bots right now. ReCAPTCHA from Google aims to help you stop spams.
 
 - name: swissup/social-login
   url: https://swissuplabs.com/magento-2-social-login.html
-  category: customer
   description: Login into Magento store using social login button.
 
 - name: swissup/sold-together
   url: https://swissuplabs.com/sold-together-extension-for-magento-2.html
-  category: marketing
   description: >
     Increase sales convertion rate using "Frequently bought together"
     and "Customers who bought this also bought".
 
 - name: swissup/testimonials
   url: https://swissuplabs.com/testimonials-for-magento-2.html
-  category: support-and-communication
   description: >
     Increase trust to your store by collecting and displaying customer testominals.
 
 - name: ulmod/bundle-item
   url: https://www.ulmod.com/magento-2-bundle-items.html
   integration_url: https://github.com/breezefront/module-breeze-ulmod-bundle-item#installation
-  integration_name: swissup/module-breeze-ulmod-bundle-item
-  category: catalog
   description: >
     Add a link of each bundle product option/item under the bundle edit page in
     the backend, allowing store admins to easily access and edit options of
@@ -628,8 +496,6 @@
 - name: walkwizus/magento2-module-meilisearch
   url: https://github.com/walkwizus/magento2-module-meilisearch
   integration_url: https://github.com/walkwizus/magento2-module-breeze-meilisearch#prerequisites
-  integration_name: walkwizus/magento2-module-meilisearch-breeze
-  category: search-and-navigation
   description: >
     The Meilisearch extension for Magento 2 enables replacing Magento's default
     search engine (OpenSearch) with Meilisearch.
@@ -637,8 +503,6 @@
 - name: webkul/module-orderby-whatsappbot
   url: https://store.webkul.com/magento2-whatsapp-shopping-bot-order-notifications.html
   integration_url: https://github.com/breezefront/module-breeze-webkul-order-by-whatsapp-bot#installation
-  integration_name: swissup/module-breeze-webkul-order-by-whatsapp-bot
-  category: sales-and-checkout
   description: >
     Integrate WhatsApp with your Magento 2 store and provide a seamless web and
     mobile commerce experience.
@@ -646,6 +510,4 @@
 - name: weltpixel/ga4
   url: https://www.weltpixel.com/google-analytics-4-ga4-with-gtm-support-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-weltpixel-ga4#installation
-  integration_name: swissup/module-breeze-weltpixel-ga4
-  category: analytics
   description: Google Analytics 4 (GA4) with Google Tag Manager (GTM) Support.
