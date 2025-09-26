@@ -33,7 +33,7 @@ To enable zoom on hover for product items, use the following code:
 Usage example:
 
 ```html
-<a href="..." class="rounded hover-zoom"><img src="..."/></a>
+<a href="..." class="rounded-sm hover-zoom"><img src="..."/></a>
 ```
 
 You can also add `hover-zoom` class for pagebuilder Slide and Banner elements

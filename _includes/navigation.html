@@ -31,11 +31,11 @@
         {%- assign css = activeClass -%}
       {%- endif -%}
 
-      <li><a class="flex p-2 py-1.5 rounded hover:text-zinc-800 md:px-3 md:py-1.5 lg:px-4 {{ css }}" href="{{ item.url | relative_url }}">{{ title }}</a></li>
+      <li><a class="flex p-2 py-1.5 rounded-sm hover:text-zinc-800 md:px-3 md:py-1.5 lg:px-4 {{ css }}" href="{{ item.url | relative_url }}">{{ title }}</a></li>
     {%- endfor %}
   </ul>
   <ul class="flex flex-col md:flex-row md:items-center md:gap-1 lg:gap-3">
-    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 {%- if page.url == '/updates' %} {{ activeClass }} {%- endif -%}" href="{{ 'updates' | relative_url }}">Changelog</a></li>
-    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 md:text-white md:hover:text-white md:bg-zinc-900" href="{{ 'docs/installation' | relative_url }}">Docs</a></li>
+    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded-sm hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 {%- if page.url == '/updates' %} {{ activeClass }} {%- endif -%}" href="{{ 'updates' | relative_url }}">Changelog</a></li>
+    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded-sm hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 md:text-white md:hover:text-white md:bg-zinc-900" href="{{ 'docs/installation' | relative_url }}">Docs</a></li>
   </ul>
 </div>

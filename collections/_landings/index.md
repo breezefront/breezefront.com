@@ -6,7 +6,7 @@ description: High performance frontend for Magento 2
 ---
 
 <section class="hero-home py-8 md:py-16 flex flex-col justify-center">
-  <h1 class="text-[7.5vw] leading-[7.5vw] tracking-tight text-center font-extrabold sm:text-5xl sm:font-black md:text-6xl bg-zinc-800 bg-clip-text text-transparent">
+  <h1 class="text-[7.5vw] leading-[7.5vw] tracking-tight text-center font-extrabold sm:text-5xl sm:leading-none sm:font-black md:text-6xl bg-zinc-800 bg-clip-text text-transparent">
     A gentle shift from <br/>
     default Magento frontend<br/>
     towards <span class="whitespace-nowrap text-green-500">all-green</span> performance
@@ -28,23 +28,23 @@ description: High performance frontend for Magento 2
 </section>
 
 <section class="max-w-4xl 2xl:max-w-5xl mx-auto py-8 sm:py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
-  <div class="p-8 py-10 sm:p-12 sm:py-12 flex flex-col gap-2 items-center text-center text-white rounded-xl shadow-xl bg-gradient-to-bl from-green-500/80 via-green-500 to-green-600/90">
-    <div class="p-1.5 px-3 rounded bg-white/20 font-bold uppercase text-sm tracking-wide">Blazing Fast</div>
+  <div class="p-8 py-10 sm:p-12 sm:py-12 flex flex-col gap-2 items-center text-center text-white rounded-xl shadow-xl bg-linear-to-bl from-green-500/80 via-green-500 to-green-600/90">
+    <div class="p-1.5 px-3 rounded-sm bg-white/20 font-bold uppercase text-sm tracking-wide">Blazing Fast</div>
     <h2 class="text-4xl font-bold max-w-xs">Boost your store performance</h2>
     <p class="mt-1 text-white/70 text-xl">
       We've reduced JS stack complexity and decreased scripts evaluation time
       from 2 seconds to 100 milliseconds!
     </p>
   </div>
-  <div class="p-8 py-10 sm:p-12 sm:py-12 flex flex-col gap-2 items-center text-center text-white rounded-xl shadow-xl bg-gradient-to-br from-fuchsia-500 to-violet-500">
-    <div class="p-1.5 px-3 rounded bg-white/20 font-bold uppercase text-sm tracking-wide">Modern Features</div>
+  <div class="p-8 py-10 sm:p-12 sm:py-12 flex flex-col gap-2 items-center text-center text-white rounded-xl shadow-xl bg-linear-to-br from-fuchsia-500 to-violet-500">
+    <div class="p-1.5 px-3 rounded-sm bg-white/20 font-bold uppercase text-sm tracking-wide">Modern Features</div>
     <h2 class="text-4xl font-bold max-w-xs">Make your store shine bright</h2>
     <p class="mt-1 text-white/70 text-xl">
       Razor sharp responsive images, optimized CSS delivery, image preload, and more.
     </p>
   </div>
   <div class="md:col-span-2 p-8 py-10 sm:p-12 sm:py-12 flex flex-col gap-2 items-center text-center rounded-xl shadow-xl bg-zinc-800 text-white bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.2),transparent)]">
-    <div class="p-1.5 px-3 rounded bg-white/20 font-bold uppercase text-sm tracking-wide">Developer experience</div>
+    <div class="p-1.5 px-3 rounded-sm bg-white/20 font-bold uppercase text-sm tracking-wide">Developer experience</div>
     <h2 class="text-4xl font-bold max-w-md">Extend your store with third-party extensions</h2>
     <p class="mt-1 text-white/70 text-xl md:mx-12">
       We've put a lot of effort to implement the same API for our own JS stack.

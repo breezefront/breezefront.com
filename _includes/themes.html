@@ -22,11 +22,11 @@
   {%- assign srcset = srcset | replace_first: ', ', '' %}
 
   <div>
-    <div class="group relative rounded shadow-[rgb(0_0_0_/_30%)_0px_10px_20px_-20px] after:rounded after:border after:border-black/5 after:absolute after:inset-0 after:pointer-events-none before:bg-gradient-to-t from-white/60 to-white/20 before:absolute before:inset-0 before:rounded before:pointer-events-none before:transition before:opacity-0 hover:before:opacity-100">
+    <div class="group relative rounded-sm shadow-[rgb(0_0_0/30%)_0px_10px_20px_-20px] after:rounded-sm after:border after:border-black/5 after:absolute after:inset-0 after:pointer-events-none before:bg-linear-to-t before:from-white/60 before:to-white/20 before:absolute before:inset-0 before:rounded-sm before:pointer-events-none before:transition before:opacity-0 hover:before:opacity-100">
       {% if theme.demo %}
         <a href="{{ theme.demo }}" target="_blank" rel="noopener">
       {% endif %}
-        <img class="inline-block rounded"
+        <img class="inline-block rounded-sm"
           src="{{ src }}"
           srcset="{{ srcset }}"
           sizes="(max-width: 639px) calc((100vw - 2.5rem) / 2), (max-width: 960px) calc((100vw - 7rem) / 3), 283px"

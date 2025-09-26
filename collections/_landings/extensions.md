@@ -22,7 +22,7 @@ Extend your store functionality with our and third-party modules.
 
   <div class="list space-y-6 sm:space-y-10 mx-auto my-12 empty:hidden prose max-w-4xl">
   {%- for extension in extensions %}
-    <section class="p-3 py-1 pb-1.5 my-6 relative group rounded-2xl outline-blue-600 has-[:target]:bg-blue-50 has-[:target]:outline has-[:target]:outline-2 has-[:target]:outline-offset-2">
+    <section class="p-3 py-1 pb-1.5 my-6 relative group rounded-2xl outline-blue-600 has-target:bg-blue-50 has-target:outline-solid has-target:outline-2 has-target:outline-offset-2">
       <h3 id="{{ extension.name | slugify }}" class="font-medium mt-0 mb-1 flex items-baseline gap-1 scroll-mt-4">
         <span class="name">{{ extension.name }}</span>
         {%- unless extension.integration_url -%}

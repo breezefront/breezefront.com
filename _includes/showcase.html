@@ -54,8 +54,8 @@
   {%- assign srcset = srcset | replace_first: ', ', '' %}
 
   <div class="sm:p-3 lg:p-6 rounded-md group transition sm:bg-zinc-50 sm:hover:bg-zinc-100">
-    <a class="block relative rounded shadow-[rgb(0_0_0_/_30%)_0px_10px_20px_-20px] after:rounded after:border after:border-black/5 after:absolute after:inset-0 after:pointer-events-none" href="{{ store.url }}" target="_blank" rel="noopener nofollow">
-      <img class="inline-block rounded"
+    <a class="block relative rounded-sm shadow-[rgb(0_0_0/30%)_0px_10px_20px_-20px] after:rounded-sm after:border after:border-black/5 after:absolute after:inset-0 after:pointer-events-none" href="{{ store.url }}" target="_blank" rel="noopener nofollow">
+      <img class="inline-block rounded-sm"
         src="{{ src }}"
         srcset="{{ srcset }}"
         sizes="(max-width: 639px) calc((100vw - 2.5rem) / 2), (max-width: 1023px) calc((100vw - 10rem) / 3), 285px"
