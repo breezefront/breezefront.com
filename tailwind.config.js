@@ -7,6 +7,7 @@ module.exports = {
     hoverOnlyWhenSupported: true,
   },
   content: [
+    './_data/**/*.yml',
     './_includes/**/*.html',
     './_layouts/*.html',
     './assets/*.{css,js}',

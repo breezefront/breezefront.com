@@ -75,6 +75,21 @@ description: High performance frontend for Magento 2
   </div>
 </section>
 
+{% assign trusted-by = site.data.trusted-by %}
+
+<section class="py-20">
+  <h2 class="mb-10 text-2xl font-bold max-w-xs mx-auto text-center">Trusted by</h2>
+  <div class="mx-auto max-w-5xl">
+    <div class="grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
+      {%- for item in trusted-by %}
+        <div class="flex items-center justify-center bg-gray-400/5 p-8 sm:p-10">
+          <img width="{{ item.width }}" height="{{ item.height }}" src="{{ item.src | relative_url }}" alt="{{ item.alt }}" loading="lazy" class="max-h-12 w-full object-contain {{ item.css }}" />
+        </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="mx-auto max-w-4xl py-8 sm:py-12">
   <h2 class="text-center text-4xl font-extrabold leading-10 tracking-tight">
     Frequently asked questions

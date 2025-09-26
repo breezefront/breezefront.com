@@ -1,0 +1,45 @@
+- alt: Migros
+  src: assets/img/trusted-by/migros.svg
+  width: 602
+  height: 178
+
+- alt: Kellanova
+  src: assets/img/trusted-by/kellanova.svg
+  width: 300
+  height: 90
+
+- alt: Kew
+  src: assets/img/trusted-by/kew.webp
+  width: 240
+  height: 100
+
+- alt: Media Markt
+  src: assets/img/trusted-by/media-markt.svg
+  width: 860
+  height: 180
+
+- alt: Orange
+  src: assets/img/trusted-by/orange.svg
+  width: 50
+  height: 50
+  css: lg:scale-130
+
+- alt: Vodafone
+  src: assets/img/trusted-by/vodafone.svg
+  width: 604
+  height: 154
+
+- alt: Coach
+  src: assets/img/trusted-by/coach.svg
+  width: 638
+  height: 170
+
+- alt: Mothercare
+  src: assets/img/trusted-by/mothercare.svg
+  width: 131
+  height: 33
+
+- alt: Mishimoto
+  src: assets/img/trusted-by/mishimoto.svg
+  width: 364
+  height: 86
