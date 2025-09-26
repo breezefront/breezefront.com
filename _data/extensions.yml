@@ -251,6 +251,14 @@
     This module allows you to replace standard "Add to Cart" button with links
     to external websites where visitors may purchase the products.
 
+- name: magento/payment-services
+  url: https://experienceleague.adobe.com/en/docs/commerce/payment-services/introduction
+  integration_url: https://github.com/breezefront/module-breeze-magento-payment-services#installation
+  description: >
+    Payment Services for Adobe Commerce and Magento Open Source is your turnkey
+    self-service solution, including sandbox testing and a simple setup,
+    for providing robust and secure payment processing for your Commerce websites.
+
 - name: magento/project-enterprise-edition
   url: https://business.adobe.com/ua/products/magento/magento-commerce.html
   integration_url: https://github.com/breezefront/module-breeze-magento-enterprise#installation
