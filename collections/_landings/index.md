@@ -40,7 +40,7 @@ description: High performance frontend for Magento 2
     <div class="p-1.5 px-3 rounded bg-white/20 font-bold uppercase text-sm tracking-wide">Modern Features</div>
     <h2 class="text-4xl font-bold max-w-xs">Make your store shine bright</h2>
     <p class="mt-1 text-white/70 text-xl">
-      SPA experience, razor sharp images, optimized CSS delivery, image preload, and more.
+      Razor sharp responsive images, optimized CSS delivery, image preload, and more.
     </p>
   </div>
   <div class="md:col-span-2 p-8 py-10 sm:p-12 sm:py-12 flex flex-col gap-2 items-center text-center rounded-xl shadow-xl bg-zinc-800 text-white bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.2),transparent)]">
