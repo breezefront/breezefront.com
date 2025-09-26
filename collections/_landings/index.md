@@ -100,13 +100,13 @@ description: High performance frontend for Magento 2
     and we’ll respond to you as soon as we can.
   </p>
   <div class="mt-10 mx-auto max-w-xl">
-    <dl class="flex flex-col gap-8">
+    <div class="flex flex-col divide-y divide-gray-900/10">
       {%- for item in site.data.faq -%}
-        <div>
-          <dt class="text-lg font-semibold" id="{{ item.q | slugify }}">{{ item.q }}</dt>
-          <dd class="mt-1 text-zinc-600 prose">{{ item.a }}</dd>
-        </div>
+        <details class="py-5">
+          <summary class="text-lg font-semibold" id="{{ item.q | slugify }}">{{ item.q }}</summary>
+          <div class="text-zinc-600 prose pt-2">{{ item.a }}</div>
+        </details>
       {%- endfor -%}
-    </dl>
+    </div>
   </div>
 </section>

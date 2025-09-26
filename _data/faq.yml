@@ -17,7 +17,7 @@
     Take a look at live demos on the <a href="/themes">separate page</a>.
 
 - q: What JS was removed?
-  a: We removed everything except Knockout.
+  a: We removed everything except Knockout and Underscore.
 
 - q: Why did you keep Knockout?
   a: >
@@ -26,7 +26,7 @@
     page only if some module will require it.
 
 - q: Can I use Breeze with my Luma-based theme?
-  a: Yes, you can install <code>swissup/breeze</code> module separately.
+  a: Yes, you can install <code>swissup/breeze</code> module on top of Luma-based theme.
 
 - q: Will my current modules work with Breeze?
   a: No, if it uses JS.
