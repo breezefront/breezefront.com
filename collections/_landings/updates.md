@@ -25,6 +25,8 @@ class: prose prose-zinc max-w-3xl mx-auto
     - Improved keyboard control.
     - Clicking the thumbnails no longer opens the lightbox. This is more expected behavior.
  -  Magento Payments Services module [support added](/extensions#magento-payment-services).
+ -  Improved fullscreen mode in iOS 26 for Product Gallery, Mobile Navigation,
+    and Category Filters panels.
 
 **🐛 Fixes**
 
