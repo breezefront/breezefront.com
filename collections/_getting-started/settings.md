@@ -15,7 +15,7 @@ Breeze lets you configure some options.
 
 <details>
     <summary>View Screenshot</summary>
-    <img src="{{ '/assets/img/settings.webp' | relative_url }}" width="697" height="545" alt="Settings Screenshot" loading="lazy"/>
+    <img src="{{ '/assets/img/settings.webp' | relative_url }}" width="697" height="545" class="!m-0" alt="Settings Screenshot" loading="lazy"/>
 </details>
 
 Here is a list of available options:

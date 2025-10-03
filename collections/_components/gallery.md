@@ -20,6 +20,7 @@ Source code:
  - [gallery.js](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/gallery.js){:target="_blank" rel="noopener"}
  - [gallery-magnifier.js](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/gallery-magnifier.js){:target="_blank" rel="noopener"}
  - [gallery-panzoom.js](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/gallery-panzoom.js){:target="_blank" rel="noopener"}
+ - [gallery-slider.js](https://github.com/breezefront/module-breeze/blob/master/view/frontend/web/js/components/gallery-slider.js){:target="_blank" rel="noopener"}
  - [view.xml](https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/etc/view.xml#L242-L266){:target="_blank" rel="noopener"}
 
 ## Options
@@ -29,11 +30,11 @@ You can configure gallery options using `view.xml` file in your theme:
 ```xml
 <vars module="Magento_Catalog">
     <var name="gallery">
-        <var name="mode">default</var> <!-- default/expanded -->
+        <var name="mode">default</var> <!-- default/expanded/slider -->
         <var name="allowfullscreen">true</var>
         <var name="keyboard">true</var>
         <var name="loop">true</var>
-        <var name="nav">thumbs</var> <!-- false/thumbs/dots -->
+        <var name="nav">thumbs</var> <!-- hidden/thumbs/dots -->
         <var name="navdir">horizontal</var> <!-- horizontal/vertical -->
         <var name="caption">false</var> <!-- true/false -->
     </var>
@@ -124,7 +125,14 @@ custom styles for that:
 
 ### Expanded gallery mode
 
-Add the following values to the `etc/view.xml` file in your theme:
+This is the popular choice for many fashion stores. All images are visible
+and you can scroll down the page to see each one.
+
+<details><summary>View Screenshot</summary>
+    <img src="{{ '/assets/img/components/gallery-expanded.webp' | relative_url }}" width="1023" height="682" class="!m-0" alt="Expanded Mode Screenshot" loading="lazy"/>
+</details>
+
+To enable this mode add the following values to the `etc/view.xml` file in your theme:
 
 ```xml
 <vars module="Magento_Catalog">
@@ -134,63 +142,25 @@ Add the following values to the `etc/view.xml` file in your theme:
 </vars>
 ```
 
-You'll also want to increase width of product-media container. We recommend using
-less variables:
+### Slider gallery mode
 
-```scss
-@product-wrapper__md__gap: @4;
-@product-wrapper__md__grid-columns: 7fr 4fr;
-@product-wrapper__lg__gap: @6;
-@product-wrapper__lg__grid-columns: 3fr 1fr;
-```
+This mode is similar to the default one, except swype and drag gestures are
+fully supported with proper slide animation. This is a default mode for the
+Breeze Evolution theme.
 
-Finally, you need to change medium image size to match updated theme config.
-Update corresponding values in the `etc/view.xml` file in your theme.
+<details><summary>View Video</summary>
+    <video loop controls class="cursor-pointer" src="{{ '/assets/img/components/gallery-slider.webm' | relative_url }}" class="!m-0"></video>
+</details>
 
-Here is proper values for the BreezeEvolution theme:
+To enable this mode add the following values to the `etc/view.xml` file in your theme:
 
 ```xml
-<media>
-    <images module="Magento_Catalog">
-        <image id="product_page_image_medium" type="image">
-            <width>465</width>
-            <height>581</height>
-        </image>
-        <image id="product_page_image_medium-srcset-1" type="image">
-            <width>465</width>
-            <height>581</height>
-        </image>
-        <image id="product_page_image_medium-srcset-2" type="image">
-            <width>738</width>
-            <height>922</height>
-        </image>
-        <image id="product_page_image_medium-srcset-3" type="image">
-            <width>800</width>
-            <height>1000</height>
-        </image>
-        <image id="product_page_image_medium-srcset-4" type="image">
-            <width>930</width>
-            <height>1162</height>
-        </image>
-        <image id="product_page_image_medium-srcset-5" type="image">
-            <width>930</width>
-            <height>1162</height>
-        </image>
-    </images>
-</media>
-<vars module="Swissup_Breeze">
-    <var name="sizes">
-        <var name="product_page_image_medium"><![CDATA[
-            (min-width: 1536px) 465px,
-            (min-width: 1280px) calc((85vw - 2.5rem - 10px) * (3 / 4) / 2),
-            (min-width: 768px) calc((100vw - 2rem - 10px) * (7 / 11) / 2),
-            calc(100vw - 1rem)
-        ]]></var>
+<vars module="Magento_Catalog">
+    <var name="gallery">
+        <var name="mode">slider</var>
     </var>
 </vars>
 ```
-
-Save the files and clear Magento cache.
 
 ### Inner zoom magnifier
 

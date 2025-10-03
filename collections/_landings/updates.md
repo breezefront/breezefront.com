@@ -9,6 +9,47 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Draft
+
+> swissup/module-breeze:2.26.0<br/>
+> swissup/theme-frontend-breeze-blank:2.11.6,swissup/theme-frontend-breeze-evolution:2.5.4
+
+**🎉 Improvements**
+
+ -  [Slider Gallery Mode](/docs/gallery#slider-gallery-mode) added.
+    It's enabled by default in Breeze Evolution theme.
+ -  Slider component:
+    -  Performance improvements.
+    -  Vertical direction support added.
+ -  Gallery component:
+    - Improved keyboard control.
+    - Clicking the thumbnails no longer opens the lightbox. This is more expected behavior.
+ -  Magento Payments Services module [support added](/extensions#magento-payment-services).
+
+**🐛 Fixes**
+
+ -  Safari and Firefox: do not open the gallery when customer wanted to swipe the image.
+ -  Safari: fixed not working first click if a dom mutation is used in `$.lazy` callback.
+ -  Fixed inability to stop the video after gallery was closed.
+
+**🏗️ Improved developer experience**
+
+ -  Scrollend event support added. You can write the following code and
+    it will just work in all browsers. We silently load [scrollyfill](https://github.com/argyleink/scrollyfills/)
+    polyfill when browser doesn't have native support.
+
+    ```js
+    $('selector').on('scrollend', () => alert('scrollend'));
+    ```
+
+ -  Fixed ability to create components using `new` keyword:
+
+    ```js
+    define(['uiComponent'], (cmp) => {
+        return new cmp(options);
+    })
+    ```
+
 ## September 8, 2025
 
 > swissup/module-breeze:2.25.0<br/>
