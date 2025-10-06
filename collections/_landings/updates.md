@@ -9,10 +9,10 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## Draft
+## October 6, 2025
 
 > swissup/module-breeze:2.26.0<br/>
-> swissup/theme-frontend-breeze-blank:2.11.6,swissup/theme-frontend-breeze-evolution:2.5.4
+> swissup/theme-frontend-breeze-blank:2.11.7,swissup/theme-frontend-breeze-evolution:2.5.4
 
 **🎉 Improvements**
 
@@ -55,7 +55,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 ## September 8, 2025
 
 > swissup/module-breeze:2.25.0<br/>
-> swissup/theme-frontend-breeze-blank:2.11.5,swissup/theme-frontend-breeze-evolution:2.5.3
+> swissup/theme-frontend-breeze-blank:2.11.6,swissup/theme-frontend-breeze-evolution:2.5.3
 
 **🎉 Improvements**
 
