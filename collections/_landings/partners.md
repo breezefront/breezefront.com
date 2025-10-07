@@ -17,5 +17,5 @@ module integration services.
 {% for partner in site.data.partners %}
   <a href="{{ partner.url }}" target="_blank" rel="noopener">{{ partner.title }}</a>
   <span class="badge">{{ partner.type }}</span>
-  <div>{{ partner.description }}</div>
+  <div>{{ partner.description | markdownify }}</div>
 {% endfor %}

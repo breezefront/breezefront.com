@@ -1,41 +1,56 @@
-- title: Storeframe.io
-  url: https://www.storeframe.io
-  type: Partner
-  description: >
-    StoreFrame is a PAAS Platform designed to streamline the process of creating
-    and managing online stores. Leveraging the power and flexibility of Magento 2,
-    StoreFrame simplifies tasks like Magento 2 installation, hosting,  configuration,
-    integration, management and store launch. All following best-practices and
-    providing you with the best possible performance. Host at StoreFrame or on
-    your own server.
-
 - title: 2buy1click.com
   url: https://www.2buy1click.com/
   type: Partner
-  description: >
+  description: |
     We are experienced Magento 2 specialists, passionate about delivering proven
     solutions that are both effective and easy to use. Working with UK clients from
     Fashion, Beauty, Giftware, we are proud to say our clients have voted us on
     Clutch for Top UK Magento Agency.
 
-- title: hobiri.com
-  url: https://www.hobiri.com/
+- title: 7Span
+  url: https://7span.com/
   type: Partner
-  description: >
-    At Hobiri, we believe digital growth should be easy and accessible.
-    That’s why we work to simplify the complicated. With over a decade experience
-    in e-commerce platforms, systems integration, and automation, we're here
-    to provide you with all the support you need! Our services go beyond merely
-    building online stores. Whether you need to upgrade your online store with
-    Adobe Commerce (Magento 2), refresh it using a headless or JAMstack solution,
-    or streamline workflows with AI, we have just the right tools and expertise
-    for the job. Our dedicated international team is committed to transforming
-    challenges into opportunities.
+  description: |
+    7Span is a trailblazing eCommerce development agency that breaks barriers
+    and infuses vibrancy and creativity into every project. With a team of
+    experts led by certified Magento (Adobe Commerce) specialists, 7Span delivers
+    swift, top-quality eCommerce development services. 7Span empowers clients
+    to craft and navigate online stores with unmatched effectiveness. Step into
+    the realm of 7Span and unlock limitless possibilities for your eCommerce
+    journey.
+
+- title: AQELTech
+  url: https://www.aqeltech.com/
+  type: Partner
+  description: |
+    AQELTech is a UK & Jordan-based full-service agency specializing in
+    end-to-end Magento development. We excel in UX/UI and graphic design,
+    and digital marketing, and provide managed hosting with guaranteed SLAs
+    to ensure your e-commerce site runs smoothly. Our expert team delivers
+    tailored, user-friendly Magento solutions that drive your business forward.
+    We're committed to exceptional customer service and partner with you to
+    achieve your goals and ensure your complete satisfaction. Choose AQELTech
+    for a dedicated team that supports your success every step of the way.
+    Contact us today to elevate your online presence!
+
+- title: Bekome Digital
+  url: https://bekome.digital/
+  type: Partner
+  description: |
+    Looking for an expert Magento development agency that provides top-class
+    services and offers exceptional customer service? Look no further! Beköme
+    Digital, based in Spain, specializes in developing first-class Magento
+    solutions and providing red-carpet customer service that exceeds expectations.
+    Our team of experienced developers has a passion for delivering proven and
+    effective solutions that are easy to use, and we have a proven track record
+    of success. Partnering with us means working with a team that is committed
+    to your success and will go above and beyond to ensure your satisfaction.
+    Contact us to learn more about how we can help your business succeed!
 
 - title: BurgessCommerce.com
   url: https://burgesscommerce.com/
   type: Partner
-  description: >
+  description: |
     Burgess Commerce is a UK based no-nonsense, cost effective alternative to
     traditional ecommerce agencies, run by ecommerce expert Rowan Burgess. Burgess
     Commerce offers something no typical agency can match - we're specialists in
@@ -44,42 +59,10 @@
     collaborative of industry experts and the team behind many successful
     ecommerce websites across a wide range of niches.
 
-- title: Elogic.co
-  url: https://elogic.co/
-  type: Partner
-  description: >
-    Certified eCommerce Development Company to Build, Transform, and Optimize
-    Your Store. We help code your ecommerce stores into perfection, build
-    successful ecommerce strategies, and deliver tech solutions that become an
-    essential part of your business success.
-
-- title: Outeredge.agency
-  url: https://outeredge.agency/
-  type: Partner
-  description: >
-    outer/edge is a UK-based, expert Magento development agency. Working with
-    Magento since its launch and with over 20 years of industry experience,
-    we're passionate about helping your business successfully achieve its
-    long-term goals. We build conversion focussed and integrated websites that
-    engage consumers and transform businesses. We have an extremely high
-    retention rate and are always on the lookout for retailers who need
-    rescuing by battle-worn Magento devs. We are excited by the opportunities
-    that Breeze can offer merchants and we are recommending it to those who
-    don't want or need the investment of a headless/PWA build.
-
-- title: Sutunam.com
-  url: https://sutunam.com/
-  type: Partner
-  description: >
-    40+ Certified Magento developers team with 12+ Years of Magento eCommerce &
-    web application developments. An award-winning team, synonymous with
-    excellence in web design & development. We've launched hundreds of sites
-    which received over 100% increase in conversions and results.
-
 - title: Commercepundit.com
   url: https://www.commercepundit.com/
   type: Partner
-  description: >
+  description: |
     Commerce Pundit is a leading web services agency based in Atlanta, Georgia,
     which boasts a wealth of experience in design and development, with a
     particular focus on delivering eCommerce solutions. With a global workforce
@@ -91,10 +74,141 @@
     Commerce Pundit has been providing cutting-edge eCommerce solutions for
     over 12 years, cementing its status as a trusted industry leader.
 
+- title: Elogic.co
+  url: https://elogic.co/
+  type: Partner
+  description: |
+    Certified eCommerce Development Company to Build, Transform, and Optimize
+    Your Store. We help code your ecommerce stores into perfection, build
+    successful ecommerce strategies, and deliver tech solutions that become an
+    essential part of your business success.
+
+- title: hobiri.com
+  url: https://www.hobiri.com/
+  type: Partner
+  description: |
+    At Hobiri, we believe digital growth should be easy and accessible.
+    That’s why we work to simplify the complicated. With over a decade experience
+    in e-commerce platforms, systems integration, and automation, we're here
+    to provide you with all the support you need! Our services go beyond merely
+    building online stores. Whether you need to upgrade your online store with
+    Adobe Commerce (Magento 2), refresh it using a headless or JAMstack solution,
+    or streamline workflows with AI, we have just the right tools and expertise
+    for the job. Our dedicated international team is committed to transforming
+    challenges into opportunities.
+
+- title: iFlair
+  url: https://www.iflair.com/
+  type: Partner
+  description: |
+    iFlair is the leading Magento Development Company offering complete
+    eCommerce solutions to brands, businesses, and sellers across the World
+    Since 2004. AOver 300+ Magento 1 & 2 consulting projects have been served
+    by us including services such as migration, payment gateway integration,
+    custom themes, and extensions, real-time order import from marketplaces,
+    inventory management, and providing proper technical solutions to the client
+    according to arisen glitches.
+
+- title: Magecomp.com
+  url: https://magecomp.com/
+  type: Vendor
+  description: |
+    Magecomp is an Indian based company with 10+ years of experience in Magento niche.
+    We have successfully completed 750+ projects and served 30000+ customers in more
+    than 120 countries. Also, we have developed 150+ Magento extensions and our
+    numerous services used by more than 10000+ store owners & developers globally.
+    Magecomp extension provider will be offering free integration for their modules
+    with Breeze frontend.
+
+- title: Magefan.com
+  url: https://magefan.com/
+  type: Partner
+  description: |
+    Magefan is a Ukrainian e-commerce agency founded in 2015. From the very
+    beginning, they’ve believed that product quality must go hand in hand with
+    exceptional customer service.
+
+    They approach both with equal dedication when creating solutions and
+    delivering services. That’s why Magefan stands for reliable, high-quality
+    e-commerce solutions you can trust.
+
+    Over the past 10 years, Magefan extensions for Magento 2 have been downloaded
+    more than 2,800,000 times.
+
+- title: Mage Montreal
+  url: https://magemontreal.com/
+  type: Partner
+  description: |
+    MageMontreal is a specialized eCommerce development agency based in Quebec,
+    Canada. We build, optimize, and support eCommerce websites on Magento,
+    Adobe Commerce, Shopify, WooCommerce, and BigCommerce—ensuring seamless
+    scalability and success. Driven by clear communication and a commitment
+    to quality, we deliver results that exceed expectations—on time and
+    within budget.
+
+- title: Meetanshi.com
+  url: https://meetanshi.com/
+  type: Vendor
+  description: |
+    Meetanshi is an Indian company from Bhavnagar that provides Magento solutions
+    since 2017. It has around 200 Magento modules and happily provide Breeze Frontend
+    integration services for any of their modules.
+
+- title: Outeredge.agency
+  url: https://outeredge.agency/
+  type: Partner
+  description: |
+    outer/edge is a UK-based, expert Magento development agency. Working with
+    Magento since its launch and with over 20 years of industry experience,
+    we're passionate about helping your business successfully achieve its
+    long-term goals. We build conversion focussed and integrated websites that
+    engage consumers and transform businesses. We have an extremely high
+    retention rate and are always on the lookout for retailers who need
+    rescuing by battle-worn Magento devs. We are excited by the opportunities
+    that Breeze can offer merchants and we are recommending it to those who
+    don't want or need the investment of a headless/PWA build.
+
+- title: Scommerce Mage
+  url: https://www.scommerce-mage.com/
+  type: Vendor
+  description: |
+    Scommerce Mage is a UK based company, specialised in Magento e-commerce. We have
+    been working on the Magento platform since it was officially launched in 2008.
+
+- title: SetuBridge Technolabs
+  url: https://www.setubridge.com/
+  type: Partner
+  description: |
+    We are a professional eCommerce Development Agency providing all kinds of
+    ecommerce services. Our expertise lies in providing fast, top-notch Magento
+    and Shopify development services that meet the highest professional standards.
+    We have  10+ years of experience and served more than 395+ projects with
+    70+ apps & modules.
+
+- title: Storeframe.io
+  url: https://www.storeframe.io
+  type: Partner
+  description: |
+    StoreFrame is a PAAS Platform designed to streamline the process of creating
+    and managing online stores. Leveraging the power and flexibility of Magento 2,
+    StoreFrame simplifies tasks like Magento 2 installation, hosting,  configuration,
+    integration, management and store launch. All following best-practices and
+    providing you with the best possible performance. Host at StoreFrame or on
+    your own server.
+
+- title: Sutunam.com
+  url: https://sutunam.com/
+  type: Partner
+  description: |
+    40+ Certified Magento developers team with 12+ Years of Magento eCommerce &
+    web application developments. An award-winning team, synonymous with
+    excellence in web design & development. We've launched hundreds of sites
+    which received over 100% increase in conversions and results.
+
 - title: Sysint.net
   url: https://sysint.net/
   type: Partner
-  description: >
+  description: |
     We create cloud-native B2C and B2B commerce experiences from a single platform
     that is flexible, extensible, and scalable.  "Play smarter, not harder"
     Our e-commerce services are more productive because we use ready-made
@@ -102,34 +216,10 @@
     omnichannel solutions, our services are tailored to make your business
     succeed.
 
-- title: SetuBridge Technolabs
-  url: https://www.setubridge.com/
-  type: Partner
-  description: >
-    We are a professional eCommerce Development Agency providing all kinds of
-    ecommerce services. Our expertise lies in providing fast, top-notch Magento
-    and Shopify development services that meet the highest professional standards.
-    We have  10+ years of experience and served more than 395+ projects with
-    70+ apps & modules.
-
-- title: Bekome Digital
-  url: https://bekome.digital/
-  type: Partner
-  description: >
-    Looking for an expert Magento development agency that provides top-class
-    services and offers exceptional customer service? Look no further! Beköme
-    Digital, based in Spain, specializes in developing first-class Magento
-    solutions and providing red-carpet customer service that exceeds expectations.
-    Our team of experienced developers has a passion for delivering proven and
-    effective solutions that are easy to use, and we have a proven track record
-    of success. Partnering with us means working with a team that is committed
-    to your success and will go above and beyond to ensure your satisfaction.
-    Contact us to learn more about how we can help your business succeed!
-
 - title: tbbAgency
   url: https://tbb.agency
   type: Partner
-  description: >
+  description: |
     tbbAgency is a digital marketing agency based in Barcelona- its primary
     objective is to co-create and develop innovative digital products and
     services. We design unique digital strategies for each client through a
@@ -141,59 +231,10 @@
     personalized digital marketing solutions that tailor to the needs of each
     client. We give utmost attention to innovation and customer satisfaction.
 
-- title: 7Span
-  url: https://7span.com/
-  type: Partner
-  description: >
-    7Span is a trailblazing eCommerce development agency that breaks barriers
-    and infuses vibrancy and creativity into every project. With a team of
-    experts led by certified Magento (Adobe Commerce) specialists, 7Span delivers
-    swift, top-quality eCommerce development services. 7Span empowers clients
-    to craft and navigate online stores with unmatched effectiveness. Step into
-    the realm of 7Span and unlock limitless possibilities for your eCommerce
-    journey.
-
-- title: iFlair
-  url: https://www.iflair.com/
-  type: Partner
-  description: >
-    iFlair is the leading Magento Development Company offering complete
-    eCommerce solutions to brands, businesses, and sellers across the World
-    Since 2004. AOver 300+ Magento 1 & 2 consulting projects have been served
-    by us including services such as migration, payment gateway integration,
-    custom themes, and extensions, real-time order import from marketplaces,
-    inventory management, and providing proper technical solutions to the client
-    according to arisen glitches.
-
-- title: AQELTech
-  url: https://www.aqeltech.com/
-  type: Partner
-  description: >
-    AQELTech is a UK & Jordan-based full-service agency specializing in
-    end-to-end Magento development. We excel in UX/UI and graphic design,
-    and digital marketing, and provide managed hosting with guaranteed SLAs
-    to ensure your e-commerce site runs smoothly. Our expert team delivers
-    tailored, user-friendly Magento solutions that drive your business forward.
-    We're committed to exceptional customer service and partner with you to
-    achieve your goals and ensure your complete satisfaction. Choose AQELTech
-    for a dedicated team that supports your success every step of the way.
-    Contact us today to elevate your online presence!
-
-- title: Mage Montreal
-  url: https://magemontreal.com/
-  type: Partner
-  description: >
-    MageMontreal is a specialized eCommerce development agency based in Quebec,
-    Canada. We build, optimize, and support eCommerce websites on Magento,
-    Adobe Commerce, Shopify, WooCommerce, and BigCommerce—ensuring seamless
-    scalability and success. Driven by clear communication and a commitment
-    to quality, we deliver results that exceed expectations—on time and
-    within budget.
-
 - title: Venhancer
   url: https://venhancer.com/
   type: Partner
-  description: >
+  description: |
     Venhancer is a trusted partner specializing in e-commerce, delivering
     end-to-end solutions with Magento 2 technology. We design innovative,
     custom extensions and applications to provide tailored solutions that
@@ -202,29 +243,3 @@
     for Magento technology users. Whether you are a small entrepreneur or a
     large enterprise, we aim to create value for e-commerce businesses of
     all sizes.
-
-- title: Scommerce Mage
-  url: https://www.scommerce-mage.com/
-  type: Vendor
-  description: >
-    Scommerce Mage is a UK based company, specialised in Magento e-commerce. We have
-    been working on the Magento platform since it was officially launched in 2008.
-
-- title: Magecomp.com
-  url: https://magecomp.com/
-  type: Vendor
-  description: >
-    Magecomp is an Indian based company with 10+ years of experience in Magento niche.
-    We have successfully completed 750+ projects and served 30000+ customers in more
-    than 120 countries. Also, we have developed 150+ Magento extensions and our
-    numerous services used by more than 10000+ store owners & developers globally.
-    Magecomp extension provider will be offering free integration for their modules
-    with Breeze frontend.
-
-- title: Meetanshi.com
-  url: https://meetanshi.com/
-  type: Vendor
-  description: >
-    Meetanshi is an Indian company from Bhavnagar that provides Magento solutions
-    since 2017. It has around 200 Magento modules and happily provide Breeze Frontend
-    integration services for any of their modules.
