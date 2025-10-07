@@ -1,3 +1,10 @@
+- url: https://xlsanitair.nl/
+  description: Bathroom, Kitchen, Toilet
+  scores:
+    Homepage: 76
+    Category: 97
+    Product: 95
+
 - url: https://shop.kew.org/
   description: Garden and Craft Food
   scores:
