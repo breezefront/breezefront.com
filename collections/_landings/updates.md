@@ -9,6 +9,15 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## October 7, 2025
+
+> swissup/module-breeze:2.26.1
+
+**🏗️ Improved developer experience**
+
+ -  Added ability to use `$.cookies` in inline scripts without `require()` calls.
+ -  New method added to get the formKey in third-party modules: `$.breeze.getFormKey()`.
+
 ## October 6, 2025
 
 > swissup/module-breeze:2.26.0<br/>
