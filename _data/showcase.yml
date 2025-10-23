@@ -1,3 +1,10 @@
+- url: https://www.recommerce.com/
+  description: Electronics
+  scores:
+    Homepage: 70
+    Category: 78
+    Product: 50
+
 - url: https://xlsanitair.nl/
   description: Bathroom, Kitchen, Toilet
   scores:
