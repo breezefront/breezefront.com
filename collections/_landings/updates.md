@@ -9,6 +9,61 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Coming soon
+
+**🚨 Breaking changes**
+
+ -  `this.element` is not longer available in `uiComponents`. You can use
+    `this.el` instead.
+    This was made to accomplish the **Better compatibility** mode.
+
+**🚀 Major changes**
+
+ -  **Better compatibility mode added!** This mode allows using all third-party
+   modules without the need to create custom integration modules. Or, at least,
+   significantly reduce the amount of work needed to make third-party modules
+   compatible with Breeze.
+
+    -  This mode is disabled by default. You can enable it in
+      [Breeze configuration](/docs/settings)
+    -  There is also a way to preview the page in this mode using
+      `?breeze=1&compat=1` the query parameter. This feature works in
+      [Debug mode](/docs/settings) only.
+
+      This mode enables support of the `requirejs-config.js` file. This means that
+      you don't have to create `breeze_default.xml` files to declare third-party
+      components, mixins, and remote templates. All of this features will now
+      work automatically!
+
+**🎉 Improvements**
+
+ -  Evolution theme is now comes with enabled `View Transition` CSS feature.
+ -  Improved loading of the critical CSS content. This significatly decreases
+    the page loading time when the page is not cached.
+ -  Added ability to add exceptions for "Disabled URLs" option. This feature
+    allows to fine tune the list of pages when the Breeze should be disabled.
+ -  Improved `uiComponent` compatibility with third-party modules.
+
+**🐛 Fixes**
+
+ -  Fixed js error when trying to login using invalid credentials.
+ -  Fixed js error on the product page when product doens't have any images.
+ -  Fixed `<select>` size in calendar popup.
+ -  Fixed missing `narrow` styles at the create password page.
+ -  Added missing `$.when` function.
+ -  Align `require.toUrl` with RequireJS API.
+ -  Fixes to the `$.extend|$.ajax` to align with jQuery API.
+
+**🏗️ Improved developer experience**
+
+ -  Added ability to enable debug logs in the Browser using the localStorage:
+
+      ```js
+      localStorage.setItem('breeze_debug', true);
+      ```
+
+    Now, you don't have to use `?breeze=1` query string to see debug logs.
+
 ## October 7, 2025
 
 > swissup/module-breeze:2.26.1
