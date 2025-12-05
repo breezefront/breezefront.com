@@ -35,7 +35,7 @@ loaded on all pages:
  - Use `extend.js` file if you are the custom theme developer.
  - Use `custom.js` file if you are the Breeze theme end-user.
 
-Additionally, you can add your own `my-theme-js.js` using `breeze_default.xml` layout
+Additionally, you can add your own `my-theme.js` using `breeze_default.xml` layout
 update:
 
 ```xml
@@ -44,8 +44,8 @@ update:
     <argument name="bundles" xsi:type="array">
       <item name="default" xsi:type="array">
         <item name="items" xsi:type="array">
-          <item name="js/breeze/my-theme-js" xsi:type="array">
-            <item name="path" xsi:type="string">js/breeze/my-theme-js</item>
+          <item name="js/breeze/my-theme" xsi:type="array">
+            <item name="path" xsi:type="string">js/breeze/my-theme</item>
             <item name="autoload" xsi:type="boolean">true</item>
           </item>
         </item>
@@ -57,46 +57,24 @@ update:
 
 ## Module entry points
 
-You should register module components using `breeze_default.xml` layout update
-as described in [JS Components](components) section:
+We recommend enabling Better Compatibility mode for your module. Doing
+so will make all your Luma-based JS files work out of the box:
 
 ```xml
-<referenceBlock name="breeze.js">
-  <arguments>
-    <argument name="bundles" xsi:type="array">
-      <item name="default" xsi:type="array">
-        <item name="items" xsi:type="array">
-          <item name="Vendor_Module/js/name" xsi:type="array">
-            <item name="path" xsi:type="string">Vendor_Module/js/name</item>
-          </item>
-        </item>
-      </item>
-    </argument>
-  </arguments>
-</referenceBlock>
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceBlock name="breeze.js">
+      <arguments>
+        <argument name="better_compatibility" xsi:type="array">
+          <item name="Vendor_Module" xsi:type="boolean">true</item>
+        </argument>
+      </arguments>
+    </referenceBlock>
+  </body>
+</page>
 ```
 
-Now, Breeze will load `Vendor_Module/js/name` if it will be used in
-`data-mage-init`, `x-magento-init`, or inline `require` call.
-
-Sometimes you may want to load js file even when it's not used in `data-mage-init`
-attributes, `x-magento-init` scripts, or `require` calls. In Luma, these types
-of files are usually loaded via `deps` directive in `requirejs-config.js`.
-In Breeze you need to set the `autoload` property instead:
-
-```xml
-<referenceBlock name="breeze.js">
-  <arguments>
-    <argument name="bundles" xsi:type="array">
-      <item name="default" xsi:type="array">
-        <item name="items" xsi:type="array">
-          <item name="Vendor_Module/js/name" xsi:type="array">
-            <item name="path" xsi:type="string">Vendor_Module/js/name</item>
-            <item name="autoload" xsi:type="boolean">true</item>
-          </item>
-        </item>
-      </item>
-    </argument>
-  </arguments>
-</referenceBlock>
-```
+See the [Integration Example](integration-example) page for more details about
+third-party modules and Breeze.

@@ -12,50 +12,17 @@ order: 590
 
 ## About
 
-On this page, you’ll find out how to integrate third-party Luma-based module.
+With our newest **Better Compatibility** mode, integration became much easier.
+Even, when the mode is disabled, you can still force its status for your module
+programmatically.
 
-## 1. Find components to integrate
+## Better compatibility
 
-Every Magento component starts its lifecycle from initialization in `*.phtml`
-template. It may be written as a `data-mage-init` or `x-magento-init` configs,
-or inline `require` call:
+This approach is the easiest way to integrate Luma-based module with Breeze.
 
-```html
-<!-- 1. data-mage-init -->
-<div data-mage-init='{"Vendor_Module/js/component": {}}'></div>
-
-<!-- 2. x-magento-init -->
-<script type="text/x-magento-init">
-{
-    ".class-name": {
-        "Vendor_Module/js/component": {}
-    }
-}
-</script>
-
-<!-- 3. inline `require` call -->
-<script>
-require(['Vendor_Module/js/component'], function () {
-    $(el).widgetName();
-});
-</script>
-```
-
-`Vendor_Module/js/component` --- is a component name in the examples above.
-
-The easiest way to find component names to integrate is to add `?breeze=1`
-parameter to your URL and checl the browser developer console output:
-
-![Unknown components reported by Breeze](/assets/img/integration-example/unknown-components.webp){:width="835" height="267"}
-
-When you'll find the component names you want to integrate, you may proceed
-to the next step.
-
-## 2. Register js components
-
-When you know the component name and path to the js file where it's located,
-you need to register it in the `Vendor_Module/view/frontend/layout/breeze_default.xml`
-layout update file.
+To enable "Better Compatibility" mode for your particular module, add the
+following code in the `Vendor_Module/view/frontend/layout/breeze_default.xml`
+layout update file:
 
 ```xml
 <?xml version="1.0"?>
@@ -64,11 +31,56 @@ layout update file.
   <body>
     <referenceBlock name="breeze.js">
       <arguments>
+        <argument name="better_compatibility" xsi:type="array">
+          <item name="Vendor_Module" xsi:type="boolean">true</item>
+        </argument>
+      </arguments>
+    </referenceBlock>
+  </body>
+</page>
+```
+
+This code ensures that Breeze will use "Better Compatibility" mode for `Vendor_Module`
+despite of the global setting.
+
+**Now, clear the cache and check if the module is working fine!**
+
+## Moving further
+
+Depending on the "Better Compatibility" results you may want to proceed with
+the following options:
+
+ -  [Override selected component](#override-components) to fix possible js errors.
+ -  [Move your component](#move-component-to-the-bundle) to one of the Breeze bundles to reduce ajax requests.
+ -  [Pre-render html templates](#pre-render-html-templates) to speedup component rendering.
+ -  [Include module's CSS](#include-module-css) styles.
+
+Let's review each step!
+
+## Override component
+
+If you are getting js errors in "Better Compatibility" mode, you may want to
+override component. To do so, let's tell Breeze to load another file instead of
+the original one.
+
+> Remember to put this code in `breeze_default.xml` file.
+> You may refer to `breeze.js` block only from the `breeze_default.xml` file.
+
+```xml
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceBlock name="breeze.js">
+      <arguments>
+        <argument name="better_compatibility" xsi:type="array">
+          <item name="Vendor_Module" xsi:type="boolean">true</item>
+        </argument>
         <argument name="bundles" xsi:type="array">
-          <item name="default" xsi:type="array">
+          <item name="dynamic" xsi:type="array">
             <item name="items" xsi:type="array">
               <item name="Vendor_Module/js/component" xsi:type="array">
-                <item name="path" xsi:type="string">Vendor_Module/js/component</item>
+                <item name="path" xsi:type="string">Vendor_Module/js/breeze/component</item>
               </item>
             </item>
           </item>
@@ -79,140 +91,130 @@ layout update file.
 </page>
 ```
 
-## 3. Add component name
+In this example, when Breeze tries to load `Vendor_Module/js/component`, it will
+load `Vendor_Module/js/breeze/component` file instead. The overriden file could
+be a copy of original file with necessary fixes applied.
 
-Open `Vendor_Module/js/component` file and add component name. See the
-corresponding section below:
+Please note that we are using `dynamic` bundle in the code. This is important!
 
-<details markdown=1><summary>Adding component name to widget-based component</summary>
+## Move component to the bundle
 
-```diff
- define(['jquery'], function ($) {
-     'use strict';
+> 1. Proceed to this section only if the component is working fine already.
+> 2. It's perfectly fine to keep your component in the "dynamic" bundle, unless
+>    your are adding tens or hundreds of such components.
 
-     $.widget('widgetName', {
-+        component: 'Vendor_Module/js/component',
-     });
- });
-```
-</details>
-
-<details markdown=1><summary>Adding component name to uiComponent-based component</summary>
-
-```diff
- define(['uiComponent'], function (Component) {
-     'use strict';
-
-     return Component.extend({
-+        component: 'Vendor_Module/js/component',
-     });
- });
-```
-</details>
-
-<details markdown=1><summary>Adding component name to function-based component</summary>
-
-```diff
- define(['jquery'], function ($) {
-     'use strict';
-
--    return function (options, element) {
-+    var result = function (options, element) {
-     };
-+
-+    result.component = 'Vendor_Module/js/component';
-+
-+    return result;
- });
-```
-</details>
-
-<details markdown=1><summary>Adding component name to object-based component</summary>
-
-```diff
- define(['jquery'], function ($) {
-     'use strict';
-
-     return {
-+        component: 'Vendor_Module/js/component',
-     };
- });
-```
-</details>
-
-## 4. Prepare dependencies
-
-Sometimes it's not enough to add component name. For example, if component
-requires additional dependencies:
+Let's assume that you want to move `Vendor_Module/js/component` to the default
+bundle. The code of your component is following:
 
 ```js
 define([
-  'jquery',
-  'Vendor_Module/js/function',
-  'Vendor_Module/js/object'
-], function ($, fn, obj) {
-  'use strict';
-
-  ...
+  'Vendor_Module/js/dependency1',
+  'dependency2'
+], (dep1, dep2) => {
+  //
 })
 ```
 
-We need to register `Vendor_Module/js/function` and
-`Vendor_Module/js/object` files, and add corresponsing component names to
-each of these files:
-
-<details markdown=1><summary>Vendor_Module/view/frontend/layout/breeze_default.xml</summary>
+To move your component to one of the Breeze bundles, update the previous code:
 
 ```diff
-           <item name="default" xsi:type="array">
+         <argument name="bundles" xsi:type="array">
+-          <item name="dynamic" xsi:type="array">
++          <item name="default" xsi:type="array">
              <item name="items" xsi:type="array">
                <item name="Vendor_Module/js/component" xsi:type="array">
-                 <item name="path" xsi:type="string">Vendor_Module/js/component</item>
+                 <item name="path" xsi:type="string">Vendor_Module/js/breeze/component</item>
++                <item name="anonymous" xsi:type="boolean">true</item>
 +                <item name="import" xsi:type="array">
-+                  <item name="Vendor_Module/js/function" xsi:type="string">Vendor_Module/js/function</item>
-+                  <item name="Vendor_Module/js/object" xsi:type="string">Vendor_Module/js/object</item>
++                    <item name="0" xsi:type="string">Vendor_Module/js/dependency1</item>
++                    <item name="1" xsi:type="string">dependency2</item>
 +                </item>
                </item>
-             </item>
-           </item>
++               <item name="Vendor_Module/js/dependency1" xsi:type="array">
++                 <item name="path" xsi:type="string">Vendor_Module/js/dependency1</item>
++                <item name="anonymous" xsi:type="boolean">true</item>
++               </item>
++               <item name="dependency2" xsi:type="array">
++                 <item name="path" xsi:type="string">Vendor_Module/js/dependency2</item>
++                <item name="anonymous" xsi:type="boolean">true</item>
++               </item>
 ```
-</details>
 
-<details markdown=1><summary>Vendor_Module/view/frontend/web/js/function.js</summary>
+It's important to list all dependencies of your component in the `import` section
+to ensure that they are loaded before your component.
 
-```diff
- define([
-     'jquery'
- ], function ($) {
-     'use strict';
+Remember to choose the bundle wisely:
 
--    return function (options, element) {
-+    var result = function (options, element) {
-     };
-+
-+    result.component = 'Vendor_Module/js/function';
-+
-+    return result;
- });
+ -  default --- use it when your script is added on all (almost all) pages.
+ -  product --- use when your script is added on the product page only.
+ -  product-bundle --- for the scripts related to bundle product types.
+ -  product-configurable --- for the configurable products.
+ -  customer --- for the scripts added on customer/login pages.
+ -  checkout --- for the scripts added on checkout cart page.
+
+## Pre-render HTML templates
+
+If your component is using HTML templates, you may want to pre-render them to
+speedup component rendering.
+
+Use the following layout update instruction to do that:
+
+```xml
+<referenceContainer name="breeze.container">
+  <block class="Swissup\Breeze\Block\HtmlTemplate" template="Vendor_Module::path/to/template.html">
+    <arguments>
+      <argument name="id" xsi:type="string">Vendor_Module/path/to/template.html</argument>
+    </arguments>
+  </block>
+</referenceContainer>
+
 ```
-</details>
 
-<details markdown=1><summary>Vendor_Module/view/frontend/web/js/object.js</summary>
+## Include module CSS
 
-```diff
- define([
-     'jquery'
- ], function ($) {
-     'use strict';
+If your module has its own `_module.less` file, you may want to include it in
+Breeze theme too.
 
-     return {
-+        component: 'Vendor_Module/js/object',
-         'Vendor_Module/js/object': function (options, element) {}
-     };
- });
-```
-</details>
+To do so, use the following approach:
 
-## 5. That's all
+1. Create `web/css/breeze/_default.less` file in your module with the following
+   contents:
 
-Clear the cache and try to refresh the page on frontend.
+   ```scss
+   @import '../source/_module.less';
+   ```
+
+2. Declare `@critical` variable in your existing `source/_module.less` to
+   prevent error in Luma theme:
+
+   ```scss
+   @critical: unsure;
+   ```
+
+3. Wrap your styles in `source/_module.less` into `@critical` guards:
+
+   ```diff
+    & when (@media-common = true) {
+   +& when (@critical = unsure), (@critical) {
+        // Put critical styles here
+   +}
+   +& when (@critical = unsure), (@critical = false) {
+        // Put non-critical styles here
+   +}
+    }
+
+    .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+   +& when (@critical = unsure), (@critical) {
+        // Put critical styles here
+   +}
+    }
+   ```
+
+4. Add missing variables to `web/css/breeze/_default.less`.
+   For example, if your styles use `@font-weight__semibold` variable and it's not
+   available in Breeze theme:
+
+   ```scss
+   @import '../source/_module.less';
+   @font-weight__semibold: 400;
+   ```

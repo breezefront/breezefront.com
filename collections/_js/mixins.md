@@ -12,6 +12,11 @@ order: 450
 
 ## About
 
+> When [Better Compatibility](better-compatibility) mode is enabled,
+> Luma-based mixins will work out of the box.
+>
+> We recommend enabling Better Compatibility and reuse Luma-based mixins.
+
 Mixin --- is a powerful feature that allows you to override or disable any built-in
 or third-party Breeze component.
 

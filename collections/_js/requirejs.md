@@ -17,11 +17,11 @@ functions with similar API. The main differences between requirejs and our
 implementation are:
 
  -  Our implementation is not `amd` compatible. See [AMD dependencies](#amd-dependencies).
- -  We load js file only if it's registered in `breeze_default.xml` layout update.
+ -  We load js file only if it's registered in `breeze_default.xml` layout update,
+    or if [Better Compatibility](better-compatibility) mode is enabled.
 
-When running `require` or `define` Breeze will try to find dependencies in the
-`$.breezemap` object. If not found, Breeze will load dependencies that
-was previously registered in `breeze_default.xml` files.
+When running `require` or `define` Breeze will try to retrieve the dependencies from
+the `$.breezemap` object. If not found, Breeze will try loading these dependencies.
 
 ## Common dependencies
 
@@ -64,27 +64,7 @@ require([
 ```
 
 To make this code work with Breeze frontend you need to register `Vendor_Module/js/extended-modal`
-in `breeze_default.xml` layout update. Additionally you have to add `import`
-property, if your component depends on other components:
-
-```xml
-<referenceBlock name="breeze.js">
-  <arguments>
-    <argument name="bundles" xsi:type="array">
-      <item name="default" xsi:type="array">
-        <item name="items" xsi:type="array">
-          <item name="Vendor_Module/js/extended-modal" xsi:type="array">
-            <item name="path" xsi:type="string">Vendor_Module/js/extended-modal</item>
-            <item name="import" xsi:type="array">
-                <item name="modal" xsi:type="string">modal</item>
-            </item>
-          </item>
-        </item>
-      </item>
-    </argument>
-  </arguments>
-</referenceBlock>
-```
+in `breeze_default.xml` layout update or enable [Better Compatibility](better-compatibility) mode.
 
 ## AMD dependencies
 
@@ -101,18 +81,18 @@ require([
 });
 ```
 
-In the example above, `Marquee` is undefined, but `Marquee3k` is not. This happens
+In the example above, `Marquee` is undefined, but `Marquee3k` is resolved. This happens
 because `marquee3k.min.js` exposes itself into `window.Marquee3k` when `define.amd`
 is not supported.
 
-In Breeze you can setup shim for the scripts that register itself into
-global variables. Add the following code to `breeze_default.xml`:
+In order to make `Marquee` variable resolved correctly, you need to setup a shim
+using `breeze_default.xml` layout update:
 
 ```xml
 <referenceBlock name="breeze.js">
   <arguments>
     <argument name="bundles" xsi:type="array">
-      <item name="default" xsi:type="array">
+      <item name="dynamic" xsi:type="array">
         <item name="items" xsi:type="array">
           <item name="https://unpkg.com/marquee3000@1.1.1/marquee3k.min.js" xsi:type="array">
             <item name="path" xsi:type="string">https://unpkg.com/marquee3000@1.1.1/marquee3k.min.js</item>

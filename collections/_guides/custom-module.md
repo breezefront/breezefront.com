@@ -19,8 +19,7 @@ updates, and templates for almost all of the pages.
 The only parts that you may need to change are:
 
  -  CSS styles --- if you use `source/_module.less` entry point for your styles.
- -  Javascript --- if you use `requirejs` in your scripts.
- -  Html templates --- if you use custom knockout tags (`<each>`, `<render>`, etc).
+ -  Javascript --- if you use `jquery` specific functions that are not implemented in CashJS.
 
 Let's take a look at directory structure of the Breeze-friendly module.
 
@@ -133,49 +132,30 @@ JS component lifecycle in Breeze is pretty similar to Luma's components:
  1. DOM parser finds `data-mage-init` or `text/x-magento-init` instructions.
  2. JS Component is created according to these instructions.
 
-The only difference is that you have to register your component in one of js bundles
-using `breeze_default.xml` layout update:
+The only difference is that you have to enable Better Compatibility more, or
+register your component in one of js bundles using `breeze_default.xml`
+layout update:
 
 ```xml
 <referenceBlock name="breeze.js">
   <arguments>
-    <argument name="bundles" xsi:type="array">
-      <item name="default" xsi:type="array">
-        <item name="items" xsi:type="array">
-          <item name="Vendor_Module/js/component" xsi:type="array">
-            <item name="path" xsi:type="string">Vendor_Module/js/breeze/component</item>
-          </item>
-        </item>
-      </item>
+    <argument name="better_compatibility" xsi:type="array">
+      <item name="Vendor_Module" xsi:type="boolean">true</item>
     </argument>
   </arguments>
 </referenceBlock>
 ```
 
-Pay attention to the bundle name in the example above and choose the right one
-for your component. See the list of available bundles at [JS components page](components).
-
 Now, let's view a basic example of `js/breeze/component.js` file:
 
 ```js
-define(['uiComponent'], (Component) => {
+define(['jquery'], ($) => {
     'use strict';
 
     $.widget('uniqueComponentName', {
         component: 'Vendor_Module/js/component', // an alias that's used in the `data-mage-init` instructions.
         create: function () {
-            // this.element - Cash collection. See https://github.com/fabiospampinato/cash
-            // this.options - object
-        }
-    });
-
-    Component.extend({
-        component: 'Vendor_Module/js/component', // an alias that's used in the initialization instructions.
-        defaults: {
-            template: 'Vendor_Module/component' // see "Knockout templates" section below
-        },
-        create: function () {
-            // this.element - Cash collection. See https://github.com/fabiospampinato/cash
+            // this.el - Cash collection. See https://github.com/fabiospampinato/cash
             // this.options - object
         }
     });
@@ -183,24 +163,4 @@ define(['uiComponent'], (Component) => {
 ```
 
 > Please review [Widgets](widgets) and [UI Components](ui-components) pages to
-> get more information about these components.
-
-## Knockout templates
-
-> Think twice before using knockout templates. We think that they are overused
-> in Luma's codebase and we will remove their usages from built-in Breeze components
-> in the future. Usually, simple `_.template` is what you need for the majority of the modules.
-
-If your JS component is using KnockoutJS template, you should prerender it.
-To do that you need to use layout update instructions and our HTML block renderer.
-
-Here is an example that will render knockout or raw html template and will
-make it visible for view component from the previous example:
-
-```xml
-<referenceContainer name="before.body.end">
-    <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.Vendor_Module_component" template="Vendor_Module::component.html"/>
-</referenceContainer>
-```
-
-See more information at [UI Components](ui-components#rendering-html-template) page.
+> get more information about these component types.

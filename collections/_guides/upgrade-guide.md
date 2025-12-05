@@ -3,6 +3,7 @@ layout: docs
 title: Upgrade Guide
 description: How to upgrade between major Breeze updates
 order: 5000
+navigation: false
 ---
 
 # Upgrade Guide

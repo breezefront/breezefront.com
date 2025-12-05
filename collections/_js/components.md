@@ -12,8 +12,9 @@ order: 200
 
 ## About
 
-The code below shows three different approaches to load component in Magento.
-Any of these approaches may be used by Magento developer:
+The code below shows three different approaches to initialize component
+when working with Luma-based theme. All of these approaches are supported by
+Breeze too:
 
 ```html
 <!-- 1. data-mage-init -->
@@ -36,8 +37,38 @@ require(['Vendor_Module/js/component'], function () {
 </script>
 ```
 
-While the code above is working in Luma out of the box, in Breeze you need to register
-`Vendor_Module/js/component` component and its dependencies using `breeze_default.xml` file.
+While the code above is working in Luma out of the box, in Breeze you need to:
+
+ -  Enable Better Compatibility mode
+ -  Or, register `Vendor_Module/js/component` component and its dependencies `breeze_default.xml` file.
+
+## Better compatibility
+
+To enable "Better Compatibility" mode for `Vendor_Module` module, add the
+following code in the `Vendor_Module/view/frontend/layout/breeze_default.xml`
+layout update file:
+
+```xml
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceBlock name="breeze.js">
+      <arguments>
+        <argument name="better_compatibility" xsi:type="array">
+          <item name="Vendor_Module" xsi:type="boolean">true</item>
+        </argument>
+      </arguments>
+    </referenceBlock>
+  </body>
+</page>
+```
+
+Better compatibility is the fastest way to make your components work in Breeze
+just like in Luma.
+
+Manual component registration allows more fine-grained control over component
+loading process.
 
 ## Component registration
 

@@ -42,5 +42,7 @@ change your current theme to Breeze.
 
 **That's all.** Breeze is now installed and activated for the selected store view.
 
-No additional action is required, however, you can customize some config
-options if you want.
+## Configuration
+
+This step is optional but highly recommended. Enable **Better Compatibility**
+mode at the [Breeze Settings](settings) page.

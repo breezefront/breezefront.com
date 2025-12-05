@@ -13,39 +13,42 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 **🚨 Breaking changes**
 
+ -  PHP 8.1 is now a minimal requirement for Breeze module.
  -  `this.element` is not longer available in `uiComponents`. You can use
     `this.el` instead.
     This was made to accomplish the **Better compatibility** mode.
+ -  We no longer override the minicart templates and use Magento default
+    templates instead. If you have customizations for the minicart templates,
+    you need to override default Magento templates now.
 
-**🚀 Major changes**
+    Here is the list of new templates:
 
- -  **Better compatibility mode added!** This mode allows using all third-party
-   modules without the need to create custom integration modules. Or, at least,
-   significantly reduce the amount of work needed to make third-party modules
-   compatible with Breeze.
-
-    -  This mode is disabled by default. You can enable it in
-      [Breeze configuration](/docs/settings)
-    -  There is also a way to preview the page in this mode using
-      `?breeze=1&compat=1` the query parameter. This feature works in
-      [Debug mode](/docs/settings) only.
-
-      This mode enables support of the `requirejs-config.js` file. This means that
-      you don't have to create `breeze_default.xml` files to declare third-party
-      components, mixins, and remote templates. All of this features will now
-      work automatically!
+    Old template                                               | New template
+    -----------------------------------------------------------|-------------------------------------
+    Swissup_Breeze::ko/checkout/minicart/item/default.phtml    | Magento_Checkout::minicart/item/default.html
+    Swissup_Breeze::ko/checkout/minicart/item/price.phtml      | Magento_Checkout::minicart/item/price.html
+    Swissup_Breeze::ko/checkout/minicart/subtotal.phtml        | Magento_Checkout::minicart/subtotal.html
+    Swissup_Breeze::ko/checkout/minicart/subtotal/totals.phtml | Magento_Tax::checkout/minicart/subtotal/totals.html
+    Swissup_Breeze::ko/checkout/minicart/subtotal/msrp.phtml   | Magento_Msrp::checkout/minicart/subtotal/totals.html
 
 **🎉 Improvements**
 
- -  Evolution theme is now comes with enabled `View Transition` CSS feature.
+ -  **[Better compatibility mode added!](/docs/better-compatibility)**
+ -  Improved LCP score on the pages with a lot of JS components.
  -  Improved loading of the critical CSS content. This significatly decreases
     the page loading time when the page is not cached.
- -  Added ability to add exceptions for "Disabled URLs" option. This feature
-    allows to fine tune the list of pages when the Breeze should be disabled.
- -  Improved `uiComponent` compatibility with third-party modules.
+ -  Evolution theme is now comes with enabled `View Transition` CSS feature.
+ -  Added ability to add <a href="/docs/settings">exceptions for "Disabled URLs"</a>
+    option. This feature allows to fine tune the list of pages when the
+    Breeze should be disabled.
+ -  Improved `uiComponent` compatibility with third-party modules. We now support
+    links, imports, exports, and literal (`${ $.name }`) features.
 
 **🐛 Fixes**
 
+ -  Fixes possible CLS issues on slow devices.
+ -  Fixed mobile styles of the "Add to cart" and "Swatches" elements on Samsung phones.
+ -  Fixed PHP error on the `/swagger` page.
  -  Fixed js error when trying to login using invalid credentials.
  -  Fixed js error on the product page when product doens't have any images.
  -  Fixed `<select>` size in calendar popup.

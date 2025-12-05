@@ -37,12 +37,13 @@ Create `breeze_default.xml` layout update file with the following code inside:
 </referenceBlock>
 ```
 
-Keep one of `js-from-theme-folder` and `js-from-theme-folder` items depending on
+Keep one of `js-from-theme-folder` and `js-from-module-folder` items depending on
 your needs.
 
-Create js file. If you use `js-from-theme-folder` item, the path is
-`<theme>/web/js/breeze/my-custom-file.js`. Otherwise, the path is
-`<module>/view/frontend/web/js/breeze/my-custom-file.js`.
+Create js file using the following path:
+
+ -  `<theme>/web/js/breeze/my-custom-file.js` --- if you used `js-from-theme-folder`.
+ -  `<module>/view/frontend/web/js/breeze/my-custom-file.js` --- if you used `js-from-module-folder`.
 
 ## Theme customization script
 

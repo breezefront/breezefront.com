@@ -15,49 +15,29 @@ order: 100
 In this guide we will create a new Breeze-based theme called "Local/breeze-custom"
 and then activate it for selected store view.
 
-## Declare new theme
+## Create new theme
 
- 1. Open your terminal and navigate to `app/design/frontend` folder:
+Open your terminal and run the following command undex Magento root directory:
 
-    ```bash
-    cd <MAGENTO_ROOT>/app/design/frontend
-    ```
+```
+bin/magento breeze:theme:create local/theme-frontend-breeze-custom
+```
 
- 2. Create `Local/breeze-custom` folder and navigate inside:
+This command will ask you to choose parent theme. Select `Breeze Evolution`
+or `Breeze Blank` from the list and proceed.
 
-    ```bash
-    mkdir -p Local/breeze-custom && cd Local/breeze-custom
-    ```
+Optionally, you can pass the parent theme:
 
- 3. Create `theme.xml` file:
-
-    ```xml
-    <theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
-        <title>Custom Breeze Theme</title>
-        <parent>Swissup/breeze-blank</parent>
-    </theme>
-    ```
-
- 4. Create `registration.php` file:
-
-    ```php
-    <?php
-
-    use Magento\Framework\Component\ComponentRegistrar;
-
-    ComponentRegistrar::register(
-        ComponentRegistrar::THEME,
-        'frontend/Local/breeze-custom',
-        __DIR__
-    );
-    ```
+```
+bin/magento breeze:theme:create local/theme-frontend-breeze-custom --parent=Swissup/breeze-evolution
+```
 
 ## Activate theme
 
 Login to the Magento backend and navigate to _Content > Design > Configuration_.
 Select the store view you want to apply the theme and press **Edit**.
 
-Select `Custom Breeze Theme` in the **Applied Theme** dropdown and save the config.
+Select `BreezeCustom` in the **Applied Theme** dropdown and save the config.
 
 ---
 
