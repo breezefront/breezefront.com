@@ -9,7 +9,27 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## December 12, 2025
+
+> swissup/module-breeze:2.27.2
+> swissup/theme-frontend-breeze-blank:2.12.2
+
+**🐛 Fixes**
+
+ -  Fixed not working Google reCaptcha.
+ -  Fixed bug when unknown paths still resolved if compatibility mode is disabled.
+ -  Fixed bug when some components wasn't properly initialized on page load.
+ -  Fixed js loading error when wishlist is disabled via backend configuration.
+ -  Allow reusing Luma-mixins for `Magento_Catalog/js/catalog-add-to-cart` component.
+ -  Fixed js error on customer registration page.
+ -  Improved cart sidebar logic to work better with third-party overriden templates.
+ -  Stablity improvements in the component resolving logic.
+ -  Added missing `Magento_PageCache/js/page-cache`, and `$.mage.pageCache` components.
+
 ## December 5, 2025
+
+> swissup/module-breeze:2.27.0<br/>
+> swissup/theme-frontend-breeze-blank:2.12.1,swissup/theme-frontend-breeze-evolution:2.5.5
 
 **🚨 Breaking changes**
 
