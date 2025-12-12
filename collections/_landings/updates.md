@@ -11,7 +11,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## December 12, 2025
 
-> swissup/module-breeze:2.27.2
+> swissup/module-breeze:2.27.2<br/>
 > swissup/theme-frontend-breeze-blank:2.12.2
 
 **🐛 Fixes**
