@@ -34,7 +34,7 @@ bin/magento config:set web/url/catalog_media_url_format image_optimization_param
 bin/magento cache:clean
 ```
 
-Check the frontend now. All images should use the new format for their URLs:
+Check the frontend now. All product images should use the new format for their URLs:
 `example.com/media/catalog/image.jpg?width=300&height=300..`
 
 However, images are not resized at this point. We need to configure the Nginx server.
@@ -46,7 +46,7 @@ and apply the following changes:
 
 ```diff
 location /media/ {
-+   location ~* ^/media/catalog/.* {
++   location ~* ^/media/.* {
 +       proxy_pass http://$resize_stream;
 +       proxy_cache images;
 +       proxy_cache_valid 200 24h;
@@ -87,7 +87,7 @@ server {
     set $MAGE_ROOT /www/magento2;
     root $MAGE_ROOT/pub;
 
-    location ~* ^/(?<path>media/catalog/.*)$ {
+    location ~* ^/(?<path>media/.*)$ {
         set $ext "";
 
         # when request is made for image.jpg,
@@ -161,7 +161,7 @@ Let's run a command to create a webp image near every existing image in
 > This command requires to install `cwebp` utility: `sudo apt install cwebp`
 
 ```bash
-find ./pub/media/catalog/product/ -type d -name cache -prune \
+find ./pub/media/ -type d -name cache -prune \
   -o \( -type f -name '*.jpg' -o -type f -name '*.png' \) -print0 \
     | xargs -0 -P $(nproc) -I {} sh -c \
       'test ! -f $1.webp && echo $1.webp && cwebp -quiet -q 80 $1 -o $1.webp' _ {} \;
