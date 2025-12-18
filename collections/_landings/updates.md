@@ -9,6 +9,16 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## December 18, 2025
+
+> swissup/module-breeze:2.27.3
+
+**🐛 Fixes**
+
+ -  Prevent unclickable links inside [Slider](/docs/slider) when user accidenty drags slider a little bit.
+ -  Fixed possible missing children regions in complex uiComponents.
+ -  Fixed inability to style [RangeSlider](/docs/range-slider) using inline CSS properties.
+
 ## December 12, 2025
 
 > swissup/module-breeze:2.27.2<br/>
