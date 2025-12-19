@@ -11,10 +11,11 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 ## December 18, 2025
 
-> swissup/module-breeze:2.27.3
+> swissup/module-breeze:2.27.4
 
 **🐛 Fixes**
 
+ -  Fixed not working Smart Paypal Buttons (In-Context Checkout Buttons).
  -  Prevent unclickable links inside [Slider](/docs/slider) when user accidenty drags slider a little bit.
  -  Fixed possible missing children regions in complex uiComponents.
  -  Fixed inability to style [RangeSlider](/docs/range-slider) using inline CSS properties.
