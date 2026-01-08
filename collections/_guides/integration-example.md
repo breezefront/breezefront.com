@@ -177,44 +177,19 @@ Breeze theme too.
 
 To do so, use the following approach:
 
-1. Create `web/css/breeze/_default.less` file in your module with the following
-   contents:
+ 1. Create `web/css/breeze/_deferred.less` or `web/css/breeze/_critical.less`
+    file in your module with the following contents:
 
-   ```scss
-   @import '../source/_module.less';
+    ```scss
+     @import 'Vendor_Module::css/source/_module.less';
    ```
 
-2. Declare `@critical` variable in your existing `source/_module.less` to
-   prevent error in Luma theme:
+ 2. Add missing variables to newly created file if needed.
 
-   ```scss
-   @critical: unsure;
-   ```
+    For example, if your styles use `@font-weight__semibold` variable and it's not
+    available in Breeze theme, your file may look like this:
 
-3. Wrap your styles in `source/_module.less` into `@critical` guards:
-
-   ```diff
-    & when (@media-common = true) {
-   +& when (@critical = unsure), (@critical) {
-        // Put critical styles here
-   +}
-   +& when (@critical = unsure), (@critical = false) {
-        // Put non-critical styles here
-   +}
-    }
-
-    .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-   +& when (@critical = unsure), (@critical) {
-        // Put critical styles here
-   +}
-    }
-   ```
-
-4. Add missing variables to `web/css/breeze/_default.less`.
-   For example, if your styles use `@font-weight__semibold` variable and it's not
-   available in Breeze theme:
-
-   ```scss
-   @import '../source/_module.less';
-   @font-weight__semibold: 400;
-   ```
+    ```scss
+    @import 'Vendor_Module::css/source/_module.less';
+    @font-weight__semibold: 400;
+    ```
