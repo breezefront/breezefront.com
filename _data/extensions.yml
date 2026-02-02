@@ -222,6 +222,13 @@
     There's no need to install WordPress or other platforms additionally in order
     to have a blog on the Magento store!
 
+- name: magefan/webp-images
+  url: https://magefan.com/magento-2-webp-optimized-images
+  description: >
+    Magento 2 WebP Images allow you to improve your website loading speed
+    converting old PNG and JPG images into a modern WebP file format
+    with fallback to original image for the older browsers.
+
 - name: mageme/module-easyquote
   url: https://mageme.com/magento-2-quote-extension.html
   integration_url: https://docs.mageme.com/easyquote/breeze-compatibility
