@@ -23,18 +23,19 @@ bin/magento setup:upgrade --safe-mode=1
 ## Installation
 
 When Marketplace module is installed, proceed with the following commands to
-download and enable Breeze package.
+download and enable Breeze Theme.
 
-Replace `swissup/breeze-blank` with theme you'd like to install:
+Replace `swissup/breeze-evolution` with theme you'd like to install:
 
  <!-- - Breeze Module --- `swissup/breeze` [View demo](https://breeze.swissupdemo.com/default/){:target="_blank" rel="noopener"} -->
  - Breeze Blank Theme --- `swissup/breeze-blank` [View demo](https://breeze.swissupdemo.com/breeze_blank/){:target="_blank" rel="noopener"}
  - Breeze Evolution Theme --- `swissup/breeze-evolution` [View demo](https://breeze.swissupdemo.com/breeze_evolution/){:target="_blank" rel="noopener"}
+ - Breeze Enterprise Theme --- `swissup/breeze-enterprise` [View demo](https://breezeenterprise.swissupdemo.com/){:target="_blank" rel="noopener"}
 
 ```powershell
-composer require swissup/breeze-blank &&\
-bin/magento module:enable Swissup_Breeze Swissup_Rtl &&\
-bin/magento marketplace:package:install swissup/breeze-blank
+composer require swissup/breeze-evolution:^3.0.0 &&\
+bin/magento module:enable Swissup_Breeze Swissup_BreezeThemeEditor Swissup_Rtl &&\
+bin/magento marketplace:package:install swissup/breeze-evolution
 ```
 
 Installer will ask you to select a store, then it will create CMS content, and
