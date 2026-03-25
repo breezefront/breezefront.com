@@ -16,7 +16,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 **🚨 Breaking changes**
 
- -  Follow the [upgrade guide](/docs/guides/upgrade-guide) to update your theme
+ -  Follow the [upgrade guide](/docs/upgrade-guide) to update your theme
     from 2.x versions.
  -  We use better color format now:
 
