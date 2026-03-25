@@ -9,6 +9,47 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## March 25, 2025 &mdash; Breeze-3.0.0-beta.1
+
+> swissup/module-breeze:2.29.0<br/>
+> swissup/breeze-blank:3.0.0-beta.1,swissup/breeze-evolution:3.0.0-beta.1
+
+**🚨 Breaking changes**
+
+ -  Follow the [upgrade guide](/docs/guides/upgrade-guide) to update your theme
+    from 2.x versions.
+ -  We use better color format now:
+
+    ```scss
+    /* Old format */
+    --color-white: 255, 255, 255; /* Dev tools doesn't show the color here */
+    color: rgba(var(--color-white), 0.5);
+
+    /* New format */
+    --color-white: #fff; /* Or rgb(255, 255, 255), or any other color format */
+    color: color-mix(in oklch, var(--color-white) 50%, transparent);
+    ```
+
+ -  We've renamed some less variables. Follow the
+    [upgrade guide](/docs/upgrade-guide) to update your theme from 2.x versions.
+
+**🎉 Improvements**
+
+ -  Changing basic styles was never easier! We've made an extensible
+    [Theme Editor](/docs/live-editor) that allows changing the most of the basic
+    styles using simple interface with live updates.
+ -  [Breeze Enterprise](https://swissuplabs.com/magento-themes/magento-2-breeze-enterprise.html){:target="_blank" rel="noopener"}
+    Theme is now available! It's a premium theme built on top of
+    Breeze Blank with more features and [Content Builder](/docs/live-editor#content-builder).
+ -  Improved abilities to customize inverted colors for better support of dark sections.
+ -  Added ability to use `view-transitions` when switching between product tabs.
+ -  Allow configuring scroll reveal onReveal options from theme's layout update xml.
+
+**🐛 Fixes**
+
+ -  Fixed compatibility with complex uiComponents. Tested with Amasty_MegaMenu module.
+ -  Fixed incorrect magnifier position when gap is set in rem's.
+
 ## December 18, 2025
 
 > swissup/module-breeze:2.27.4

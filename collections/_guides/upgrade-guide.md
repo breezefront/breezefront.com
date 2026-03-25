@@ -8,6 +8,95 @@ navigation: false
 
 # Upgrade Guide
 
+## Upgrading from 2.x to 3.x
+
+In order to make transition less painfull we decided to keep popular variables
+and mixins in place, but mark them as deprecated. You can find all deprecated
+variables inside [_deprecated.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/3.x/web/css/abstracts/variables/_deprecated.less)
+file.
+
+Please make sure that your theme is not using any of the variables listed in
+this file. Let's review some of the changes from [_deprecated.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/3.x/web/css/abstracts/variables/_deprecated.less)
+file.
+
+ 1. In order to prevent conflict with TailwindCSS classes we renamed the following
+    classes. Make sure that you don't use old name in your CMS pages, blocks, etc.
+
+    Old         | New
+    ------------|------------------
+    `max-w-xs`  | `max-w-screen-xs`
+    `max-w-sm`  | `max-w-screen-sm`
+    `max-w-md`  | `max-w-screen-md`
+    `max-w-lg`  | `max-w-screen-lg`
+    `max-w-xl`  | `max-w-screen-xl`
+    `max-w-xxl` | `max-w-screen-xxl`
+
+ 2. Color variables where renamed a lot:
+
+    Old                         | New
+    ----------------------------|-----------------------
+    @brand__color               | @color__brand
+    @theme__brand-color         | @color__brand
+    @theme__dark__brand-color   | @color__inverted__brand
+    @blue                       | @color__blue
+    @green                      | @color__green
+    @red                        | @color__red
+    @yellow                     | @color__yellow
+    @dark__blue                 | @color__inverted__blue
+    @dark__green                | @color__inverted__green
+    @dark__red                  | @color__inverted__red
+    @theme__dark-color          | @dark__background
+    @divider__color             | @subtle__color
+    @z-layer__background        | @surface__background
+    @z-layer__color             | @surface__color
+    @z-layer__dark__background-color | @surface__inverted__background
+    @dark__gray-800             | @base__inverted__color
+    @brand__hover__color        | **Removed**
+    @theme__brand-hover-color   | **Removed**
+    @blue__muted                | **Removed**
+    @green__muted               | **Removed**
+    @red__muted                 | **Removed**
+    @yellow__muted              | **Removed**
+    @\*\_\_alpha                | **Removed**
+
+ 3. Ring variables renamed:
+
+    Old                         | New
+    ----------------------------|-----------------------
+    @ring__width                | @focus-ring__width;
+    @ring__offset               | @focus-ring__offset;
+    @ring__color                | @focus-ring__color;
+    @ring__inverted__text-color | @focus-ring__inverted__color;
+
+ 4. Rename all `@*__text-color` variables to `@*__color` and
+    `@*__background-color` variables to `@*__background`. Examples:
+
+    Old                             | New
+    --------------------------------|------------------------
+    `@base__text-color: #000`       | `@base__color: #000`
+    `@base__background-color: #fff` | `@base__background: #fff`
+
+ 5. Find `rgb(var(...))`, `rgba(var(...))` and make sure that `rgba|rgb` is still
+    needed here. In most cases it should be replaced with raw `var(...)`.
+    Examples:
+
+    Old                                 | New
+    ------------------------------------|------------------------
+    `color: ~"rgb(var(--base-color))"` | `color: var(--base-color)`
+    `color: ~"rgba(var(--base-color), 1)"` | `color: var(--base-color)`
+    `color: ~"rgba(var(--base-color), 0.1)"` | `color: color-mix(in oklch, var(--base-color) 10%, transparent)`
+
+ 6. To make your theme compatible with Theme Editor always use CSS tokens
+    when consume the variable:
+
+    Old                    | New
+    -----------------------|------------------------
+    `color: @color__brand` | `color: var(--color-brand)`
+    `color: @muted__color` | `color: var(--muted-color)`
+
+ 7. Replace all `.lib-rgb()` and `.breeze-rgb()` usages with `.lib-css()`.
+
+
 ## Upgrading from 2.18.0 to 2.19.0
 
 Update `swissup/theme-frontend-breeze-blank` to version 2.19:
