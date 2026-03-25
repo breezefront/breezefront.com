@@ -14,9 +14,10 @@ order: 800
 
 Breeze Themes 3.0 comes with built-in Live Editor. It consists from two parts:
 
- -  Theme Editor --- a free extensible module that allows changing theme styles
-    using intuitive interface with live updates.
- -  Content Builder --- a part of [Breeze Enterprise](https://swissuplabs.com/magento-themes/magento-2-breeze-enterprise.html)
+ -  Theme Editor --- a free, [open-source](https://github.com/breezefront/module-breeze-theme-editor){:target="_blank" rel="noopener"},
+    extensible module that allows changing theme styles using intuitive
+    interface with live updates.
+ -  Content Builder --- a part of [Breeze Enterprise](https://swissuplabs.com/magento-themes/magento-2-breeze-enterprise.html){:target="_blank" rel="noopener"}
     theme. This is a powerful content management module.
 
 ## Theme Editor
