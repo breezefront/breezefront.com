@@ -1,7 +1,7 @@
 {%- assign images = site.static_files | where: "image", true -%}
 
-<div class="max-w-4xl grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2 gap-y-3 sm:gap-6 sm:gap-y-8 my-12 mx-auto not-prose sm:mt-16">
-{% for theme in site.data.themes %}
+<div class="max-w-xl grid grid-cols-2 lg:max-w-7xl lg:grid-cols-4 gap-2 gap-y-3 sm:gap-7 sm:gap-y-10 my-12 mx-auto not-prose sm:mt-16">
+{% for theme in include.themes %}
   {%- assign marker = theme.media | append: '/demo-' -%}
   {%- assign srcset = '' -%}
   {%- assign src = '' -%}
@@ -62,7 +62,7 @@
 </div>
 
 <div class="hidden">
-{%- for theme in site.data.themes -%}
+{%- for theme in include.themes -%}
   {%- if theme.gallery == false -%}
     {%- continue -%}
   {%- endif -%}
@@ -70,3 +70,4 @@
   {%- include docs/gallery.html dir=theme.media width="350" height="250" animation="fade" -%}
 {%- endfor -%}
 </div>
+

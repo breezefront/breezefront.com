@@ -1,39 +1,47 @@
-- demo: https://breeze.swissupdemo.com/default/
-  title: Luma + Breeze Module
-  description: Luma theme powered by BreezeJS boosts its performance to the edge
-  media: luma
-  gallery: false
+breeze:
+  - demo: https://breeze.swissupdemo.com/default/
+    title: Luma + Breeze Module
+    description: Luma theme powered by BreezeJS boosts its performance to the edge
+    media: luma
+    gallery: false
 
-- demo: https://breeze.swissupdemo.com/breeze_blank/
-  title: Breeze Blank Theme
-  description: Minimalistic starter theme for you next unique design
-  media: blank
+  - demo: https://breeze.swissupdemo.com/breeze_blank/
+    title: Breeze Blank Theme
+    description: Minimalistic starter theme for you next unique design
+    media: blank
 
-- demo: https://breeze.swissupdemo.com/breeze_evolution/
-  title: Breeze Evolution Theme
-  description: Light theme with rounded shapes and contrast forms
-  media: evolution
+  - demo: https://breeze.swissupdemo.com/breeze_evolution/
+    title: Breeze Evolution Theme
+    description: Light theme with rounded shapes and contrast forms
+    media: evolution
 
-- demo: https://argento-breeze-m2.swissupdemo.com/business_breeze/
-  title: Argento Business Theme
-  description: Premium theme for enterprise clients built on top of Breeze Blank
-  media: argento-business
-  buy: https://argentotheme.com/order/
+  - demo: https://breezeenterprise.swissupdemo.com
+    title: Breeze Enterprise Theme
+    description: Premium theme with additional features and Live Content Builder
+    media: apollo
+    buy: https://swissuplabs.com/magento-themes/magento-2-breeze-enterprise.html
 
-- demo: https://argento-breeze-m2.swissupdemo.com/force_breeze/
-  title: Argento Force Theme
-  description: Premium theme with dynamic accents built on top of Breeze Blank
-  media: argento-force
-  buy: https://argentotheme.com/order/
+argento:
+  - demo: https://argento-breeze-m2.swissupdemo.com/business_breeze/
+    title: Argento Business Theme
+    description: Premium theme for enterprise clients built on top of Breeze Blank
+    media: argento-business
+    buy: https://argentotheme.com/order/
 
-- title: Argento Chic Theme
-  demo: https://argento-breeze-m2.swissupdemo.com/chic_breeze/
-  description: Premium theme with large headings and neon accents
-  media: argento-chic
-  buy: https://argentotheme.com/order/
+  - demo: https://argento-breeze-m2.swissupdemo.com/force_breeze/
+    title: Argento Force Theme
+    description: Premium theme with dynamic accents built on top of Breeze Blank
+    media: argento-force
+    buy: https://argentotheme.com/order/
 
-- demo: https://argento-breeze-m2.swissupdemo.com/stripes_breeze/
-  title: Argento Stripes Theme
-  description: Premium theme with contrast header built on top of Breeze Blank
-  media: argento-stripes
-  buy: https://argentotheme.com/order/
+  - title: Argento Chic Theme
+    demo: https://argento-breeze-m2.swissupdemo.com/chic_breeze/
+    description: Premium theme with large headings and neon accents
+    media: argento-chic
+    buy: https://argentotheme.com/order/
+
+  - demo: https://argento-breeze-m2.swissupdemo.com/stripes_breeze/
+    title: Argento Stripes Theme
+    description: Premium theme with contrast header built on top of Breeze Blank
+    media: argento-stripes
+    buy: https://argentotheme.com/order/
