@@ -5,8 +5,8 @@ title: Welcome
 description: High performance frontend for Magento 2
 ---
 
-<section class="hero-home py-8 md:py-16 flex flex-col justify-center">
-  <h1 class="text-[7.5vw] leading-[7.5vw] tracking-tight text-center font-extrabold sm:text-5xl sm:leading-none sm:font-black md:text-6xl bg-zinc-800 bg-clip-text text-transparent">
+<section class="hero-home -mx-4 py-8 md:py-16 flex flex-col justify-center">
+  <h1 class="text-2xl xs:text-[1.7rem] leading-[1.1] tracking-tight text-center font-extrabold sm:text-4xl sm:font-black md:text-5xl mdl:text-6xl bg-zinc-800 bg-clip-text text-transparent">
     A gentle shift from <br/>
     default Magento frontend<br/>
     towards <span class="whitespace-nowrap text-green-500">all-green</span> performance
@@ -62,7 +62,7 @@ description: High performance frontend for Magento 2
           </svg>
         </div>
       </a>
-      <a class="group inline-flex items-center justify-center px-7 py-3 text-zinc-800 rounded-lg border-2 border-transparent bg-white text-lg font-bold shadow-xl transition hover:bg-white/90" href="{{ 'docs/installation' | relative_url }}">
+      <a class="group inline-flex items-center justify-center px-7 py-3 text-zinc-800 rounded-lg border-2 border-transparent bg-white text-lg font-bold shadow-xl transition hover:bg-white/90" href="{{ 'docs/better-compatibility' | relative_url }}">
         Read the docs
         <div class="relative w-1 h-5">
           <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
