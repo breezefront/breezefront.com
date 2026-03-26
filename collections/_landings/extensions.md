@@ -11,7 +11,7 @@ search: true
 {:.text-4xl.tracking-tight.text-center.font-extrabold.sm:text-5xl.sm:font-black.md:text-6xl}
 
 Extend your store functionality with our and third-party modules.
-{:.text-center.text-zinc-500.text-lg.mt-1.sm:mx-10}
+{:.text-center.text-zinc-500.text-lg.mt-2.sm:mx-10}
 
 {% assign extensions = site.data.extensions | sort_natural: 'name' %}
 

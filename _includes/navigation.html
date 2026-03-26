@@ -1,4 +1,4 @@
-<div class="nav-toggler ml-auto md:hidden">
+<div class="nav-toggler ml-auto mdl:hidden">
   <input class="hidden" type="checkbox" id="nav-toggler"/>
   <label class="nav-icon block h-6 w-6 cursor-pointer relative z-50" for="nav-toggler">
     <svg class="nav-open absolute w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -12,9 +12,9 @@
 </div>
 
 <div class="nav items-center grow
-  opacity-0 pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 md:opacity-100 md:pointer-events-auto md:translate-y-0 md:flex md:static md:shadow-none md:p-0 md:gap-3">
+  opacity-0 pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 mdl:opacity-100 mdl:pointer-events-auto mdl:translate-y-0 mdl:flex mdl:static mdl:shadow-none mdl:p-0 mdl:gap-3">
   {%- assign activeClass = 'underline decoration-2 underline-offset-4 text-zinc-800' -%}
-  <ul class="flex flex-col md:flex-row md:items-center md:gap-1 lg:gap-3 mx-auto">
+  <ul class="flex flex-col mdl:flex-row mdl:items-center mdl:gap-1 xl:gap-3 mx-auto">
     {%- assign items = site.landings | sort: 'order' -%}
     {% for item in items %}
       {%- if item.navigation == false -%}
@@ -31,11 +31,11 @@
         {%- assign css = activeClass -%}
       {%- endif -%}
 
-      <li><a class="flex p-2 py-1.5 rounded-sm hover:text-zinc-800 md:px-3 md:py-1.5 lg:px-4 {{ css }}" href="{{ item.url | relative_url }}">{{ title }}</a></li>
+      <li><a class="flex p-2 py-1.5 rounded-sm hover:text-zinc-800 mdl:px-3 mdl:py-1.5 xl:px-4 {{ css }}" href="{{ item.url | relative_url }}">{{ title }}</a></li>
     {%- endfor %}
   </ul>
-  <ul class="flex flex-col md:flex-row md:items-center md:gap-1 lg:gap-3">
-    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded-sm hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 {%- if page.url == '/updates' %} {{ activeClass }} {%- endif -%}" href="{{ 'updates' | relative_url }}">Changelog</a></li>
-    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded-sm hover:text-zinc-900 md:px-3 md:py-1.5 lg:px-4 md:text-white md:hover:text-white md:bg-zinc-900" href="{{ 'docs/installation' | relative_url }}">Docs</a></li>
+  <ul class="flex flex-col mdl:flex-row mdl:items-center mdl:gap-1 lg:gap-3">
+    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded-sm hover:text-zinc-900 mdl:px-3 mdl:py-1.5 xl:px-4 {%- if page.url == '/updates' %} {{ activeClass }} {%- endif -%}" href="{{ 'updates' | relative_url }}">Changelog</a></li>
+    <li><a class="flex p-2 py-1.5 text-zinc-600 rounded-sm hover:text-zinc-900 mdl:px-3 mdl:py-1.5 xl:px-4 mdl:text-white mdl:hover:text-white mdl:bg-zinc-900" href="{{ 'docs/installation' | relative_url }}">Docs</a></li>
   </ul>
 </div>
