@@ -14,8 +14,8 @@ Push Breeze beyond the limits with premuim theme and additional features
 
 <section class="max-w-4xl 2xl:max-w-5xl mx-auto py-8 sm:py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
   <div class="md:col-span-2 p-8 py-10 sm:p-12 sm:py-10 flex rounded-xl border-1">
-    <div class="flex gap-6">
-      <div class="flex flex-col gap-4 items-start">
+    <div class="flex gap-6 max-md:flex-col max-md:items-center max-md:gap-8 max-md:text-center">
+      <div class="flex flex-col gap-4 items-start max-md:items-center">
         <h2 class="text-4xl font-bold">Apollo Theme</h2>
         <p class="text-black/70 text-xl">
           Apollo is an example theme included with Breeze Enterprise. It demonstrates how
@@ -23,7 +23,7 @@ Push Breeze beyond the limits with premuim theme and additional features
           to use or adapt. For custom development, Breeze Enterprise Blank serves as the
           minimal and clean base.
         </p>
-        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="my-4 flex flex-wrap justify-center gap-4">
           <a class="group inline-flex items-center justify-center px-7 py-3 rounded-lg border-1 text-lg font-bold shadow-xl transition" href="https://breezeenterprise.swissupdemo.com/" target="_blank" rel="noopener">
             View Demo
             <div class="relative w-1 h-5">
@@ -44,15 +44,15 @@ Push Breeze beyond the limits with premuim theme and additional features
           </a>
         </div>
       </div>
-      <div class="shrink-0">
-        <img class="inline-block rounded-sm" src="/assets/img/apollo/demo-566.webp" alt="Breeze Enterprise Theme" width="283" height="340">
+      <div class="shrink-0 md:max-w-[35%]">
+        <img class="inline-block rounded-sm object-cover object-top-left" src="/assets/img/apollo/demo-566.webp" alt="Breeze Enterprise Theme" width="283" height="340">
       </div>
     </div>
   </div>
 
   <div class="md:col-span-2 p-8 py-10 sm:p-12 sm:py-10 flex flex-col gap-4 items-start rounded-xl border-1">
-    <div class="flex gap-6">
-      <div class="flex flex-col gap-4 items-start">
+    <div class="flex gap-6 max-md:flex-col max-md:items-center max-md:gap-8 max-md:text-center">
+      <div class="flex flex-col gap-4 items-start max-md:items-center">
         <h2 class="text-4xl font-bold">Theme Editor</h2>
         <p class="mt-1 text-black/70 text-xl">
           The Theme Editor provides a UI layer for managing design-related settings such
@@ -61,15 +61,15 @@ Push Breeze beyond the limits with premuim theme and additional features
           code changes.
         </p>
       </div>
-      <div class="shrink-0">
-        <img class="inline-block rounded-sm outline w-[283px] h-[210px] object-cover object-top-left" src="/assets/img/live-editor/theme-editor.webp?v=1" width="250" height="138" alt="Theme Editor Screenshot">
+      <div class="shrink-0 md:max-w-[35%]">
+        <img class="inline-block rounded-sm outline w-[283px] h-full min-h-[210px] max-md:w-[400px] max-md:h-[270px] object-cover object-top-left" src="/assets/img/live-editor/theme-editor.webp?v=1" width="250" height="138" alt="Theme Editor Screenshot">
       </div>
     </div>
   </div>
 
   <div class="md:col-span-2 p-8 py-10 sm:p-12 sm:py-10 flex flex-col gap-4 items-start rounded-xl border-1">
-    <div class="flex gap-6">
-      <div class="flex flex-col gap-4 items-start">
+    <div class="flex gap-6 max-md:flex-col max-md:items-center max-md:gap-8 max-md:text-center">
+      <div class="flex flex-col gap-4 items-start max-md:items-center">
         <h2 class="text-4xl font-bold">Content Editor</h2>
         <p class="mt-1 text-black/70 text-xl">
           The Content Editor allows you to build pages using predefined sections and
@@ -78,8 +78,8 @@ Push Breeze beyond the limits with premuim theme and additional features
           frontend development.
         </p>
       </div>
-      <div class="shrink-0">
-        <img class="inline-block rounded-sm outline w-[283px] h-[210px] object-cover object-top-left" src="/assets/img/live-editor/content-builder.webp?v=1" width="250" height="138" alt="Content Builder Screenshot" loading="lazy">
+      <div class="shrink-0 md:max-w-[35%]">
+        <img class="inline-block rounded-sm outline w-[283px] h-full min-h-[210px] max-md:w-[400px] max-md:h-[270px] object-cover object-top-left" src="/assets/img/live-editor/content-builder.webp?v=1" width="250" height="138" alt="Content Builder Screenshot" loading="lazy">
       </div>
     </div>
   </div>
