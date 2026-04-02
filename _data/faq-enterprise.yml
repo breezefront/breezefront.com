@@ -1,0 +1,48 @@
+- q: What is Breeze Enterprise?
+  a: >
+    Breeze Enterprise is an extended version of the Breeze frontend
+    for Magento 2. It adds visual tooling (Theme Editor and Content Builder)
+    on top of the existing lightweight and performance-focused architecture.
+
+- q: How is Breeze Enterprise different from Breeze or Luma?
+  a: >
+    Compared to Luma, Breeze Enterprise uses a much lighter frontend stack with
+    fewer dependencies and better performance out of the box. Compared to
+    standard Breeze, the Enterprise version includes additional tooling for
+    visual styling and content management, reducing the need for custom
+    frontend development.
+
+- q: What does the Theme Editor actually change?
+  a: >
+    The Theme Editor allows you to modify design-related variables such as
+    colors, typography, spacing, and layout settings. Changes are applied in
+    real time and typically map to CSS variables, so you don’t need to
+    recompile styles or modify source files.
+
+- q: How does the Content Builder work?
+  a: >
+    The Content Builder provides a set of predefined sections and layout
+    blocks that can be combined to build pages. It’s intended to cover
+    common use cases like landing pages or homepage layouts without requiring
+    custom CMS templates or frontend code.
+
+- q: Can developers still customise things outside the UI tools?
+  a: >
+    Yes. Breeze Enterprise does not restrict standard Magento or frontend
+    workflows. You can still override templates, extend components, or add
+    custom logic where needed. The visual tools are optional and sit on top
+    of the existing system.
+
+- q: Does Breeze Enterprise affect performance?
+  a: >
+    The core Breeze approach remains the same - minimal JavaScript,
+    reduced CSS size, and optimised asset loading. The additional features
+    in Enterprise are designed to avoid introducing heavy dependencies, so
+    performance impact is kept minimal if used correctly.
+
+- q: How do I install or access Breeze Enterprise?
+  a: >
+    Breeze Enterprise is available as part of an active Swissuplabs
+    subscription. If you already have access, you can install it using
+    the provided package and follow the setup guide. For evaluation, you
+    can request access via the support helpdesk.
