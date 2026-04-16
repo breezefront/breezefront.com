@@ -9,7 +9,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## April 16, 2025 &mdash; Breeze Content Builder 1.0.0-beta.2
+## April 16, 2026 &mdash; Breeze Content Builder 1.0.0-beta.2
 
 > swissup/module-breeze-content-builder:1.0.0-beta.2<br/>
 > swissup/module-breeze-content-builder-migration:1.0.1
@@ -29,7 +29,7 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  The property panel is now cleared when store changed or editor disabled
  -  Fixed toolbar activation race condition issue
 
-## April 16, 2025 &mdash; Breeze-3.0.0-beta.3
+## April 16, 2026 &mdash; Breeze-3.0.0-beta.3
 
 > swissup/module-breeze:2.29.2<br/>
 > swissup/breeze-blank:3.0.0-beta.3,swissup/breeze-evolution:3.0.0-beta.3
@@ -51,7 +51,7 @@ class: prose prose-zinc max-w-3xl mx-auto
     - Theme editor now allows changing navigation styles.
     - Fixed incorrect "Wave background" when using `boxed` page layout.
 
-## March 25, 2025 &mdash; Breeze-3.0.0-beta.1
+## March 25, 2026 &mdash; Breeze-3.0.0-beta.1
 
 > swissup/module-breeze:2.29.0<br/>
 > swissup/breeze-blank:3.0.0-beta.1,swissup/breeze-evolution:3.0.0-beta.1
