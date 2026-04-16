@@ -9,6 +9,26 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## April 16, 2025 &mdash; Breeze Content Builder 1.0.0-beta.2
+
+> swissup/module-breeze-content-builder:1.0.0-beta.2<br/>
+> swissup/module-breeze-content-builder-migration:1.0.1
+
+**Fixes and Improvements**
+
+ -  Added **new** companion module `swissup/module-breeze-content-builder-migration` that converts existing Page Builder content to BCB format
+ -  Added new `Grid` layout component
+ -  Added new `HTML Code` component
+ -  Added components copy/paste with Ctrl+C/Ctrl+V
+ -  `Banner` component: added `Layout` and `Headline Type` options
+ -  Added desktop/mobile visibility toggler
+ -  Added 3-dots dropdown menu in the left panel and moved theme switcher into it
+ -  Added `Conditions` source support for the `Products` component
+ -  `Text` component: moved `SVG Code` insertion and editing to the modal
+ -  `Text` component: added modal with full-featured `TinyMCE` editor and widget directives processing
+ -  The property panel is now cleared when store changed or editor disabled
+ -  Fixed toolbar activation race condition issue
+
 ## April 16, 2025 &mdash; Breeze-3.0.0-beta.3
 
 > swissup/module-breeze:2.29.2<br/>
@@ -1330,8 +1350,8 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 **Performance improvements**
 
- -  Allow using ["Move js to bottom" option](docs/performance#enable-performance-settings) 
-    starting from Magento 2.4.1. In older Magento versions this option is not 
+ -  Allow using ["Move js to bottom" option](docs/performance#enable-performance-settings)
+    starting from Magento 2.4.1. In older Magento versions this option is not
     supported and will cause js error.
  -  Improve image preload feature on the homepage.
  -  Prevent CLS when breadcrumbs are too long for the single line in Evolution theme.
@@ -1407,7 +1427,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 > swissup/breeze-blank:2.3.3
 
  -  Magento 2.4.6 and PHP 8.2 compatibility added.
- -  Added ability to include third-party scripts [after user interaction](/docs/globals#lazy-script). 
+ -  Added ability to include third-party scripts [after user interaction](/docs/globals#lazy-script).
     This is a useful feature to include third-party scripts without
     affecting pagespeed score. The following modules will use this feature out of the box:
     - GoogleAnalytics
@@ -1422,7 +1442,7 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  Added missing minlength, maxlength, min, and max js validators.
  -  Update all bundled js libraries.
  -  Drastically reduced LCP value for Evolution theme.
- -  Reduce noise at category listing for touch devices in Evolution theme - 
+ -  Reduce noise at category listing for touch devices in Evolution theme -
     Add to cart button will use secondary button styles now.
 
 ## February 23, 2023
