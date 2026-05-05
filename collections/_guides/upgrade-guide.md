@@ -10,8 +10,7 @@ navigation: false
 
 ## Upgrading from 2.x to 3.x
 
-In order to make transition less painfull we decided to keep popular variables
-and mixins in place, but mark them as deprecated. You can find all deprecated
+Quite a lot variables where droppped or renamed. You can find all deprecated
 variables inside [_deprecated.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/3.x/web/css/abstracts/variables/_deprecated.less)
 file.
 
@@ -76,6 +75,7 @@ file.
     @z-layer__background        | @surface__background
     @z-layer__color             | @surface__color
     @z-layer__dark__background-color | @surface__inverted__background
+    @rating__color              | @rating-icon__color;
 
  4. Rename all `@*__text-color` variables to `@*__color` and
     `@*__background-color` variables to `@*__background`. Examples:
