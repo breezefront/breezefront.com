@@ -9,6 +9,19 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Coming Soon &mdash; Breeze 3.0
+
+> swissup/module-breeze:2.29.3<br/>
+> swissup/module-theme-editor:1.0.0<br/>
+> swissup/breeze-blank:3.0.0,swissup/breeze-evolution:3.0.0
+
+More flexibility, better dark mode, [Theme Editor](/docs/live-editor),
+and [Breeze Enterprise](/enterprise)!
+
+**🚨 Breaking changes**
+
+Follow the [upgrade guide](/docs/upgrade-guide) to update your theme from 2.x versions.
+
 ## April 16, 2026 &mdash; Breeze-3.0.0-beta.3
 
 > swissup/module-breeze:2.29.2<br/>
