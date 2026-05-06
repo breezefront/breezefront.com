@@ -10,6 +10,18 @@ navigation: false
 
 ## Upgrading from 2.x to 3.x
 
+We've made a script that helps to find and replace deprecated variables in your theme.
+Use it as shows below:
+
+```sh
+curl -s https://breezefront.com/tools/migrate-2-to-3 | php -- /www/magento2/app/design/frontend/Local/breeze-custom
+```
+
+Manual review is still required after running the script, but it should help
+to find most of the deprecated variables and replace them with new ones.
+
+---
+
 Quite a lot variables where droppped or renamed. You can find all deprecated
 variables inside [_deprecated.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/3.x/web/css/abstracts/variables/_deprecated.less)
 file.
