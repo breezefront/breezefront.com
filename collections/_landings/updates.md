@@ -13,7 +13,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 > swissup/module-breeze:2.30.0<br/>
 > swissup/module-theme-editor:1.0.1<br/>
-> swissup/breeze-blank:3.0.0,swissup/breeze-evolution:3.0.0
+> swissup/breeze-blank:3.0.0,swissup/breeze-evolution:3.0.0<br/>
 > swissup/breeze-enterprise:3.0.0-beta.3
 
 Breeze 3.0 themes coming with a lot of internal improvements.
