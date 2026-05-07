@@ -11,15 +11,31 @@ navigation: false
 ## Upgrading from 2.x to 3.x
 
 We've made a script that will automatically find and replace deprecated
-variables in your theme. Use it as shows below:
+variables in your theme. Use it as shown below:
 
-```sh
-curl -s https://breezefront.com/tools/migrate-2-to-3 | php -- /www/magento2/app/design/frontend/Local/breeze-custom
-```
+ 1. Update parent themes:
 
-Manual review is still required after running the script.
+    ```
+    composer require swissup/breeze-blank:^3.0 swissup/breeze-evolution:^3.0
+    bin/magento setup:upgrade
+    ```
 
- 1. Pay attention to `-alpha` variables. So if you did something like:
+ 2. Run the migration script for your custom theme:
+
+    ```sh
+    curl -s https://breezefront.com/tools/migrate-2-to-3 | php -- /www/magento2/app/design/frontend/Local/breeze-custom
+    ```
+
+ 3. Clear cache and static content:
+
+    ```
+    bin/magento cache:clean
+    rm -rf var/view_preprocessed pub/static/frontend
+    ```
+
+**Manual review is still required after running the script.**
+
+ 1. Pay attention to `-alpha` variables. If you did something like:
 
     ```
     --base-bg-alpha: 0;
@@ -48,8 +64,8 @@ Manual review is still required after running the script.
 
     Old                    | New
     -----------------------|------------------
-    `icon rounded`         | ` icon rounded p-3 bg-muted`
-    `icon small rounded`   | ` icon rounded p-2 bg-muted`
+    `icon rounded`         | `icon rounded p-3 bg-muted`
+    `icon small rounded`   | `icon small rounded p-2 bg-muted`
 
 ---
 
