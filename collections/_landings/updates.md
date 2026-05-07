@@ -9,18 +9,28 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## Coming Soon &mdash; Breeze 3.0
+## May 7, 2026
 
-> swissup/module-breeze:2.29.3<br/>
-> swissup/module-theme-editor:1.0.0<br/>
+> swissup/module-breeze:2.30.0<br/>
+> swissup/module-theme-editor:1.0.1<br/>
 > swissup/breeze-blank:3.0.0,swissup/breeze-evolution:3.0.0
+> swissup/breeze-enterprise:3.0.0-beta.3
 
-More flexibility, better dark mode, [Theme Editor](/docs/live-editor),
-and [Breeze Enterprise](/enterprise)!
+Breeze 3.0 themes coming with a lot of internal improvements.
 
-**🚨 Breaking changes**
+ -  **🚨 Breaking changes** Follow the [upgrade guide](/docs/upgrade-guide) to update your theme from 2.x versions.
+ -  More CSS variables where added to control the styles without recomiling LESS sources.
+ -  Traditional color format instead of comma separated RGB values.
+ -  Better dark mode support using `.breeze-tokens()` and `.breeze-inverted-tokens()` mixins.
+ -  Live [Theme Editor](/docs/live-editor) added to easily customize basic theme styles.
+ -  We launched [Breeze Enterprise](/enterprise)!
 
-Follow the [upgrade guide](/docs/upgrade-guide) to update your theme from 2.x versions.
+**Breeze Module**
+
+ -  Added ability to open menu dropdowns using touch device with large screen.
+ -  Prevent opened menu after page navigate if cursor stays over menu item.
+ -  Fixed missing ReCaptcha2 in product review form.
+ -  Small js fixes.
 
 ## April 16, 2026 &mdash; Breeze-3.0.0-beta.3
 

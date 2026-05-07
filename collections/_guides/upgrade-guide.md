@@ -53,15 +53,14 @@ Manual review is still required after running the script.
 
 ---
 
+**Here is brief summary of the changes that were made in Breeze 3.0**
+
 Quite a lot variables where droppped or renamed. You can find all deprecated
 variables inside [_deprecated.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/3.x/web/css/abstracts/variables/_deprecated.less)
 file.
 
 Please make sure that your theme is not using any of the variables listed in
 this file.
-
-Let's review some of the changes from [_deprecated.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/3.x/web/css/abstracts/variables/_deprecated.less)
-file.
 
  1. Color variables where renamed a lot:
 
