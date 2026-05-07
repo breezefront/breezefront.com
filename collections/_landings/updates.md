@@ -16,8 +16,6 @@ class: prose prose-zinc max-w-3xl mx-auto
 > swissup/breeze-blank:3.0.0,swissup/breeze-evolution:3.0.0<br/>
 > swissup/breeze-enterprise:3.0.0-beta.3
 
-Breeze 3.0 themes coming with a lot of internal improvements.
-
  -  **🚨 Breaking changes** Follow the [upgrade guide](/docs/upgrade-guide) to update your theme from 2.x versions.
  -  More CSS variables where added to control the styles without recomiling LESS sources.
  -  Traditional color format instead of comma separated RGB values.
