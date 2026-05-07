@@ -33,7 +33,7 @@ Replace `swissup/breeze-evolution` with theme you'd like to install:
  - Breeze Enterprise Theme --- `swissup/breeze-enterprise` [View demo](https://breezeenterprise.swissupdemo.com/){:target="_blank" rel="noopener"}
 
 ```powershell
-composer require swissup/breeze-evolution:^3.0.0 &&\
+composer require swissup/breeze-evolution &&\
 bin/magento module:enable Swissup_Breeze Swissup_BreezeThemeEditor Swissup_Rtl &&\
 bin/magento marketplace:package:install swissup/breeze-evolution
 ```
