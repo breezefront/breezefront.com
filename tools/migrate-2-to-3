@@ -18,6 +18,7 @@ if (!is_dir($targetDir)) {
 
 $rules = [
     [
+        'mode' => 'default',
         'exclude' => ['deprecated'],
         'mapping' => [
             '.lib-rgb' => '.lib-css',
@@ -25,6 +26,7 @@ $rules = [
             '@theme__dark-color:' => '@dark__background:',
             '@theme__dark__brand-color:' => '@color__inverted__brand:',
             '@brand__color:' => '@color__brand:',
+            '@brand__text-color:' => '@color__brand-text:',
             '@divider__color:' => '@subtle__color:',
             '@z-layer__background-color:' => '@surface__background:',
             '@z-layer__background:' => '@surface__background:',
@@ -84,6 +86,7 @@ $rules = [
         ]
     ],
     [
+        'mode' => 'default',
         'exclude' => ['email', 'deprecated', 'variables'],
         'mapping' => [
             ': @gray-50;' => ': ~"var(--subtle-bg)";',
@@ -93,12 +96,14 @@ $rules = [
         ],
     ],
     [
+        'mode' => 'default',
         'exclude' => ['email', 'deprecated'],
         'mapping' => [
             ': @theme__brand-color;' => ': ~"var(--color-brand)";',
             ': @theme__dark-color;' => ': ~"var(--dark-bg)";',
             ': @theme__dark__brand-color;' => ': ~"var(--color-inverted-brand)";',
             ': @brand__color;' => ': ~"var(--color-brand)";',
+            ': @brand__text-color;' => ': @color__brand-text;',
             ': @divider__color;' => ': ~"var(--subtle-color)";',
             ': @base__text-color;' => ': ~"var(--base-color)";',
             ': @base__color;' => ': ~"var(--base-color)";',
@@ -172,19 +177,27 @@ $rules = [
         ],
     ],
     [
-        're' => true,
+        'mode' => 're',
         'exclude' => ['deprecated'],
         'mapping' => [
             '/~"rgba\(var\((--[^)]+)\),\s*var\((--[^,]+),\s*([^)]+)\)\)"/' => '~"color-mix(in srgb, var($1) calc(var($2, $3) * 100%), transparent)"',
         ],
     ],
     [
+        'mode' => 'default',
         'exclude' => ['deprecated'],
         'mapping' => [
             '*__text-color:' => '*__color:',
             '*__background-color:' => '*__background:',
             '*__text-color;' => '*__color;',
             '*__background-color;' => '*__background;',
+        ],
+    ],
+    [
+        'mode' => 'inform',
+        'exclude' => ['email', 'deprecated'],
+        'mapping' => [
+            '-alpha:' => 'Alpha channel is no longer used by Breeze colors',
         ],
     ],
 ];
@@ -213,7 +226,10 @@ foreach ($iterator as $file) {
         continue;
     }
 
-    $matches = [];
+    $matches = [
+        'inform' => [],
+        'fixes' => [],
+    ];
     foreach ($rules as $values) {
         foreach ($values['exclude'] as $exclude) {
             if (strstr($relativePath, $exclude)) {
@@ -221,7 +237,11 @@ foreach ($iterator as $file) {
             }
         }
         foreach ($values['mapping'] as $search => $replace) {
-            if (!empty($values['re'])) {
+            if ($values['mode'] === 'inform') {
+                if (strstr($content, $search)) {
+                    $matches['inform'][] = [$search => $replace];
+                }
+            } elseif ($values['mode'] === 're') {
                 $content = preg_replace_callback(
                     $search,
                     function ($match) use (&$matches, $replace) {
@@ -229,7 +249,7 @@ foreach ($iterator as $file) {
                             return $match[(int) $m[1]] ?? '';
                         }, $replace);
 
-                        $matches[] = [$match[0] => $result];
+                        $matches['fixes'][] = [$match[0] => $result];
 
                         return $result;
                     },
@@ -243,20 +263,21 @@ foreach ($iterator as $file) {
                     $pattern,
                     function ($match) use (&$matches, $replace) {
                         $replace = str_replace('*', $match[1], $replace);
-                        $matches[] = [$match[0] => $replace];
+                        $matches['fixes'][] = [$match[0] => $replace];
                         return $replace;
                     },
                     $content
                 );
             } elseif (strstr($content, $search)) {
-                $matches[] = [$search => $replace];
+                $matches['fixes'][] = [$search => $replace];
                 $content = str_replace($search, $replace, $content);
             }
         }
     }
 
-    if ($content !== $original) {
-        $matchesCount = count($matches);
+    if (count($matches['fixes']) || count($matches['inform'])) {
+        $informCount = count($matches['inform']);
+        $matchesCount = count($matches['fixes']);
         $changedLines += $matchesCount;
         $changedFiles++;
 
@@ -266,20 +287,30 @@ foreach ($iterator as $file) {
             echo "\033[33m[SKIPPED] $relativePath (Backup exists, so the file was likely processed)\033[0m";
         } else {
             if ($applyFix) {
-                if (!copy($path, $backupPath)) {
-                    throw new \RuntimeException("Failed to create backup for $path");
+                if ($content !== $original) {
+                    if (!copy($path, $backupPath)) {
+                        throw new \RuntimeException("Failed to create backup for $path");
+                    }
+                    file_put_contents($path, $content);
                 }
-                file_put_contents($path, $content);
-                echo "\033[32m[FIXED] $relativePath $matchesCount\033[0m";
+                echo "\033[32m[FIXED] $relativePath Fixable: $matchesCount; Manual: $informCount\033[0m";
             } else {
-                echo "\033[32m[FOUND] $relativePath $matchesCount\033[0m";
+                echo "\033[32m[FOUND] $relativePath Fixable: $matchesCount; Manual: $informCount\033[0m";
             }
         }
 
-        echo "\n\t" . implode("\n\t", array_map(
-            fn($item) => key($item) . ' => ' . current($item),
-            $matches
-        ));
+        if (count($matches['inform'])) {
+            echo "\n\t\033[33m" . implode("\n\t", array_map(
+                fn($item) => key($item) . ' => ' . current($item),
+                $matches['inform']
+            )) . "\033[0m";
+        }
+        if (count($matches['fixes'])) {
+            echo "\n\t" . implode("\n\t", array_map(
+                fn($item) => key($item) . ' => ' . current($item),
+                $matches['fixes']
+            ));
+        }
         echo "\n\n";
     }
 }
