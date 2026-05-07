@@ -10,15 +10,46 @@ navigation: false
 
 ## Upgrading from 2.x to 3.x
 
-We've made a script that helps to find and replace deprecated variables in your theme.
-Use it as shows below:
+We've made a script that will automatically find and replace deprecated
+variables in your theme. Use it as shows below:
 
 ```sh
 curl -s https://breezefront.com/tools/migrate-2-to-3 | php -- /www/magento2/app/design/frontend/Local/breeze-custom
 ```
 
-Manual review is still required after running the script, but it should help
-to find most of the deprecated variables and replace them with new ones.
+Manual review is still required after running the script.
+
+ 1. Pay attention to `-alpha` variables. So if you did something like:
+
+    ```
+    --base-bg-alpha: 0;
+    --muted-bg-alpha: .5;
+    ```
+
+    this will no loger work and you should do this instead:
+
+    ```
+    background: transparent;
+    background: color-mix(in srgb, var(--muted-bg) 50%, transparent);
+    ```
+
+ 2. Additionally we've renamed few css classes:
+
+    Old         | New
+    ------------|------------------
+    `max-w-xs`  | `max-w-screen-xs`
+    `max-w-sm`  | `max-w-screen-sm`
+    `max-w-md`  | `max-w-screen-md`
+    `max-w-lg`  | `max-w-screen-lg`
+    `max-w-xl`  | `max-w-screen-xl`
+    `max-w-xxl` | `max-w-screen-xxl`
+
+ 3. We've removed default padding and background from the round icons:
+
+    Old                    | New
+    -----------------------|------------------
+    `icon rounded`         | ` icon rounded p-3 bg-muted`
+    `icon small rounded`   | ` icon rounded p-2 bg-muted`
 
 ---
 
@@ -32,26 +63,7 @@ this file.
 Let's review some of the changes from [_deprecated.less](https://github.com/breezefront/theme-frontend-breeze-blank/blob/3.x/web/css/abstracts/variables/_deprecated.less)
 file.
 
- 1. In order to prevent conflict with TailwindCSS classes we renamed the following
-    classes. Make sure that you don't use old name in your CMS pages, blocks, etc.
-
-    Old         | New
-    ------------|------------------
-    `max-w-xs`  | `max-w-screen-xs`
-    `max-w-sm`  | `max-w-screen-sm`
-    `max-w-md`  | `max-w-screen-md`
-    `max-w-lg`  | `max-w-screen-lg`
-    `max-w-xl`  | `max-w-screen-xl`
-    `max-w-xxl` | `max-w-screen-xxl`
-
- 2. Icon helper classes where cleaned. They are no longer adding padding or background:
-
-    Old                     | New
-    ------------------------|-----------------------------
-    `.icon.rounded`         | `.icon.rounded.p-3.bg-muted`
-    `.icon.small.rounded`   | `.icon.rounded.p-2.bg-muted`
-
- 3. Color variables where renamed a lot:
+ 1. Color variables where renamed a lot:
 
     Old                         | New
     ----------------------------|-----------------------
@@ -76,7 +88,7 @@ file.
     @yellow__muted              | **Removed**
     @\*\_\_alpha                | **Removed**
 
- 3. Few components where renamed:
+ 2. Few components where renamed:
 
     Old                         | New
     ----------------------------|-----------------------
@@ -89,7 +101,7 @@ file.
     @z-layer__dark__background-color | @surface__inverted__background
     @rating__color              | @rating-icon__color;
 
- 4. Rename all `@*__text-color` variables to `@*__color` and
+ 3. Rename all `@*__text-color` variables to `@*__color` and
     `@*__background-color` variables to `@*__background`. Examples:
 
     Old                             | New
@@ -97,9 +109,9 @@ file.
     `@base__text-color: #000`       | `@base__color: #000`
     `@base__background-color: #fff` | `@base__background: #fff`
 
- 5. Remove all `@*__alpha` variables. Breeze Themes no longer use them.
+ 4. Remove all `@*__alpha` variables. Breeze Themes no longer use them.
 
- 6. Find `rgb(var(...))`, `rgba(var(...))` and make sure that `rgba|rgb` is still
+ 5. Find `rgb(var(...))`, `rgba(var(...))` and make sure that `rgba|rgb` is still
     needed here. In most cases it should be replaced with raw `var(...)`.
     Examples:
 
@@ -109,7 +121,7 @@ file.
     `color: ~"rgba(var(--base-color), 1)"` | `color: var(--base-color)`
     `color: ~"rgba(var(--base-color), 0.1)"` | `color: color-mix(in oklch, var(--base-color) 10%, transparent)`
 
- 7. To make your theme compatible with Theme Editor always use CSS tokens
+ 6. To make your theme compatible with Theme Editor always use CSS tokens
     when consume the variable:
 
     Old                    | New
@@ -117,7 +129,7 @@ file.
     `color: @color__brand` | `color: var(--color-brand)`
     `color: @muted__color` | `color: var(--muted-color)`
 
- 8. Replace all `.lib-rgb()` and `.breeze-rgb()` usages with `.lib-css()`.
+ 7. Replace all `.lib-rgb()` and `.breeze-rgb()` usages with `.lib-css()`.
 
 
 ## Upgrading from 2.18.0 to 2.19.0

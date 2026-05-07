@@ -181,6 +181,8 @@ $rules = [
         'exclude' => ['deprecated'],
         'mapping' => [
             '/~"rgba\(var\((--[^)]+)\),\s*var\((--[^,]+),\s*([^)]+)\)\)"/' => '~"color-mix(in srgb, var($1) calc(var($2, $3) * 100%), transparent)"',
+            '/~"rgba\(var\((--[^)]+)\),\s*(0?\.\d+|1(?:\.0+)?)\)"/' => '~"color-mix(in srgb, var($1) calc($2 * 100%), transparent)"',
+            '/~"rgb\(var\((--[^)]+)\)\)"/' => '~"var($1)"',
         ],
     ],
     [
