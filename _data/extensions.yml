@@ -1,4 +1,5 @@
 - name: affirm/magento
+  shortname: affirm
   url: https://github.com/Affirm/Magento2_Affirm
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/astound-affirm-integration#installation
   description: Affirm for the Magento 2.
@@ -47,6 +48,7 @@
     categories. Manage prices display depending on customer groups.
 
 - name: amasty/aminvisiblecaptcha
+  shortname: invisible-captcha
   url: https://amasty.com/google-invisible-recaptcha-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-invisible-captcha-integration#installation
   description: >
@@ -185,6 +187,7 @@
     with dynamic attribute changes, improved SEO, and advertising options.
 
 - name: klaviyo/magento2-extension
+  shortname: klaviyo
   url: https://github.com/klaviyo/magento2-klaviyo
   integration_url: https://github.com/breezefront/module-breeze-klaviyo-reclaim#installation
   description: >
@@ -352,6 +355,7 @@
   description: Authorize.net CIM payments.
 
 - name: partnerads/magento2
+  shortname: partnerads
   url: https://github.com/PartnerAds/Magento2
   integration_url: https://github.com/breezefront/module-breeze-partnerads-magento2#installation
   description: Magento2 module for Partner Ads tracking.
@@ -378,6 +382,7 @@
     and other pages of your store.
 
 - name: plumrocket/module-prnewsletterpopup
+  shortname: newsletter-popup
   url: https://plumrocket.com/magento-newsletter-popup
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/plumrocket-newsletter-popup-integration#installation
   description: >
@@ -403,6 +408,7 @@
   description: Buy now button on the product listings, product, and search pages.
 
 - name: stripe/module-payments
+  shortname: stripe
   url: https://github.com/stripe/stripe-magento2-releases
   integration_url: https://github.com/breezefront/module-breeze-stripe-payments#installation
   description: >
