@@ -24,21 +24,35 @@ Extend your store functionality with our and third-party modules.
       <a href="{{ extension.integration_url | default: extension.url }}" target="_blank" rel="noopener nofollow"
         class="flex relative rounded-md group">
         <div class="flex gap-3.5 w-full ring ring-gray-200 p-3 lg:p-4.5 rounded-md">
-          <div class="shrink-0 w-16 h-16 rounded bg-gray-100"></div>
+          <div class="flex items-center shrink-0 w-16 h-16 rounded-md overflow-hidden whitespace-nowrap uppercase p-2 {{ extension.css | default: 'bg-gray-200/60 text-gray-50 text-4xl font-black' }}">
+            {%- if extension.logo -%}
+              {{ extension.logo }}
+            {%- elsif extension.shortname -%}
+              {{ extension.shortname }}
+            {%- else -%}
+              {{ extension.name
+                | split: '/'
+                | last
+                | remove: 'module-'
+                | remove: 'magento2-'
+                | remove: '-integration'
+              }}
+            {%- endif -%}
+          </div>
           <div class="flex flex-col">
             <div class="flex">
               <span class="text-xs font-semibold text-gray-500 uppercase">{{ extension.name | split: '/' | first }}</span>
               <span class="text-xs font-semibold text-gray-500 uppercase">/</span>
             </div>
             <div class="text-lg/6 font-bold break-all">
-              <span class="name pr-4">
+              <span class="name pr-[2ch]">
                 {%- if extension.shortname -%}
                   {{ extension.shortname }}
                 {%- else -%}
                   {{ extension.name | split: '/' | last | remove: 'module-' | remove: 'magento2-' | remove: '-integration' }}
                 {%- endif -%}
               </span>
-              <svg class="inline-block -mt-px -ml-5.5 transition opacity-0 shrink-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              <svg class="inline-block -mt-px -ml-6 transition opacity-0 shrink-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
             </div>
             <div class="description mt-1.5 text-sm text-gray-500 line-clamp-3">
               {{ extension.description }}

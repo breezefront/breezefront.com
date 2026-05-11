@@ -1,15 +1,21 @@
 - name: affirm/magento
   shortname: affirm
+  logo: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 167"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="white" d="M34.3 94.1c-11.3 0-24.4 5.4-31.5 11l6.5 13.6c5.7-5.2 14.9-9.6 23.2-9.6 7.9 0 12.2 2.6 12.2 7.9 0 3.6-2.9 5.4-8.3 6.1C16 125.7 0 131.3 0 147c0 12.4 8.9 20 22.7 20 9.9 0 18.7-5.5 22.9-12.7V165H64v-44.9c0-18.5-12.9-26-29.7-26zm-6.9 58.5c-5.2 0-7.8-2.5-7.8-6.7 0-7.8 8.7-10.4 24.6-12.1.1 10.4-7 18.8-16.8 18.8zm210.1-44.9V96.1h-18.4V165h19.7v-33.2c0-15.8 9.5-20.4 16.2-20.4 2.6 0 6.1.8 8.4 2.5l3.6-18.2c-3-1.3-6.2-1.6-8.8-1.6-10.1 0-16.5 4.5-20.7 13.6zm120.9-13.6c-10.4 0-18.2 6.2-22.3 12.1-3.8-7.7-11.7-12.1-21.3-12.1-10.4 0-17.6 5.8-21 12.4V96.1h-19V165h19.7v-35.5c0-12.7 6.7-18.8 12.9-18.8 5.6 0 10.8 3.6 10.8 13V165H338v-35.5c0-12.9 6.5-18.8 13-18.8 5.2 0 10.7 3.8 10.7 12.9V165h19.7v-47.6c0-15.5-10.4-23.3-23-23.3zM133.6 91v5.1h-29.9v-7c0-9.1 5.2-11.7 9.7-11.7 2.6 0 6 .6 8.8 2.2l6.1-13.9c-3.6-2.1-9.5-4-17.4-4-12.6 0-26.9 7.1-26.9 29.4v5.1H72.6v15.2H84V165h19.7v-53.7h29.9V165h19.7v-53.7h17.9V96.1h-17.9v-7c0-9.1 5.2-11.7 9.7-11.7 5 0 8.8 2.2 8.8 2.2l6.1-13.9s-6.2-4-17.4-4c-12.5-.1-26.9 7-26.9 29.3zm49.3 5.1h19.7V165h-19.7z"/><path fill="white" d="M297.7 0c-53.2 0-100.6 36.9-114 84.4H203C214.2 49 252.3 18 297.7 18c55.2 0 102.8 42 102.8 107.4 0 14.7-1.9 27.9-5.5 39.6h18.7l.2-.6c3.1-12.1 4.6-25.2 4.6-39C418.5 52.5 365.4 0 297.7 0"/></g></svg>
+  css: bg-black
   url: https://github.com/Affirm/Magento2_Affirm
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/astound-affirm-integration#installation
   description: Affirm for the Magento 2.
 
 - name: afterpay-global/module-afterpay
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Afterpay</title><path d="M12 0C5.373 0 0 5.373 0 12c0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12Zm1.236 4.924a2.21 2.21 0 0 1 1.15.299l4.457 2.557c1.495.857 1.495 3.013 0 3.87l-4.457 2.558c-1.488.854-3.342-.22-3.342-1.935v-.34a.441.441 0 0 0-.66-.383L6.287 13.9a.441.441 0 0 0 0 .765l4.096 2.35a.44.44 0 0 0 .661-.382v-.685c0-.333.36-.542.649-.376l1.041.597a.441.441 0 0 1 .222.383v.29c0 1.715-1.854 2.789-3.342 1.935L5.157 16.22c-1.495-.857-1.495-3.013 0-3.87l4.457-2.558c1.488-.854 3.342.22 3.342 1.935v.34c0 .34.366.551.66.383l4.097-2.35a.441.441 0 0 0 0-.765l-4.096-2.351a.441.441 0 0 0-.661.382v.685c0 .333-.36.541-.649.375l-1.041-.597a.442.442 0 0 1-.222-.383v-.29c0-1.285 1.043-2.21 2.192-2.233z"/></svg>
+  css: bg-[#B2FCE4]
   url: https://github.com/afterpay/afterpay-magento-2
   integration_url: https://github.com/breezefront/module-breeze-afterpay#installation
   description: Official Afterpay payment extension.
 
 - name: algolia/algoliasearch
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Algolia</title><path d="M12 0C5.445 0 .103 5.285.01 11.817c-.097 6.634 5.285 12.131 11.92 12.17a11.91 11.91 0 0 0 5.775-1.443.281.281 0 0 0 .052-.457l-1.122-.994a.79.79 0 0 0-.833-.14 9.693 9.693 0 0 1-3.923.77c-5.36-.067-9.692-4.527-9.607-9.888.084-5.293 4.417-9.573 9.73-9.573h9.73v17.296l-5.522-4.907a.407.407 0 0 0-.596.063 4.52 4.52 0 0 1-3.934 1.793 4.538 4.538 0 0 1-4.192-4.168 4.53 4.53 0 0 1 4.512-4.872 4.532 4.532 0 0 1 4.509 4.126c.018.205.11.397.265.533l1.438 1.275a.28.28 0 0 0 .462-.158 6.82 6.82 0 0 0 .099-1.725c-.232-3.376-2.966-6.092-6.345-6.3-3.873-.24-7.11 2.79-7.214 6.588-.1 3.7 2.933 6.892 6.634 6.974a6.75 6.75 0 0 0 4.136-1.294l7.212 6.394a.48.48 0 0 0 .797-.36V.456A.456.456 0 0 0 23.54 0Z"/></svg>
+  css: bg-[#003DFF] fill-white
   url: https://www.algolia.com/search-solutions/adobe-commerce-magento/
   integration_url: https://github.com/breezefront/module-breeze-algoliasearch#installation
   description: >
@@ -17,6 +23,8 @@
     Adobe Commerce with a robust autocomplete search menu and Instantsearch results page.
 
 - name: amasty/age-verification
+  logo: 18+
+  css: bg-red-100 text-red-500 text-4xl font-black
   url: https://amasty.com/age-verification-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-age-verification#installation
   description: >
@@ -25,6 +33,8 @@
     surrounding the sale of such items.
 
 - name: amasty/blog
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil-icon lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+  css: bg-pink-100 text-pink-500 justify-center
   url: https://amasty.com/blog-pro-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-blog#installation
   description: >
@@ -33,6 +43,8 @@
     your Magento 2 store.
 
 - name: amasty/ga4
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-combined-icon lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></svg>
+  css: bg-purple-100 text-purple-600 justify-center
   url: https://amasty.com/google-tag-manager-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-ga4#installation
   description: >
@@ -41,6 +53,8 @@
     events and extended performance reports.
 
 - name: amasty/hide-price
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-off-icon lucide-eye-off"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/></svg>
+  css: bg-green-100 text-green-500 justify-center
   url: https://amasty.com/hide-price-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-hide-price#installation
   description: >
@@ -49,6 +63,8 @@
 
 - name: amasty/aminvisiblecaptcha
   shortname: invisible-captcha
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+  css: bg-blue-100 text-blue-500 justify-center
   url: https://amasty.com/google-invisible-recaptcha-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-invisible-captcha-integration#installation
   description: >
@@ -57,12 +73,16 @@
     your website security becomes more user-friendly.
 
 - name: amasty/module-custom-forms-pro
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-form-icon lucide-form"><path d="M4 14h6"/><path d="M4 2h10"/><rect x="4" y="18" width="16" height="4" rx="1"/><rect x="4" y="6" width="16" height="4" rx="1"/></svg>
+  css: bg-yellow-100 text-yellow-500 justify-center
   url: https://amasty.com/custom-form-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-custom-forms-integration#installation
   description: >
     Use Magento 2 Form Builder to create web questionnaires of various types and effectively collect customer info.
 
 - name: amasty/module-faq-product-questions
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark-icon lucide-circle-question-mark"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+  css: bg-cyan-100 text-cyan-500 justify-center
   url: https://amasty.com/faq-and-product-questions-for-magento-2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/amasty-faq-integration#installation
   description: >
@@ -71,11 +91,15 @@
     and get valuable insights about your audience.
 
 - name: amasty/module-promo-countdown
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer-icon lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+  css: bg-orange-100 text-orange-500 justify-center
   url: https://amasty.com/countdown-timer-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-promo-countdown#installation
   description: Countdown timer widget for Magento.
 
 - name: amasty/mostviewed
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+  css: bg-indigo-100 text-indigo-500 justify-center
   url: https://amasty.com/automatic-related-products-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-mostviewed#installation
   description: >
@@ -85,6 +109,8 @@
     complement their orders with extra items.
 
 - name: amasty/request-quote
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-baggage-claim-icon lucide-baggage-claim"><path d="M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2"/><path d="M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10"/><rect width="13" height="8" x="8" y="6" rx="1"/><circle cx="18" cy="20" r="2"/><circle cx="9" cy="20" r="2"/></svg>
+  css: bg-emerald-100 text-emerald-500 justify-center
   url: https://amasty.com/request-a-quote-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-request-quote#required-patches
   description: >
@@ -92,6 +118,8 @@
     Magento 2 Quote Extension.
 
 - name: amasty/rewards
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-medal-icon lucide-medal"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg>
+  css: bg-yellow-200 text-yellow-700 justify-center
   url: https://amasty.com/reward-points-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-rewards#installation
   description: >
@@ -99,6 +127,8 @@
     an effective loyalty program with Magento 2 Reward Points extension.
 
 - name: amasty/shopby
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-funnel-icon lucide-funnel"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/></svg>
+  css: bg-fuchsia-100 text-fuchsia-500 justify-center
   url: https://amasty.com/improved-layered-navigation-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-shopby#required-patches
   description: >
@@ -107,6 +137,8 @@
     to help visitors instantly find the products they need.
 
 - name: amasty/stockstatus
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-boxes-icon lucide-boxes"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg>
+  css: bg-lime-100 text-lime-500 justify-center
   url: https://amasty.com/custom-stock-status-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-stockstatus#required-patches
   description: >
@@ -115,6 +147,8 @@
     attract customers' attention with catchy icons.
 
 - name: amasty/xnotif
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-ring-icon lucide-bell-ring"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M22 8c0-2.3-.8-4.3-2-6"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/><path d="M4 2C2.8 3.7 2 5.7 2 8"/></svg>
+  css: bg-teal-100 text-teal-500 justify-center
   url: https://amasty.com/out-of-stock-notification-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-xnotif#installation
   description: >
@@ -123,6 +157,8 @@
     the "most wanted" products and "recent activity" subscriptions, and many more.
 
 - name: amasty/xsearch
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scan-search-icon lucide-scan-search"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/><path d="m16 16-1.9-1.9"/></svg>
+  css: bg-cyan-100 text-cyan-500 justify-center
   url: https://amasty.com/advanced-search-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-amasty-xsearch#installation
   description: >
@@ -131,11 +167,15 @@
     keywords to upsell via flexibly customizable autocomplete popup.
 
 - name: avalara/avatax
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-percent-icon lucide-circle-percent"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="M9 9h.01"/><path d="M15 15h.01"/></svg>
+  css: bg-red-100 text-red-500 justify-center
   url: https://github.com/avadev/Avalara-AvaTax-for-Magento2
   integration_url: https://github.com/breezefront/module-breeze-avalara-avatax#installation
   description: Tax calculation at the shopping cart page.
 
 - name: backendorf/installment
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket-percent-icon lucide-ticket-percent"><path d="M2 9a3 3 0 1 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M9 9h.01"/><path d="m15 9-6 6"/><path d="M15 15h.01"/></svg>
+  css: bg-sky-100 text-sky-500 justify-center
   url: https://github.com/backendorf/magento2-installment
   integration_url: https://github.com/breezefront/module-breeze-backendorf-installment#installation
   description: >
@@ -143,6 +183,8 @@
     on the frontend.
 
 - name: best4mage/ucps
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-restart-icon lucide-list-restart"><path d="M21 5H3"/><path d="M7 12H3"/><path d="M7 19H3"/><path d="M12 18a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5c-1.33 0-2.54.54-3.41 1.41L11 14"/><path d="M11 10v4h4"/></svg>
+  css: bg-violet-100 text-violet-500 justify-center
   url: https://www.best4mage.com/magento-2-ultimate-configurable-products-suite.html
   integration_url: https://github.com/breezefront/module-breeze-best4mage-ucps#installation
   description: >
@@ -151,11 +193,15 @@
     for configurable product.
 
 - name: bsscommerce/simple-detail-configurable
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-list-icon lucide-layout-list"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><path d="M14 4h7"/><path d="M14 9h7"/><path d="M14 15h7"/><path d="M14 20h7"/></svg>
+  css: bg-yellow-100 text-yellow-500 justify-center
   url: https://bsscommerce.com/magento-2-simple-details-on-configurable-product-extension.html
   integration_url: https://github.com/breezefront/module-breeze-bss-simple-detail-configurable#installation
   description: Simple details on configurable product.
 
 - name: bsscommerce/quantity-dropdown
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-chevrons-up-down-icon lucide-list-chevrons-up-down"><path d="M3 5h8"/><path d="M3 12h8"/><path d="M3 19h8"/><path d="m15 8 3-3 3 3"/><path d="m15 16 3 3 3-3"/></svg>
+  css: bg-gray-100 text-gray-500 justify-center
   url: https://bsscommerce.com/magento-2-quantity-dropdown-extension.html
   integration_url: https://github.com/breezefront/module-breeze-bss-quantity-dropdown#installation
   description: >
@@ -163,6 +209,8 @@
     owners control over the number of items customers can select to purchase.
 
 - name: extend/module-warranty
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-star-icon lucide-circle-star"><circle cx="12" cy="12" r="10"/><path d="M11.051 7.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.867l-1.156-1.152a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z"/></svg>
+  css: bg-black text-white justify-center
   url: https://github.com/helloextend/magento-extension
   integration_url: https://github.com/breezefront/module-breeze-extend-warranty#installation
   description: >
@@ -171,6 +219,8 @@
     improving the customer experience.
 
 - name: fishpig/magento2-wordpress-integration
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WordPress</title><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg>
+  css: bg-[#21759B] fill-white
   url: https://fishpig.com/magento-2-wordpress-integration
   integration_url: https://github.com/breezefront/module-breeze-fishpig-wordpress
   description: >
@@ -178,6 +228,8 @@
     your Magento 2 website with this free Magento 2 extension.
 
 - name: firebear/configurableproducts
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-sliders-icon lucide-file-sliders"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M8 12h8"/><path d="M10 11v2"/><path d="M8 17h8"/><path d="M14 16v2"/></svg>
+  css: bg-green-100 text-green-500 justify-center
   url: https://firebearstudio.com/improved-configurable-products-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-firebear-configurableproducts#installation
   description: >
@@ -188,6 +240,8 @@
 
 - name: klaviyo/magento2-extension
   shortname: klaviyo
+  logo: <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 581 172"><style>.st0{fill:#fff}</style><path d="M329.9 34.4c3.1 0 6.1-1.2 8.3-3.3s3.5-5.1 3.6-8.1c0-3.1-1.3-6.1-3.5-8.3s-5.2-3.5-8.3-3.5c-3.1.1-6 1.3-8.2 3.6-2.2 2.2-3.4 5.2-3.3 8.2 0 3 1.2 5.9 3.4 8.1 2.1 2 5 3.2 8 3.3m80.6 11h28.6v2.3c-1.6.3-3.1.8-4.5 1.6-2.6 1.2-7.8 7.1-11.9 17-6.8 17.1-13.9 37.4-21.4 60.6l-2.8 8.8c-1.2 4-2.3 6.6-2.8 8.1-.5 1.6-1.2 4-2.4 6.9-.7 2.2-1.6 4.4-2.7 6.4-1.4 2.6-4 7.9-6.1 9.5-3.3 2.8-8.2 5.9-14.3 5.4-11.9 0-20.8-8.8-20.9-19.2 0-7.1 4.5-11.8 11.3-11.8 4.9 0 9.2 2.6 9.2 8.1 0 4-4 8.1-4 10.2 0 5.4 3.1 7.9 9.2 7.9 4.9 0 8.9-3.1 11.9-9.3 4-7.1 4.4-14.9 1-23.6l-25.1-66c-5.8-15.2-10.1-20.2-15.5-20.8v-2.3h39.6v2.3c-4.7.5-7.1 3.3-7.1 8.3 0 3.6 1.4 9.2 4 16.3l4.7 12.8c5.4 13.9 9.8 26 12 33.6 5.1-15.8 9.8-29.6 14.3-41.7 3.3-9 4.9-15.4 4.9-19.2 0-6.8-3.7-9.9-9.2-9.9zm-275.3 84.3c-5.1-.9-9.4-5.4-9.4-14.9V0L97 6.2v2.4c4.9-.5 9.8 3.8 9.8 13v93.2c0 9-4.9 14.2-9.8 14.9-.5.1-.9.1-1.4.2-2.5.2-5-.3-7.3-1.3-3.9-1.7-7.1-4.7-9.8-9.1L65.2 98.4c-2.8-4.5-7-7.9-11.9-9.8s-10.3-2.2-15.4-.8l15-16.5c11.3-12.5 21.8-20.4 31.7-23.7v-2.3h-33v2.3c8.5 3.3 8 10.6-1.8 22L28.8 94V0L0 6.2v2.4c4.9 0 9.8 4.8 9.8 13.3v92.8C9.8 125 5 129 0 129.7v2.3h38.2v-2.3c-6.3-.9-9.4-5.7-9.4-14.9V97.7l8.2-9 19.8 32.4c4.7 7.8 9.1 10.9 16 10.9h66.4v-1.8c.1 0-1.8-.1-4-.5m79.2-10.9V80c-.4-25.3-11.1-36.9-35.6-36.9-7.8-.1-15.4 2.5-21.6 7.3-6.5 4.9-9.6 10.4-9.6 16.8 0 6.2 3.5 10.9 9.2 10.9 6.1 0 10.5-3.5 10.5-8.3 0-3.6-2.4-8.7-2.4-12.1 0-6.2 4.7-11.6 12.9-11.6 10.5 0 18 7.8 18 25.1v10.4l-8.7 2.1c-4.5.9-8.4 1.8-11.3 2.6-3 .9-6.8 2.1-11.3 3.8-9.1 3.5-13.9 6.8-18.1 13-2.1 3-3.1 6.6-3.1 10.2 0 14.4 10.1 21 24.2 21 11.2 0 23-5.9 28.4-17 .1 3.5.9 6.9 2.5 10.1 5.9 11.9 25.5 4.9 25.5 4.9V130c-8.8 1.3-9.5-8.8-9.5-11.2m-18.6-12c0 5.7-2.1 10.4-6.3 13.7-4 3.3-8.2 5-12.6 5-8.5 0-14.1-5.5-14.1-15.8 0-4.8 2.7-9.3 4.9-11.9 1.8-1.8 3.8-3.3 6.1-4.3 3-1.6 4.4-2.4 6.5-3.3l8-2.9c4-1.6 6.4-2.4 7.5-2.9zM581 45.4h-67.8V0H581l-14.2 22.7zm-137.9 75.5c-8.4-8.6-13.1-20.2-12.9-32.3-.1-5.9 1-11.8 3.2-17.3s5.5-10.5 9.7-14.8c8.6-9 19-13.5 31.3-13.5 12 0 22.5 4.5 31.1 13.5 4.2 4.2 7.6 9.2 9.8 14.7 2.3 5.5 3.4 11.4 3.3 17.4.1 6-1 11.9-3.3 17.4s-5.6 10.6-9.8 14.8c-8.6 8.8-19 13.4-31.1 13.4-12.2.1-22.7-4.4-31.3-13.3m47-62.9c-3.4-6.7-8-10.6-13.3-11.7-10.8-2.2-20.3 8.9-23.9 26.4-1.5 7.9-1.9 15.9-1.1 23.8.8 8 3 15.7 6.6 22.9 3.5 6.7 8 10.6 13.3 11.7 10.8 2.2 20.6-9.3 24.2-27 3-14.8 1.5-32.8-5.8-46.1" class="st0"/><path d="M340 114.8V45.4h-61.4v2.1c8.2 1.2 12.1 7.4 8.4 17.3-19.2 51.8-18 49.5-19.2 53.6-1.2-4-4-13.8-8.5-26.1s-7.5-20.4-8.7-24.1c-4.7-14.4-3.1-19.7 4.5-20.6v-2.3h-39.8v2.3c5.9 1.2 11.2 8 15.5 20.1l6.1 15.8c6.7 17 14.6 40.5 17.2 48.5h13.2c4.3-12.3 21.3-61.5 23.6-66.5 2.5-5.7 5.3-10 8.4-13 1.5-1.6 3.3-2.9 5.4-3.7 2-.8 4.2-1.3 6.4-1.2 0 0 9.6 0 9.6 9.2v58.1c0 9.7-4.7 14.2-9.6 14.9v2.3h38v-2.3c-4.9-.8-9.1-5.3-9.1-15" class="st0"/></svg>
+  css: bg-[#F86353] fill-white
   url: https://github.com/klaviyo/magento2-klaviyo
   integration_url: https://github.com/breezefront/module-breeze-klaviyo-reclaim#installation
   description: >
@@ -195,11 +249,15 @@
     platform and more.
 
 - name: landofcoder/estimate-shipping-rate
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck-electric-icon lucide-truck-electric"><path d="M14 19V7a2 2 0 0 0-2-2H9"/><path d="M15 19H9"/><path d="M19 19h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 9.38a1 1 0 0 0-.78-.38H14"/><path d="M2 13v5a1 1 0 0 0 1 1h2"/><path d="M4 3 2.15 5.15a.495.495 0 0 0 .35.86h2.15a.47.47 0 0 1 .35.86L3 9.02"/><circle cx="17" cy="19" r="2"/><circle cx="7" cy="19" r="2"/></svg>
+  css: bg-gray-100 text-gray-600 justify-center
   url: https://github.com/landofcoder/module-simple-calculate-shipping-rate
   integration_url: https://github.com/breezefront/module-breeze-landofcoder-estimate-shipping-rate#installation
   description: This module allows you to calculate shipping rates on product page.
 
 - name: landofcoder/request-for-quote
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket-icon lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>
+  css: bg-orange-100 text-orange-500 justify-center
   url: https://landofcoder.com/magento-2-quote-extension.html
   integration_url: https://github.com/breezefront/module-breeze-lof-requestforquote?tab=readme-ov-file#installation
   description: >
@@ -210,6 +268,8 @@
     the module personalizes customers' orders and increases their retention, loyalty.
 
 - name: magedelight/membership-subscription
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-key-icon lucide-user-key"><path d="M20 11v6"/><path d="M20 13h2"/><path d="M3 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 2.072.578"/><circle cx="10" cy="7" r="4"/><circle cx="20" cy="19" r="2"/></svg>
+  css: bg-purple-500 text-white justify-center
   url: https://www.magedelight.com/membership-subscription-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-magedelight-membership-subscription#installation
   description: >
@@ -217,6 +277,8 @@
     membership subscription plans and discounts on different products.
 
 - name: magefan/blog
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-icon lucide-pen"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></svg>
+  css: bg-yellow-100 text-yellow-500 justify-center
   url: https://magefan.com/magento2-blog-extension
   integration_url: https://github.com/breezefront/module-breeze-magefan-blog#installation
   description: >
@@ -226,6 +288,8 @@
     to have a blog on the Magento store!
 
 - name: magefan/webp-images
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-icon lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+  css: bg-blue-100 text-blue-500 justify-center
   url: https://magefan.com/magento-2-webp-optimized-images
   description: >
     Magento 2 WebP Images allow you to improve your website loading speed
@@ -233,6 +297,8 @@
     with fallback to original image for the older browsers.
 
 - name: mageme/module-easyquote
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag-icon lucide-shopping-bag"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>
+  css: bg-teal-100 text-teal-500 justify-center
   url: https://mageme.com/magento-2-quote-extension.html
   integration_url: https://docs.mageme.com/easyquote/breeze-compatibility
   description: >
@@ -241,6 +307,8 @@
     powerful admin tools for fast, efficient customer interaction.
 
 - name: mageme/module-webforms-3
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-form-icon lucide-form"><path d="M4 14h6"/><path d="M4 2h10"/><rect x="4" y="18" width="16" height="4" rx="1"/><rect x="4" y="6" width="16" height="4" rx="1"/></svg>
+  css: bg-indigo-100 text-indigo-500 justify-center
   url: https://mageme.com/magento-2-form-builder.html
   integration_url: https://docs.mageme.com/webforms-pro-3/breeze-compatibility
   description: >
@@ -248,6 +316,8 @@
     various purposes such as contact forms, surveys, and product inquiries.
 
 - name: mageme/module-webforms-3-product-options
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-form-icon lucide-form"><path d="M4 14h6"/><path d="M4 2h10"/><rect x="4" y="18" width="16" height="4" rx="1"/><rect x="4" y="6" width="16" height="4" rx="1"/></svg>
+  css: bg-pink-100 text-pink-500 justify-center
   url: https://mageme.com/magento-2-advanced-product-options.html
   integration_url: https://docs.mageme.com/webforms-pro-3/breeze-compatibility
   description: >
@@ -256,12 +326,16 @@
     image swatches, multi-step forms, and popup options.
 
 - name: magenable/purchase-partner-url
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+  css: bg-red-100 text-red-500 justify-center
   url: https://github.com/magenable/module-purchase-partner-url
   description: >
     This module allows you to replace standard "Add to Cart" button with links
     to external websites where visitors may purchase the products.
 
 - name: magento/payment-services
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 32 32"><path d="M30.996 2.724H19.894l11.102 26.552zm-18.89 0H1.004v26.552zm6.351 26.552-2.112-5.35h-5.191l4.864-11.427 7.075 16.776z"/></svg>
+  css: bg-red-500 fill-white
   url: https://experienceleague.adobe.com/en/docs/commerce/payment-services/introduction
   integration_url: https://github.com/breezefront/module-breeze-magento-payment-services#installation
   description: >
@@ -270,6 +344,8 @@
     for providing robust and secure payment processing for your Commerce websites.
 
 - name: magento/project-enterprise-edition
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 32 32"><path d="M30.996 2.724H19.894l11.102 26.552zm-18.89 0H1.004v26.552zm6.351 26.552-2.112-5.35h-5.191l4.864-11.427 7.075 16.776z"/></svg>
+  css: bg-red-500 fill-white
   url: https://business.adobe.com/ua/products/magento/magento-commerce.html
   integration_url: https://github.com/breezefront/module-breeze-magento-enterprise#installation
   description: >
@@ -277,11 +353,15 @@
     Magento Open Source with various B2B and B2C solutions.
 
 - name: mageworx/advancedproductoptions
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-chevrons-up-down-icon lucide-list-chevrons-up-down"><path d="M3 5h8"/><path d="M3 12h8"/><path d="M3 19h8"/><path d="m15 8 3-3 3 3"/><path d="m15 16 3 3 3-3"/></svg>
+  css: bg-gray-100 text-gray-600 justify-center
   url: https://www.mageworx.com/magento-2-advanced-product-options-suite.html
   integration_url: https://github.com/breezefront/module-breeze-mageworx-advancedproductoptions#description
   description: Powerful module to manage product customizable options.
 
 - name: meta/meta-for-magento2
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Meta</title><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg>
+  css: bg-[#0467DF] fill-white
   url: https://commercemarketplace.adobe.com/meta-meta-for-magento2.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/meta-conversion-integration#installation
   description: >
@@ -291,6 +371,8 @@
     a checkout-enabled Shop on Facebook & Instagram.
 
 - name: mirasvit/affiliate
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake-icon lucide-heart-handshake"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762"/></svg>
+  css: bg-green-100 text-green-500 justify-center
   url: https://mirasvit.com/magento-2-extensions/affiliate.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-affiliate#installation
   description: >
@@ -299,6 +381,8 @@
     Increase sales from alternative channels and let your affiliates earn extra money.
 
 - name: mirasvit/cachewarmer
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-check-icon lucide-clock-check"><path d="M12 6v6l4 2"/><path d="M22 12a10 10 0 1 0-11 9.95"/><path d="m22 16-5.5 5.5L14 19"/></svg>
+  css: bg-yellow-100 text-yellow-500 justify-center
   url: https://mirasvit.com/magento-2-extensions/full-page-cache-warmer.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-cachewarmer#installation
   description: >
@@ -307,6 +391,8 @@
     variant will be loaded in a fraction of seconds from the cache.
 
 - name: mirasvit/googletagmanager
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-candlestick-icon lucide-chart-candlestick"><path d="M9 5v4"/><rect width="4" height="6" x="7" y="9" rx="1"/><path d="M9 15v2"/><path d="M17 3v2"/><rect width="4" height="8" x="15" y="5" rx="1"/><path d="M17 13v3"/><path d="M3 3v16a2 2 0 0 0 2 2h16"/></svg>
+  css: bg-blue-600 text-white justify-center
   url: https://mirasvit.com/magento-2-google-tag-manager.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/mirasvit-gtm-integration#description
   description: >
@@ -316,6 +402,8 @@
     the shopping process in your store.
 
 - name: mirasvit/helpdesk
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-question-mark-icon lucide-message-circle-question-mark"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+  css: bg-pink-500 text-white justify-center
   url: https://mirasvit.com/magento-2-extensions/helpdesk.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/mirasvit-helpdesk-integration#installation
   description: >
@@ -323,6 +411,8 @@
     process all inquiries, emails, and offline chats in one place!
 
 - name: mirasvit/module-gdpr
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-user-icon lucide-shield-user"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M6.376 18.91a6 6 0 0 1 11.249.003"/><circle cx="12" cy="11" r="4"/></svg>
+  css: bg-emerald-100 text-emerald-500 justify-center
   url: https://mirasvit.com/magento-2-gdpr.html
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/mirasvit-gdpr-integration#installation
   description: >
@@ -331,11 +421,15 @@
     data protection, CNIL and LGPD standards.
 
 - name: mirasvit/reward-points
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award-icon lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+  css: bg-violet-500 text-white justify-center
   url: https://mirasvit.com/magento-2-extensions/reward-points-referral-program.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-rewards#installation
   description: Reward points and referral program extension.
 
 - name: mirasvit/search-ultimate
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+  css: bg-blue-600 text-white justify-center
   url: https://mirasvit.com/magento-2-extensions/sphinx-search-ultimate.html
   integration_url: https://github.com/breezefront/module-breeze-mirasvit-search-ultimate#installation
   description: >
@@ -343,6 +437,7 @@
     stopwords and synonyms for search queries.
 
 - name: nosto/module-nostotagging
+  logo: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 34" width="150" height="34"><defs><clipPath id="a"><path fill="none" d="M-2-2h150v34H-2z" data-name="Rectangle 5"/></clipPath></defs><g clip-path="url(#a)" data-name="Group 3" transform="translate(2 2)"><path fill="#211c1f" fill-rule="evenodd" d="M104.247 24.53a6.113 6.113 0 0 1-6.156-6.384 6.159 6.159 0 1 1 12.307 0 6.11 6.11 0 0 1-6.151 6.388Zm0-18.621a12.213 12.213 0 1 0 12.4 12.238 12.175 12.175 0 0 0-12.4-12.238m-91.241 0a8.14 8.14 0 0 0-3.9.851A8.6 8.6 0 0 0 6 9.4V6.418H0v23.9h6.214V18.413c0-4.143 1.854-6.559 5.072-6.559 3.13 0 4.586 2.509 4.586 6.559v11.919h6.218V17.355c0-8.7-4.451-11.441-9.083-11.441m51.076 9.494c-3.372-.369-5.4-.507-5.4-2.264 0-1.574 1.664-2.546 4.113-2.546 2.678 0 4.481 1.3 4.668 3.036h6.193c-.331-4.858-4.673-7.678-11.057-7.725-6.067 0-10.167 3.1-10.167 7.807 0 4.906 4.3 6.107 9.8 6.8 3.788.46 5.452.646 5.452 2.542 0 1.735-1.8 2.6-4.481 2.6-2.912 0-4.9-1.431-5.084-3.513h-6.19c.23 5.087 4.767 8.184 11.32 8.184 6.379 0 10.77-3.006 10.77-7.72 0-5.352-4.529-6.6-9.937-7.2m-26.49 9.116a6.11 6.11 0 0 1-6.154-6.379 6.158 6.158 0 1 1 12.3 0 6.11 6.11 0 0 1-6.15 6.384Zm0-18.617a12.213 12.213 0 1 0 0 24.423 12.213 12.213 0 1 0 0-24.423M83.206 0H77.12v19.979c0 3.323.518 5.392 1.671 6.982 1.546 2.117 4.215 3.37 7.866 3.37a14.6 14.6 0 0 0 3.793-.484l-.936-5.3a14 14 0 0 1-2.481.242 3.77 3.77 0 0 1-3.091-1.154 4.4 4.4 0 0 1-.752-2.935v-8.9h7.494V6.5h-7.478Z" data-name="Path 2"/><path fill="#ff66bf" d="M123.679 15.064a5.5 5.5 0 0 1 3.921-9.278h13.363a5.45 5.45 0 0 1 5.41 5.494v13.547a5.4 5.4 0 0 1-9.142 3.977l-7.325-7.087Z" data-name="Path 3"/></g></svg>
   url: https://github.com/Nosto/nosto-magento2
   integration_url: https://github.com/breezefront/module-breeze-nosto#installation
   description: >
@@ -350,22 +445,29 @@
     customers personalized product recommendations throughout their shopping journey.
 
 - name: paradoxlabs/authnetcim
+  logo: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 191"><defs><clipPath id="a"><path d="M447.88 798h11.125v11H447.88z"/></clipPath><clipPath id="b"><path d="M508 793.98h4v4.016h-4z"/></clipPath><clipPath id="c"><path d="M558 795h8.93v14H558z"/></clipPath><clipPath id="d"><path d="M508 813h7v7.512h-7z"/></clipPath><clipPath id="e"><path d="M515 813h2v7.512h-2z"/></clipPath><clipPath id="f"><path d="M517 815h5v5.512h-5z"/></clipPath><clipPath id="g"><path d="M522 815h5v5.512h-5z"/></clipPath><clipPath id="h"><path d="M530 813h6v7.512h-6z"/></clipPath><clipPath id="i"><path d="M536 815h6v5.512h-6z"/></clipPath><clipPath id="j"><path d="M542 813h1v7.512h-1z"/></clipPath><clipPath id="k"><path d="M544 815h5v5.512h-5z"/></clipPath><clipPath id="l"><path d="M549 813h5v7.512h-5z"/></clipPath><clipPath id="m"><path d="M554 813h2v7.512h-2z"/></clipPath><clipPath id="n"><path d="M556 815h6v5.512h-6z"/></clipPath><clipPath id="o"><path d="M562 815h4.93v5.512H562z"/></clipPath><clipPath id="p"><path d="M500 813h7v7.512h-7z"/></clipPath></defs><g clip-path="url(#a)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#19303f" d="M451.26 803.16q0 .824.563 1.402c.378.387.84.579 1.378.579q.815 0 1.383-.579.563-.577.563-1.402 0-.822-.563-1.402a1.86 1.86 0 0 0-1.383-.578q-.81-.001-1.379.578a1.94 1.94 0 0 0-.562 1.402m3.844 4.352v-.164c-.317.3-.668.527-1.063.68a3.7 3.7 0 0 1-1.289.226q-2.062 0-3.469-1.477-1.406-1.471-1.406-3.617c0-2.146.469-2.633 1.406-3.617.938-.985 2.094-1.473 3.47-1.473.46 0 .894.074 1.288.223.395.152.746.375 1.063.672v-.172q.001-.2.125-.328a.46.46 0 0 1 .324-.125h2.46q.2.001.329.125a.46.46 0 0 1 .125.328v8.719a.44.44 0 0 1-.133.324.41.41 0 0 1-.308.137h-2.453a.46.46 0 0 1-.329-.137.44.44 0 0 1-.14-.324"/></g><path fill="#19303f" d="M220.05 150.36c5.885 0 10.312-1.667 13.333-5.052q4.53-5.079 4.531-14.844V63.537c0-1.459.625-2.709 1.927-3.802 1.303-1.094 2.76-1.615 4.375-1.615h32.396c1.615 0 3.073.52 4.375 1.615 1.25 1.093 1.927 2.343 1.927 3.802v72.969c0 15.677-5.677 28.593-17.03 38.697-11.303 10.157-26.512 15.209-45.574 15.209-19.219 0-34.635-5.104-46.302-15.313q-17.5-15.312-17.5-38.593V63.537c0-1.459.625-2.709 1.876-3.802 1.249-1.094 2.656-1.615 4.27-1.615h32.448c1.615 0 3.073.52 4.427 1.615 1.303 1.093 1.98 2.343 1.98 3.802v66.927c0 6.354 1.614 11.25 4.791 14.739q4.845 5.157 13.75 5.157M356.56 189.11c-14.062 0-25.26-3.698-33.698-11.042-8.385-7.396-12.604-17.552-12.604-30.573V95.256h-13.229c-1.615 0-3.02-.57-4.167-1.823-1.145-1.199-1.77-2.657-1.77-4.427v-9.271c0-2.761.26-4.948.78-6.667.521-1.667 1.511-3.281 2.865-4.844l31.927-35.416c2.76-2.969 5-4.948 6.823-5.782 1.823-.89 4.167-1.354 7.031-1.354h8.594c1.667 0 3.125.57 4.27 1.771 1.198 1.145 1.772 2.552 1.772 4.271V58.12h28.229c1.666 0 3.125.57 4.322 1.771 1.2 1.145 1.823 2.552 1.823 4.271v24.844c0 1.77-.625 3.229-1.823 4.427-1.197 1.249-2.656 1.823-4.322 1.823h-28.23v42.812c0 3.125.834 5.625 2.5 7.396 1.72 1.823 4.011 2.76 6.876 2.76 1.718 0 3.49-.36 5.416-1.041 1.98-.68 4.167-1.771 6.667-3.229 2.5-1.407 4.583-1.927 6.302-1.511 1.77.36 3.386 1.667 4.896 3.854l11.354 16.98c1.25 1.927 1.875 3.854 1.77 5.781-.05 1.927-.832 3.646-2.239 5.052-4.583 4.687-10.677 8.333-18.177 10.99s-15.469 4.01-23.958 4.01M475.47 93.438c-6.094 0-11.094 1.927-15.052 5.729-3.958 3.854-5.886 8.958-5.886 15.416v65.938q0 2.656-1.718 4.375c-1.094 1.093-2.552 1.667-4.323 1.667h-32.812c-1.77 0-3.23-.57-4.323-1.667q-1.718-1.718-1.719-4.375V10.991q0-2.656 1.719-4.375c1.093-1.094 2.552-1.667 4.323-1.667h32.812c1.77 0 3.23.57 4.323 1.667q1.718 1.718 1.718 4.375v62.448c4.063-6.198 9.271-10.886 15.625-14.115q9.453-4.844 21.72-4.844c16.197 0 28.437 4.844 36.718 14.427 8.334 9.636 12.5 23.594 12.5 41.927v69.688c0 1.771-.573 3.229-1.666 4.375-1.146 1.093-2.604 1.667-4.375 1.667h-32.76c-1.823 0-3.23-.57-4.375-1.667-1.093-1.145-1.667-2.604-1.667-4.375v-65.938c0-6.458-1.927-11.562-5.78-15.416-3.907-3.802-8.855-5.729-15-5.729M597.19 122.4c0 7.344 2.5 13.542 7.5 18.698 5.052 5.156 11.198 7.708 18.385 7.708 7.24 0 13.385-2.552 18.438-7.708 5-5.156 7.5-11.354 7.5-18.698 0-7.292-2.5-13.542-7.5-18.698-5.052-5.156-11.198-7.708-18.438-7.708-7.187 0-13.333 2.552-18.385 7.708-5 5.156-7.5 11.406-7.5 18.698m-45.104 0c0-18.802 6.927-34.844 20.729-48.073 13.854-13.177 30.573-19.792 50.26-19.792 19.74 0 36.51 6.615 50.312 19.792 13.854 13.229 20.729 29.271 20.729 48.073s-6.875 34.844-20.729 48.073q-20.703 19.844-50.312 19.844c-19.687 0-36.406-6.615-50.26-19.844-13.802-13.229-20.729-29.271-20.729-48.073M712.6 58.125h23.386c2.552 0 4.74.57 6.562 1.823 1.823 1.197 3.282 3.021 4.428 5.417l3.593 8.073c4.74-5.625 9.636-9.948 14.635-12.917 5.052-2.969 9.948-4.427 14.792-4.427q7.813 0 11.875 3.437c2.709 2.292 3.75 5.521 3.177 9.792l-3.593 29.323c-.468 3.385-1.563 5.885-3.282 7.604-1.666 1.667-3.958 2.552-6.875 2.552-.937 0-1.979-.16-3.02-.31-1.042-.21-2.605-.62-4.688-1.145-2.292-.73-4.062-1.199-5.26-1.406a19 19 0 0 0-3.386-.31c-4.114 0-7.448 1.197-9.896 3.645-2.5 2.396-3.75 5.677-3.75 9.896v61.979c0 1.407-.625 2.709-1.875 3.802-1.249 1.094-2.656 1.615-4.27 1.615h-32.708c-1.771 0-3.177-.57-4.323-1.719-1.146-1.093-1.667-2.5-1.667-4.218V64.171c0-1.719.573-3.125 1.719-4.323 1.145-1.145 2.656-1.718 4.427-1.718"/><g clip-path="url(#b)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#0073ff" d="M511.8 795.82q0 .743-.555 1.281c-.37.36-.812.535-1.324.535-.516 0-.957-.175-1.332-.535a1.7 1.7 0 0 1-.558-1.281c0-.496.183-.926.558-1.29s.817-.546 1.332-.546q.768.001 1.324.547.556.545.555 1.289"/></g><path fill="#19303f" d="m974.74 93.229-50.886 54.948h50.677c1.667 0 3.073.63 4.219 1.719 1.093 1.145 1.666 2.552 1.666 4.219v26.51c0 1.719-.573 3.125-1.666 4.219q-1.719 1.718-4.219 1.719h-105.31c-1.667 0-3.125-.63-4.375-1.823-1.25-1.198-1.875-2.657-1.875-4.323v-21.823c0-1.563.208-2.813.625-3.854.364-1.042 1.093-2.136 2.135-3.125l51.98-55.157H871.2c-1.72 0-3.178-.57-4.375-1.77-1.198-1.25-1.823-2.709-1.823-4.375V64.375q0-2.5 1.875-4.375c1.249-1.249 2.708-1.875 4.322-1.875h100.21c1.667 0 3.125.62 4.323 1.875 1.198 1.249 1.823 2.708 1.823 4.375v21.719c0 1.51-.208 2.812-.625 3.854q-.624 1.562-2.187 3.281M1032.5 105.78h42.604q-1.327-7.5-7.188-12.187c-3.906-3.177-8.437-4.74-13.698-4.74-5.156 0-9.74 1.563-13.802 4.74-4.062 3.125-6.666 7.187-7.916 12.187m80.729 59.792c-5.156 7.5-12.865 13.49-23.073 17.969s-21.354 6.771-33.49 6.771c-20.521 0-37.344-6.407-50.47-19.115-13.176-12.76-19.74-28.802-19.74-48.177 0-20.104 6.199-36.563 18.49-49.323 12.345-12.813 28.543-19.219 48.543-19.219q28.985 0 47.03 18.438 18.126 18.358 18.126 45.156v7.344c0 2.812-.625 5.052-1.823 6.771-1.197 1.666-2.917 2.5-5.208 2.5h-80.052c1.197 5.937 4.114 10.677 8.802 14.114 4.635 3.438 10.312 5.209 16.875 5.209 4.427 0 8.49-.83 12.24-2.448 3.75-1.615 7.343-4.115 10.78-7.605 1.563-1.51 3.126-2.343 4.792-2.5 1.667-.16 3.334.31 5.104 1.459l21.72 14.218c1.51.99 2.395 2.24 2.604 3.855.208 1.614-.26 3.125-1.25 4.583"/><path fill="#ffc200" d="M1185.7 161.46c0 7.917-2.813 14.688-8.49 20.313-5.677 5.677-12.5 8.542-20.469 8.542-7.864 0-14.636-2.865-20.26-8.542q-8.438-8.437-8.438-20.313c0-7.968 2.812-14.739 8.437-20.364s12.396-8.438 20.261-8.438q11.953 0 20.47 8.438c5.676 5.625 8.489 12.396 8.489 20.364"/><path fill="#19303f" d="M1265.1 93.438c-6.146 0-11.146 1.927-15.104 5.729-3.906 3.854-5.885 8.958-5.885 15.416v65.938q0 2.656-1.72 4.375c-1.092 1.093-2.551 1.667-4.322 1.667h-32.813c-1.77 0-3.177-.57-4.323-1.667q-1.718-1.718-1.719-4.375V64.171q0-2.656 1.72-4.375c1.145-1.094 2.551-1.667 4.322-1.667h32.813c1.77 0 3.23.57 4.323 1.667q1.718 1.718 1.719 4.375v9.271c4.114-6.198 9.27-10.886 15.625-14.115q9.453-4.844 21.719-4.844c16.198 0 28.438 4.844 36.77 14.427 8.282 9.636 12.449 23.594 12.449 41.927v69.688c0 1.771-.573 3.229-1.667 4.375-1.145 1.093-2.604 1.667-4.375 1.667h-32.76c-1.77 0-3.23-.57-4.375-1.667-1.093-1.145-1.667-2.604-1.667-4.375v-65.938c0-6.458-1.927-11.562-5.78-15.416-3.855-3.802-8.855-5.729-14.949-5.729M1387.9 105.78h42.552c-.885-5-3.281-9.062-7.136-12.187-3.906-3.177-8.49-4.74-13.698-4.74-5.156 0-9.74 1.563-13.802 4.74-4.062 3.125-6.718 7.187-7.916 12.187m80.677 59.792c-5.157 7.5-12.812 13.49-23.021 17.969-10.208 4.479-21.406 6.771-33.542 6.771-20.521 0-37.344-6.407-50.47-19.115-13.124-12.76-19.687-28.802-19.687-48.177 0-20.104 6.146-36.563 18.49-49.323 12.344-12.813 28.49-19.219 48.542-19.219q28.906 0 47.03 18.438c12.032 12.239 18.074 27.291 18.074 45.156v7.344c0 2.812-.573 5.052-1.823 6.771q-1.797 2.5-5.156 2.5h-80.052c1.197 5.937 4.114 10.677 8.802 14.114 4.635 3.438 10.26 5.209 16.875 5.209 4.427 0 8.49-.83 12.24-2.448 3.75-1.615 7.291-4.115 10.78-7.605 1.511-1.51 3.126-2.343 4.74-2.5 1.667-.16 3.386.31 5.156 1.459l21.667 14.218c1.563.99 2.448 2.24 2.605 3.855.208 1.614-.208 3.125-1.25 4.583"/><g clip-path="url(#c)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#19303f" d="M563.6 808.17q-1.583 0-2.527-.828-.948-.83-.946-2.293v-3.918h-.996a.4.4 0 0 1-.312-.137.46.46 0 0 1-.133-.332v-.695q0-.308.062-.5.06-.187.211-.363l2.395-2.657c.207-.222.375-.37.512-.433q.203-.101.53-.102h.642q.192-.001.32.133.134.128.133.32v1.98h2.117q.188 0 .324.134.136.127.137.32v1.863a.45.45 0 0 1-.137.332.43.43 0 0 1-.324.137h-2.117v3.21q0 .355.187.556a.68.68 0 0 0 .52.207q.188-.001.406-.079c.218-.078.309-.132.496-.242.188-.105.344-.144.477-.113q.193.042.363.29l.851 1.272c.098.145.141.29.137.434a.55.55 0 0 1-.172.379q-.514.527-1.363.824-.844.3-1.793.301"/></g><g clip-path="url(#d)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M512.31 820.32c-.02.066-.04.098-.11.098h-.898c-.07 0-.09-.032-.11-.098l-2.39-6.668q-.028-.099.078-.098h.762c.07 0 .102.032.121.098l1.988 5.785 1.993-5.785c.02-.066.047-.098.117-.098h.762c.07 0 .101.032.082.098z"/></g><g clip-path="url(#e)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M515.54 813.65q-.001-.099.098-.098h.843q.1-.001.098.098v.844c0 .07-.031.097-.098.097h-.843c-.067 0-.098-.027-.098-.097zm.137 1.941c0-.07.03-.097.097-.097h.57c.067 0 .098.027.098.097v4.727q.002.098-.097.098h-.57q-.1 0-.098-.098z"/></g><g clip-path="url(#f)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M519.51 820.51c-1.144 0-2.066-.676-2.066-1.598 0-.058.027-.097.097-.097h.625c.07 0 .09.027.102.097.078.57.539.871 1.273.871.656 0 1.137-.203 1.137-.714 0-.508-.434-.688-1.434-.844-1.176-.184-1.676-.567-1.676-1.43 0-.902.825-1.402 1.864-1.402 1.097 0 1.773.558 1.894 1.41 0 .059-.03.098-.097.098h-.551c-.07 0-.078-.028-.098-.098-.148-.48-.648-.684-1.176-.684-.629 0-1.07.215-1.07.657 0 .48.395.644 1.383.824.941.164 1.765.441 1.765 1.371 0 .988-.824 1.54-1.972 1.54"/></g><g clip-path="url(#g)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M522.68 816.95c-.04 0-.07-.02-.07-.059 0-.02 0-.058.011-.097.196-.746.832-1.403 1.98-1.403 1.138 0 1.95.688 1.95 1.715v2.364c0 .468.04.609.168.843.008.02.02.028.02.047 0 .04-.032.051-.079.051h-.773c-.07 0-.098-.031-.098-.098v-.511c-.316.433-.914.707-1.609.707-.852 0-1.766-.508-1.766-1.559 0-1.09.883-1.637 1.993-1.637.488 0 .968.098 1.382.215v-.273c0-.735-.433-1.14-1.187-1.14-.578 0-.973.277-1.16.745-.028.078-.074.09-.137.09zm1.773 1.09c-.695 0-1.234.254-1.234.86 0 .57.39.882 1.047.882.824 0 1.523-.54 1.523-1.527a4 4 0 0 0-1.336-.215"/></g><g clip-path="url(#h)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M532.66 813.45c1.48 0 2.324.91 2.352 1.91 0 .07-.028.102-.098.102h-.629c-.066 0-.094-.031-.094-.102-.043-.676-.707-1.125-1.53-1.125-.833 0-1.481.371-1.481 1.008 0 .734.785 1.012 1.812 1.285 1.254.332 2.246.793 2.246 1.883 0 1.41-1.047 2.098-2.53 2.098-1.423 0-2.528-.883-2.528-2.176 0-.07.027-.098.097-.098h.63c.066 0 .097.028.097.098.027.793.684 1.39 1.703 1.39 1.063 0 1.707-.39 1.707-1.261 0-.688-.844-.953-1.793-1.2-1.344-.34-2.265-.824-2.265-1.98 0-1.207 1.078-1.832 2.304-1.832"/></g><g clip-path="url(#i)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M538.6 815.39c1.41 0 2.5 1 2.5 2.559 0 1.558-1.09 2.558-2.5 2.558-1.414 0-2.5-1-2.5-2.558 0-1.559 1.086-2.559 2.5-2.559m0 4.39c1.008 0 1.695-.734 1.695-1.831 0-1.098-.687-1.832-1.695-1.832-1.012 0-1.695.734-1.695 1.832 0 1.097.683 1.832 1.695 1.832"/></g><g clip-path="url(#j)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M542.22 813.65q-.001-.099.098-.098h.57q.098-.001.098.098v6.668q.001.098-.098.098h-.57q-.1 0-.098-.098z"/></g><g clip-path="url(#k)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M548.39 820.32c0 .066-.027.098-.098.098h-.57q-.099 0-.098-.098v-.559c-.379.461-.93.754-1.625.754-1.03 0-1.707-.636-1.707-1.785v-3.137q-.001-.098.098-.097h.57q.1-.001.098.097v3.02c0 .793.41 1.176 1.117 1.176.824 0 1.45-.598 1.45-1.785v-2.41q-.002-.1.097-.098h.57c.07 0 .098.03.098.097z"/></g><g clip-path="url(#l)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M552.85 815.49c.07 0 .098.031.098.098v.527c0 .07-.028.102-.098.102h-1.625v2.734c0 .55.254.832.773.832.325 0 .579-.02.93-.145a.2.2 0 0 1 .07-.023c.047 0 .067.043.067.102v.46c0 .086 0 .137-.078.165-.282.109-.637.168-1.047.168-.922 0-1.48-.56-1.48-1.493v-2.8h-.872c-.07 0-.101-.032-.101-.102v-.527c0-.067.03-.098.101-.098h.871v-1.41c0-.07.028-.098.098-.098h.57c.067 0 .098.027.098.098v1.41z"/></g><g clip-path="url(#m)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M554.05 813.65c0-.066.027-.098.098-.098h.843q.1-.001.098.098v.844c0 .07-.031.097-.098.097h-.843c-.07 0-.098-.027-.098-.097zm.137 1.941c0-.07.027-.097.097-.097h.57c.067 0 .098.027.098.097v4.727q.002.098-.097.098h-.57c-.071 0-.098-.032-.098-.098z"/></g><g clip-path="url(#n)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M558.52 815.39c1.414 0 2.5 1 2.5 2.559 0 1.558-1.086 2.558-2.5 2.558-1.41 0-2.5-1-2.5-2.558 0-1.559 1.09-2.559 2.5-2.559m0 4.39c1.012 0 1.695-.734 1.695-1.831 0-1.098-.683-1.832-1.695-1.832-1.008 0-1.695.734-1.695 1.832 0 1.097.687 1.832 1.695 1.832"/></g><g clip-path="url(#o)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M562.01 815.59c0-.07.031-.098.098-.098h.57c.066 0 .098.028.098.098v.559c.383-.461.922-.754 1.629-.754 1.027 0 1.703.636 1.703 1.785v3.137c0 .066-.028.097-.098.097h-.566c-.07 0-.098-.031-.098-.097v-3.02c0-.793-.414-1.176-1.117-1.176-.825 0-1.453.598-1.453 1.785v2.41q0 .1-.098.098h-.57q-.1.002-.098-.097z"/></g><g clip-path="url(#p)" transform="translate(-5971.7 -10586)scale(13.333)"><path fill="#1e2842" d="M505.04 818.42h-2.805l-.675 1.895c-.02.066-.04.097-.118.097h-.66c-.066 0-.105-.031-.105-.098 0-.019 0-.03.008-.058l2.433-6.61c.02-.066.028-.097.098-.097h.844c.066 0 .078.031.097.097l2.43 6.61c.012.027.012.039.012.059 0 .066-.04.097-.11.097h-.656c-.078 0-.097-.031-.117-.098zm-2.52-.781h2.235l-1.117-3.098z"/></g><path fill="#19303f" d="M849.58 64.167v116.35c0 1.719-.573 3.125-1.77 4.271-1.146 1.197-2.605 1.771-4.376 1.771h-32.552c-1.77 0-3.23-.57-4.427-1.771-1.145-1.146-1.719-2.552-1.719-4.271V64.167c0-1.719.573-3.125 1.719-4.271 1.199-1.197 2.656-1.771 4.427-1.771h32.552c1.77 0 3.23.57 4.375 1.771 1.197 1.145 1.771 2.552 1.771 4.271"/></svg>
   url: https://github.com/ParadoxLabs-Inc/authnetcim
   integration_url: https://github.com/breezefront/module-breeze-paradoxlabs-authnetcim#installation
   description: Authorize.net CIM payments.
 
 - name: partnerads/magento2
   shortname: partnerads
+  logo: -ads
+  css: bg-cyan-500 text-white justify-center text-xl font-black
   url: https://github.com/PartnerAds/Magento2
   integration_url: https://github.com/breezefront/module-breeze-partnerads-magento2#installation
   description: Magento2 module for Partner Ads tracking.
 
 - name: paypal/braintree
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Braintree</title><path d="M8.276 20.482h4.717c3.641 0 5.462-1.2 5.462-3.517 0-2.275-1.945-3.517-5.752-3.517H8.276Zm0-16.965v6.538h4.138c3.103 0 4.717-1.159 4.717-3.269 0-2.152-1.655-3.269-4.759-3.269zM1.696 24v-3.518H4.47V3.517H1.697V0h11.089c5.09 0 8.193 2.358 8.193 6.455 0 2.69-1.572 4.345-3.558 5.131 2.855.787 4.882 2.814 4.882 5.586 0 4.386-3.393 6.828-8.938 6.828H1.697"/></svg>
+  css: bg-black fill-white
   url: https://marketplace.magento.com/paypal-module-braintree.html
   integration_url: https://github.com/breezefront/module-breeze-paypal-braintree#installation
   description: Braintree payment method.
 
 - name: plumrocket/module-call-for-price
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call-icon lucide-phone-call"><path d="M13 2a9 9 0 0 1 9 9"/><path d="M13 6a5 5 0 0 1 5 5"/><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+  css: bg-lime-500 text-white justify-center
   url: https://plumrocket.com/magento-call-for-price
   integration_url: https://github.com/breezefront/module-breeze-plumrocket-call-for-price#installation
   description: >
@@ -374,6 +476,8 @@
     date ranges and more.
 
 - name: plumrocket/module-estimateddelivery
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck-icon lucide-truck"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+  css: bg-rose-100 text-rose-600 justify-center
   url: https://plumrocket.com/magento-estimated-delivery-date
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/plumrocket-estimated-delivery-integration#installation
   description: >
@@ -383,6 +487,8 @@
 
 - name: plumrocket/module-prnewsletterpopup
   shortname: newsletter-popup
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mails-icon lucide-mails"><path d="M17 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 1-1.732"/><path d="m22 5.5-6.419 4.179a2 2 0 0 1-2.162 0L7 5.5"/><rect x="7" y="3" width="15" height="12" rx="2"/></svg>
+  css: bg-blue-100 text-blue-500 justify-center
   url: https://plumrocket.com/magento-newsletter-popup
   integration_url: https://git.aqeltech.com/aqeltech/magento-2/breezefront/plumrocket-newsletter-popup-integration#installation
   description: >
@@ -390,6 +496,8 @@
     through offering special deals and promotions.
 
 - name: scommerce/googletagmanagerpro
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-combined-icon lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></svg>
+  css: bg-orange-100 text-orange-600 justify-center
   url: https://www.scommerce-mage.com/magento-2-google-tag-manager.html
   integration_url: https://docs.scommerce-mage.com/magento-2-extensions/analytics-and-tracking-extensions/magento-2-google-tag-manager-gtm-ga4-ecommerce-tracking#bookmark0
   description: >
@@ -398,17 +506,23 @@
     Conversion, Google Ads Enhanced Conversion and many more trackings with GTM.
 
 - name: smile/elasticsuite
+  logo: <svg viewBox="0 0 66 63"><path d="M18.7246 54.7918C20.0792 55.5379 21.4341 56.5174 22.6953 57.8231L22.9287 58.0555C21.8077 59.7343 19.7057 62.0662 16.5761 62.6258C11.6716 63.5118 5.73974 62.9985 6.16013 59.1746C6.62765 55.3978 14.4277 56.9832 14.4277 56.9832C14.4518 56.9879 16.0821 57.291 18.7246 54.7918ZM17.1357 21.6366C21.9935 19.7246 26.7577 19.6783 30.3076 21.1239C33.1569 22.243 35.1659 24.3413 35.9599 27.0926C37.4545 32.3154 33.9512 38.5645 27.9258 42.5282C27.9252 42.5747 27.8317 42.6213 27.7851 42.6678C23.8153 45.7919 23.4882 48.2635 25.0293 49.7557C26.6125 51.2433 31.1671 49.07 31.1953 49.0565C38.2485 47.0513 45.1152 50.036 45.1152 50.036C45.162 50.0504 49.0778 51.2664 47.9638 54.3719C46.9418 57.3402 41.6231 57.0799 41.5654 57.077C35.6996 54.6602 23.9407 56.4585 23.8623 56.4705C18.5374 51.1078 12.3711 50.5955 9.89548 50.5955C9.52187 50.6422 9.10111 50.6881 8.72751 50.6414C6.67239 50.5014 4.33731 49.1025 2.56247 46.7244C0.553981 44.0664 -0.286776 40.7558 0.0868884 38.1444C0.0974992 38.1605 0.888448 39.3561 2.00193 39.2635C3.12277 39.1702 3.58968 38.8441 5.13083 40.3827C4.99077 40.0098 4.89783 39.6833 4.75779 39.3104C3.02953 32.9218 8.54114 25.0407 17.1357 21.6366ZM28.206 9.83871C28.6264 7.97344 33.531 7.83336 39.5097 9.41879C40.0234 9.55865 40.5839 9.69911 41.0976 9.88558C46.6094 11.611 51.001 14.1294 52.122 16.1346C52.122 16.088 52.1679 16.0406 52.1679 15.994C57.1191 16.5069 62.5378 21.7297 64.6865 26.4862C66.8352 31.2427 63.5185 36.1392 63.5185 36.0926C52.9624 36.2326 43.1537 43.0873 38.8095 46.5848C36.4274 46.3516 33.6246 46.3988 30.7754 47.2381L30.6347 47.285L30.4951 47.3309H30.4482C30.4016 47.3309 30.3552 47.3314 30.3086 47.3778C30.2151 47.4244 30.0276 47.471 29.8408 47.5643C29.4204 47.7042 28.86 47.9371 28.2529 48.077C27.6457 48.2635 27.0852 48.3573 26.6181 48.3573C26.2917 48.3573 26.1514 48.2638 26.1045 48.2635C25.9644 48.1236 25.8711 47.9837 25.8711 47.8905C25.8244 47.8438 25.8236 47.6575 25.917 47.3778C26.1505 46.7249 26.8982 45.6054 28.7666 44.1131L28.9072 44.0203C32.0365 41.922 34.6052 39.1706 36.1933 36.1864C37.7815 33.1553 38.4353 29.7507 37.5478 26.533C37.4077 26.1135 37.2678 25.6938 37.081 25.2743C39.3696 26.1136 41.8919 26.1137 44.414 25.1346C47.4968 23.9222 49.8799 21.4505 51.2812 18.3729C49.2727 19.2123 44.6477 18.8392 39.4629 17.2537C32.7835 15.2019 27.7389 11.8905 28.206 9.83871ZM35.0722 0.511559C36.0998 -1.02726 40.397 1.02412 44.6474 5.08089C46.9829 7.31925 48.8052 9.65163 49.7861 11.6102C47.6376 10.3045 44.7415 8.99864 41.5654 8.01937C40.1641 7.59968 38.762 7.22592 37.4541 6.94613C35.3525 4.14858 34.3252 1.58418 35.0722 0.511559Z" fill="white"/></svg>
+  css: bg-[#F56553]
   url: https://elasticsuite.io/
   integration_url: https://github.com/breezefront/module-breeze-smile-elasticsuite#installation
   description: The Ultimate eCommerce Searchandising Toolbox.
 
 - name: sparsh/buy-now
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+  css: bg-green-100 text-green-600 justify-center
   url: https://www.sparsh-technologies.com/magento-extensions/magento-2-buy-now-extension
   integration_url: https://github.com/breezefront/module-breeze-sparsh-buy-now#installation
   description: Buy now button on the product listings, product, and search pages.
 
 - name: stripe/module-payments
   shortname: stripe
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Stripe</title><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></svg>
+  css: bg-[#635BFF] fill-white
   url: https://github.com/stripe/stripe-magento2-releases
   integration_url: https://github.com/breezefront/module-breeze-stripe-payments#installation
   description: >
@@ -416,97 +530,133 @@
     Stripe payment gateway.
 
 - name: swissup/address-field-manager
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-tabs-icon lucide-notebook-tabs"><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M15 2v20"/><path d="M15 7h5"/><path d="M15 12h5"/><path d="M15 17h5"/></svg>
+  css: bg-fuchsia-100 text-fuchsia-500 justify-center
   url: https://swissuplabs.com/m2-address-fields-manager.html
   description: Add additional or hide useless address fields.
 
 - name: swissup/ajaxlayerednavigation
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-funnel-icon lucide-funnel"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/></svg>
+  css: bg-sky-200 text-sky-600 justify-center
   url: https://swissuplabs.com/layered-navigation-extension-for-magento-2.html
   description: >
     Advanced layered navigation, multiple filter values, price slider, infinite scroll
     and much more.
 
 - name: swissup/ajaxpro
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-icon lucide-loader"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
+  css: bg-orange-200 text-orange-600 justify-center
   url: https://swissuplabs.com/ajax-pro-extension-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-integrations#installation
   description: >
     Ajax "Add to cart", "Add to compare", "Add to wishlist". Quick view popup.
 
 - name: swissup/ajaxsearch
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+  css: bg-lime-500 text-white justify-center
   url: https://swissuplabs.com/ajax-search-and-autocomplete-extension-for-magento-2.html
   description: >
     Search dropdown and autocomplete with products, categories, and CMS pages.
 
 - name: swissup/askit
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square-icon lucide-messages-square"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"/></svg>
+  css: bg-black text-white justify-center
   url: https://swissuplabs.com/product-question-extension-for-magento-2.html
   description: >
     Product questions and anwers. Reduce support requests by showing the popular
     product questions in questions block.
 
 - name: swissup/cache-warmer
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-backup-icon lucide-database-backup"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 12a9 3 0 0 0 5 2.69"/><path d="M21 9.3V5"/><path d="M3 5v14a9 3 0 0 0 6.47 2.88"/><path d="M12 12v4h4"/><path d="M13 20a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5c-1.33 0-2.54.54-3.41 1.41L12 16"/></svg>
+  css: bg-yellow-200 text-yellow-600 justify-center
   url: https://swissuplabs.com/magento-2-cache-warmer.html
   description: >
     Warmup your pages to deliver top performance for your visitors.
 
 - name: swissup/customer-field-manager
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-user-icon lucide-book-user"><path d="M15 13a3 3 0 1 0-6 0"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><circle cx="12" cy="8" r="2"/></svg>
+  css: bg-pink-100 text-pink-500 justify-center
   url: https://swissuplabs.com/m2-customer-fields-manager.html
   description: >
     Add additional or hide useless customer fields. It allows you capture more
     information about a client, that can be used as the basis for your marketing strategy.
 
 - name: swissup/easybanner
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target-icon lucide-target"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+  css: bg-red-200 text-red-600 justify-center
   url: https://swissuplabs.com/magento-2-banners-and-custom-blocks-extension.html
   description: >
     Display banners, custom content in three banner types. Flexible conditions
     included!
 
 - name: swissup/gdpr
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+  css: bg-green-600 text-white justify-center
   url: https://swissuplabs.com/m2-gdpr-extension.html
   description: >
     GDPR compliance module. Cookie consent includes Google Consent V2 support.
 
 - name: swissup/helpdesk
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-life-buoy-icon lucide-life-buoy"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
+  css: bg-indigo-200 text-indigo-600 justify-center
   url: https://swissuplabs.com/magento-2-help-desk.html
   description: >
     The module provides easy-to-use ticketing system and reliable support
     request management.
 
 - name: swissup/navigationpro
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-menu-icon lucide-square-menu"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h10"/></svg>
+  css: bg-green-100 text-green-500 justify-center
   url: https://swissuplabs.com/magento-2-navigation-pro-extension.html
   description: >
     Create simple and complex menu's in just a few clicks. Megamenu,
     Amazon-like menu, simple menu, sidebar navigation. Unlimited possibilites!
 
 - name: swissup/pagespeed
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+  css: bg-yellow-400 text-white justify-center
   url: https://swissuplabs.com/page-speed-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-integrations#installation
   description: All-in-one optimization tool.
 
 - name: swissup/prolabels
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tags-icon lucide-tags"><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z"/><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193"/><circle cx="10.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+  css: bg-pink-100 text-pink-500 justify-center
   url: https://swissuplabs.com/product-labels-extension-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-integrations#installation
   description: Bring more attention to products using colorful badges and labels.
 
 - name: swissup/recaptcha
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brick-wall-shield-icon lucide-brick-wall-shield"><path d="M12 9v1.258"/><path d="M16 3v5.46"/><path d="M21 9.118V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h5.75"/><path d="M22 17.5c0 2.499-1.75 3.749-3.83 4.474a.5.5 0 0 1-.335-.005c-2.085-.72-3.835-1.97-3.835-4.47V14a.5.5 0 0 1 .5-.499c1 0 2.25-.6 3.12-1.36a.6.6 0 0 1 .76-.001c.875.765 2.12 1.36 3.12 1.36a.5.5 0 0 1 .5.5z"/><path d="M3 15h7"/><path d="M3 9h12.142"/><path d="M8 15v6"/><path d="M8 3v6"/></svg>
+  css: bg-fuchsia-100 text-fuchsia-500 justify-center
   url: https://swissuplabs.com/recaptcha-magento-2.html
   description: >
     Stop unwanted spam bots right now. ReCAPTCHA from Google aims to help you stop spams.
 
 - name: swissup/social-login
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scan-face-icon lucide-scan-face"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg>
+  css: bg-blue-600 text-white justify-center
   url: https://swissuplabs.com/magento-2-social-login.html
   description: Login into Magento store using social login button.
 
 - name: swissup/sold-together
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive-restore-icon lucide-archive-restore"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h2"/><path d="M20 8v11a2 2 0 0 1-2 2h-2"/><path d="m9 15 3-3 3 3"/><path d="M12 12v9"/></svg>
+  css: bg-purple-200 text-purple-600 justify-center
   url: https://swissuplabs.com/sold-together-extension-for-magento-2.html
   description: >
     Increase sales convertion rate using "Frequently bought together"
     and "Customers who bought this also bought".
 
 - name: swissup/testimonials
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-id-card-icon lucide-id-card"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
+  css: bg-gray-200 text-gray-700 justify-center
   url: https://swissuplabs.com/testimonials-for-magento-2.html
   description: >
     Increase trust to your store by collecting and displaying customer testominals.
 
 - name: ulmod/bundle-item
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package2-icon lucide-package-2"><path d="M12 3v6"/><path d="M16.76 3a2 2 0 0 1 1.8 1.1l2.23 4.479a2 2 0 0 1 .21.891V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.472a2 2 0 0 1 .211-.894L5.45 4.1A2 2 0 0 1 7.24 3z"/><path d="M3.054 9.013h17.893"/></svg>
+  css: bg-amber-100 text-amber-500 justify-center
   url: https://www.ulmod.com/magento-2-bundle-items.html
   integration_url: https://github.com/breezefront/module-breeze-ulmod-bundle-item#installation
   description: >
@@ -515,6 +665,8 @@
     bundle products.
 
 - name: walkwizus/magento2-module-meilisearch
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Meilisearch</title><path d="m6.505 18.998 4.434-11.345a4.168 4.168 0 0 1 3.882-2.651h2.674l-4.434 11.345a4.169 4.169 0 0 1-3.883 2.651H6.505Zm6.505 0 4.434-11.345a4.169 4.169 0 0 1 3.883-2.651H24l-4.434 11.345a4.168 4.168 0 0 1-3.882 2.651H13.01Zm-13.01 0L4.434 7.653a4.168 4.168 0 0 1 3.882-2.651h2.674L6.556 16.347a4.169 4.169 0 0 1-3.883 2.651H0Z"/></svg>
+  css: bg-[#FF5CAA] fill-white
   url: https://github.com/walkwizus/magento2-module-meilisearch
   integration_url: https://github.com/walkwizus/magento2-module-breeze-meilisearch#prerequisites
   description: >
@@ -522,6 +674,8 @@
     search engine (OpenSearch) with Meilisearch.
 
 - name: webkul/module-orderby-whatsappbot
+  logo: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  css: bg-[#25D366] fill-white
   url: https://store.webkul.com/magento2-whatsapp-shopping-bot-order-notifications.html
   integration_url: https://github.com/breezefront/module-breeze-webkul-order-by-whatsapp-bot#installation
   description: >
@@ -529,6 +683,8 @@
     mobile commerce experience.
 
 - name: weltpixel/ga4
+  logo: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-combined-icon lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></svg>
+  css: bg-blue-100 text-blue-600 justify-center
   url: https://www.weltpixel.com/google-analytics-4-ga4-with-gtm-support-for-magento-2.html
   integration_url: https://github.com/breezefront/module-breeze-weltpixel-ga4#installation
   description: Google Analytics 4 (GA4) with Google Tag Manager (GTM) Support.
