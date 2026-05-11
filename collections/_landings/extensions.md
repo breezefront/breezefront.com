@@ -39,8 +39,8 @@ Extend your store functionality with our and third-party modules.
     {%- for extension in extensions %}
       <a href="{{ extension.integration_url | default: extension.url }}" target="_blank" rel="noopener nofollow"
         class="flex relative rounded-md group">
-        <div class="flex gap-3.5 w-full ring ring-gray-200 p-3 lg:p-4.5 rounded-md">
-          <div class="flex items-center shrink-0 w-16 h-16 rounded-md overflow-hidden whitespace-nowrap uppercase p-2 {{ extension.css | default: 'bg-gray-200/60 text-gray-50 text-4xl font-black' }}">
+        <div class="flex gap-3.5 w-full ring ring-gray-200 p-4.5 rounded-md">
+          <div class="flex items-center shrink-0 max-[450px]:hidden w-16 h-16 rounded-md overflow-hidden whitespace-nowrap uppercase p-2 {{ extension.css | default: 'bg-gray-200/60 text-gray-50 text-4xl font-black' }}">
             {%- if extension.logo -%}
               {{ extension.logo }}
             {%- elsif extension.shortname -%}
