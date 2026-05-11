@@ -19,6 +19,22 @@ Extend your store functionality with our and third-party modules.
     <input class="search px-4 py-2 text-lg border border-zinc-300 rounded-full w-full max-w-md" type="text" placeholder="Search..."/>
   </div>
 
+  <div class="max-w-6xl mx-auto flex gap-4 ring-1 ring-blue-100 bg-blue-50 p-4 rounded-md">
+    <div class="flex items-center justify-center shrink-0 w-12 h-12 rounded-full bg-blue-600 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks-icon lucide-blocks"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"/><rect x="14" y="2" width="8" height="8" rx="1"/></svg>
+    </div>
+    <div>
+      <div class="font-semibold text-gray-600">Better compatibility mode</div>
+      <div>
+        When enabled, "Better Compatibility" allows using third-party modules without the need to create custom integration.
+        <a class="inline-flex items-center text-blue-600 font-semibold hover:underline" href="docs/better-compatibility">
+          Learn More
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class="list grid justify-center grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(220px,285px))] gap-2 sm:gap-5 my-12 mx-auto not-prose sm:mt-16">
     {%- for extension in extensions %}
       <a href="{{ extension.integration_url | default: extension.url }}" target="_blank" rel="noopener nofollow"
