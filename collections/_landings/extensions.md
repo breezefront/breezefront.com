@@ -14,7 +14,7 @@ Extend your store functionality with our and third-party modules.
 
 {% assign extensions = site.data.extensions | sort_natural: 'name' %}
 
-<div id="modules">
+<div class="max-w-7xl mx-auto" id="modules">
   <div class="text-center py-8">
     <input class="search px-4 py-2 text-lg border border-zinc-300 rounded-full w-full max-w-md" type="text" placeholder="Search..."/>
   </div>

@@ -12,9 +12,9 @@
 </div>
 
 <div class="nav items-center grow
-  opacity-0 pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white rounded-lg shadow-lg p-4 py-5 z-40 mdl:opacity-100 mdl:pointer-events-auto mdl:translate-y-0 mdl:flex mdl:static mdl:shadow-none mdl:p-0 mdl:gap-3">
+  opacity-0 pointer-events-none -translate-y-4 transition absolute top-24 left-2.5 right-2.5 bg-white mdl:bg-transparent rounded-lg shadow-lg p-4 py-5 z-40 mdl:opacity-100 mdl:pointer-events-auto mdl:translate-y-0 mdl:flex mdl:static mdl:shadow-none mdl:p-0 mdl:gap-3">
   {%- assign activeClass = 'underline decoration-2 underline-offset-4 text-zinc-800' -%}
-  <ul class="flex flex-col mdl:flex-row mdl:items-center mdl:gap-1 xl:gap-3 mx-auto">
+  <ul class="flex flex-col mdl:flex-row mdl:items-center mdl:gap-1 xl:gap-3 mdl:ml-4 mdl:mr-auto">
     {%- assign items = site.landings | sort: 'order' -%}
     {% for item in items %}
       {%- if item.navigation == false -%}

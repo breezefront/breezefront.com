@@ -16,17 +16,42 @@
       </nav>
     </header>
 
-    <main id="main" class="max-w-7xl mx-auto p-4 sm:px-6 sm:py-5 md:px-8 md:py-6 lg:py-8">
+    <main id="main" class="mx-auto p-4 sm:px-6 sm:py-5 md:px-8 md:py-6 lg:py-8">
       {%- if page.class %} <div class="{{ page.class }}"> {% endif %}
       {{ content }}
       {%- if page.class %} </div> {% endif %}
     </main>
 
-    <footer class="max-w-7xl mx-auto p-8">
-      <ul class="flex items-center justify-center gap-1 lg:gap-3">
-        <li><a class="flex px-3 py-1.5 text-zinc-600 hover:text-zinc-800" href="https://github.com/breezefront/community/discussions" target="_blank" rel="noopener">Support</a></li>
-        <li><a class="flex px-3 py-1.5 text-zinc-600 hover:text-zinc-800" href="https://github.com/breezefront" target="_blank" rel="noopener">GitHub</a></li>
-      </ul>
+    <footer class="rounded-top bg-black text-white" style="--rounded-bg: black;">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-7xl mx-auto px-8 pt-6 pb-8 sm:pb-20">
+        <div>
+          {%- include logo-round-invert.svg -%}
+          <div class="text-2xl/7.5 font-semibold mt-6">
+            Turning your Magento<br/>
+            e-commerce store into<br/>
+            a successful business
+          </div>
+        </div>
+        <div class="flex text-lg font-semibold sm:text-right">
+          <div class="sm:ml-auto">
+            <div class="opacity-70 mb-2 mr-6">Product</div>
+            <ul>
+              <li>
+                <a class="flex gap-1 items-center sm:justify-end hover:underline" href="https://github.com/breezefront" target="_blank" rel="noopener">
+                  GitHub
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-1 items-center sm:justify-end hover:underline" href="https://github.com/breezefront/community/discussions" target="_blank" rel="noopener">
+                  Support
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     {%- include before-body-end.html -%}

@@ -32,10 +32,42 @@
     }
     details summary {
         cursor: pointer;
+        position: relative;
+        list-style: none;
+        padding-right: 42px;
+    }
+    details summary::before {
+        content: '';
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        border-radius: 99px;
+        background: #F5F5F5;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    details summary::after {
+        content: '';
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        background: #5445F5;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        mask: url('data:image/svg+xml;charset=utf-8,<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.30326 2.35717L9.42809 6.48193L10.6066 5.30343L5.30326 8.34465e-05L0 5.30343L1.17851 6.48193L5.30326 2.35717Z" fill="currentColor"/></svg>');
+        mask-repeat: no-repeat;
+        mask-position: 50% 50%;
+        transition: transform 200ms ease-out;
+    }
+    details[open] summary::after {
+        transform: translateY(-50%) rotate(0deg);
     }
     details::details-content {
         height: 0;
         opacity: 0;
+        padding-right: 50px;
         overflow: clip;
         transform: scale(.96) translateY(-10px);
         transform-origin: 50% 0;
@@ -46,6 +78,25 @@
         height: auto;
         opacity: 1;
         transform: none;
+    }
+    .rounded-top {
+        position: relative;
+        z-index: 10;
+        margin-top: -20px;
+        background: var(--rounded-bg);
+        &::after {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            inset: 0;
+            top: -40px;
+            height: 80px;
+            background: var(--rounded-bg);
+            mask-image: url('data:image/svg+xml;charset=utf-8,<svg width="1440" height="160" preserveAspectRatio="none" viewBox="0 0 1440 160" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="720" cy="80" rx="941" ry="80" fill="black"/></svg>');
+            mask-repeat: no-repeat;
+            mask-position: 0 0;
+            mask-size: 100% 160px;
+        }
     }
 }
 
