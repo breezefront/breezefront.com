@@ -13,7 +13,8 @@ NodeJS and RubyDev should be installed priod to installation:
 sudo apt install make build-essential ruby-full
 
 # Bundler
-gem install bundler
+sudo gem install bundler
+# bundle config set --global path ~/.gem
 ```
 
 ## Installation
