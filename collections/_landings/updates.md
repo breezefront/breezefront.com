@@ -9,6 +9,13 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## May 15, 2026
+
+> swissup/module-breeze:2.30.1<br/>
+> swissup/module-theme-editor:1.0.3
+
+ -  Magento 2.4.9 compatibility
+
 ## May 7, 2026
 
 > swissup/module-breeze:2.30.0<br/>
