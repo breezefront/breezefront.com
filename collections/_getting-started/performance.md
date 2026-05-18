@@ -5,7 +5,10 @@ description: How to get maximum performance with Breeze Theme
 order: 400
 ---
 
+
 # Performance
+
+> To test your store performance, we recommend using [Google PageSpeed Insights](https://pagespeed.web.dev/){:target="_blank" rel="noopener"}. If you need help with optimisation or performance analysis, feel free to contact the Swissuplabs team at our [contact form](https://swissuplabs.com/contact){:target="_blank" rel="noopener"} for consultation.
 
 * TOC
 {:toc}
