@@ -34,7 +34,7 @@ Replace `swissup/breeze-evolution` with theme you'd like to install:
 
 ```powershell
 composer require swissup/breeze-evolution &&\
-bin/magento module:enable Swissup_Breeze Swissup_BreezeThemeEditor Swissup_Rtl &&\
+bin/magento setup:upgrade --safe-mode=1 &&\
 bin/magento marketplace:package:install swissup/breeze-evolution
 ```
 
