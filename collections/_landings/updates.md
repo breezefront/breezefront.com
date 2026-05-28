@@ -9,6 +9,23 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## May 28, 2026
+
+> swissup/module-breeze:2.30.2<br/>
+> swissup/module-theme-editor:1.0.3
+> swissup/breeze-blank:3.0.1,swissup/breeze-enterprise:3.0.0-beta.4
+
+ -  BF-Cache support added to js components. Now, they properly restore
+    initial state when customer goes back to the page using browser's back button.
+ -  Improved menu opening when hovering mouse over menu before js is initialized.
+ -  Fixed not working preview of theme editor styles.
+ -  Small style fixes.
+
+**Breeze Enterprise**
+
+ -  Added ability to change layout settings via theme editor.
+ -  Added ability to change product listing columns count via theme editor.
+
 ## May 15, 2026
 
 > swissup/module-breeze:2.30.1<br/>
