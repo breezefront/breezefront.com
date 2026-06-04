@@ -9,6 +9,13 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## June 4, 2026
+
+> swissup/module-breeze:2.30.3<br/>
+> swissup/breeze-blank:3.0.2
+
+ -  Added integration with Magento_OrderCancellation module.
+
 ## May 28, 2026
 
 > swissup/module-breeze:2.30.2<br/>
