@@ -9,6 +9,24 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## July 23, 2026
+
+> swissup/breeze:2.30.4<br/>
+> swissup/breeze-blank:3.0.3,swissup/breeze-enterprise:3.0.0
+
+**Breeze Enterprise**
+
+ -  Breeze Enterprise theme stable release! Now, with BreezeAI included!
+ -  Improved integration with [Swissup_Attributepages](https://docs.swissuplabs.com/m2/extensions/attributepages/) module.
+ -  Sticky messages moved to the bottom to prevent overlapping with sticky header.
+
+**Breeze**
+
+ -  Fixed mobile css overlap with messages on customer account page.
+ -  Fixed js error when account sharing is enabled.
+ -  Register missing `Magento_Theme/js/model/breadcrumb-list` component.
+ -  Improved compatibility with [Swissup_Ignition](https://github.com/swissup/module-ignition) module.
+
 ## June 4, 2026
 
 > swissup/module-breeze:2.30.3<br/>
