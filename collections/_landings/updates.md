@@ -9,7 +9,44 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## July 23, 2026
+## July 8, 2026
+
+> swissup/breeze:2.31.0<br/>
+> swissup/breeze-blank:3.1.0,swissup/breeze-evolution:3.1.0<br/>
+> swissup/breeze-enterprise-blank:3.1.0,swissup/breeze-enterprise-apollo:3.1.0
+> swissup/module-breeze-content-builder:1.0.4
+
+**Breeze**
+
+ -  Fixed js error when account sharing option is enabled.
+ -  Fixed ability to call same component by both alias and path.
+ -  Align `$.fn.serializeArray` with jQuery implementation.
+ -  Added `$.fn.suffixIds` function to append suffix to all ids in the element
+    and its children.
+
+    This is useful when you need to duplicate the same component on the page.
+    Usage example:
+
+    ```js
+    $('.selector').suffixIds('_unique');
+    ```
+
+**Breeze Evolution**
+
+ -  Ability to enable/disable scroll reveal feature using theme editor.
+ -  Ability to setup heading styles using theme editor.
+ -  Ability to write custom CSS using theme editor.
+
+**Breeze Enterprise**
+
+ -  Ability to enable/disable scroll reveal feature using theme editor.
+ -  Ability to write custom CSS using theme editor.
+ -  Improved product comparison page styles.
+ -  Configurable StickyFilters feature added to the category page.
+ -  Configurable StickyCart feature added to the product page.
+ -  Theme editor fixes and improvements.
+
+## June 23, 2026
 
 > swissup/breeze:2.30.4<br/>
 > swissup/breeze-blank:3.0.3,swissup/breeze-enterprise:3.0.0
