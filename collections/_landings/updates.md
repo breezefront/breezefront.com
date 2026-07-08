@@ -13,8 +13,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 > swissup/breeze:2.31.0<br/>
 > swissup/breeze-blank:3.1.0,swissup/breeze-evolution:3.1.0<br/>
-> swissup/breeze-enterprise-blank:3.1.0,swissup/breeze-enterprise-apollo:3.1.0<br/>
-> swissup/module-breeze-content-builder:1.0.4
+> swissup/breeze-enterprise:3.1.0
 
 **Breeze**
 
