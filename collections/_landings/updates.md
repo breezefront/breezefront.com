@@ -41,6 +41,7 @@ class: prose prose-zinc max-w-3xl mx-auto
  -  Ability to enable/disable scroll reveal feature using theme editor.
  -  Ability to setup heading styles using theme editor.
  -  Ability to write custom CSS using theme editor.
+ -  Improved top header panel on tablet and mobile devices.
  -  Improved product comparison page styles.
  -  Configurable StickyFilters feature added to the category page.
  -  Configurable StickyCart feature added to the product page.
