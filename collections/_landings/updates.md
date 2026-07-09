@@ -39,6 +39,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 **Breeze Enterprise**
 
  -  Ability to enable/disable scroll reveal feature using theme editor.
+ -  Ability to setup heading styles using theme editor.
  -  Ability to write custom CSS using theme editor.
  -  Improved product comparison page styles.
  -  Configurable StickyFilters feature added to the category page.
