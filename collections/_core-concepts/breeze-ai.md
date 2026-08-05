@@ -62,12 +62,21 @@ the same conversation, then click _Apply_ to write the result into the field.
 ## AI Bulk Action
 
 Bulk generation is available under _Swissup > Breeze AI > AI Bulk Action_ menu.
-Select the products or categories in the grid, choose the skill --- _generate_ or
-_translate_ --- pick the fields, prompts and target store views, and submit.
+The page is a step-by-step form, and every step only appears once the previous
+one is answered:
 
-The jobs are dispatched to a Magento message queue, so the admin session isn't
-blocked and the progress can be watched under _System > Bulk Actions_. The
-consumer has to be running:
+ 1. _Select content type_ --- products or categories.
+ 2. _Select AI task_ --- _Generate Content_ or _Translate_.
+ 3. _Select store view_ --- the language and scope of the operation. Translate
+    asks for a source and a target store view instead of a single one.
+ 4. _Select fields_ --- the attributes to process, with a prompt picked per
+    field.
+ 5. _Select items_ --- the grid, where the products or categories are picked
+    by hand or narrowed down with filters.
+
+Then hit _Run_. The jobs are dispatched to a Magento message queue, so the admin
+session isn't blocked and the progress can be watched under _System > Bulk
+Actions_. The consumer has to be running:
 
 ```bash
 bin/magento queue:consumers:start swissup.breezeai.product.attribute.update.consumer
@@ -79,10 +88,10 @@ bin/magento queue:consumers:start swissup.breezeai.product.attribute.update.cons
 
 ## Translation
 
-Translation is a skill of its own, not a separate screen. It reads the default
-value of an attribute, translates it into the locale of the target store view
-and writes the result back to that store view --- available both from the AI
-Assistant popup and from AI Bulk Action.
+Translation is a skill of its own, not a separate screen. It reads the value of
+an attribute in the source store view, translates it into the locale of the
+target store view and writes the result back to that store view --- available
+both from the AI Assistant popup and from AI Bulk Action.
 
 ## MCP Server
 
