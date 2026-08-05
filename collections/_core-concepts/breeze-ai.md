@@ -101,6 +101,12 @@ call the store. The endpoint is `POST /rest/V1/breezeai/mcp` and it exposes four
 tools: `generate`, `translate`, `list_prompts` and `graphql` for read-only
 catalog access.
 
+`graphql` forwards the query to the storefront GraphQL endpoint without an auth
+header, so it sees what a guest sees. Read-only there is enforced rather than
+assumed --- the tool reads the operation type of the document and rejects anything
+but `query` and `fragment` definitions, so a mutation never reaches the store.
+`generate` and `translate` do write, which is what they are for.
+
 The endpoint is enabled by default. To register an agent, generate a token:
 
 ```bash
