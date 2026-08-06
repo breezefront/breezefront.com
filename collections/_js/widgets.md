@@ -198,8 +198,7 @@ will be called twice.
 
 ### destroy
 
-Component destructor. It's called before the page unload event when
-[Turbo mode](settings) is enabled.
+Component destructor.
 Since base Widget class has its own destroy logic you should call `this._super()`
 inside your destroy method.
 

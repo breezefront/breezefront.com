@@ -91,10 +91,8 @@ Local/breeze-custom/
 
 Magento provides two entry points to add your custom HTML code:
 
- -  Content > Configuration > Head --- scripts added here will be processed once 
-    per turbo session. This is useful to import third-party library.
- -  Content > Configuration > Footer --- scripts added here will be processed on 
-    every page. This is useful to call some method on every page.
+ -  Content > Configuration > Head
+ -  Content > Configuration > Footer
 
 > Breeze provides lazy script evaluation feature. We recommend to use it
 > when importing third-party service script.
