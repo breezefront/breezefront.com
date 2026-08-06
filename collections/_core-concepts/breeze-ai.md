@@ -34,19 +34,13 @@ under _Swissup > Breeze AI > Models_ menu. Add a model, pick the provider,
 paste the API key and mark one of them as default --- everything else in Breeze AI
 uses the default model unless a different one is chosen explicitly.
 
-<!-- TODO: screenshot --- Swissup > Breeze AI > Models grid, or the model form with provider select
-<img src="{{ '/assets/img/breeze-ai/models.webp?v=1' | relative_url }}" width="656" height="362" class="!m-0 rounded-lg shadow-lg" alt="AI Models Screenshot"/>
--->
+<img src="{{ '/assets/img/breeze-ai/models.webp?v=1' | relative_url }}" width="656" height="256" class="!m-0 rounded-lg shadow-lg" alt="AI Models Screenshot"/>
 
 ## Prompts
 
 Prompts live under _Swissup > Breeze AI > Prompts_ menu. Every prompt is bound to
 the fields it may write to, so the AI Assistant and AI Bulk Action only offer the
 prompts that make sense for the field at hand.
-
-<!-- TODO: screenshot --- Swissup > Breeze AI > Prompts grid, or the prompt form with the field assignment
-<img src="{{ '/assets/img/breeze-ai/prompts.webp?v=1' | relative_url }}" width="656" height="362" class="!m-0 rounded-lg shadow-lg" alt="Prompts Screenshot"/>
--->
 
 ## AI Assistant
 
@@ -82,9 +76,7 @@ Actions_. The consumer has to be running:
 bin/magento queue:consumers:start swissup.breezeai.product.attribute.update.consumer
 ```
 
-<!-- TODO: screenshot --- Swissup > Breeze AI > AI Bulk Action page with the product grid and the field/prompt form
-<img src="{{ '/assets/img/breeze-ai/bulk-action.webp?v=1' | relative_url }}" width="656" height="362" class="!m-0 rounded-lg shadow-lg" alt="AI Bulk Action Screenshot"/>
--->
+<img src="{{ '/assets/img/breeze-ai/bulk-action.webp?v=1' | relative_url }}" width="656" height="836" class="!m-0 rounded-lg shadow-lg" alt="AI Bulk Action Screenshot"/>
 
 ## Translation
 
@@ -126,10 +118,6 @@ The endpoint can be switched off, and the GraphQL URL used by the `graphql` tool
 can be overridden, under _Stores > Configuration > Swissup > Breeze AI > MCP
 Server_ --- the override is needed when the server can't reach itself by its
 public URL, for example with Varnish in front or inside docker.
-
-<!-- TODO: screenshot --- Stores > Configuration > Swissup > Breeze AI section (General + MCP Server groups)
-<img src="{{ '/assets/img/breeze-ai/mcp-server.webp?v=1' | relative_url }}" width="656" height="362" class="!m-0 rounded-lg shadow-lg" alt="MCP Server Screenshot"/>
--->
 
 ## Store discoverability
 
