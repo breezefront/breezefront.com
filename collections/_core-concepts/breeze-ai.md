@@ -24,6 +24,8 @@ theme and consists from several parts:
     category or CMS page edit form.
  -  AI Bulk Action --- generate and translate content for many products or
     categories at once, in the background.
+ -  Build Landing Page --- turn a text brief into a
+    [Content Builder](/docs/live-editor#content-builder) page document.
  -  MCP Server --- expose the store to AI coding agents over the
     [Model Context Protocol](https://spec.modelcontextprotocol.io){:target="_blank" rel="noopener"}.
 
@@ -77,6 +79,32 @@ bin/magento queue:consumers:start swissup.breezeai.product.attribute.update.cons
 ```
 
 <img src="{{ '/assets/img/breeze-ai/bulk-action.webp?v=1' | relative_url }}" width="656" height="836" class="!m-0 rounded-lg shadow-lg" alt="AI Bulk Action Screenshot"/>
+
+## Build Landing Page
+
+Since 1.0.12 Breeze AI can compose a whole page instead of a single field. Give
+it a brief in plain language and it returns a
+[Content Builder](/docs/live-editor#content-builder) document --- the components,
+already validated against the ones the store actually has --- for a CMS page:
+
+```bash
+bin/magento breezeai:page:build --brief "Landing page for the summer sale: hero, three benefits, product carousel, newsletter form"
+```
+
+The command prints the components as JSON and nothing is written to the
+database, so the result can be reviewed before it's saved as a draft. Useful
+options:
+
+ -  `--page-id` --- an existing CMS page to take the title and URL key from, as
+    extra context for the model.
+ -  `--model-id` --- a specific AI model instead of the default one.
+ -  `--show-catalog` --- print the component catalog exactly as the model
+    receives it, and exit. Handy when the generated page keeps missing a
+    component you expected.
+
+The skill needs `Swissup_BreezeContentBuilder` installed --- there is nothing to
+compose a page from without it --- and it works on CMS pages only, so it isn't
+part of the products and categories flow above.
 
 ## Translation
 
