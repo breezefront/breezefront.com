@@ -18,6 +18,39 @@ a lot of customization options for listing out of the box.
 
 Breeze provides 5 containers to inject custom content between product items.
 
+<details><summary>View Screenshot</summary>
+    <img src="{{ '/assets/img/features/product-listing-banners.webp' | relative_url }}" width="600" height="413" class="!my-2" alt="Product Listing Banners Screenshot" loading="lazy"/>
+</details>
+
+You can add Banners using:
+
+ -  Our [Content Builder extension](/docs/live-editor#content-builder)
+ -  Magento's native `Content > Widgets` interface
+    (Search for "Product List Banner X" containers in "Catalog Category View" page)
+ -  Layout update XML
+
+Here is an example on how to accomplish the task using layout update XML:
+
+```xml
+<!-- Set banner positions (Optional) -->
+<referenceBlock name="product.list.banners">
+    <arguments>
+        <argument name="banner_positions" xsi:type="array">
+            <item name="product.list.banner.1" xsi:type="number">1</item>
+            <item name="product.list.banner.2" xsi:type="number">3</item>
+            <item name="product.list.banner.3" xsi:type="number">8</item>
+            <item name="product.list.banner.4" xsi:type="number">11</item>
+            <item name="product.list.banner.5" xsi:type="number">14</item>
+        </argument>
+    </arguments>
+</referenceBlock>
+
+<!-- Assign custom block to the container -->
+<referenceContainer name="product.list.banner.1">
+    <block template="Magento_Catalog/product/list/banner1.phtml"/>
+</referenceContainer>
+```
+
 ## LESS variables
 
 ### List mode

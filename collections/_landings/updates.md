@@ -9,6 +9,39 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## August 5, 2026
+
+> swissup/breeze:2.31.4<br/>
+> swissup/breeze-blank:3.2.0<br/>
+> swissup/breeze-enterprise:3.2.0
+
+**Breeze**
+
+ -  Third-party js libraries updated to the latest versions.
+ -  Added ability to [inject banners](/docs/product-listing#banners) into the
+    product listing pages right between product items.
+ -  Fixed PHP error when BreezeThemeEditor module is installed but not enabled.
+ -  Fixed empty pages in Instagram and Facebook Browsers when view transition is enabled.
+ -  Disable view transitions when `prefers-reduced-motion` is set to `reduce`.
+
+**Apollo Theme**
+
+ -  Added page load progress bar to improve user experience on slow internet connections.
+ -  Fixed empty search slideout in Safari browser after closing the keyboard.
+ -  Content Builder now allows to reorder the blocks using drag and drop.
+ -  Theme editor now allows using gradients for the background color options.
+ -  Homepage:
+    - Product list widgets now use same design for price and "Add to cart" button as product listing.
+    - Better images for mobile slider.
+    - Scrollable sections instead of long vertical page.
+ -  Category page:
+    - Added testimonials block to the category at the bottom of the page.
+    - Improved recent products widget styles in sidebar.
+    - Default products per-page limit changed to 24.
+ -  Product page:
+    - Limit upsell and related products to 6 items on the product page.
+    - Prevent zoom-in on mobile devices when entering product quantity.
+
 ## July 8, 2026
 
 > swissup/breeze:2.31.1<br/>
