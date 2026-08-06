@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: Listing
+title: Product Listing
 description: Product listing customization
 ---
 
-# Listing
+# Product Listing
 
 * TOC
 {:toc}
@@ -13,6 +13,10 @@ description: Product listing customization
 
 Product listing --- is one of the main parts of every store. Breeze provides
 a lot of customization options for listing out of the box.
+
+## Banners
+
+Breeze provides 5 containers to inject custom content between product items.
 
 ## LESS variables
 

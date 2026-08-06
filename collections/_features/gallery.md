@@ -129,7 +129,7 @@ This is the popular choice for many fashion stores. All images are visible
 and you can scroll down the page to see each one.
 
 <details><summary>View Screenshot</summary>
-    <img src="{{ '/assets/img/components/gallery-expanded.webp' | relative_url }}" width="1023" height="682" class="!m-0" alt="Expanded Mode Screenshot" loading="lazy"/>
+    <img src="{{ '/assets/img/features/gallery-expanded.webp' | relative_url }}" width="1023" height="682" class="!m-0" alt="Expanded Mode Screenshot" loading="lazy"/>
 </details>
 
 To enable this mode add the following values to the `etc/view.xml` file in your theme:
@@ -149,7 +149,7 @@ fully supported with proper slide animation. This is a default mode for the
 Breeze Evolution theme.
 
 <details><summary>View Video</summary>
-    <video loop controls class="cursor-pointer" src="{{ '/assets/img/components/gallery-slider.webm' | relative_url }}" class="!m-0"></video>
+    <video loop controls class="cursor-pointer" src="{{ '/assets/img/features/gallery-slider.webm' | relative_url }}" class="!m-0"></video>
 </details>
 
 To enable this mode add the following values to the `etc/view.xml` file in your theme:

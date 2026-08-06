@@ -50,11 +50,11 @@ collections:
     navigation: true
     title: Theming
     order: 50
-  components:
+  features:
     output: true
     permalink: /docs/:name
     navigation: true
-    title: Components
+    title: Features
     order: 60
   extensions:
     output: true
