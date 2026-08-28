@@ -17,7 +17,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 **Breeze**
 
  -  Improved image preloading on category page.
- -  Defer requirejs-config script as it's not needed to be loaded syncronously.
+ -  Defer requirejs-config script as it's not needed to be loaded synchronously.
  -  Improved expanded mode for product gallery component on mobile devices.
  -  Improved closing logic of dropdownDialog component when swiping inside inner slider.
  -  Improved `pagebuilderSlider.destroy()` function.
@@ -27,15 +27,15 @@ class: prose prose-zinc max-w-3xl mx-auto
 
 **Apollo Theme**
 
- -  Contact Us recieved and new design and now it's fully editable using Content Editor.
+ -  Contact Us received new design and now it's fully editable using Content Editor.
  -  Added ability to show Incl/Excl VAT switcher in header panel.
 
     See the _Stores > Configuration > Sales > Tax > Price Display Settings_:
-    - Set "Display Product Prices In Catalog" to "Including and Excluding Tax"
+    - Set "Display Product Prices In Catalog" to "Including and Excluding Tax".
     - Enable "Breeze Enterprise: Show Incl/Excl VAT switcher".
 
  -  Improved homepage blocks.
- -  Fixed listing styles on Magento < 2.4.8
+ -  Fixed listing styles on Magento < 2.4.8.
  -  Fixed horizontal scrollbar inside search slideout in Firefox browser.
 
 ## August 5, 2026
