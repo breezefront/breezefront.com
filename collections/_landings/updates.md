@@ -9,6 +9,35 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## August 28, 2026
+
+> swissup/breeze:2.32.0<br/>
+> swissup/breeze-enterprise:3.3.0
+
+**Breeze**
+
+ -  Improved image preloading on category page.
+ -  Defer requirejs-config script as it's not needed to be loaded syncronously.
+ -  Improved expanded mode for product gallery component on mobile devices.
+ -  Improved closing logic of dropdownDialog component when swiping inside inner slider.
+ -  Improved `pagebuilderSlider.destroy()` function.
+ -  Allow using `multipleCollapsible` option for tabs component.
+ -  Improved parsing of `scope: component` blocks.
+ -  Fixed incorrect URL's in speculation rules block.
+
+**Apollo Theme**
+
+ -  Contact Us recieved and new design and now it's fully editable using Content Editor.
+ -  Added ability to show Incl/Excl VAT switcher in header panel.
+
+    See the _Stores > Configuration > Sales > Tax > Price Display Settings_:
+    - Set "Display Product Prices In Catalog" to "Including and Excluding Tax"
+    - Enable "Breeze Enterprise: Show Incl/Excl VAT switcher".
+
+ -  Improved homepage blocks.
+ -  Fixed listing styles on Magento < 2.4.8
+ -  Fixed horizontal scrollbar inside search slideout in Firefox browser.
+
 ## August 5, 2026
 
 > swissup/breeze:2.31.4<br/>
