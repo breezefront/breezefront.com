@@ -9,6 +9,13 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## September 3, 2026
+
+> swissup/breeze-enterprise:3.3.3
+
+ -  Improved styles when both "Excl. Tax" and "Incl. Tax" prices are displayed.
+ -  Fixed integration with Swissup_AjaxLayeredNavigation and Swissup_AjaxPro modules.
+
 ## August 28, 2026
 
 > swissup/breeze:2.32.0<br/>
