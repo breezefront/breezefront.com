@@ -12,16 +12,40 @@ class: prose prose-zinc max-w-3xl mx-auto
 ## October 8, 2026
 
 > swissup/breeze:2.32.1<br/>
-> swissup/breeze-content-builder:1.0.17
+> swissup/breeze-enterprise:3.3.1
+
+**Breeze**
 
  -  Improved lazyload image detection on category pages.
  -  Improved reCaptcha integration with login modal popup.
  -  Fixed incorrect magnifier image when using expanded gallery on the product.
  -  Prevent possible infinite loop when head contains malformed stylesheet link.
 
+**Apollo Theme**
+
+ -  Security improvements in Theme Editor, Content Builder, Layout Builder,
+    Ajax Search and Navigation Pro modules. **Updating is highly recommended**
+ -  Header and footer can now be edited visually using Layout Builder:
+    - Preview changes and publish when you're happy with the result.
+    - Header and footer blocks can be hidden on selected pages.
+ -  Header:
+    - Pick one of ready-made header layouts.
+    - Added "transparent header" option: the header can float over the hero
+      image on the homepage and category pages. Colors are adjustable in Theme Editor.
+ -  Footer:
+    - Footer top section is now editable with Content Builder.
+ -  Content Builder:
+    - FAQ block: added per-item icons and ability to show product attribute as an answer.
+    - Newsletter block: new inline layout.
+    - Banner block: hover zoom now affects the image only, text stays in place.
+    - Featured Product block now shows the quantity switcher.
+    - Fixed hard-to-read FAQ items on light backgrounds.
+    - Fixed heading text color being ignored.
+ -  Contact form now uses the full page width.
+
 ## September 3, 2026
 
-> swissup/breeze-enterprise:3.3.3
+> swissup/theme-frontend-breeze-enterprise-apollo:3.3.3
 
  -  Improved styles when both "Excl. Tax" and "Incl. Tax" prices are displayed.
  -  Fixed integration with Swissup_AjaxLayeredNavigation and Swissup_AjaxPro modules.
