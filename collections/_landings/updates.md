@@ -9,6 +9,16 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## October 8, 2026
+
+> swissup/breeze:2.32.1<br/>
+> swissup/breeze-content-builder:1.0.17
+
+ -  Improved lazyload image detection on category pages.
+ -  Improved reCaptcha integration with login modal popup.
+ -  Fixed incorrect magnifier image when using expanded gallery on the product.
+ -  Prevent possible infinite loop when head contains malformed stylesheet link.
+
 ## September 3, 2026
 
 > swissup/breeze-enterprise:3.3.3
