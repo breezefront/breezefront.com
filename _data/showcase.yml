@@ -1,3 +1,10 @@
+- url: https://dealo.co.za/
+  description: Electronics and Solar
+  scores:
+    Homepage: 75
+    Category: 97
+    Product: 89
+
 - url: https://www.recommerce.com/
   description: Electronics
   scores:
