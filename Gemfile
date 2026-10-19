@@ -39,3 +39,6 @@ gem "kramdown-parser-gfm"
 
 
 gem "webrick", "~> 1.7"
+gem "csv"
+gem "bigdecimal"
+gem "logger", "< 1.7" # 1.7 warns about Jekyll 3.9 Stevenson
