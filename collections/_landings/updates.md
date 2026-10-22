@@ -9,7 +9,7 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
-## Coming soon
+## October 22, 2026
 
 > swissup/breeze:2.33.0
 
