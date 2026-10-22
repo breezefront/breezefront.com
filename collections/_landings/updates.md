@@ -9,6 +9,13 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## Coming soon
+
+> swissup/breeze:2.33.0
+
+ -  Greatly improved compatibility with third-party js components.
+ -  Fixed infinite focus loop when validating single field in login popup.
+
 ## October 8, 2026
 
 > swissup/breeze:2.32.1<br/>
