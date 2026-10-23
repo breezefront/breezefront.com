@@ -9,6 +9,43 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## October 23, 2026
+
+> swissup/breeze-enterprise:3.4.0
+
+**Eir Theme**
+
+ -  Meet Eir, a brand new Breeze Enterprise design! Highlights:
+    - Homepage built with Content Builder: animated banners, video section,
+      running line, testimonials, FAQ, and brand logos. Separate banner sliders
+      for mobile devices.
+    - Header with slideout navigation menu, search slideout, and header panel slider.
+    - Category page: new product listing design, "Shop by" filters dropdown, and
+      banners between product items.
+    - Product page: sticky gallery and product info on desktop, sticky "Add to cart"
+      bar, review popup, testimonials, FAQ, and "Frequently Bought Together" blocks.
+    - Cart sidebar opens automatically after adding a product to the cart.
+    - Redesigned shopping cart page.
+    - Footer with reveal animation.
+    - Theme Editor: colors, typography, layout, overlay header, border radius,
+      color and font palettes, listing, and animation settings.
+
+**Apollo Theme**
+
+ -  Product page: running line and "Choose us" banners are now editable with Content Builder.
+
+**Eir and Apollo Themes**
+
+ -  Content Builder:
+    - New Running Line component.
+    - New Gallery 2×5 layout for Grid component.
+    - Video component now supports TikTok videos.
+    - Improved CMS pages selector.
+ -  Ajax Search: security and stability improvements. Autocomplete requests are
+    now rate limited, and special characters in search terms are handled properly.
+ -  Fixed visible progress bar when loading delayed CSS.
+ -  Fixed Incl/Excl VAT switcher state sync between header and mobile menu.
+
 ## October 22, 2026
 
 > swissup/breeze:2.33.0
