@@ -463,7 +463,6 @@
   logo: -ads
   css: bg-cyan-500 text-white justify-center text-xl font-black
   url: https://github.com/PartnerAds/Magento2
-  integration_url: https://github.com/breezefront/module-breeze-partnerads-magento2#installation
   description: Magento2 module for Partner Ads tracking.
 
 - name: paypal/braintree
