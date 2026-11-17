@@ -9,6 +9,19 @@ class: prose prose-zinc max-w-3xl mx-auto
 # Updates
 {:.text-center.text-zinc-800.sm:text-5xl.sm:font-black.md:text-6xl}
 
+## November 17, 2026
+
+> swissup/breeze:2.33.2
+
+ -  Fixed possible missing `requirejs-config-breeze` file after deploy.
+ -  Fixed error when `breeze.viewTransition` block is removed by the theme.
+
+## November 6, 2026
+
+> swissup/breeze:2.33.1
+
+ -  Improved compatibility wit third-party Luma-based modules.
+
 ## October 23, 2026
 
 > swissup/breeze-enterprise:3.4.0
